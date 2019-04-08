@@ -8,7 +8,7 @@ public class Restart : MonoBehaviour {
     public void RestartGame()
     {
         //Application.LoadLevel(Application.loadedLevel); Depricated
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
  
 
