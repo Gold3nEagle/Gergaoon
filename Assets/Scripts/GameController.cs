@@ -20,9 +20,16 @@ public class GameController : MonoBehaviour {
     private float maxWidth;
     private bool playing;
 
+    private float firstWait, secondWait;
+    private int designatedTime= 100;
+    private float startWait;
     // Use this for initialization
     void Start()
     {
+        firstWait = 1.0f;
+        secondWait = 2.0f;
+        startWait = 2.0f;
+
         if (cam == null)
         {
             cam = Camera.main;
@@ -53,6 +60,8 @@ public class GameController : MonoBehaviour {
         startButton.SetActive(false);
         StartCoroutine(Spawn());
         playing = true;
+
+        
     }
 
 
@@ -68,34 +77,52 @@ public class GameController : MonoBehaviour {
                 timeLeft = 0;
             }
             UpdateText();
+             
         }
     }
 
     IEnumerator Spawn()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(startWait);
 
-        while (timeLeft > 0) {
+        while (timeLeft > designatedTime) {
             GameObject ball = balls[Random.Range(0, balls.Length)];
         Vector3 spawnPosition = new Vector3(Random.Range(-maxWidth, maxWidth), transform.position.y, transform.position.z);
         Quaternion spawnRotation = Quaternion.identity;
         Instantiate(ball, spawnPosition, spawnRotation);
             
-          
+            
 
-            yield return new WaitForSeconds(Random.Range(1.0f, 2.0f));
+
+          yield return new WaitForSeconds(Random.Range(firstWait, secondWait));
         }
-        yield return new WaitForSeconds(0.5f);
-        gameOverText.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        restartButton.SetActive(true);
+        if (timeLeft == 0)
+        {
+            yield return new WaitForSeconds(0.5f);
+            gameOverText.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            restartButton.SetActive(true);
+        } else if (designatedTime > 0) {
+            startWait = 0;     
+        firstWait -= 0.15f;
+        secondWait -= 0.3f;
+        designatedTime -= 15;
+            if (designatedTime < 0 || firstWait < 0)
+            { designatedTime = 0;
+                firstWait = 0.1f;
+                secondWait = 0.2f;
 
+            }
+        StartCoroutine(Spawn());
+        }
+         
     }
+     
+
 
     void UpdateText()
     {
-        timerText.text = "Time Left: \n" + Mathf.RoundToInt(timeLeft);
-
+        timerText.text = "Time Left: \n" + Mathf.RoundToInt(timeLeft); 
     }
 
 }

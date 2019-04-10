@@ -225,8 +225,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022888, y: 42.2}
-  m_SizeDelta: {x: 1300.9, y: 975.6}
+  m_AnchoredPosition: {x: 48, y: -118.09997}
+  m_SizeDelta: {x: 3289.4, y: 1316.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &460880094
 MonoBehaviour:
@@ -248,7 +248,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e9be043caef9841aaa0ccf63db879072, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 190ac2f8f9f25bb4a999a35d456d66bf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -460,8 +460,8 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -9.887873, y: 13.235241}
-  - {x: -9.966434, y: -3.6432295}
-  - {x: 11.662882, y: -3.5704262}
+  - {x: -9.90575, y: -5.4637237}
+  - {x: 11.905613, y: -5.572969}
   - {x: 11.846097, y: 12.936828}
   - {x: 11.848134, y: 13.118653}
 --- !u!4 &857610113
@@ -533,7 +533,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8a5a9fd6238654fee876913b6aedc962, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.08321467, g: 0.11041268, b: 0.4, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -943,7 +943,7 @@ SpriteRenderer:
   m_SortingLayerID: 1525669723
   m_SortingLayer: 3
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: b2adb93fe7d2449dc906d0f559214f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6bc09bc57d2444b4e988c15ca86e7f7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1380,12 +1380,12 @@ SpriteRenderer:
   m_SortingLayerID: 1525669723
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 6901eb77571e744fe8f25a4a51a7316d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 889abf16d49beee4ba355773606c854b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 9, y: 9.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1399,8 +1399,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782233399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.58, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.38, y: 0.7, z: 0}
+  m_LocalScale: {x: 0.20439838, y: 0.27398354, z: 0.23819767}
   m_Children:
   - {fileID: 1284825892}
   m_Father: {fileID: 0}
@@ -1456,41 +1456,40 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.6627958, y: -0.6880611}
-  - {x: -0.5738256, y: -0.7549988}
-  - {x: -0.15358447, y: -0.7836824}
-  - {x: -0.36992404, y: -0.7643567}
-  - {x: -0.67328286, y: -0.7185347}
-  - {x: -0.79167914, y: 1.0324101}
-  - {x: -0.8242749, y: 1.0517938}
-  - {x: -1.1717293, y: 0.88157153}
-  - {x: -1.2421314, y: 0.70353436}
-  - {x: -1.2302831, y: 0.5662052}
-  - {x: -1.1836323, y: 0.4374764}
-  - {x: -1.0187403, y: 0.3403424}
-  - {x: -0.8999164, y: -0.08357212}
-  - {x: -0.9707587, y: -0.64328957}
-  - {x: -0.9432843, y: -0.7685882}
-  - {x: -0.7349942, y: -0.93172896}
-  - {x: -0.44303265, y: -1.0824442}
-  - {x: -0.23043531, y: -1.153263}
-  - {x: -0.052820645, y: -1.1773922}
-  - {x: 0.26533553, y: -1.133694}
-  - {x: 0.6279248, y: -0.98768646}
-  - {x: 0.83328557, y: -0.852937}
-  - {x: 0.9098636, y: -0.7610842}
-  - {x: 0.7803167, y: 0.047304302}
-  - {x: 1.0807815, y: 0.30867222}
-  - {x: 1.237506, y: 0.5309544}
-  - {x: 1.2533079, y: 0.7405519}
-  - {x: 1.1684527, y: 0.8279748}
-  - {x: 1.0529602, y: 0.96455956}
-  - {x: 0.8209522, y: 1.0526394}
-  - {x: 0.47021595, y: -0.75911546}
-  - {x: 0.27755415, y: -0.794232}
-  - {x: -0.18443398, y: -0.782465}
-  - {x: -0.47498253, y: -0.76409894}
-  - {x: -0.45601812, y: -0.7198488}
+  - {x: -3.4335747, y: -1.3555743}
+  - {x: -3.5899498, y: -0.41482592}
+  - {x: -3.6061294, y: -0.3105559}
+  - {x: -3.7914495, y: -0.12768975}
+  - {x: -3.9437828, y: -0.1200867}
+  - {x: -4.2039266, y: -0.14172596}
+  - {x: -4.456546, y: -0.15285477}
+  - {x: -4.4363475, y: -0.3497015}
+  - {x: -4.299129, y: -0.65430206}
+  - {x: -4.129292, y: -0.7193718}
+  - {x: -3.944173, y: -1.2711492}
+  - {x: -3.6749842, y: -2.4343464}
+  - {x: -2.998841, y: -3.5405486}
+  - {x: -2.5127158, y: -4.0550046}
+  - {x: -1.3295854, y: -4.4577646}
+  - {x: -0.30588743, y: -4.689545}
+  - {x: 1.4669222, y: -4.410908}
+  - {x: 2.2886903, y: -4.2360115}
+  - {x: 2.5448294, y: -4.018728}
+  - {x: 2.9757063, y: -3.6531093}
+  - {x: 3.1966143, y: -3.3874357}
+  - {x: 3.6183116, y: -2.642704}
+  - {x: 3.822815, y: -2.121587}
+  - {x: 4.0117583, y: -1.4804794}
+  - {x: 4.0704036, y: -0.9791733}
+  - {x: 4.1184554, y: -0.8311375}
+  - {x: 4.204698, y: -0.7817068}
+  - {x: 4.2726655, y: -0.7511398}
+  - {x: 4.3562326, y: -0.615013}
+  - {x: 4.4348316, y: -0.3795691}
+  - {x: 4.4581933, y: -0.15031981}
+  - {x: 3.9479868, y: 0.10525001}
+  - {x: 3.7468855, y: -0.18751502}
+  - {x: 3.6176066, y: -1.0746579}
 --- !u!114 &1782233405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,8 +1518,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.8077479, y: -0.6559057}
-  - {x: 0.62409383, y: -0.6559059}
+  - {x: -2.0299106, y: -4.3451586}
+  - {x: -0.17279592, y: -4.577092}
+  - {x: 1.8621975, y: -4.321996}
 --- !u!114 &1782233407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1730,7 +1730,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.20315279}
   m_AnchorMax: {x: 0.5, y: 0.20315279}
-  m_AnchoredPosition: {x: 0.000015259, y: -53}
+  m_AnchoredPosition: {x: 0.000015259, y: -116.649994}
   m_SizeDelta: {x: 466.5, y: 233.3}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1987623704
