@@ -10,10 +10,15 @@ public class GameController : MonoBehaviour {
     public Text timerText;
     public GameObject gameOverText;
     public GameObject restartButton;
+    public GameObject DLight;
+    public GameObject Lights;
     public HatController hatController;
     public int ballSpeed;
     public GameObject splashScreen;
     public GameObject startButton;
+
+    public Score gameScore;
+    public AdsScript ads;
 
     private Rigidbody2D rb;
     private new Renderer renderer;
@@ -22,6 +27,7 @@ public class GameController : MonoBehaviour {
 
     private float firstWait, secondWait;
     private int designatedTime= 100;
+    private float yrotation = 100;
     private float startWait;
     // Use this for initialization
     void Start()
@@ -37,8 +43,8 @@ public class GameController : MonoBehaviour {
 
         playing = false;
         renderer = GetComponent<Renderer>();
-       // rb = ball.GetComponent<Rigidbody2D>();
-       // rb.gravityScale = ballSpeed;
+        //rb = balls[0].GetComponent<Rigidbody2D>();
+        // rb.gravityScale = ballSpeed;
 
         //Getting the width and height of the screen.
         Vector3 upperCorner = new Vector3(Screen.width, Screen.height, 0.0f);
@@ -46,8 +52,7 @@ public class GameController : MonoBehaviour {
 
         //ball.renderer.bounds.extents.x; I had to put it as 1.0f because the renderer property was duprecated. Needed to improvise so I got the width manually
         float ballWidth = 1.0f;
-        //GetComponent<SpriteRenderer>().bounds.size.x;
-        //Debug.Log(ballWidth);
+ 
 
         maxWidth = targetWidth.x - ballWidth;    
         UpdateText();
@@ -56,17 +61,19 @@ public class GameController : MonoBehaviour {
     public void StartGame()
     {
         hatController.ToggleControl(true);
-        splashScreen.SetActive(false);
-        startButton.SetActive(false);
+       // splashScreen.SetActive(false);
+       // startButton.SetActive(false);
         StartCoroutine(Spawn());
         playing = true;
-
+        //Lights.SetActive(false);
         
     }
 
 
     void FixedUpdate()
     {
+
+        
 
         if (playing)
         {
@@ -77,7 +84,13 @@ public class GameController : MonoBehaviour {
                 timeLeft = 0;
             }
             UpdateText();
-             
+
+            if (DLight.transform.rotation.y > 0)
+            {
+                yrotation = DLight.transform.rotation.y;
+                DLight.transform.Rotate(new Vector3(0, --yrotation, 0));
+            }
+
         }
     }
 
@@ -91,9 +104,7 @@ public class GameController : MonoBehaviour {
         Quaternion spawnRotation = Quaternion.identity;
         Instantiate(ball, spawnPosition, spawnRotation);
             
-            
-
-
+             
           yield return new WaitForSeconds(Random.Range(firstWait, secondWait));
         }
         if (timeLeft == 0)
@@ -102,11 +113,17 @@ public class GameController : MonoBehaviour {
             gameOverText.SetActive(true);
             yield return new WaitForSeconds(0.5f);
             restartButton.SetActive(true);
+
+            //Post Score to leaderboard
+            gameScore.PostScore();
+            //Show Ad
+            ads.ShowInterstitialAd();
+
         } else if (designatedTime > 0) {
             startWait = 0;     
         firstWait -= 0.15f;
         secondWait -= 0.3f;
-        designatedTime -= 15;
+        designatedTime -= 10;
             if (designatedTime < 0 || firstWait < 0)
             { designatedTime = 0;
                 firstWait = 0.1f;
@@ -119,10 +136,23 @@ public class GameController : MonoBehaviour {
     }
      
 
+    public void AdjustDLight()
+    {
+      
+
+        while(yrotation > 0)
+        {
+            yrotation-=2f;
+        DLight.transform.Rotate( new Vector3(0,yrotation , 0));
+         //   DLight.transform.eulerAngles = new Vector3(0, DLight.transform.eulerAngles.y - 2, 0);
+        }
+
+    }
+
 
     void UpdateText()
     {
-        timerText.text = "Time Left: \n" + Mathf.RoundToInt(timeLeft); 
+        timerText.text =   Mathf.RoundToInt(timeLeft).ToString(); 
     }
 
 }

@@ -8,6 +8,8 @@ public class Score : MonoBehaviour {
     public Text scoreText;
     public int ballValue;
 
+    public GPlayServices playServ;
+
     private int score;
 
 	// Use this for initialization
@@ -27,7 +29,7 @@ public class Score : MonoBehaviour {
     {
         if (other.gameObject.tag == "Bomb")
         {
-            score -= ballValue * 2;
+            score -= ballValue * 3;
             UpdateScore();
         }
     }
@@ -35,6 +37,12 @@ public class Score : MonoBehaviour {
 
     void UpdateScore()
     {
-        scoreText.text = "Score: \n" + score;
+        scoreText.text = score.ToString();
     }
+
+    public void PostScore()
+    {
+        playServ.AddScoreToLeaderboard(GPGSIds.leaderboard, score);
+    }
+
 }
