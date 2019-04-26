@@ -2,7 +2,9 @@
 using GooglePlayGames.BasicApi;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
-
+/// <summary>
+/// ??? Where is Documentation?
+/// </summary>
 public class GPlayServices : MonoBehaviour
 {
     // Start is called before the first frame update

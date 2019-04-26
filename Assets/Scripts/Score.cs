@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// ??? Where is Documentation?
+/// </summary>
+
 public class Score : MonoBehaviour {
 
     public Text scoreText;
@@ -10,7 +14,7 @@ public class Score : MonoBehaviour {
 
     public GPlayServices playServ;
 
-    private int score;
+    public int score;
 
 	// Use this for initialization
 	void Start () {

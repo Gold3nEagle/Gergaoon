@@ -8,14 +8,15 @@ public class GameController : MonoBehaviour {
     public GameObject[] balls;
     public float timeLeft;
     public Text timerText;
-    public GameObject gameOverText;
-    public GameObject restartButton;
+    public Text endScoreText;
+    public GameObject EndGameObj; 
     public GameObject DLight;
     public GameObject Lights;
     public HatController hatController;
     public int ballSpeed;
     public GameObject splashScreen;
     public GameObject startButton;
+    public GameObject GameBeginsObj;
 
     public Score gameScore;
     public AdsScript ads;
@@ -30,6 +31,12 @@ public class GameController : MonoBehaviour {
     private float yrotation = 100;
     private float startWait;
     // Use this for initialization
+
+    /// <summary>
+    /// ??? Where is Documentation?
+    /// </summary>
+
+
     void Start()
     {
         firstWait = 1.0f;
@@ -43,8 +50,8 @@ public class GameController : MonoBehaviour {
 
         playing = false;
         renderer = GetComponent<Renderer>();
-        //rb = balls[0].GetComponent<Rigidbody2D>();
-        // rb.gravityScale = ballSpeed;
+        //rb = balls[0].GetComponent<Rigidbody2D>();   Responsible for sprite's gravity. 
+        // rb.gravityScale = ballSpeed;                Setting the gravity modifier to the rigidbody component. 
 
         //Getting the width and height of the screen.
         Vector3 upperCorner = new Vector3(Screen.width, Screen.height, 0.0f);
@@ -60,21 +67,16 @@ public class GameController : MonoBehaviour {
 
     public void StartGame()
     {
-        hatController.ToggleControl(true);
-       // splashScreen.SetActive(false);
-       // startButton.SetActive(false);
+        hatController.ToggleControl(true); 
         StartCoroutine(Spawn());
-        playing = true;
-        //Lights.SetActive(false);
+        playing = true; 
         
     }
 
 
     void FixedUpdate()
     {
-
-        
-
+         
         if (playing)
         {
             timeLeft -= Time.deltaTime;
@@ -109,10 +111,12 @@ public class GameController : MonoBehaviour {
         }
         if (timeLeft == 0)
         {
+            GameBeginsObj.SetActive(false);
             yield return new WaitForSeconds(0.5f);
-            gameOverText.SetActive(true);
-            yield return new WaitForSeconds(0.5f);
-            restartButton.SetActive(true);
+            EndGameObj.SetActive(true);
+            StartCoroutine(ShowScore());
+            
+
 
             //Post Score to leaderboard
             gameScore.PostScore();
@@ -143,8 +147,7 @@ public class GameController : MonoBehaviour {
         while(yrotation > 0)
         {
             yrotation-=2f;
-        DLight.transform.Rotate( new Vector3(0,yrotation , 0));
-         //   DLight.transform.eulerAngles = new Vector3(0, DLight.transform.eulerAngles.y - 2, 0);
+        DLight.transform.Rotate( new Vector3(0,yrotation , 0)); 
         }
 
     }
@@ -155,4 +158,16 @@ public class GameController : MonoBehaviour {
         timerText.text =   Mathf.RoundToInt(timeLeft).ToString(); 
     }
 
+
+    IEnumerator ShowScore()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        for (int i = 0; i <= gameScore.score; ++i)
+        {
+            endScoreText.text = i.ToString();
+            yield return new WaitForSeconds(0.1f);
+        }
+      
+    }
 }

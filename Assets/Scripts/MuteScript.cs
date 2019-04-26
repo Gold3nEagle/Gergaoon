@@ -38,4 +38,17 @@ public class MuteScript : MonoBehaviour
     {
         Application.OpenURL("https://haethamalhaddad.blogspot.com/2019/04/blog-post.html");
     }
+
+
+    public void InstAcess()
+    {
+        Application.OpenURL("https://www.instagram.com/gold3neagle/");
+    }
+
+    public void TwitAcess()
+    {
+        Application.OpenURL("https://twitter.com/eaglegamer47");
+    }
+     
+
 }
