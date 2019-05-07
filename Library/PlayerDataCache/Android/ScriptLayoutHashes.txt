@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/eagle/Desktop/Dev/Projects/Gerga3oon/gergaoon v0.5.apk
+C:/Users/eagle/Desktop/Dev/Projects/Gerga3oon/gergaoon v0.8.apk
 SceneListBegin?
 Assets/Scenes/GameScene.unity
 SceneListEnd?
@@ -165,6 +165,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+30f3213a6e218a461fa00e428f22d3eb Assembly-CSharp.dll:.AnimationController
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 03a6e673bc431d492ae15c5d5132b2af Assembly-CSharp.dll:.HT_Score
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:GooglePlayGames.OurUtils.PlayGamesHelperObject

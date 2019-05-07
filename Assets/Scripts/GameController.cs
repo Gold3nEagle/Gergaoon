@@ -67,10 +67,12 @@ public class GameController : MonoBehaviour {
 
     public void StartGame()
     {
+        SetTimesPlayed();
         hatController.ToggleControl(true); 
         StartCoroutine(Spawn());
-        playing = true; 
+        playing = true;
         
+
     }
 
 
@@ -169,5 +171,12 @@ public class GameController : MonoBehaviour {
             yield return new WaitForSeconds(0.1f);
         }
       
+    }
+
+    void SetTimesPlayed()
+    {
+        int TP = PlayerPrefs.GetInt("TP");
+        TP++;
+        PlayerPrefs.SetInt("TP", TP);
     }
 }

@@ -49,6 +49,12 @@ public class MuteScript : MonoBehaviour
     {
         Application.OpenURL("https://twitter.com/eaglegamer47");
     }
+
+    public void RateGame()
+    {
+        Application.OpenURL("market://details?id=com.goldeneagle.gergaoon");
+        PlayerPrefs.SetInt("BeenRated", 1);
+    }
      
 
 }
