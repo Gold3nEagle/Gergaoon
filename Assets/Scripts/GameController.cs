@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
     public int ballSpeed;
     public GameObject splashScreen;
     public GameObject startButton;
+    public GameObject restartButton;
     public GameObject GameBeginsObj;
 
     public Score gameScore;
@@ -35,6 +36,7 @@ public class GameController : MonoBehaviour {
     /// <summary>
     /// ??? Where is Documentation?
     /// </summary>
+
 
 
     void Start()
@@ -63,6 +65,9 @@ public class GameController : MonoBehaviour {
 
         maxWidth = targetWidth.x - ballWidth;    
         UpdateText();
+         
+        
+
     }
 
     public void StartGame()
@@ -143,15 +148,12 @@ public class GameController : MonoBehaviour {
      
 
     public void AdjustDLight()
-    {
-      
-
+    { 
         while(yrotation > 0)
         {
             yrotation-=2f;
         DLight.transform.Rotate( new Vector3(0,yrotation , 0)); 
-        }
-
+        } 
     }
 
 
@@ -163,14 +165,21 @@ public class GameController : MonoBehaviour {
 
     IEnumerator ShowScore()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(4.0f);
+        hatController.ToggleControl(false);
+        hatController.HatEndPosition();
+        Quaternion spawnRotation = Quaternion.identity;
+        Vector3 spawnPosition = new Vector3(4, 8);
 
         for (int i = 0; i <= gameScore.score; ++i)
         {
             endScoreText.text = i.ToString();
             yield return new WaitForSeconds(0.1f);
+            GameObject endballs = balls[Random.Range(0, 7)];
+            Instantiate( endballs, spawnPosition, spawnRotation); 
         }
-      
+        yield return new WaitForSeconds(4.0f);
+        restartButton.SetActive(true);
     }
 
     void SetTimesPlayed()

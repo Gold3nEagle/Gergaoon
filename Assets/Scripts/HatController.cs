@@ -55,4 +55,9 @@ public class HatController : MonoBehaviour {
         canControl = toggle;
     }
 
+    public void HatEndPosition()
+    {
+        rb.MovePosition(new Vector2(4, 0));
+    }
+
 }

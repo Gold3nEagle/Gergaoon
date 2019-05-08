@@ -6,6 +6,7 @@ public class AnimationController : MonoBehaviour
 {
 
     public Animator animator;
+    public GameObject m_Object;
     int timesPlayed, IsRated;
 
     // Start is called before the first frame update
@@ -14,12 +15,13 @@ public class AnimationController : MonoBehaviour
         timesPlayed = PlayerPrefs.GetInt("TP");
         IsRated = PlayerPrefs.GetInt("BeenRated");
         RateGame();
+        LBPointer();
     }
       
 
     public void RateGame()
     {
-        if (timesPlayed >= 1 && IsRated == 0) {  
+        if (timesPlayed >= 2 && IsRated == 0) {  
         animator.SetBool("IsOpen", true);
         }
     }
@@ -37,5 +39,12 @@ public class AnimationController : MonoBehaviour
     public void HideOptions()
     {
         animator.SetBool("IsShown", false);
+    }
+
+    public void LBPointer()
+    {
+        if(timesPlayed == 1) {
+        m_Object.SetActive(true);
+        }
     }
 }
