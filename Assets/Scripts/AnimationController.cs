@@ -45,6 +45,6 @@ public class AnimationController : MonoBehaviour
     {
         if(timesPlayed == 1) {
         m_Object.SetActive(true);
-        }
+        } 
     }
 }

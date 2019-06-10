@@ -44,6 +44,11 @@ public class Score : MonoBehaviour {
         scoreText.text = score.ToString();
     }
 
+    public void SaveScore()
+    {
+        PlayerPrefs.SetInt("Score", score);
+    }
+
     public void PostScore()
     {
         playServ.AddScoreToLeaderboard(GPGSIds.leaderboard, score);

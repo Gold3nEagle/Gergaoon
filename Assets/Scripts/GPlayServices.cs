@@ -30,7 +30,7 @@ public class GPlayServices : MonoBehaviour
     public void ShowLeaderboardsUI()
     {
          Social.ShowLeaderboardUI();
-         PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkItef62N0LEAIQAA");
+         PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkItef62N0LEAIQAg");
     }
       
 }

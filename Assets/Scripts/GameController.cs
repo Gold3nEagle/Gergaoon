@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
     public Camera cam;
@@ -18,9 +19,11 @@ public class GameController : MonoBehaviour {
     public GameObject startButton;
     public GameObject restartButton;
     public GameObject GameBeginsObj;
+    public GameObject colliderObj;
 
     public Score gameScore;
     public AdsScript ads;
+    public SfxController sfx;
 
     private Rigidbody2D rb;
     private new Renderer renderer;
@@ -31,14 +34,7 @@ public class GameController : MonoBehaviour {
     private int designatedTime= 100;
     private float yrotation = 100;
     private float startWait;
-    // Use this for initialization
-
-    /// <summary>
-    /// ??? Where is Documentation?
-    /// </summary>
-
-
-
+    
     void Start()
     {
         firstWait = 1.0f;
@@ -122,10 +118,11 @@ public class GameController : MonoBehaviour {
             yield return new WaitForSeconds(0.5f);
             EndGameObj.SetActive(true);
             StartCoroutine(ShowScore());
-            
 
 
-            //Post Score to leaderboard
+
+            //Save and Post Score to leaderboard
+            gameScore.SaveScore();
             gameScore.PostScore();
             //Show Ad
             ads.ShowInterstitialAd();
@@ -166,6 +163,7 @@ public class GameController : MonoBehaviour {
     IEnumerator ShowScore()
     {
         yield return new WaitForSeconds(4.0f);
+        colliderObj.SetActive(true);
         hatController.ToggleControl(false);
         hatController.HatEndPosition();
         Quaternion spawnRotation = Quaternion.identity;
@@ -174,6 +172,7 @@ public class GameController : MonoBehaviour {
         for (int i = 0; i <= gameScore.score; ++i)
         {
             endScoreText.text = i.ToString();
+            sfx.PlayScoreSound();
             yield return new WaitForSeconds(0.1f);
             GameObject endballs = balls[Random.Range(0, 7)];
             Instantiate( endballs, spawnPosition, spawnRotation); 
@@ -188,4 +187,12 @@ public class GameController : MonoBehaviour {
         TP++;
         PlayerPrefs.SetInt("TP", TP);
     }
+
+
+    public void RestartGame()
+    {
+        ads.ShowInterstitialAd();
+        SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
+    }
+
 }

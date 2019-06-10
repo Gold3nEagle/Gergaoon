@@ -6,7 +6,7 @@ public class MusicController : MonoBehaviour
 {
 
 
-    AudioSource audioSource;
+    AudioSource audioSource; 
     public AudioClip[] clips;
 
     // Start is called before the first frame update
@@ -36,4 +36,7 @@ public class MusicController : MonoBehaviour
         audioSource.Play();
 
     }
+
+     
+
 }

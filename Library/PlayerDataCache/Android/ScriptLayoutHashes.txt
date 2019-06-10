@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/eagle/Desktop/Dev/Projects/Gerga3oon/gergaoon v0.9.apk
+C:/Users/eagle/Desktop/Dev/Projects/Gerga3oon/gergaoon v1.6.apk
 SceneListBegin?
 Assets/Scenes/GameScene.unity
 SceneListEnd?
@@ -122,11 +122,12 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 ee17abc28cc51eb78f8bf4de956b90da Assembly-CSharp.dll:.HT_SetParticleSortingLayer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.AdsScript
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
-4ff639e87ae735f048d2ffda5693dc94 Assembly-CSharp.dll:.GameController
+de8acad374029132ae27b0abbd1a1b70 Assembly-CSharp.dll:.GameController
 23eb55b6eae0da78ab8a5391a38a8374 Assembly-CSharp.dll:.Explode
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GPlayServices
+35105bfdabca68abd50fa354768d4758 Assembly-CSharp.dll:.SfxController
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -172,9 +173,10 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.HT_Restart
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Restart
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 d3bbd1f86b55a6168b664522b2cf57b3 Assembly-CSharp.dll:.SelfDestruct
 23eb55b6eae0da78ab8a5391a38a8374 Assembly-CSharp.dll:.HT_Explode
 a957c799ed6ee3879c04f2421fa97dbd Assembly-CSharp.dll:.HT_GameController
 0880b30b97266268dd6c5edaaf8c4f61 Assembly-CSharp.dll:.MusicController
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Assets.SimpleAndroidNotifications.NotificationExample
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Assets.SimpleAndroidNotifications.NotificationController
