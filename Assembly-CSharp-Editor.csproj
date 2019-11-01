@@ -70,14 +70,19 @@
     <Compile Include="Assets\GooglePlayGames\Editor\GPGSUpgrader.cs" />
     <Compile Include="Assets\GooglePlayGames\Editor\GPGSUtil.cs" />
     <Compile Include="Assets\GooglePlayGames\Editor\NearbyConnectionUI.cs" />
+    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.116.0.txt" />
     <None Include="Assets\GooglePlayGames\Editor\GooglePlayGamesPluginDependencies.xml" />
-    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.102.0.txt" />
+    <None Include="Assets\Firebase\Editor\FirebaseAnalytics_version-6.1.1_manifest.txt" />
+    <None Include="Assets\Firebase\Editor\FirebaseMessaging_version-6.1.1_manifest.txt" />
     <None Include="Assets\GooglePlayGames\Editor\template-GameInfo.txt" />
     <None Include="Assets\GooglePlayGames\Editor\template-AndroidManifest.txt" />
+    <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
+    <None Include="Assets\Firebase\Editor\AnalyticsDependencies.xml" />
     <None Include="Assets\GooglePlayGames\Editor\GooglePlayGamesPlugin_v0.9.62.txt" />
     <None Include="Assets\GooglePlayGames\Editor\m2repository\com\google\games\gpgs-plugin-support\maven-metadata.xml" />
     <None Include="Assets\GooglePlayGames\Editor\template-Constants.txt" />
     <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsDependencies.xml" />
+    <None Include="Assets\Firebase\Editor\MessagingDependencies.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Development/Unity/Git/Gergaoon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -330,17 +335,44 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Google.IOSResolver_v1.2.102.0">
-      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.102.0.dll</HintPath>
+    <Reference Include="Firebase.Editor">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Google.JarResolver_v1.2.102.0">
-      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.102.0.dll</HintPath>
+    <Reference Include="Firebase.Analytics">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Messaging">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/Firebase/Plugins/Firebase.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver_v1.2.116.0">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.116.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.116.0">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.116.0.dll</HintPath>
     </Reference>
     <Reference Include="Google.VersionHandler">
       <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
     </Reference>
-    <Reference Include="Google.VersionHandlerImpl_v1.2.102.0">
-      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.102.0.dll</HintPath>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.116.0">
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.116.0.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>E:/Development/Unity/Git/Gergaoon/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

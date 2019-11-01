@@ -31,6 +31,9 @@ public class GPlayServices : MonoBehaviour
     {
          Social.ShowLeaderboardUI();
          PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkItef62N0LEAIQAg");
+
+        //Log event for accessing leaderboard.
+        Firebase.Analytics.FirebaseAnalytics.LogEvent("Accessed Leaderboards");
     }
       
 }

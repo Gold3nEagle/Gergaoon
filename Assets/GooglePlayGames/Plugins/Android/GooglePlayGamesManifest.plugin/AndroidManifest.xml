@@ -6,14 +6,10 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="14" />
+<uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="14" /> 
 
-     
-
-    <application>
-
-     
-
+    <application> 
         <!-- The space in these forces it to be interpreted as a string vs. int -->
         <meta-data android:name="com.google.android.gms.games.APP_ID"
             android:value="\u003403108180917" />

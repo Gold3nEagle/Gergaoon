@@ -34,6 +34,9 @@ public class AnimationController : MonoBehaviour
     public void ShowOptions()
     {
         animator.SetBool("IsShown", true);
+
+        //Logging Options Event on Google Analytics
+        Firebase.Analytics.FirebaseAnalytics.LogEvent("Accessed Options Panel");
     }
 
     public void HideOptions()

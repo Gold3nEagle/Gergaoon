@@ -1,68 +1,153 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Firebase.Extensions;
+using Firebase;
 using System;
-
-namespace Assets.SimpleAndroidNotifications { 
+using System.Threading.Tasks;
 
 public class NotificationController : MonoBehaviour
 {
 
-        int timesPlayed;
-        int Score;
 
-    // Start is called before the first frame update
-    void Start()
+    Firebase.DependencyStatus dependencyStatus = Firebase.DependencyStatus.UnavailableOther;
+    protected bool isFirebaseInitialized = false;
+    private string topic = "TestTopic";
+
+
+    // Log the result of the specified task, returning true if the task
+    // completed successfully, false otherwise.
+    protected bool LogTaskCompletion(Task task, string operation)
     {
-            timesPlayed = PlayerPrefs.GetInt("TP");
-            Score = PlayerPrefs.GetInt("Score"); 
-            NotificationSetup(timesPlayed);
-
-
-        }
-
-
-        public void NotificationSetup(int tp)
+        bool complete = false;
+        if (task.IsCanceled)
         {
-
-            if(tp > 6) { tp = 0; PlayerPrefs.SetInt("TP", tp); }
-
-            switch (tp)
-            {
-                case 0:
-                    NotificationManager.SendWithAppIcon(TimeSpan.FromHours(2), "قدها والا لا؟", " أعلى نقطة حصلتها كانت " + Score + " تقدر تحصل أعلى منها؟ ", new Color(0, 0.6f, 0), NotificationIcon.Star); 
-                    break;
-
-                case 1:
-                    NotificationManager.SendWithAppIcon(TimeSpan.FromHours(10), "متملل؟"  , "أتحداك تحصل أعلى نقطة في تاريخ اللعبة!" , new Color(0, 0.6f, 0), NotificationIcon.Star);
-                    break;
-
-                case 2:
-                    NotificationManager.SendWithAppIcon(TimeSpan.FromDays(5), "تبغي جوائز؟", "لا تنسى تتابع حسابنا عالانستقرام للفوز بجوائز من خلال اللعبة!", new Color(0, 0.6f, 0), NotificationIcon.Star);
-                    break;
-
-                case 3:
-                    NotificationManager.SendWithAppIcon(TimeSpan.FromDays(2), "مع اصحابك؟"  , "خلهم يحملون اللعبة معاك وعيشوا الطفولة", new Color(0, 0.6f, 0), NotificationIcon.Star);
-                    break;
-
-                case 4:
-                    NotificationManager.SendWithAppIcon(TimeSpan.FromDays(2), "مرحبا!", "لو نافست اصحابك من بيجمع قرقاعون أكثر؟", new Color(0, 0.6f, 0), NotificationIcon.Star);
-                    break;
-
-                case 5:
-                    NotificationManager.SendWithAppIcon(TimeSpan.FromDays(2), "مرحبا!", "لو نافست اصحابك من بيجمع قرقاعون أكثر؟", new Color(0, 0.6f, 0), NotificationIcon.Star);
-                    break;
-
-                case 6:
-                    NotificationManager.SendWithAppIcon(TimeSpan.FromDays(2), "تبي تجوف دياية ترقص شرقي؟", "ادخل اللعبة وشغل لها اغنية قرقاعون وطالع بعينك!", new Color(0, 0.6f, 0), NotificationIcon.Star);
-                    break;
-
-
-            }
-
-
+            Debug.Log(operation + " canceled.");
         }
+        else if (task.IsFaulted)
+        {
+            Debug.Log(operation + " encounted an error.");
+            foreach (Exception exception in task.Exception.Flatten().InnerExceptions)
+            {
+                string errorCode = "";
+                Firebase.FirebaseException firebaseEx = exception as Firebase.FirebaseException;
+                if (firebaseEx != null)
+                {
+                    errorCode = String.Format("Error.{0}: ",
+                      ((Firebase.Messaging.Error)firebaseEx.ErrorCode).ToString());
+                }
+                Debug.Log(errorCode + exception.ToString());
+            }
+        }
+        else if (task.IsCompleted)
+        {
+            Debug.Log(operation + " completed");
+            complete = true;
+        }
+        return complete;
+    }
 
- 
-}
+
+    // When the app starts, check to make sure that we have
+    // the required dependencies to use Firebase, and if not,
+    // add them if possible.
+    protected virtual void Start()
+    {
+        Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
+            dependencyStatus = task.Result;
+            if (dependencyStatus == Firebase.DependencyStatus.Available)
+            {
+                InitializeFirebase();
+            }
+            else
+            {
+                Debug.LogError(
+                  "Could not resolve all Firebase dependencies: " + dependencyStatus);
+            }
+        });
+    }
+
+    // Setup message event handlers.
+    void InitializeFirebase()
+    {
+        Firebase.Messaging.FirebaseMessaging.MessageReceived += OnMessageReceived;
+        Firebase.Messaging.FirebaseMessaging.TokenReceived += OnTokenReceived;
+        Firebase.Messaging.FirebaseMessaging.SubscribeAsync(topic).ContinueWithOnMainThread(task => {
+            LogTaskCompletion(task, "SubscribeAsync");
+        });
+        Debug.Log("Firebase Messaging Initialized");
+
+        // This will display the prompt to request permission to receive
+        // notifications if the prompt has not already been displayed before. (If
+        // the user already responded to the prompt, thier decision is cached by
+        // the OS and can be changed in the OS settings).
+        Firebase.Messaging.FirebaseMessaging.RequestPermissionAsync().ContinueWithOnMainThread(
+          task => {
+              LogTaskCompletion(task, "RequestPermissionAsync");
+          }
+        );
+        isFirebaseInitialized = true;
+    }
+
+    public virtual void OnMessageReceived(object sender, Firebase.Messaging.MessageReceivedEventArgs e)
+    {
+        Debug.Log("Received a new message");
+        var notification = e.Message.Notification;
+        if (notification != null)
+        {
+            Debug.Log("title: " + notification.Title);
+            Debug.Log("body: " + notification.Body);
+            var android = notification.Android;
+            if (android != null)
+            {
+                Debug.Log("android channel_id: " + android.ChannelId);
+            }
+        }
+        if (e.Message.From.Length > 0)
+            Debug.Log("from: " + e.Message.From);
+        if (e.Message.Link != null)
+        {
+            Debug.Log("link: " + e.Message.Link.ToString());
+        }
+        if (e.Message.Data.Count > 0)
+        {
+            Debug.Log("data:");
+            foreach (System.Collections.Generic.KeyValuePair<string, string> iter in
+                     e.Message.Data)
+            {
+                Debug.Log("  " + iter.Key + ": " + iter.Value);
+            }
+        }
+    }
+
+    public virtual void OnTokenReceived(object sender, Firebase.Messaging.TokenReceivedEventArgs token)
+    {
+        Debug.Log("Received Registration Token: " + token.Token);
+    }
+
+    public void ToggleTokenOnInit()
+    {
+        bool newValue = !Firebase.Messaging.FirebaseMessaging.TokenRegistrationOnInitEnabled;
+        Firebase.Messaging.FirebaseMessaging.TokenRegistrationOnInitEnabled = newValue;
+        Debug.Log("Set TokenRegistrationOnInitEnabled to " + newValue);
+    }
+
+    // Exit if escape (or back, on mobile) is pressed.
+    protected virtual void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
+    // End our messaging session when the program exits.
+    public void OnDestroy()
+    {
+        Firebase.Messaging.FirebaseMessaging.MessageReceived -= OnMessageReceived;
+        Firebase.Messaging.FirebaseMessaging.TokenReceived -= OnTokenReceived;
+    }
+
+
+
 }
