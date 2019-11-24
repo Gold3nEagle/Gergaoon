@@ -10,14 +10,17 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour {
 
     public Text scoreText;
-    public int ballValue;
-
-    public GPlayServices playServ;
-
+    public int ballValue; 
+    public GPlayServices playServ; 
     public int score;
+    public AudioClip[] clips;
+
+    AudioSource audioSource;
+    
 
 	// Use this for initialization
 	void Start () {
+        audioSource = GetComponent<AudioSource>();
         score = 0;
         UpdateScore();
 	}
@@ -25,6 +28,8 @@ public class Score : MonoBehaviour {
 
      void OnTriggerEnter2D()
     {
+        audioSource.clip = clips[Random.Range(0, 2)];
+        audioSource.Play();
         score += ballValue;
         UpdateScore();
     }

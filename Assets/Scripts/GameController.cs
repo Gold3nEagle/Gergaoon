@@ -72,9 +72,7 @@ public class GameController : MonoBehaviour {
         hatController.ToggleControl(true); 
         StartCoroutine(Spawn());
         playing = true;
-
-        Firebase.Analytics.FirebaseAnalytics.LogEvent("Playing Game");
-
+          
     }
 
 
