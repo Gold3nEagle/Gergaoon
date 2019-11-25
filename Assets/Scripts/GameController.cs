@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour {
     private Rigidbody2D rb;
     private new Renderer renderer;
     private float maxWidth;
-    private bool playing;
+    public static bool playing;
 
     private float firstWait, secondWait;
     private int designatedTime= 100;
@@ -123,8 +123,7 @@ public class GameController : MonoBehaviour {
             //Save and Post Score to leaderboard
             gameScore.SaveScore();
             gameScore.PostScore();
-            //Show Ad
-            ads.ShowInterstitialAd();
+            
 
         } else if (designatedTime > 0) {
             startWait = 0;     
@@ -176,7 +175,9 @@ public class GameController : MonoBehaviour {
             GameObject endballs = balls[Random.Range(0, 7)];
             Instantiate( endballs, spawnPosition, spawnRotation); 
         }
-        yield return new WaitForSeconds(4.0f);
+        //Show Ad
+        ads.ShowInterstitialAd();
+        yield return new WaitForSeconds(4.0f); 
         restartButton.SetActive(true);
     }
 
