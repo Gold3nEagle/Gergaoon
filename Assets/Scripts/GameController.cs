@@ -175,6 +175,7 @@ public class GameController : MonoBehaviour {
             GameObject endballs = balls[Random.Range(0, 7)];
             Instantiate( endballs, spawnPosition, spawnRotation); 
         }
+        yield return new WaitForSeconds(2.0f);
         //Show Ad
         ads.ShowInterstitialAd();
         yield return new WaitForSeconds(4.0f); 
@@ -191,7 +192,6 @@ public class GameController : MonoBehaviour {
 
     public void RestartGame()
     {
-        ads.ShowInterstitialAd();
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
 

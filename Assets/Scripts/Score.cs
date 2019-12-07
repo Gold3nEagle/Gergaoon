@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SocialPlatforms;
+using GooglePlayGames;
 
 /// <summary>
 /// ??? Where is Documentation?
@@ -23,6 +25,8 @@ public class Score : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         score = 0;
         UpdateScore();
+        
+        
 	}
 
 
@@ -41,8 +45,7 @@ public class Score : MonoBehaviour {
             score -= ballValue * 3;
             UpdateScore();
         }
-    }
-
+    } 
 
     void UpdateScore()
     {
@@ -52,6 +55,35 @@ public class Score : MonoBehaviour {
     public void SaveScore()
     {
         PlayerPrefs.SetInt("Score", score);
+        int TP = PlayerPrefs.GetInt("TP");
+
+        if (score >= 50)
+        {
+            playServ.UnlockAchievement(1);
+        }
+
+        if(score >= 100)
+        {
+            playServ.UnlockAchievement(2);
+        }
+
+        if(score >= 111)
+        {
+            playServ.UnlockAchievement(3);
+        }
+
+        if(TP >= 20)
+        {
+            playServ.UnlockAchievement(4);
+        }
+
+        if(score <= 0)
+        {
+            playServ.UnlockAchievement(5);
+        }
+
+
+
     }
 
     public void PostScore()

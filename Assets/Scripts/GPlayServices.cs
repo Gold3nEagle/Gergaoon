@@ -31,9 +31,41 @@ public class GPlayServices : MonoBehaviour
     {
          Social.ShowLeaderboardUI();
          PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkItef62N0LEAIQAw");
-
-        //Log event for accessing leaderboard.
-        Firebase.Analytics.FirebaseAnalytics.LogEvent("Accessed Leaderboards");
+        
     }
-      
+
+    public void ShowAchievemntsUI()
+    {
+        PlayGamesPlatform.Instance.ShowAchievementsUI();
+    }
+       
+    public void UnlockAchievement(int achievement)
+    {
+        Debug.Log(achievement);
+        Debug.Log("Unlocking achievements works!!");
+        switch (achievement)
+        {
+            case 1:
+                PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_50_candies, 100f, success => { });
+                break;
+
+            case 2:
+                PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_100_candies, 100f, success => { });
+                break;
+
+            case 3:
+                PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_professional , 100f, success => { });
+                break;
+
+            case 4:
+                PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_survival_of_the_fittest, 100f, success => { });
+                break;
+
+            case 5:
+                PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_you_did_your_best, 100f, success => { });
+                break;
+        }
+
+
+    }
 }
