@@ -52,12 +52,15 @@ public class HatController : MonoBehaviour {
 
     public void ToggleControl(bool toggle)
     {
+        gameObject.GetComponent<Animator>().enabled = false;
+        gameObject.transform.eulerAngles = new Vector3(0, 0, 0);
         canControl = toggle;
     }
 
     public void HatEndPosition()
     {
         rb.MovePosition(new Vector2(4, 0));
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 
 }

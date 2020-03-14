@@ -4,24 +4,19 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    bool pauseGame; 
+
+    public void PauseGame()
     {
-        if (Input.GetKey(KeyCode.Space))
+        pauseGame = !pauseGame;
+        if (pauseGame)
         {
-            if(Time.timeScale == 1)
-            {
-                Time.timeScale = 0;
-            } else
-            {
-                Time.timeScale = 1;
-            }
+            Time.timeScale = 0;
+        } else
+        {
+            Time.timeScale = 1;
         }
     }
+
 }

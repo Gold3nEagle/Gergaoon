@@ -8,18 +8,10 @@ public class GameController : MonoBehaviour {
     public Camera cam;
     public GameObject[] balls;
     public float timeLeft;
-    public Text timerText;
-    public Text endScoreText;
-    public GameObject EndGameObj; 
-    public GameObject DLight;
-    public GameObject Lights;
+    public Text timerText, endScoreText;
+    public GameObject EndGameObj, DLight, Lights, splashScreen, startButton, restartButton, GameBeginsObj, colliderObj;  
     public HatController hatController;
     public int ballSpeed;
-    public GameObject splashScreen;
-    public GameObject startButton;
-    public GameObject restartButton;
-    public GameObject GameBeginsObj;
-    public GameObject colliderObj;
 
     public Score gameScore;
     public AdsScript ads;
@@ -30,10 +22,9 @@ public class GameController : MonoBehaviour {
     private float maxWidth;
     public static bool playing;
 
-    private float firstWait, secondWait;
+    private float firstWait, secondWait, startWait;
     private int designatedTime= 100;
-    private float yrotation = 100;
-    private float startWait;
+    private float yRotation = 100; 
     
     void Start()
     {
@@ -91,8 +82,8 @@ public class GameController : MonoBehaviour {
 
             if (DLight.transform.rotation.y > 0)
             {
-                yrotation = DLight.transform.rotation.y;
-                DLight.transform.Rotate(new Vector3(0, --yrotation, 0));
+                yRotation = DLight.transform.rotation.y;
+                DLight.transform.Rotate(new Vector3(0, --yRotation, 0));
             }
 
         }
@@ -144,10 +135,10 @@ public class GameController : MonoBehaviour {
 
     public void AdjustDLight()
     { 
-        while(yrotation > 0)
+        while(yRotation > 0)
         {
-            yrotation-=2f;
-        DLight.transform.Rotate( new Vector3(0,yrotation , 0)); 
+            yRotation-=2f;
+        DLight.transform.Rotate( new Vector3(0,yRotation , 0)); 
         } 
     }
 
