@@ -286,6 +286,7 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
+    <Compile Include="Assets\GPGSIds.cs" />
     <Compile Include="Assets\Hat Trick - The Catch Game\Scripts\HT_DestroyOnContact.cs" />
     <Compile Include="Assets\Hat Trick - The Catch Game\Scripts\HT_Explode.cs" />
     <Compile Include="Assets\Hat Trick - The Catch Game\Scripts\HT_GameController.cs" />
@@ -299,11 +300,12 @@
     <Compile Include="Assets\Scripts\DestroyOnContact.cs" />
     <Compile Include="Assets\Scripts\Explode.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Scripts\GPGSIds.cs" />
     <Compile Include="Assets\Scripts\GPlayServices.cs" />
     <Compile Include="Assets\Scripts\HatController.cs" />
+    <Compile Include="Assets\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\MusicController.cs" />
     <Compile Include="Assets\Scripts\MuteScript.cs" />
+    <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\SelfDestruct.cs" />
     <Compile Include="Assets\Scripts\SfxController.cs" />
@@ -554,10 +556,10 @@
       <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Compat">
-      <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Tasks">
-      <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>

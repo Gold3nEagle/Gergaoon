@@ -358,10 +358,10 @@
       <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Compat">
-      <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Tasks">
-      <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+      <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="Google.IOSResolver_v1.2.116.0">
       <HintPath>E:/Development/Unity/Git/Gergaoon/Gergaoon/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.116.0.dll</HintPath>
