@@ -10,10 +10,12 @@ public class GameController : MonoBehaviour {
     public float timeLeft;
     public Text timerText, endScoreText;
     public GameObject EndGameObj, DLight, Lights, splashScreen, startButton, restartButton, GameBeginsObj, colliderObj;  
-    public HatController hatController;
+    
     public int ballSpeed;
 
-    public Score gameScore;
+    Score gameScore;
+    HatController hatController;
+
     public AdsScript ads;
     public SfxController sfx;
 
@@ -28,6 +30,7 @@ public class GameController : MonoBehaviour {
     
     void Start()
     {
+        NewHat();
         firstWait = 1.0f;
         secondWait = 2.0f;
         startWait = 2.0f;
@@ -185,5 +188,12 @@ public class GameController : MonoBehaviour {
     {
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
+
+    public void NewHat()
+    {
+        gameScore = GameObject.FindGameObjectWithTag("Hat").GetComponent<Score>();
+        hatController = GameObject.FindGameObjectWithTag("Hat").GetComponent<HatController>();
+    }
+
 
 }
