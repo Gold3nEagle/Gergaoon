@@ -11,17 +11,21 @@ using GooglePlayGames;
 
 public class Score : MonoBehaviour {
 
-    public Text scoreText;
+    public Text scoreText, totalCandyDisplay;
     public int ballValue; 
     public GPlayServices playServ; 
     public int score;
     public AudioClip[] clips;
+
+    int totalCandy;
 
     AudioSource audioSource;
     
 
 	// Use this for initialization
 	void Start () {
+        totalCandyDisplay = GameObject.FindGameObjectWithTag("totalCoins").GetComponent<Text>();
+        DisplayTotalCandy();
         audioSource = GetComponent<AudioSource>();
         score = 0;
         UpdateScore();
@@ -82,13 +86,28 @@ public class Score : MonoBehaviour {
             playServ.UnlockAchievement(5);
         }
 
-
-
+        CalculateTotalCandy();
     }
 
     public void PostScore()
     {
         playServ.AddScoreToLeaderboard(GPGSIds.leaderboard, score);
+    }
+
+     void CalculateTotalCandy()
+    {
+        if(score < 0)
+        {
+            score = 0;
+        }
+        totalCandy += score;
+        PlayerPrefs.SetInt("totalCandy", totalCandy); 
+    }
+
+    void DisplayTotalCandy()
+    {
+        totalCandy = PlayerPrefs.GetInt("totalCandy");
+        totalCandyDisplay.text = totalCandy.ToString();
     }
 
 }
