@@ -32,7 +32,7 @@ public class AdsScript : MonoBehaviour
 #if UNITY_ANDROID
         string appId = "ca-app-pub-8350868259993569~2254859297";
 #elif UNITY_IPHONE
-            string appId = "ca-app-pub-3940256099942544~1458002511";
+            string appId = "ca-app-pub-8350868259993569~9193603165";
 #else
             string appId = "unexpected_platform";
 #endif
@@ -47,7 +47,7 @@ public class AdsScript : MonoBehaviour
 #if UNITY_ANDROID
         string adUnitId = "ca-app-pub-8350868259993569/2735927793";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3940256099942544/4411468910";
+        string adUnitId = "ca-app-pub-8350868259993569/4760863124";
 #else
         string adUnitId = "unexpected_platform";
 #endif
