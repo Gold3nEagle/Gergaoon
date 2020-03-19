@@ -29,14 +29,16 @@ public class AnimationController : MonoBehaviour
     public void HideRateGame()
     {
         animator.SetBool("IsOpen", false);
+        PlayerPrefs.SetInt("BeenRated", 1);
+
     }
 
     public void ShowOptions()
     {
-        animator.SetBool("IsShown", true);
-         
+        animator.SetBool("IsShown", true); 
     }
 
+   
     public void HideOptions()
     {
         animator.SetBool("IsShown", false);
