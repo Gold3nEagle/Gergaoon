@@ -25,14 +25,14 @@ public class Score : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         totalCandyDisplay = GameObject.FindGameObjectWithTag("totalCoins").GetComponent<Text>();
+        scoreText = GameObject.FindGameObjectWithTag("scoreNum").GetComponent<Text>();
         DisplayTotalCandy();
         audioSource = GetComponent<AudioSource>();
         score = 0;
         UpdateScore();
         
         
-	}
-
+	} 
 
      void OnTriggerEnter2D()
     {
@@ -104,10 +104,21 @@ public class Score : MonoBehaviour {
         PlayerPrefs.SetInt("totalCandy", totalCandy); 
     }
 
-    void DisplayTotalCandy()
+    public void DisplayTotalCandy()
     {
         totalCandy = PlayerPrefs.GetInt("totalCandy");
         totalCandyDisplay.text = totalCandy.ToString();
+    }
+
+    public int GetTotalCandy()
+    {
+        totalCandy = PlayerPrefs.GetInt("totalCandy"); 
+        return totalCandy;
+    }
+
+    public void SetTotalCandy(int total)
+    {
+        PlayerPrefs.SetInt("totalCandy", total);
     }
 
 }

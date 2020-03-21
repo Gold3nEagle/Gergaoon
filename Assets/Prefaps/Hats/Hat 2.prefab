@@ -114,7 +114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2606315008469273693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7492, y: 0.75, z: 0}
+  m_LocalPosition: {x: -2.8, y: 0.85, z: 0}
   m_LocalScale: {x: 0.2173981, y: 0.27398354, z: 0.23819767}
   m_Children:
   - {fileID: 2606315007892969038}
@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
+  totalCandyDisplay: {fileID: 0}
   ballValue: 1
   playServ: {fileID: 2606315008469273642}
   score: 0

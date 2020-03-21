@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
     public GameObject[] balls;
     public float timeLeft;
     public Text timerText, endScoreText;
-    public GameObject EndGameObj, DLight, Lights, splashScreen, startButton, restartButton, GameBeginsObj, colliderObj;  
+    public GameObject EndGameObj, DLight, Lights, splashScreen, startButton, restartButton, GameBeginsObj, colliderObj, scoreObject;  
     
     public int ballSpeed;
 
@@ -26,8 +26,9 @@ public class GameController : MonoBehaviour {
 
     private float firstWait, secondWait, startWait;
     private int designatedTime= 100;
-    private float yRotation = 100; 
-    
+    private float yRotation = 100;
+     
+
     void Start()
     {
         NewHat();
@@ -54,14 +55,13 @@ public class GameController : MonoBehaviour {
  
 
         maxWidth = targetWidth.x - ballWidth;    
-        UpdateText();
-         
-        
+        UpdateText(); 
 
     }
-
+     
     public void StartGame()
     {
+        scoreObject.transform.position = new Vector3(scoreObject.transform.position.x, Screen.height - 10, scoreObject.transform.position.z);
         SetTimesPlayed();
         hatController.ToggleControl(true); 
         StartCoroutine(Spawn());
@@ -172,7 +172,7 @@ public class GameController : MonoBehaviour {
         yield return new WaitForSeconds(2.0f);
         //Show Ad
         ads.ShowInterstitialAd();
-        yield return new WaitForSeconds(4.0f); 
+        yield return new WaitForSeconds(2.0f); 
         restartButton.SetActive(true);
     }
 
