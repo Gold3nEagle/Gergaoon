@@ -1,0 +1,77 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class AnimationController : MonoBehaviour
+{
+
+    public Animator animator, secondAnimator;
+    public GameObject m_Object;
+    string scene;
+    int timesPlayed, IsRated;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        scene = SceneManager.GetActiveScene().name;
+        timesPlayed = PlayerPrefs.GetInt("TP");
+        IsRated = PlayerPrefs.GetInt("BeenRated");
+        if (scene == "GameScene")
+        {
+            RateGame();
+            LBPointer();
+        }
+    }
+      
+
+    public void RateGame()
+    {
+        if (timesPlayed >= 2 && IsRated == 0) {  
+        animator.SetBool("IsOpen", true);
+        }
+    }
+
+    public void HideRateGame()
+    {
+        animator.SetBool("IsOpen", false);
+        PlayerPrefs.SetInt("BeenRated", 1);
+
+    }
+
+    public void ShowOptions()
+    {
+        animator.SetBool("IsShown", true); 
+        if(scene == "Bejeweled")
+        {
+            secondAnimator.SetBool("IsOpen", false);
+            StartCoroutine(GameStartCo());
+        }
+    }
+
+    IEnumerator GameStartCo()
+    {
+        yield return new WaitForSeconds(1f);
+        Board board = FindObjectOfType<Board>();
+        board.currentState = GameState.move;
+    }
+
+    public void GameOver()
+    {
+        animator.SetBool("IsOpen", true);
+        secondAnimator.SetBool("IsGameOver", true);
+    }
+   
+    public void HideOptions()
+    {
+        animator.SetBool("IsShown", false);
+    }
+
+    public void LBPointer()
+    {
+        if(timesPlayed == 1) {
+        m_Object.SetActive(true);
+        } 
+    }
+}
