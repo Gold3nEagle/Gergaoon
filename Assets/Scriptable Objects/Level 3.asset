@@ -27,9 +27,9 @@ MonoBehaviour:
     gameType: 0
     counterValue: 40
   levelGoals:
-  - numberNeeded: 5
+  - numberNeeded: 999
     numberCollected: 0
-    goalSprite: {fileID: 21300000, guid: fc805171bee632d4b82a78bf92e33cc7, type: 3}
+    goalSprite: {fileID: 21300000, guid: 88c02050aaec86b4cb34bc07c5612627, type: 3}
     matchValue: Green
   - numberNeeded: 5
     numberCollected: 0

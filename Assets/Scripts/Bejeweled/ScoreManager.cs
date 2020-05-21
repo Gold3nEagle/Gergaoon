@@ -10,23 +10,26 @@ public class ScoreManager : MonoBehaviour
     public int score;
     public Image scoreBar;
     private GameData gameData;
+    private int numberStars;
 
     // Start is called before the first frame update
     void Start()
     {
         gameData = FindObjectOfType<GameData>();
         board = FindObjectOfType<Board>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    } 
 
     public void IncreaseScore(int amountToIncrease)
     {
         score += amountToIncrease;
+        for (int i = 0; i < board.scoreGoals.Length; i++)
+        {
+            if (score > board.scoreGoals[i] && numberStars < i + 1)
+            {
+                numberStars++;
+            }
+        }
+
         scoreText.text = score.ToString(); 
 
         if(board != null && scoreBar != null)
@@ -41,11 +44,17 @@ public class ScoreManager : MonoBehaviour
             if (score > highScore)
             {
                 gameData.saveData.highScores[board.level] = score;
+                gameData.saveData.stars[board.level] = numberStars;
 
             }
+            int currentStars = gameData.saveData.stars[board.level];
+            if(numberStars > currentStars)
+            {
+                gameData.saveData.stars[board.level] = numberStars;
+            }
+            
             gameData.Save();
-        }
-
-    }
+        } 
+    } 
 
 }

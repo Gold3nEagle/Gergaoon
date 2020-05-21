@@ -5306,14 +5306,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657f1d37ed41cd94584fabd7e53194bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: 
+  levelToLoad: Bejeweled
+  level: 1
   stars:
   - {fileID: 1153998568}
   - {fileID: 1575089473}
   - {fileID: 992955732}
   highScoreText: {fileID: 680186225}
   starText: {fileID: 958996458}
-  level: 0
 --- !u!1 &1272934026
 GameObject:
   m_ObjectHideFlags: 0
