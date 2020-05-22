@@ -64,12 +64,12 @@ public class GameData : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        Save();
+       //Save();
     }
 
     private void OnDisable()
     {
-        Save();
+        //Save();
     }
 
 
