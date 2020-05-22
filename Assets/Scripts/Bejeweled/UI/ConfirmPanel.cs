@@ -64,6 +64,10 @@ public class ConfirmPanel : MonoBehaviour
     {
 
         this.gameObject.SetActive(false);
+        for (int i = 0; i < starsActive; i++)
+        {
+            stars[i].enabled = false;
+        }
     }
 
     public void Play()

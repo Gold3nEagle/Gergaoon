@@ -23,6 +23,7 @@ public class PauseManager : MonoBehaviour
         if(paused && !pausePanel.activeInHierarchy)
         {
             pausePanel.SetActive(true);
+            Debug.Log("PauseManager Pause");
             board.currentState = GameState.pause;
         }
 
