@@ -61,7 +61,7 @@ public class Board : MonoBehaviour
 
     public MatchType matchType;
     public Dot currentDot;
-    public int basePieceValue = 20;
+    public int basePieceValue = 1;
     private int streakValue = 1;
     public float refillDelay = 0.5f;
     public int[] scoreGoals;

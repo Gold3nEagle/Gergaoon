@@ -154,7 +154,7 @@ public class GameController : MonoBehaviour {
             endScoreText.text = i.ToString();
             sfx.PlayScoreSound();
             yield return new WaitForSeconds(0.1f);
-            GameObject endballs = balls[Random.Range(0, 7)];
+            GameObject endballs = balls[Random.Range(0, 5)];
             Instantiate( endballs, spawnPosition, spawnRotation); 
         }
         yield return new WaitForSeconds(2.0f);

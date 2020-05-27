@@ -25,10 +25,12 @@ public class EndGameManager : MonoBehaviour
     private float timerSeconds; 
     private Board board;
 
+    Overworld overWorld;
+
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
         board = FindObjectOfType<Board>();
         SetGameType();
         Setup();
@@ -98,6 +100,27 @@ public class EndGameManager : MonoBehaviour
         counter.text = currentCounterValue.ToString();
         AnimationController animationController = FindObjectOfType<AnimationController>();
         animationController.GameOver();
+        overWorld = FindObjectOfType<Overworld>();
+    }
+
+    public void IncreaseCounter()
+    {
+        if (overWorld.GetTotalCandy() >= 100)
+        {
+            int tempTotalCandy = overWorld.GetTotalCandy();
+            tempTotalCandy -= 100;
+            PlayerPrefs.SetInt("totalCandy", tempTotalCandy);
+            overWorld.DisplayTotalCandy();
+
+            currentCounterValue = 10;
+            counter.text = currentCounterValue.ToString();
+            AnimationController animationController = FindObjectOfType<AnimationController>();
+            animationController.Restart();
+            tryAgainPanel.SetActive(false);
+        } else
+        {
+            Debug.Log("Not Enough Candy!");
+        }
     }
 
     // Update is called once per frame

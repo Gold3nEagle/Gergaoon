@@ -9,7 +9,7 @@ public class LevelLoader : MonoBehaviour
 
     public GameObject loadingScreen;
     public Slider slider;
-
+     
 
     public void LoadLevel(int sceneIndex)
     {
@@ -21,6 +21,21 @@ public class LevelLoader : MonoBehaviour
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
         loadingScreen.SetActive(true);
+
+        switch (sceneIndex)
+        {
+            case 0:
+                Screen.orientation = ScreenOrientation.Portrait;
+                break;
+
+            case 1:
+                Screen.orientation = ScreenOrientation.LandscapeLeft;
+                break;
+
+            case 2:
+                Screen.orientation = ScreenOrientation.Portrait;
+                break;
+        }
 
         while (!operation.isDone)
         {

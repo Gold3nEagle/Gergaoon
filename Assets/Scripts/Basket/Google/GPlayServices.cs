@@ -1,6 +1,7 @@
 ﻿using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms;
 /// <summary>
 /// ??? Where is Documentation?
@@ -10,10 +11,13 @@ public class GPlayServices : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
-        PlayGamesPlatform.InitializeInstance(config);
-        PlayGamesPlatform.Activate();
-        SignIn();
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+            PlayGamesPlatform.InitializeInstance(config);
+            PlayGamesPlatform.Activate();
+            SignIn();
+        }
     }
 
     //Signing in the user upon starting the game.

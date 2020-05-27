@@ -52,15 +52,22 @@ public class AnimationController : MonoBehaviour
 
     IEnumerator GameStartCo()
     {
-        yield return new WaitForSeconds(1f);
         Board board = FindObjectOfType<Board>();
         board.currentState = GameState.move;
+        yield return new WaitForSeconds(1f); 
+        secondAnimator.SetBool("IsGameOver", false);
     }
 
     public void GameOver()
     {
         animator.SetBool("IsOpen", true);
         secondAnimator.SetBool("IsGameOver", true);
+    }
+
+    public void Restart()
+    {  
+        StartCoroutine(GameStartCo());
+        
     }
    
     public void HideOptions()

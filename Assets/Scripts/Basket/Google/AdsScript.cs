@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using GoogleMobileAds.Api;
+using UnityEngine.SceneManagement;
 
 
 
@@ -27,11 +28,13 @@ public class AdsScript : MonoBehaviour
     private InterstitialAd interstitial;
     private RewardedAd rewardedAd;
     Score gameScore;
-    
+    Overworld overWorld;
 
     // Start is called before the first frame update
     void Start()
     {
+        
+
 #if UNITY_ANDROID
         string appId = "ca-app-pub-8350868259993569~2254859297";
 #elif UNITY_IPHONE
@@ -47,6 +50,7 @@ public class AdsScript : MonoBehaviour
         this.RequestInterstitial();
         this.RequestRewardedAd(); 
          
+        if(SceneManager.GetActiveScene().buildIndex == 1)
         gameScore = GameObject.FindGameObjectWithTag("Hat").GetComponent<Score>();
     }
 
@@ -103,7 +107,17 @@ public class AdsScript : MonoBehaviour
         int totalCandy = PlayerPrefs.GetInt("totalCandy");
         totalCandy += 50;
         PlayerPrefs.SetInt("totalCandy", totalCandy);
-        gameScore.DisplayTotalCandy();
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            gameScore.DisplayTotalCandy();
+        }
+        else
+        {
+            overWorld = FindObjectOfType<Overworld>();
+            overWorld.DisplayTotalCandy();
+        }
+        
+
     }
 
     public void WatchRewardedAd()

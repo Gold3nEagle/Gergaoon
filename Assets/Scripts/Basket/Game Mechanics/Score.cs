@@ -5,9 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SocialPlatforms;
 using GooglePlayGames;
 
-/// <summary>
-/// ??? Where is Documentation?
-/// </summary>
 
 public class Score : MonoBehaviour {
 
