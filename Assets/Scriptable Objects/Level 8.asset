@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d695883d1f730ab41ae93e1e1ef6174e, type: 3}
+  m_Name: Level 8
+  m_EditorClassIdentifier: 
+  width: 6
+  height: 8
+  boardLayout: []
+  dots:
+  - {fileID: 4430133919018964258, guid: 9ab313ccd2e45b7408acb07314f32f6c, type: 3}
+  - {fileID: 3116818877187447601, guid: 3fa4c3e91cf8d4f4fbb9b1e51d3023f8, type: 3}
+  - {fileID: 4910204475911169603, guid: a8fa13b837f69c643a5686340cbe5168, type: 3}
+  scoreGoals: 64000000
+  endGameRequirements:
+    gameType: 0
+    counterValue: 40
+  levelGoals:
+  - numberNeeded: 1
+    numberCollected: 3
+    goalSprite: {fileID: 21300000, guid: fc1088f3e72d02645b815cf25bde7212, type: 3}
+    matchValue: Red
+  - numberNeeded: 1
+    numberCollected: 4
+    goalSprite: {fileID: 21300000, guid: 7c0dd4fd479307b419548358820b2515, type: 3}
+    matchValue: Yellow

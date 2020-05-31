@@ -53,9 +53,9 @@ public class PanZoom : MonoBehaviour
             Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, 500f, -10f);
         }
 
-        if (Camera.main.transform.position.x <= 300)
+        if (Camera.main.transform.position.x <= 250)
         {
-            Camera.main.transform.position = new Vector3(300f, Camera.main.transform.position.y, -10f);
+            Camera.main.transform.position = new Vector3(250f, Camera.main.transform.position.y, -10f);
         }
 
         if (Camera.main.transform.position.x >= 1000)

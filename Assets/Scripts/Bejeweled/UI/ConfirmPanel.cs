@@ -46,24 +46,17 @@ public class ConfirmPanel : MonoBehaviour
     }
 
     void ActivateStars()
-    {
-        //COME BACK TO THIS WHEN THE BINARY FILE IS DONE!!!
+    { 
         for (int i = 0; i < starsActive; i++)
         {
             stars[i].enabled = true;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    } 
 
     public void Cancel()
     {
 
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
         for (int i = 0; i < starsActive; i++)
         {
             stars[i].enabled = false;
@@ -76,5 +69,6 @@ public class ConfirmPanel : MonoBehaviour
         PlayerPrefs.SetInt("Current Level", level - 1);
         SceneManager.LoadScene(levelToLoad);
     }
+     
 
 }

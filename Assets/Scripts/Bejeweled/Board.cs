@@ -809,7 +809,7 @@ public class Board : MonoBehaviour
         }
     }
 
-    private bool CheckForMatches()
+    public bool CheckForMatches()
     {
         for (int i = 0; i < width; i++)
         {
@@ -819,9 +819,7 @@ public class Board : MonoBehaviour
                 {
                     //Make sure that one and two to the right are in the board
                     if (i < width - 2)
-                    {
-
-
+                    { 
                         //Check if the dots to the right and two to the right exists
                         if (allDots[i + 1, j] != null && allDots[i + 2, j] != null)
                         {

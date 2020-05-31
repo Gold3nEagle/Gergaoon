@@ -8,10 +8,12 @@ public class Overworld : MonoBehaviour
 {
 
     public Text totalCandyDisplay, totalLivesDisplay;
+    public GameObject pointerAnim;
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
+
         DisplayTotalCandy();
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
@@ -54,7 +56,19 @@ public class Overworld : MonoBehaviour
     public void DisplayTotalLives()
     {
         int totalLives = PlayerPrefs.GetInt("totalLives");
-        totalLivesDisplay.text = totalLives.ToString() + " / 3";
+        totalLivesDisplay.text = totalLives.ToString();
     }
-     
+
+    public void ShowPointer()
+    { 
+        pointerAnim.SetActive(true);
+        StartCoroutine(PointerOff());
+    }
+
+    IEnumerator PointerOff()
+    {
+        yield return new WaitForSeconds(3f);
+        pointerAnim.SetActive(false);
+    }
+
 }

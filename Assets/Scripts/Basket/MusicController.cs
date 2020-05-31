@@ -29,13 +29,13 @@ public class MusicController : MonoBehaviour
 
     public void StartGameMusic()
     {
-        musicAudioSource.clip = clips[0];
+        musicAudioSource.clip = clips[1];
         musicAudioSource.Play();
     } 
 
     public void PlayMenuMusic()
     { 
-        musicAudioSource.clip = clips[1]; 
+        musicAudioSource.clip = clips[0]; 
         musicAudioSource.Play();
 
     }
@@ -46,6 +46,12 @@ public class MusicController : MonoBehaviour
         int clipToPlay = Random.Range(0, destroyNoise.Length);
         sfxAudioSource.clip = destroyNoise[clipToPlay];
         sfxAudioSource.Play();
+    }
+
+    public void PlayCheeringSound()
+    {
+        musicAudioSource.clip = clips[2];
+        musicAudioSource.Play();
     }
 
 }

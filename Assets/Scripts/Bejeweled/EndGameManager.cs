@@ -18,19 +18,23 @@ public class EndGameRequirements
 
 public class EndGameManager : MonoBehaviour
 {
-    public GameObject movesLabel, timeLabel, youWinPanel, tryAgainPanel;
+    public GameObject movesLabel, timeLabel, youWinPanel, tryAgainPanel, sparksEffect;
     public Text counter;
     public EndGameRequirements requirements;
     public int currentCounterValue;
     private float timerSeconds; 
     private Board board;
+    public MusicController musicController;
 
+    int matchesCounter;
     Overworld overWorld;
+    ScoreManager scoreManager;
 
 
     // Start is called before the first frame update
     void Start()
-    { 
+    {
+        scoreManager = FindObjectOfType<ScoreManager>();
         board = FindObjectOfType<Board>();
         SetGameType();
         Setup();
@@ -83,6 +87,42 @@ public class EndGameManager : MonoBehaviour
 
     public void WinGame()
     {
+        sparksEffect.SetActive(true);
+        musicController.PlayCheeringSound();
+
+        StartCoroutine(CheckForEnd());
+    }
+
+    IEnumerator CheckForEnd()
+    {
+        yield return new WaitForSeconds(1f);
+
+        if (board.CheckForMatches())
+        {
+            StartCoroutine(CheckForEnd());
+            matchesCounter = 0;
+        } else
+        {
+            matchesCounter++;
+            if(matchesCounter >= 5)
+            {
+                StartCoroutine(ShowWinPanel());
+            } else
+            {
+                StartCoroutine(CheckForEnd());
+            }
+        }
+
+    }
+
+    IEnumerator  ShowWinPanel()
+    {
+        int finalScore = scoreManager.GetScore();
+        int savedScore = PlayerPrefs.GetInt("totalCandy");
+        savedScore = savedScore + finalScore;
+        PlayerPrefs.SetInt("totalCandy", savedScore);
+
+        yield return new WaitForSeconds(3f);
         youWinPanel.SetActive(true);
         board.currentState = GameState.win;
         currentCounterValue = 0;
@@ -105,10 +145,10 @@ public class EndGameManager : MonoBehaviour
 
     public void IncreaseCounter()
     {
-        if (overWorld.GetTotalCandy() >= 100)
+        if (overWorld.GetTotalCandy() >= 10000)
         {
             int tempTotalCandy = overWorld.GetTotalCandy();
-            tempTotalCandy -= 100;
+            tempTotalCandy -= 10000;
             PlayerPrefs.SetInt("totalCandy", tempTotalCandy);
             overWorld.DisplayTotalCandy();
 

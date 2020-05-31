@@ -18,21 +18,24 @@ public class LevelButton : MonoBehaviour
     public Image[] stars;
     public Text levelText;
     public int level;
-    public GameObject confirmPanel;
+    public GameObject confirmPanel, underDevPanel;
+    int totalLives;
 
-
+    Overworld overWorld;
     private GameData gameData;
 
     // Use this for initialization
     void Start()
     {
         gameData = FindObjectOfType<GameData>();
+        overWorld = FindObjectOfType<Overworld>();
         buttonImage = GetComponent<Image>();
         myButton = GetComponent<Button>();
         LoadData();
         ActivateStars();
         ShowLevel();
         DecideSprite();
+        totalLives = PlayerPrefs.GetInt("totalLives");
     }
 
     void LoadData()
@@ -82,18 +85,36 @@ public class LevelButton : MonoBehaviour
     void ShowLevel()
     {
         levelText.text = "" + level;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    } 
 
     public void ConfirmPanel(int level)
     {
-        confirmPanel.GetComponent<ConfirmPanel>().level = level;
-        confirmPanel.SetActive(true);
-
+        Debug.Log("Confirm Panel OK");
+        totalLives = PlayerPrefs.GetInt("totalLives");
+        if (level < 14)
+        {
+            if (totalLives == 0)
+            {
+                overWorld.ShowPointer();
+                Debug.Log("No Lives!");
+            }
+            else
+            {
+                confirmPanel.GetComponent<ConfirmPanel>().level = level;
+                confirmPanel.SetActive(true);
+            }
+        } else
+        {
+            Debug.Log("Else OK");
+            underDevPanel.SetActive(true);
+        }
     }
+
+    public void CancelUnderDev()
+    {
+        underDevPanel.SetActive(false);
+        //Liked game dude?
+    
+    }
+
 }

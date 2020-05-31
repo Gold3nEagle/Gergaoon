@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: e1873b2aefa3b734fa727535a2559703
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3942983012783967671
+    second: SplashSpriteSheet_0
+  - first:
+      213: -1561223788920672944
+    second: SplashSpriteSheet_1
+  - first:
+      213: -2288259447120745311
+    second: SplashSpriteSheet_2
+  - first:
+      213: -4541546499296109311
+    second: SplashSpriteSheet_3
+  - first:
+      213: 6857958246605320386
+    second: SplashSpriteSheet_4
+  - first:
+      213: -2110575049991232677
+    second: SplashSpriteSheet_5
+  - first:
+      213: -8232921583062081253
+    second: SplashSpriteSheet_6
+  - first:
+      213: 2284658699590805000
+    second: SplashSpriteSheet_7
+  - first:
+      213: -6433289134408532721
+    second: SplashSpriteSheet_8
+  - first:
+      213: -7099275066513548051
+    second: SplashSpriteSheet_9
+  - first:
+      213: 1359817580674313507
+    second: SplashSpriteSheet_10
+  - first:
+      213: -1823286462342927496
+    second: SplashSpriteSheet_11
+  - first:
+      213: -3309289993445858946
+    second: SplashSpriteSheet_12
+  - first:
+      213: 8015755894919849914
+    second: SplashSpriteSheet_13
+  - first:
+      213: 5845879728382159766
+    second: SplashSpriteSheet_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +85,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +115,360 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SplashSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 704
+        width: 76
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0887c580ca6074586b5f9a7639170e
+      internalID: 3942983012783967671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 628
+        width: 375
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6b9a1ee9b361c4787dbab416ac0073
+      internalID: -1561223788920672944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 532
+        width: 81
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12858586d0270c478a987f67c61fcfb
+      internalID: -2288259447120745311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 427
+        width: 73
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0442f9ae1f5259d40ae8125ee86813f5
+      internalID: -4541546499296109311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 295
+        width: 71
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1f6ab8aa7b5984fb00ba50a2e689dd
+      internalID: 6857958246605320386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 420
+        width: 68
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b7b18da817b9e44aad5c7a8139a761
+      internalID: -2110575049991232677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 375
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e3f941619d71142b83229851dbe410
+      internalID: -8232921583062081253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 363
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e391c7e3105a5a74d9797fd79374a95b
+      internalID: 2284658699590805000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 233
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc89b83064de8443965f610b7a987a3
+      internalID: -6433289134408532721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 114
+        width: 88
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e670f8e6e32d99e47aab8c3a1cf5f7fc
+      internalID: -7099275066513548051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 73
+        width: 107
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe18f0a750ed3a74a8708c2c2346ecd2
+      internalID: 1359817580674313507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 182
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78f209513d487342af4e3cec395af8c
+      internalID: -1823286462342927496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 79
+        width: 132
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610eef3f354c0f24db89eadff8438226
+      internalID: -3309289993445858946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 142
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797c8b64b5bc6d14683542e563d32493
+      internalID: 8015755894919849914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SplashSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 76
+        width: 98
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d38006957efb674c9af62fa90d82b2e
+      internalID: 5845879728382159766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

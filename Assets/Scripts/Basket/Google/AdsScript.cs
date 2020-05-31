@@ -103,20 +103,31 @@ public class AdsScript : MonoBehaviour
     }
 
     public void HandleUserEarnedReward(object sender, Reward args)
-    { 
-        int totalCandy = PlayerPrefs.GetInt("totalCandy");
-        totalCandy += 50;
-        PlayerPrefs.SetInt("totalCandy", totalCandy);
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        if (currentScene == 1 || currentScene == 3)
         {
-            gameScore.DisplayTotalCandy();
+            int totalCandy = PlayerPrefs.GetInt("totalCandy");
+            totalCandy += 50;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            if (currentScene == 1)
+            {
+                gameScore.DisplayTotalCandy();
+            }
+            else
+            {
+                overWorld = FindObjectOfType<Overworld>();
+                overWorld.DisplayTotalCandy();
+            }
         }
-        else
+        else if (currentScene == 2)
         {
             overWorld = FindObjectOfType<Overworld>();
-            overWorld.DisplayTotalCandy();
+            int totalLives = PlayerPrefs.GetInt("totalLives");
+            totalLives++;
+            PlayerPrefs.SetInt("totalLives", totalLives);
+            overWorld.DisplayTotalLives();
         }
-        
 
     }
 

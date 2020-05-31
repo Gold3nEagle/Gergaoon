@@ -21,15 +21,18 @@ public class AnimationController : MonoBehaviour
         if (scene == "GameScene")
         {
             RateGame();
-            LBPointer();
+            //LBPointer();
         }
     }
       
 
     public void RateGame()
     {
-        if (timesPlayed >= 2 && IsRated == 0) {  
+        timesPlayed++;
+        PlayerPrefs.SetInt("TP", timesPlayed);
+        if (timesPlayed >= 1 && IsRated == 0) {  
         animator.SetBool("IsOpen", true);
+        PlayerPrefs.SetInt("BeenRated", 1);
         }
     }
 
@@ -54,7 +57,7 @@ public class AnimationController : MonoBehaviour
     {
         Board board = FindObjectOfType<Board>();
         board.currentState = GameState.move;
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(0.5f); 
         secondAnimator.SetBool("IsGameOver", false);
     }
 
@@ -66,8 +69,7 @@ public class AnimationController : MonoBehaviour
 
     public void Restart()
     {  
-        StartCoroutine(GameStartCo());
-        
+        StartCoroutine(GameStartCo()); 
     }
    
     public void HideOptions()
