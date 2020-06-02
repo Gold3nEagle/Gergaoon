@@ -29,17 +29,10 @@ public class Dot : MonoBehaviour
     {
         endGameManager = FindObjectOfType<EndGameManager>();
 
-        board = GameObject.FindWithTag("Board").GetComponent<Board>();
-        //board = FindObjectOfType<Board>();
+        board = GameObject.FindWithTag("Board").GetComponent<Board>(); 
 
         hintManager = FindObjectOfType<HintManager>();
-        findMatches = FindObjectOfType<FindMatches>();
-        //targetX = (int)transform.position.x;
-        //targetY = (int)transform.position.y;
-        //row = targetY;
-        //column = targetX;
-        //previousRow = row;
-        //previousColumn = column;
+        findMatches = FindObjectOfType<FindMatches>(); 
     }
 
     //For testing and debug purposes
@@ -56,17 +49,7 @@ public class Dot : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
-        //Changes the color of matched pieces
-        /*
-        if (isMatched)
-        {
-            SpriteRenderer mySprite = GetComponent<SpriteRenderer>();
-            Color currentColor = mySprite.color;
-            mySprite.color = new Color(currentColor.r, currentColor.g, currentColor.b, .5f);
-        }
-        */
-
+    {   
         targetX = column;
         targetY = row;
         //For the X Axis
@@ -140,8 +123,7 @@ public class Dot : MonoBehaviour
                     endGameManager.DecreaseCounterValue();
                 }
                 board.DestroyMatches();
-            }
-            //otherDot = null;
+            } 
         } 
     }
 

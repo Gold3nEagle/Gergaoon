@@ -660,7 +660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4078954, y: 0.12900001}
   m_AnchorMax: {x: 0.6126264, y: 0.25100002}
-  m_AnchoredPosition: {x: -7.500022, y: 2}
+  m_AnchoredPosition: {x: -7.5, y: 2}
   m_SizeDelta: {x: -3, y: 1.9000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &62806948
@@ -1636,7 +1636,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 3
+  m_Text: 0
 --- !u!222 &122164058
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2805,12 +2805,12 @@ PrefabInstance:
     - target: {fileID: 4477163354635345516, guid: bf44a237d56e2c64fac218087414b142,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4477163354635345516, guid: bf44a237d56e2c64fac218087414b142,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf44a237d56e2c64fac218087414b142, type: 3}

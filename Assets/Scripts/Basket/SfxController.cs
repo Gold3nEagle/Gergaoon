@@ -12,11 +12,12 @@ public class SfxController : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.clip = scoreClip;
+        //audioSource.clip = scoreClip;
     }
 
     public void PlayScoreSound()
     {
+        audioSource.clip = scoreClip;
         audioSource.Play();
     } 
 

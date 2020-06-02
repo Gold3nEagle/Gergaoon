@@ -13,22 +13,86 @@ MonoBehaviour:
   m_Name: Level 5
   m_EditorClassIdentifier: 
   width: 6
-  height: 8
-  boardLayout: []
+  height: 6
+  boardLayout:
+  - x: 0
+    y: 0
+    tileKind: 1
+  - x: 1
+    y: 0
+    tileKind: 0
+  - x: 2
+    y: 0
+    tileKind: 0
+  - x: 3
+    y: 0
+    tileKind: 0
+  - x: 4
+    y: 0
+    tileKind: 0
+  - x: 5
+    y: 0
+    tileKind: 1
+  - x: 0
+    y: 1
+    tileKind: 0
+  - x: 0
+    y: 2
+    tileKind: 0
+  - x: 0
+    y: 3
+    tileKind: 0
+  - x: 0
+    y: 4
+    tileKind: 0
+  - x: 0
+    y: 5
+    tileKind: 1
+  - x: 1
+    y: 5
+    tileKind: 0
+  - x: 2
+    y: 5
+    tileKind: 0
+  - x: 3
+    y: 5
+    tileKind: 0
+  - x: 4
+    y: 5
+    tileKind: 0
+  - x: 5
+    y: 5
+    tileKind: 1
+  - x: 5
+    y: 1
+    tileKind: 0
+  - x: 5
+    y: 2
+    tileKind: 0
+  - x: 5
+    y: 3
+    tileKind: 0
+  - x: 5
+    y: 4
+    tileKind: 0
+  breakableHitPoints: 1
   dots:
   - {fileID: 4430133919018964258, guid: 9ab313ccd2e45b7408acb07314f32f6c, type: 3}
   - {fileID: 3116818877187447601, guid: 3fa4c3e91cf8d4f4fbb9b1e51d3023f8, type: 3}
   - {fileID: 4910204475911169603, guid: a8fa13b837f69c643a5686340cbe5168, type: 3}
-  scoreGoals: 64000000
+  - {fileID: 537089306582376857, guid: 3cb7eaca87ae92d4e87887cd416ddaae, type: 3}
+  - {fileID: 7970639084956933007, guid: 41def8558e545a345b2df0a232d8e140, type: 3}
+  - {fileID: 9142456478226315733, guid: 9245b9a00953144458abccc4c37a30f6, type: 3}
+  scoreGoals: 64000000c800000090010000
   endGameRequirements:
     gameType: 0
-    counterValue: 40
+    counterValue: 23
   levelGoals:
-  - numberNeeded: 1
-    numberCollected: 3
-    goalSprite: {fileID: 21300000, guid: fc1088f3e72d02645b815cf25bde7212, type: 3}
-    matchValue: Red
-  - numberNeeded: 1
-    numberCollected: 3
+  - numberNeeded: 8
+    numberCollected: 0
+    goalSprite: {fileID: 21300000, guid: c9b059b70ba824349bce7b932969f25b, type: 3}
+    matchValue: Breakable
+  - numberNeeded: 12
+    numberCollected: 0
     goalSprite: {fileID: 21300000, guid: 7c0dd4fd479307b419548358820b2515, type: 3}
     matchValue: Yellow

@@ -13,12 +13,13 @@ public class MusicController : MonoBehaviour
     public AudioClip[] clips;
     public AudioClip[] destroyNoise;
 
+    string currentScene;
     // Start is called before the first frame update
     void Start()
     {
         sfxAudioSource = GetComponent<AudioSource>(); 
 
-        string currentScene = SceneManager.GetActiveScene().name;
+        currentScene = SceneManager.GetActiveScene().name;
 
         //Run on Hat menu and Bejeweled menu
         if (currentScene == "GameScene" || currentScene == "Bejeweled") { 
@@ -37,6 +38,10 @@ public class MusicController : MonoBehaviour
     { 
         musicAudioSource.clip = clips[0]; 
         musicAudioSource.Play();
+        if (currentScene == "Bejeweled")
+        {
+            musicAudioSource.loop = true;
+        }
 
     }
 
@@ -50,6 +55,7 @@ public class MusicController : MonoBehaviour
 
     public void PlayCheeringSound()
     {
+        musicAudioSource.loop = false;
         musicAudioSource.clip = clips[2];
         musicAudioSource.Play();
     }

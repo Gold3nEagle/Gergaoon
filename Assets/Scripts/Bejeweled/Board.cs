@@ -91,7 +91,7 @@ public class Board : MonoBehaviour
                     height = world.levels[level].height;
                     dots = world.levels[level].dots;
                     scoreGoals = world.levels[level].scoreGoals;
-                    boardLayout = world.levels[level].boardLayout;
+                    boardLayout = world.levels[level].boardLayout;  
                 }
             }
         }
@@ -136,6 +136,7 @@ public class Board : MonoBehaviour
                 //create a jelly tile at that position
                 Vector2 tempPosition = new Vector2(boardLayout[i].x, boardLayout[i].y);
                 GameObject tile = Instantiate(breakableTilePrefab, tempPosition, Quaternion.identity);
+                tile.GetComponent<BackgroundTile>().hitPoints = world.levels[level].breakableHitPoints;
                 breakableTiles[boardLayout[i].x, boardLayout[i].y] = tile.GetComponent<BackgroundTile>();
             }
 
@@ -180,19 +181,17 @@ public class Board : MonoBehaviour
 
     private void GenerateSlimeTiles()
     {
-        //Check all tiles in the layout
+        //Look at all the tiles in the layout
         for (int i = 0; i < boardLayout.Length; i++)
         {
-            //if a tile is a jelly tile
+            //if a tile is a "Slime" tile
             if (boardLayout[i].tileKind == TileKind.Slime)
             {
-                Debug.Log("We reached here!");
-                //create a lock tile at that position
+                //Create a "Slime" tile at that position;
                 Vector2 tempPosition = new Vector2(boardLayout[i].x, boardLayout[i].y);
                 GameObject tile = Instantiate(slimePiecePrefab, tempPosition, Quaternion.identity);
                 slimeTiles[boardLayout[i].x, boardLayout[i].y] = tile.GetComponent<BackgroundTile>();
             }
-
         }
     }
 
@@ -738,13 +737,16 @@ public class Board : MonoBehaviour
 
     private void CheckToMakeSlime()
     {
+        //Check the slime tiles array
         for (int i = 0; i < width; i++)
         {
             for (int j = 0; j < height; j++)
             {
-                if(slimeTiles[i,j] != null && makeSlime)
+                if (slimeTiles[i, j] != null && makeSlime)
                 {
+                    //Call another method to make a new slime
                     MakeNewSlime();
+                    return;
                 }
             }
         }
@@ -752,7 +754,7 @@ public class Board : MonoBehaviour
 
     private Vector2 CheckForAdjacent(int column, int row)
     {
-        if(allDots[column + 1, row] && column < width - 1)
+        if (allDots[column + 1, row] && column < width - 1)
         {
             return Vector2.right;
         }
@@ -764,7 +766,7 @@ public class Board : MonoBehaviour
         {
             return Vector2.up;
         }
-        if (allDots[column, row - 1] && row >0)
+        if (allDots[column, row - 1] && row > 0)
         {
             return Vector2.down;
         }
@@ -775,24 +777,27 @@ public class Board : MonoBehaviour
     {
         bool slime = false;
         int loops = 0;
-        while (!slime & loops < 200)
+        while (!slime && loops < 200)
         {
-            int newX = Random.Range(0, width);
-            int newY = Random.Range(0, height);
-            if(slimeTiles[newX, newY])
+            int newX = Random.Range(0, width - 1);
+            int newY = Random.Range(0, height - 1);
+            if (slimeTiles[newX, newY] != null)
             {
                 Vector2 adjacent = CheckForAdjacent(newX, newY);
-                if(adjacent != Vector2.zero)
+                Debug.Log(adjacent);
+                if (adjacent != Vector2.zero)
                 {
-                    Destroy(allDots[newX + (int) adjacent.x, newY + (int) adjacent.y]);
+                    Destroy(allDots[newX + (int)adjacent.x, newY + (int)adjacent.y]);
                     Vector2 tempPosition = new Vector2(newX + (int)adjacent.x, newY + (int)adjacent.y);
                     GameObject tile = Instantiate(slimePiecePrefab, tempPosition, Quaternion.identity);
+                    Debug.Log(tempPosition);
                     slimeTiles[newX + (int)adjacent.x, newY + (int)adjacent.y] = tile.GetComponent<BackgroundTile>();
                     slime = true;
                 }
-            }
 
+            }
             loops++;
+            Debug.Log(loops);
         }
     }
 

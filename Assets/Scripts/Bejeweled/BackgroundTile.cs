@@ -29,8 +29,8 @@ public class BackgroundTile : MonoBehaviour
     void MakeLighter()
     {
         Color color = spriteRenderer.color;
-        //Get alpha value and divide in half
-        float newAlpha = color.a * .5f;
+        //Get alpha value and remove some alpha from it.
+        float newAlpha = color.a * .8f;
         spriteRenderer.color = new Color(color.r, color.g, color.b, newAlpha);
 
     }

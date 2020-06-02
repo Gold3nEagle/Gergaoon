@@ -10,6 +10,7 @@ public class Level : ScriptableObject
 
     [Header("Starting Tiles")]
     public TileType[] boardLayout;
+    public int breakableHitPoints;
 
     [Header("Available Candy")]
     public GameObject[] dots;

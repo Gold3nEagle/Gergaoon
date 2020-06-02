@@ -25,6 +25,7 @@ public class EndGameManager : MonoBehaviour
     private float timerSeconds; 
     private Board board;
     public MusicController musicController;
+    public SfxController sfx;
 
     int matchesCounter;
     Overworld overWorld;
@@ -78,7 +79,7 @@ public class EndGameManager : MonoBehaviour
         {
             currentCounterValue--;
             counter.text = currentCounterValue.ToString();
-            if (currentCounterValue <= 0)
+            if (currentCounterValue <= 0 && board.currentState != GameState.win)
             {
                 LoseGame();
             }
@@ -117,18 +118,35 @@ public class EndGameManager : MonoBehaviour
 
     IEnumerator  ShowWinPanel()
     {
+        StartCoroutine(CalculateScore());
+         
+        yield return new WaitForSeconds(3f);
+        youWinPanel.SetActive(true);
+        board.currentState = GameState.win;
+        AnimationController animationController = FindObjectOfType<AnimationController>();
+        animationController.GameOver();
+    }
+
+    IEnumerator CalculateScore()
+    { 
+        for (int i = 0; i < currentCounterValue; i++)
+        { 
+            yield return new WaitForSeconds(0.4f);
+            if (currentCounterValue > 0)
+            {
+                scoreManager.IncreaseScore(50);
+                sfx.PlayScoreSound();
+                currentCounterValue--;
+                counter.text = currentCounterValue.ToString();
+            }
+        }
+        counter.text = "0";
         int finalScore = scoreManager.GetScore();
         int savedScore = PlayerPrefs.GetInt("totalCandy");
         savedScore = savedScore + finalScore;
         PlayerPrefs.SetInt("totalCandy", savedScore);
 
-        yield return new WaitForSeconds(3f);
-        youWinPanel.SetActive(true);
-        board.currentState = GameState.win;
-        currentCounterValue = 0;
-        counter.text = currentCounterValue.ToString();
-        AnimationController animationController = FindObjectOfType<AnimationController>();
-        animationController.GameOver();
+        yield return null;
     }
 
     public void LoseGame()

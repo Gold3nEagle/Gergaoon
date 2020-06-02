@@ -23,7 +23,7 @@ public class BackToMenu : MonoBehaviour
             gameData.saveData.isActive[board.level + 1] = true;
             gameData.Save();
         }
-        levelLoader.LoadLevel(2);
+        StartCoroutine(GoToMenu());
     }
 
     public void LoseOK()
@@ -31,7 +31,7 @@ public class BackToMenu : MonoBehaviour
         int totalLives = PlayerPrefs.GetInt("totalLives");
         totalLives--;
         PlayerPrefs.SetInt("totalLives", totalLives);
-        levelLoader.LoadLevel(2);
+        StartCoroutine(GoToMenu());
          
     }
 
@@ -41,7 +41,7 @@ public class BackToMenu : MonoBehaviour
         {
             adScript.ShowInterstitialAd();
         }
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(2f); 
         levelLoader.LoadLevel(2);
 
     } 
