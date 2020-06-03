@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
     public GameObject[] balls;
     public float timeLeft;
     public Text timerText, endScoreText;
-    public GameObject EndGameObj, Lights, splashScreen, startButton, restartButton, GameBeginsObj, colliderObj, scoreObject, sparksObj;  
+    public GameObject EndGameObj, Lights, splashScreen, startButton, restartButton, GameBeginsObj, colliderObj, scoreObject, sparksObj, exitButton;  
     
     public int ballSpeed;
 
@@ -62,6 +62,7 @@ public class GameController : MonoBehaviour {
     public void StartGame()
     {
         scoreObject.transform.position = new Vector3(scoreObject.transform.position.x, Screen.height - 10, scoreObject.transform.position.z);
+        exitButton.SetActive(true);
         SetTimesPlayed();
         hatController.ToggleControl(true); 
         StartCoroutine(Spawn());
