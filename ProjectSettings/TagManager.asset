@@ -6,6 +6,20 @@ TagManager:
   tags:
   - Bomb
   - Hat
+  - totalCoins
+  - scoreNum
+  - Blue
+  - Green
+  - Indigo
+  - Orange
+  - Red
+  - Yellow
+  - Color
+  - Breakable
+  - Board
+  - Concrete
+  - Chocolate
+  - Lock
   layers:
   - Default
   - TransparentFX
