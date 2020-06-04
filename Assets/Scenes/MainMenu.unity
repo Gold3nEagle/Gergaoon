@@ -584,6 +584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 144752521}
   - component: {fileID: 144752520}
+  - component: {fileID: 144752522}
   m_Layer: 0
   m_Name: LevelLoader
   m_TagString: Untagged
@@ -619,6 +620,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &144752522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144752519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23542d210d974c34392b1a58a4004aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &177563327
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00006445341, y: -0.000013124189}
+  m_AnchoredPosition: {x: -0.00006445341, y: 0.00019097871}
   m_SizeDelta: {x: 0, y: 671.8}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &808653253
@@ -965,7 +978,7 @@ GameObject:
   - component: {fileID: 1050437447}
   - component: {fileID: 1050437446}
   m_Layer: 0
-  m_Name: GooglePlayServices
+  m_Name: Services
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1429,7 +1442,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 758623030}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99993604
+  m_Size: 0.95687854
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

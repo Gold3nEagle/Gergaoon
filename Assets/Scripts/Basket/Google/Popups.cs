@@ -5,7 +5,7 @@ using UnityEngine;
 public class Popups : MonoBehaviour
 {
     //ENABLE FOR NEXT UPDATE!
-    /*
+    
     private void Awake()
     {
         Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
@@ -43,11 +43,5 @@ public class Popups : MonoBehaviour
     {
         Debug.Log("Received a new message from: " + e.Message.From);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    */
+ 
 }

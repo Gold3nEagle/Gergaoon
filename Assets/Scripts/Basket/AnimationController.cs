@@ -36,6 +36,16 @@ public class AnimationController : MonoBehaviour
         }
     }
 
+    public void ShowAdPanel()
+    {
+        animator.SetBool("IsOpen", true);
+    }
+
+    public void HideAdPanel()
+    {
+        animator.SetBool("IsOpen", false);
+    }
+
     public void HideRateGame()
     {
         animator.SetBool("IsOpen", false);
