@@ -13,7 +13,7 @@ public class Overworld : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //PlayerPrefs.SetInt("totalLives", 3);
+        //PlayerPrefs.SetInt("totalCandy", 100000);
 
         DisplayTotalCandy();
         if (SceneManager.GetActiveScene().buildIndex == 2)
@@ -38,6 +38,8 @@ public class Overworld : MonoBehaviour
             {
                 PlayerPrefs.SetInt("firstMatch3", 1);
                 PlayerPrefs.SetInt("totalLives", 3);
+                PlayerPrefs.SetInt("DestroyBoost", 3);
+                PlayerPrefs.SetInt("ColorBombBoost", 3);
             }
             DisplayTotalLives();
         }

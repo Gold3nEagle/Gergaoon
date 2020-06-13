@@ -154,8 +154,10 @@ public class EndGameManager : MonoBehaviour
         overWorld = FindObjectOfType<Overworld>();
         Debug.Log("Time is up LOSO!");
         currentCounterValue = 0;
-        counter.text = currentCounterValue.ToString(); 
-        
+        counter.text = currentCounterValue.ToString();
+        AnimationController animationController = GameObject.Find("FadePanel").GetComponent<AnimationController>();
+        animationController.GameOver();
+
     }
 
     public void IncreaseCounter()
@@ -169,7 +171,7 @@ public class EndGameManager : MonoBehaviour
 
             currentCounterValue = 10;
             counter.text = currentCounterValue.ToString();
-            AnimationController animationController = FindObjectOfType<AnimationController>();
+            AnimationController animationController = GameObject.Find("FadePanel").GetComponent<AnimationController>();
             animationController.Restart();
             tryAgainPanel.SetActive(false);
         } else

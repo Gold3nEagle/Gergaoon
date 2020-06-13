@@ -70,11 +70,13 @@ public class MuteScript : MonoBehaviour
         // To avoid memory leaks
         Destroy(ss);
 
-        new NativeShare().AddFile(filePath).SetSubject("Subject goes here").SetText("Hello world!").Share();
+        new NativeShare().AddFile(filePath).SetSubject("Subject goes here").SetText("Text goes here").Share();
 
         // Share on WhatsApp only, if installed (Android only)
-        //if( NativeShare.TargetExists( "com.whatsapp" ) )
-        //	new NativeShare().AddFile( filePath ).SetText( "Hello world!" ).SetTarget( "com.whatsapp" ).Share();
+        if( NativeShare.TargetExists( "com.whatsapp" ) )
+        new NativeShare().AddFile( filePath ).SetText("!ﻥﻮﻔﻳﻵﺍﻭ ﺪﻳﻭﺭﺪﻧﻷﺍ ﻰﻠﻋ ﻥﻮﻋﺎﻗﺮﻗ ﺔﺒﻌﻟ ﻞﻤﺣ" + 
+            "Android:  https://play.google.com/store/apps/details?id=com.goldeneagle.gergaoon" +
+            "iOS:  https://apps.apple.com/us/app/%D9%82%D8%B1%D9%82%D8%A7%D8%B9%D9%88%D9%86/id1485903162?ls=1").SetTarget( "com.whatsapp" ).Share();
     }
 
 

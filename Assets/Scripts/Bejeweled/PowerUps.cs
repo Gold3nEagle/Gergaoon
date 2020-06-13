@@ -17,14 +17,14 @@ public class PowerUps : MonoBehaviour
     {
 
         //  PlayerPrefs.SetInt("ColorBombBoost", 100);
-        //  PlayerPrefs.SetInt("DestroyBoost", 100);
-        DisplayColorBombNum();
-        DisplayDestroyNum();
-
+        //  PlayerPrefs.SetInt("DestroyBoost", 100); 
         destroyBoostNum = GetDestroyBoostNum();
         colorBombBoostNum = GetColorBombBoostNum();
 
-        if(destroyBoostNum == 0)
+        DisplayColorBombNum();
+        DisplayDestroyNum();
+
+        if (destroyBoostNum == 0)
             destroyBoostButton.interactable = false;
 
         if (colorBombBoostNum == 0)

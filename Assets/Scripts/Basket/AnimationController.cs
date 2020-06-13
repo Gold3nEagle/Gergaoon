@@ -71,6 +71,11 @@ public class AnimationController : MonoBehaviour
         secondAnimator.SetBool("IsGameOver", false);
     } 
 
+    public void GameOver()
+    {
+        secondAnimator.SetBool("IsGameOver", true);
+    }
+
     public void Restart()
     {  
         StartCoroutine(GameStartCo()); 
