@@ -122,9 +122,7 @@ public class EndGameManager : MonoBehaviour
          
         yield return new WaitForSeconds(3f);
         youWinPanel.SetActive(true);
-        board.currentState = GameState.win;
-        AnimationController animationController = FindObjectOfType<AnimationController>();
-        animationController.GameOver();
+        board.currentState = GameState.win; 
     }
 
     IEnumerator CalculateScore()
@@ -153,12 +151,11 @@ public class EndGameManager : MonoBehaviour
     {
         tryAgainPanel.SetActive(true);
         board.currentState = GameState.lose;
+        overWorld = FindObjectOfType<Overworld>();
         Debug.Log("Time is up LOSO!");
         currentCounterValue = 0;
-        counter.text = currentCounterValue.ToString();
-        AnimationController animationController = FindObjectOfType<AnimationController>();
-        animationController.GameOver();
-        overWorld = FindObjectOfType<Overworld>();
+        counter.text = currentCounterValue.ToString(); 
+        
     }
 
     public void IncreaseCounter()

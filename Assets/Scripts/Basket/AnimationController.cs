@@ -69,13 +69,7 @@ public class AnimationController : MonoBehaviour
         board.currentState = GameState.move;
         yield return new WaitForSeconds(0.5f); 
         secondAnimator.SetBool("IsGameOver", false);
-    }
-
-    public void GameOver()
-    {
-        animator.SetBool("IsOpen", true);
-        secondAnimator.SetBool("IsGameOver", true);
-    }
+    } 
 
     public void Restart()
     {  

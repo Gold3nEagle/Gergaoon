@@ -23,11 +23,14 @@ public class Dot : MonoBehaviour
     private Board board; 
     private Vector2 firstTouchPosition, finalTouchPosition, tempPosition;
 
+    PowerUps powerUp;
+
 
     // Start is called before the first frame update
     void Start()
     {
         endGameManager = FindObjectOfType<EndGameManager>();
+        powerUp = FindObjectOfType<PowerUps>();
 
         board = GameObject.FindWithTag("Board").GetComponent<Board>(); 
 
@@ -82,7 +85,6 @@ public class Dot : MonoBehaviour
                 findMatches.FindAllMatches();
             }
 
-
         }
         else
         {
@@ -135,11 +137,44 @@ public class Dot : MonoBehaviour
             hintManager.DestroyHint();
         }
 
+        if (powerUp.toggleBoost)
+        {
+            //Check which powerup to select and do 
+            if (powerUp.colorBombBoost)
+            {  
+                BoostColorBomb();
+            }
+            else if (powerUp.destroyBoost)
+            { 
+                BoostDestroyDot();
+            }
+            //MakeAdjacentBomb
+        }
+
         if(board.currentState == GameState.move)
         { 
         firstTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //  Debug.Log(firstTouchPosition);
         }
+    }
+
+    void BoostDestroyDot()
+    {
+        powerUp.DecreaseDestroyNum();
+        Destroy(gameObject);
+        board.FillBoard();
+
+        powerUp.destroyBoost = false;
+        powerUp.toggleBoost = false; 
+    }
+
+    void BoostColorBomb()
+    {
+        powerUp.DecreaseColorNum();
+        MakeColorBomb();
+
+        powerUp.colorBombBoost = false;
+        powerUp.toggleBoost = false;
     }
 
     private void OnMouseUp()

@@ -57,8 +57,7 @@ public class Board : MonoBehaviour
     public GameObject lockTilePrefab;
     public GameObject concreteTilePrefab;
     public GameObject slimePiecePrefab; 
-
-
+    
     public MatchType matchType;
     public Dot currentDot;
     public int basePieceValue = 1;
@@ -74,6 +73,7 @@ public class Board : MonoBehaviour
     private ScoreManager scoreManager;
     private MusicController musicController;
     private GoalManager goalManager;
+     
 
     private void Awake()
     {
@@ -95,7 +95,7 @@ public class Board : MonoBehaviour
                 }
             }
         }
-    }
+    } 
 
     // Start is called before the first frame update
     void Start()
@@ -706,6 +706,11 @@ public class Board : MonoBehaviour
             }
         } 
         return false;
+    }
+
+    public void FillBoard()
+    {
+        StartCoroutine(FillBoardCo());
     }
 
     private IEnumerator FillBoardCo()

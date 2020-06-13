@@ -67,6 +67,7 @@ MonoBehaviour:
     type: 3}
   adjacentMarker: {fileID: 5964863732808059288, guid: 0c9f99440a1cfee4db6fb7bcd7cf93af,
     type: 3}
+  boost: 1
 --- !u!212 &8312703379661741346
 SpriteRenderer:
   m_ObjectHideFlags: 0
