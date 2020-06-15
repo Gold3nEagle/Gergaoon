@@ -37,7 +37,7 @@ public class MuteScript : MonoBehaviour
 
     public void PPAccess()
     {
-        Application.OpenURL("http://www.geagle.tech/gergaoon-privacy-policy");
+        Application.OpenURL("https://www.geagle.tech/gergaoon-privacy-policy");
     } 
 
     public void RateGame()

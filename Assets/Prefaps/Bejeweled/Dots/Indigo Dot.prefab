@@ -67,7 +67,6 @@ MonoBehaviour:
     type: 3}
   adjacentMarker: {fileID: 5964863732808059288, guid: 0c9f99440a1cfee4db6fb7bcd7cf93af,
     type: 3}
-  boost: 0
 --- !u!212 &1906375525876049539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106,7 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 6cda880551e86b94f9d8170b2640baf4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 302874602d7725e4a8f722a735181a65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

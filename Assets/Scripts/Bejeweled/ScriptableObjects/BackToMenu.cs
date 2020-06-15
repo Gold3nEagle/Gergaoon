@@ -23,6 +23,12 @@ public class BackToMenu : MonoBehaviour
             gameData.saveData.isActive[board.level + 1] = true;
             gameData.Save();
         }
+
+        if (board.level % 3 == 0)
+        {
+            adScript.ShowInterstitialAd();
+        }
+
         StartCoroutine(GoToMenu());
     }
 
@@ -31,16 +37,17 @@ public class BackToMenu : MonoBehaviour
         int totalLives = PlayerPrefs.GetInt("totalLives");
         totalLives--;
         PlayerPrefs.SetInt("totalLives", totalLives);
-        StartCoroutine(GoToMenu());
-         
+
+        if (board.level % 3 == 0)
+        {
+            adScript.ShowInterstitialAd();
+        } 
+
+        StartCoroutine(GoToMenu());  
     }
 
     IEnumerator GoToMenu()
     {
-        if (board.level == 4 || board.level == 8 || board.level == 12)
-        {
-            adScript.ShowInterstitialAd();
-        }
         yield return new WaitForSeconds(2f); 
         levelLoader.LoadLevel(2);
 

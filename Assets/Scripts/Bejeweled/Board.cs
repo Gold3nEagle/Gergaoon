@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public enum GameState
 {
@@ -215,12 +216,12 @@ public class Board : MonoBehaviour
                     backgroundTile.name = "( " + i + ", " + j + " )";
 
                     //Initializaing
-                    int dotToUse = Random.Range(0, dots.Length);
+                    int dotToUse = UnityEngine.Random.Range(0, dots.Length);
                     int maxIterations = 0;
 
                     while (MatchesAt(i, j, dots[dotToUse]) && maxIterations < 100)
                     {
-                        dotToUse = Random.Range(0, dots.Length);
+                        dotToUse = UnityEngine.Random.Range(0, dots.Length);
                         maxIterations++;
                     }
                     maxIterations = 0;
@@ -671,12 +672,12 @@ public class Board : MonoBehaviour
                 if(allDots[i, j] == null && !blankSpaces[i,j] && !concreteTiles[i,j] && !slimeTiles[i,j])
                 {
                     Vector2 tempPosition = new Vector2(i, j + offSet);
-                    int dotToUse = Random.Range(0, dots.Length);
+                    int dotToUse = UnityEngine.Random.Range(0, dots.Length);
                     int maxIterations = 0;
                     while (MatchesAt(i,j, dots[dotToUse]) && maxIterations < 100)
                     {
                         maxIterations++;
-                        dotToUse = Random.Range(0, dots.Length);
+                        dotToUse = UnityEngine.Random.Range(0, dots.Length);
                     }
                     maxIterations = 0;
 
@@ -759,22 +760,30 @@ public class Board : MonoBehaviour
 
     private Vector2 CheckForAdjacent(int column, int row)
     {
-        if (allDots[column + 1, row] && column < width - 1)
+        try
         {
-            return Vector2.right;
+            if (allDots[column + 1, row] && column < width - 1)
+            {
+                return Vector2.right;
+            }
+            if (allDots[column - 1, row] && column > 0)
+            {
+                return Vector2.left;
+            }
+            if (allDots[column, row + 1] && row < height - 1)
+            {
+                return Vector2.up;
+            }
+            if (allDots[column, row - 1] && row > 0)
+            {
+                return Vector2.down;
+            }
         }
-        if (allDots[column - 1, row] && column > 0)
+        catch
         {
-            return Vector2.left;
+            Debug.Log("Error Happened, Let's redo it.");
         }
-        if (allDots[column, row + 1] && row < height - 1)
-        {
-            return Vector2.up;
-        }
-        if (allDots[column, row - 1] && row > 0)
-        {
-            return Vector2.down;
-        }
+        
         return Vector2.zero;
     }
 
@@ -784,8 +793,8 @@ public class Board : MonoBehaviour
         int loops = 0;
         while (!slime && loops < 200)
         {
-            int newX = Random.Range(0, width - 1);
-            int newY = Random.Range(0, height - 1);
+            int newX = UnityEngine.Random.Range(0, width);
+            int newY = UnityEngine.Random.Range(0, height);
             if (slimeTiles[newX, newY] != null)
             {
                 Vector2 adjacent = CheckForAdjacent(newX, newY);
@@ -802,7 +811,7 @@ public class Board : MonoBehaviour
 
             }
             loops++;
-            Debug.Log(loops);
+            //Debug.Log(loops);
         }
     }
 
@@ -924,14 +933,14 @@ public class Board : MonoBehaviour
                 if (!blankSpaces[i, j] && !concreteTiles[i, j] && !slimeTiles[i, j])
                 {
                     //Pick a random number
-                    int pieceToUse = Random.Range(0, newBoard.Count);
+                    int pieceToUse = UnityEngine.Random.Range(0, newBoard.Count);
 
                     //Assign the column to the piece
                     int maxIterations = 0;
 
                     while (MatchesAt(i, j, newBoard[pieceToUse]) && maxIterations < 100)
                     {
-                        pieceToUse = Random.Range(0, newBoard.Count);
+                        pieceToUse = UnityEngine.Random.Range(0, newBoard.Count);
                         maxIterations++;
                     }
                     //Make a container for the piece

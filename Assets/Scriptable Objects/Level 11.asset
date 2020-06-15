@@ -68,5 +68,5 @@ MonoBehaviour:
     matchValue: Red
   - numberNeeded: 10
     numberCollected: 0
-    goalSprite: {fileID: 21300000, guid: 6cda880551e86b94f9d8170b2640baf4, type: 3}
+    goalSprite: {fileID: 21300000, guid: 302874602d7725e4a8f722a735181a65, type: 3}
     matchValue: Indigo
