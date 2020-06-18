@@ -7,12 +7,8 @@ public class PanZoom : MonoBehaviour
     Vector3 touchStart;
     public float zoomOutMin = 500;
     public float zoomOutMax = 1000;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float minX, maxX, minY, maxY;
+ 
 
     // Update is called once per frame
     void Update()
@@ -43,24 +39,24 @@ public class PanZoom : MonoBehaviour
             Camera.main.transform.position += direction;
         }
 
-        if(Camera.main.transform.position.y >= 1500)
+        if(Camera.main.transform.position.y >= maxY)
         {
-            Camera.main.transform.position = new Vector3(Camera.main.transform.position.x,  1500f, -10f);
+            Camera.main.transform.position = new Vector3(Camera.main.transform.position.x,  maxY, -10f);
         }
 
-        if (Camera.main.transform.position.y <= 500)
+        if (Camera.main.transform.position.y <= minY)
         {
-            Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, 500f, -10f);
+            Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, minY, -10f);
         }
 
-        if (Camera.main.transform.position.x <= 250)
+        if (Camera.main.transform.position.x <= minX)
         {
-            Camera.main.transform.position = new Vector3(250f, Camera.main.transform.position.y, -10f);
+            Camera.main.transform.position = new Vector3(minX, Camera.main.transform.position.y, -10f);
         }
 
-        if (Camera.main.transform.position.x >= 1000)
+        if (Camera.main.transform.position.x >= maxX)
         {
-            Camera.main.transform.position = new Vector3(1000f, Camera.main.transform.position.y, -10f);
+            Camera.main.transform.position = new Vector3(maxX, Camera.main.transform.position.y, -10f);
         }
 
         Zoom(Input.GetAxis("Mouse ScrollWheel"));
