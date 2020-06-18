@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>188886758141-uc2m1m470bqjv3jf80m3rl8ol8dhv985.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.188886758141-uc2m1m470bqjv3jf80m3rl8ol8dhv985</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBxq6NL4lWjYBrwHSwH4DrxkGoFk4wcLy0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>188886758141</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.goldeneagle.gergaoon</string>
+	<key>PROJECT_ID</key>
+	<string>gergaoon-1b998</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gergaoon-1b998.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:188886758141:ios:cc117ce50b1e593e94c494</string>
+	<key>DATABASE_URL</key>
+	<string>https://gergaoon-1b998.firebaseio.com</string>
+</dict>
+</plist>
