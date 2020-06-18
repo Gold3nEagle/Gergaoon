@@ -88,10 +88,14 @@ public class Score : MonoBehaviour {
 
     public void PostScore()
     {
+#if UNITY_ANDROID
         playServ.AddScoreToLeaderboard(GPGSIds.leaderboard, score);
+#elif UNITY_IPHONE
+        playServ.PostScoreOnLeaderBoard(score);
+#endif 
     }
 
-     void CalculateTotalCandy()
+    void CalculateTotalCandy()
     {
         if(score < 0)
         {

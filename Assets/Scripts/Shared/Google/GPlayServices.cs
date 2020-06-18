@@ -3,20 +3,30 @@ using GooglePlayGames.BasicApi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms;
-/// <summary>
-/// ??? Where is Documentation?
-/// </summary>
+
+
 public class GPlayServices : MonoBehaviour
 {
+
+    public bool loginSuccessful;
+
+    string leaderboardID = "leaderboardGen1";
+
     // Start is called before the first frame update
     void Start()
     {
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
+#if UNITY_ANDROID
             PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
             PlayGamesPlatform.InitializeInstance(config);
             PlayGamesPlatform.Activate();
             SignIn();
+
+#elif UNITY_IPHONE
+            AuthenticateUser(); 
+#endif
+
         }
     }
 
@@ -30,19 +40,19 @@ public class GPlayServices : MonoBehaviour
     {
         Social.ReportScore(score, leaderboardId, success => { });
     }
- 
+
     public void ShowLeaderboardsUI()
     {
-         Social.ShowLeaderboardUI();
-         PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkItef62N0LEAIQAw");
-        
+        Social.ShowLeaderboardUI();
+        PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkItef62N0LEAIQAw");
+
     }
 
     public void ShowAchievemntsUI()
     {
         PlayGamesPlatform.Instance.ShowAchievementsUI();
     }
-       
+
     public void UnlockAchievement(int achievement)
     {
         Debug.Log(achievement);
@@ -58,7 +68,7 @@ public class GPlayServices : MonoBehaviour
                 break;
 
             case 3:
-                PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_professional , 100f, success => { });
+                PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_professional, 100f, success => { });
                 break;
 
             case 4:
@@ -69,7 +79,59 @@ public class GPlayServices : MonoBehaviour
                 PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_you_did_your_best, 100f, success => { });
                 break;
         }
-
-
     }
+
+    // For iOS
+
+    void AuthenticateUser()
+    {
+        Social.localUser.Authenticate((bool success) =>
+    {
+        if (success)
+        {
+            loginSuccessful = true;
+            Debug.Log("success");
+        }
+        else
+        {
+            Debug.Log("unsuccessful");
+        }
+        // handle success or failure
+    });
+    }
+
+
+    public void PostScoreOnLeaderBoard(int myScore)
+
+    {
+        if (loginSuccessful)
+        {
+            Social.ReportScore(myScore, leaderboardID, (bool success) =>
+{
+    if (success)
+        Debug.Log("Successfully Uploaded");
+                // handle success or failure
+            });
+        }
+        else
+        {
+            Social.localUser.Authenticate((bool success) =>
+{
+    if (success)
+    {
+        loginSuccessful = true;
+        Social.ReportScore(myScore, leaderboardID, (bool successful) =>
+{
+                        // handle success or failure
+                    });
+    }
+    else
+    {
+        Debug.Log("unsuccessful");
+    }
+                // handle success or failure
+            });
+        }
+    }
+
 }
