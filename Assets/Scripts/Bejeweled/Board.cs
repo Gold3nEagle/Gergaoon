@@ -20,7 +20,6 @@ public enum TileKind
     Concrete,
     Slime,
     Normal,
-
 }
 
 [System.Serializable]

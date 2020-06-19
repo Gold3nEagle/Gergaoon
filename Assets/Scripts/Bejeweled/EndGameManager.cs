@@ -18,7 +18,7 @@ public class EndGameRequirements
 
 public class EndGameManager : MonoBehaviour
 {
-    public GameObject movesLabel, timeLabel, youWinPanel, tryAgainPanel, sparksEffect;
+    public GameObject movesLabel, timeLabel, youWinPanel, tryAgainPanel, sparksEffect, movesFlash;
     public Text counter;
     public EndGameRequirements requirements;
     public int currentCounterValue;
@@ -79,6 +79,12 @@ public class EndGameManager : MonoBehaviour
         {
             currentCounterValue--;
             counter.text = currentCounterValue.ToString();
+
+            if(currentCounterValue == 5)
+            {
+                movesFlash.SetActive(true);
+            }
+
             if (currentCounterValue <= 0 && board.currentState != GameState.win)
             {
                 LoseGame();
