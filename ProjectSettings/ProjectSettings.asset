@@ -122,7 +122,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 2.21
+  bundleVersion: 2.22
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -169,7 +169,7 @@ PlayerSettings:
     Android: com.goldeneagle.gergaoon
     Standalone: com.Company.ProductName
   buildNumber: {}
-  AndroidBundleVersionCode: 221
+  AndroidBundleVersionCode: 222
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -706,6 +706,10 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   luminIcon:
     m_Name: 
@@ -726,10 +730,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 27340fb4-7bf6-4048-a540-a3261c27608a
+  cloudProjectId: b62893ce-999f-460b-bb7b-40a66739e8ec
   framebufferDepthMemorylessMode: 0
-  projectName: Hat Trick
-  organizationId: eagle-3609553
+  projectName: Gergaoon-Mobile
+  organizationId: g3agle
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

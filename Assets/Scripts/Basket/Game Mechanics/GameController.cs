@@ -27,6 +27,8 @@ public class GameController : MonoBehaviour {
     private float firstWait, secondWait, startWait;
     private int designatedTime= 100;
     private float yRotation = 100;
+    private int adsNum;
+    private bool adsEnabled;
      
 
     void Start()
@@ -55,7 +57,14 @@ public class GameController : MonoBehaviour {
  
 
         maxWidth = targetWidth.x - ballWidth;    
-        UpdateText(); 
+        UpdateText();
+
+        adsNum = PlayerPrefs.GetInt("IAPAds");
+        if (adsNum == 1)
+        {
+            adsEnabled = true;
+        }
+
 
     }
      
@@ -158,9 +167,13 @@ public class GameController : MonoBehaviour {
             GameObject endballs = balls[Random.Range(0, 5)];
             Instantiate( endballs, spawnPosition, spawnRotation); 
         }
-        yield return new WaitForSeconds(2.0f);
-        //Show Ad
-        ads.ShowInterstitialAd();
+
+        if (adsEnabled == false)
+        {
+            yield return new WaitForSeconds(2.0f);
+            //Show Ad
+            ads.ShowInterstitialAd();
+        }
         yield return new WaitForSeconds(2.0f); 
         restartButton.SetActive(true);
     }

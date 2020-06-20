@@ -8,12 +8,20 @@ public class BackToMenu : MonoBehaviour
     private Board board;
     public LevelLoader levelLoader;
     public AdsScript adScript;
+    private int adsNum;
+    private bool adsEnabled;
 
     // Start is called before the first frame update
     void Start()
     {
         gameData = FindObjectOfType<GameData>();
         board = FindObjectOfType<Board>();
+        adsNum = PlayerPrefs.GetInt("IAPAds");
+        if(adsNum == 1)
+        {
+            adsEnabled = true;
+        }
+
     }
 
     public void WinOK()
@@ -24,12 +32,18 @@ public class BackToMenu : MonoBehaviour
             gameData.Save();
         }
 
-        if (board.level % 3 == 0)
+        if (adsEnabled == false)
         {
-            adScript.ShowInterstitialAd();
+            if (board.level % 3 == 0)
+            {
+                adScript.ShowInterstitialAd();
+                StartCoroutine(GoToMenu(5));
+            }
         }
-
-        StartCoroutine(GoToMenu());
+        else
+        {
+            StartCoroutine(GoToMenu(1));
+        } 
     }
 
     public void LoseOK()
@@ -38,17 +52,23 @@ public class BackToMenu : MonoBehaviour
         totalLives--;
         PlayerPrefs.SetInt("totalLives", totalLives);
 
-        if (board.level % 3 == 0)
+        if (adsEnabled == false)
         {
-            adScript.ShowInterstitialAd();
-        } 
-
-        StartCoroutine(GoToMenu());  
+            if (board.level % 3 == 0)
+            {
+                adScript.ShowInterstitialAd();
+                StartCoroutine(GoToMenu(5));
+            }
+        }
+        else
+        {
+            StartCoroutine(GoToMenu(1));
+        }
     }
 
-    IEnumerator GoToMenu()
+    IEnumerator GoToMenu(int waitTime)
     {
-        yield return new WaitForSeconds(2f); 
+        yield return new WaitForSeconds(waitTime); 
         levelLoader.LoadLevel(2);
 
     } 
