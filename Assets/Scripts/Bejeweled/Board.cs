@@ -151,7 +151,6 @@ public class Board : MonoBehaviour
             //if a tile is a jelly tile
             if (boardLayout[i].tileKind == TileKind.Lock)
             {
-                Debug.Log("We reached here!");
                 //create a lock tile at that position
                 Vector2 tempPosition = new Vector2(boardLayout[i].x, boardLayout[i].y);
                 GameObject tile = Instantiate(lockTilePrefab, tempPosition, Quaternion.identity);
@@ -467,8 +466,19 @@ public class Board : MonoBehaviour
             DamageSlime(column, row);
             if (goalManager != null)
             {
-                goalManager.CompareGoal(allDots[column, row].tag.ToString());
-                goalManager.UpdateGoals();
+                
+                if (world.levels[level].levelGoals[0].goalKind == GoalKind.candyGoal)
+                {
+                    goalManager.CompareGoal(allDots[column, row].tag.ToString());
+                    goalManager.UpdateCandyGoals();
+                } else
+                {
+                    if (scoreManager.GetScore() >= world.levels[level].levelGoals[0].scoreNeeded)
+                    {
+                        //Debug.Log(goalManager.levelGoals[0].scoreNeeded.ToString());
+                        goalManager.UpdateScoreGoal();
+                    }
+                }
             }
             
             GameObject particle = Instantiate(destroyEffect, allDots[column, row].transform.position, Quaternion.identity);

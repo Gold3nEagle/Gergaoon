@@ -91,7 +91,7 @@ public class LevelButton : MonoBehaviour
     {
         Debug.Log("Confirm Panel OK");
         totalLives = PlayerPrefs.GetInt("totalLives");
-        if (level < 19)
+        if (level < 20)
         {
             if (totalLives == 0)
             {

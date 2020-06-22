@@ -4452,15 +4452,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelGoals:
-  - numberNeeded: 5
+  - goalSprite: {fileID: 21300000, guid: fc1088f3e72d02645b815cf25bde7212, type: 3}
+    goalKind: 0
+    numberNeeded: 5
     numberCollected: 0
-    goalSprite: {fileID: 21300000, guid: fc1088f3e72d02645b815cf25bde7212, type: 3}
     matchValue: Red
+    scoreNeeded: 0
   currentGoals: []
   goalPrefab: {fileID: 2224000781981491184, guid: aa105bff3f80e474db30d9354a48bd0f,
     type: 3}
   goalIntroParent: {fileID: 1116332798}
   goalGameParent: {fileID: 159080398}
+  scoreGoalPrefab: {fileID: 2224000781981491184, guid: 3bcbbf52b2199474da19ef8f32762048,
+    type: 3}
 --- !u!1 &1237792552
 GameObject:
   m_ObjectHideFlags: 0

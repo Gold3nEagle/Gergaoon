@@ -20,7 +20,7 @@ public class BackgroundTile : MonoBehaviour
         if(hitPoints <= 0)
         {
             goalManager.CompareGoal(gameObject.tag);
-            goalManager.UpdateGoals();
+            goalManager.UpdateCandyGoals();
             Destroy(gameObject);
         }
         MakeLighter();
