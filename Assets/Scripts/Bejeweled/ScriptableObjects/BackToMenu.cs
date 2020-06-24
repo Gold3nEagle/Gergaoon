@@ -9,7 +9,7 @@ public class BackToMenu : MonoBehaviour
     public LevelLoader levelLoader;
     public AdsScript adScript;
     private int adsNum;
-    private bool adsEnabled;
+    private bool adsEnabled = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +25,8 @@ public class BackToMenu : MonoBehaviour
     }
 
     public void WinOK()
-    {
-        if(gameData != null)
+    { 
+        if (gameData != null)
         {
             gameData.saveData.isActive[board.level + 1] = true;
             gameData.Save();
@@ -35,19 +35,21 @@ public class BackToMenu : MonoBehaviour
         if (adsEnabled == false)
         {
             if (board.level % 3 == 0)
-            {
+            { 
                 adScript.ShowInterstitialAd();
-                StartCoroutine(GoToMenu(5));
+                StartCoroutine(GoToMenu(3));
+            } else
+            {
+                StartCoroutine(GoToMenu(1));
             }
-        }
-        else
-        {
+        } else
+        { 
             StartCoroutine(GoToMenu(1));
         } 
     }
 
     public void LoseOK()
-    {
+    { 
         int totalLives = PlayerPrefs.GetInt("totalLives");
         totalLives--;
         PlayerPrefs.SetInt("totalLives", totalLives);
@@ -55,13 +57,15 @@ public class BackToMenu : MonoBehaviour
         if (adsEnabled == false)
         {
             if (board.level % 3 == 0)
-            {
+            { 
                 adScript.ShowInterstitialAd();
-                StartCoroutine(GoToMenu(5));
+                StartCoroutine(GoToMenu(3));
+            } else
+            {
+                StartCoroutine(GoToMenu(1));
             }
-        }
-        else
-        {
+        } else
+        { 
             StartCoroutine(GoToMenu(1));
         }
     }

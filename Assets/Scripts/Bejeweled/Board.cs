@@ -148,7 +148,7 @@ public class Board : MonoBehaviour
         //Check all tiles in the layout
         for (int i = 0; i < boardLayout.Length; i++)
         {
-            //if a tile is a jelly tile
+            //if a tile is a lock tile
             if (boardLayout[i].tileKind == TileKind.Lock)
             {
                 //create a lock tile at that position
@@ -167,8 +167,7 @@ public class Board : MonoBehaviour
         {
             //if a tile is a jelly tile
             if (boardLayout[i].tileKind == TileKind.Concrete)
-            {
-                Debug.Log("We reached here!");
+            { 
                 //create a lock tile at that position
                 Vector2 tempPosition = new Vector2(boardLayout[i].x, boardLayout[i].y);
                 GameObject tile = Instantiate(concreteTilePrefab, tempPosition, Quaternion.identity);
@@ -205,7 +204,7 @@ public class Board : MonoBehaviour
         {
             for (int j = 0; j < height; j++)
             {
-                if (!blankSpaces[i, j] && !concreteTiles[i,j] && !slimeTiles[i,j])
+                if (!blankSpaces[i, j]) // && !concreteTiles[i,j] && !slimeTiles[i,j])
                 {
                     Vector2 tempPosition = new Vector2(i, j + offSet);
                     Vector2 tilePosition = new Vector2(i, j);
@@ -213,23 +212,27 @@ public class Board : MonoBehaviour
                     backgroundTile.transform.parent = this.transform;
                     backgroundTile.name = "( " + i + ", " + j + " )";
 
-                    //Initializaing
-                    int dotToUse = UnityEngine.Random.Range(0, dots.Length);
-                    int maxIterations = 0;
 
-                    while (MatchesAt(i, j, dots[dotToUse]) && maxIterations < 100)
+                    if (!blankSpaces[i, j] && !concreteTiles[i, j] && !slimeTiles[i, j])
                     {
-                        dotToUse = UnityEngine.Random.Range(0, dots.Length);
-                        maxIterations++;
-                    }
-                    maxIterations = 0;
+                        //Initializaing
+                        int dotToUse = UnityEngine.Random.Range(0, dots.Length);
+                        int maxIterations = 0;
 
-                    GameObject dot = Instantiate(dots[dotToUse], tempPosition, Quaternion.identity);
-                    dot.GetComponent<Dot>().row = j;
-                    dot.GetComponent<Dot>().column = i;
-                    dot.transform.parent = this.transform;
-                    dot.name = "( " + i + ", " + j + " )";
-                    allDots[i, j] = dot;
+                        while (MatchesAt(i, j, dots[dotToUse]) && maxIterations < 100)
+                        {
+                            dotToUse = UnityEngine.Random.Range(0, dots.Length);
+                            maxIterations++;
+                        }
+                        maxIterations = 0;
+
+                        GameObject dot = Instantiate(dots[dotToUse], tempPosition, Quaternion.identity);
+                        dot.GetComponent<Dot>().row = j;
+                        dot.GetComponent<Dot>().column = i;
+                        dot.transform.parent = this.transform;
+                        dot.name = "( " + i + ", " + j + " )";
+                        allDots[i, j] = dot;
+                    }
                 }
             }
         }
