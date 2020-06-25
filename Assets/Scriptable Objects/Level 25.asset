@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d695883d1f730ab41ae93e1e1ef6174e, type: 3}
+  m_Name: Level 25
+  m_EditorClassIdentifier: 
+  width: 7
+  height: 8
+  boardLayout:
+  - x: 0
+    y: 2
+    tileKind: 1
+  - x: 1
+    y: 2
+    tileKind: 1
+  - x: 2
+    y: 2
+    tileKind: 1
+  - x: 4
+    y: 2
+    tileKind: 1
+  - x: 5
+    y: 2
+    tileKind: 1
+  - x: 6
+    y: 2
+    tileKind: 1
+  - x: 0
+    y: 5
+    tileKind: 1
+  - x: 1
+    y: 5
+    tileKind: 1
+  - x: 2
+    y: 5
+    tileKind: 1
+  - x: 4
+    y: 5
+    tileKind: 1
+  - x: 5
+    y: 5
+    tileKind: 1
+  - x: 6
+    y: 5
+    tileKind: 1
+  breakableHitPoints: 1
+  dots:
+  - {fileID: 537089306582376857, guid: 3cb7eaca87ae92d4e87887cd416ddaae, type: 3}
+  - {fileID: 7970639084956933007, guid: 41def8558e545a345b2df0a232d8e140, type: 3}
+  - {fileID: 9142456478226315733, guid: 9245b9a00953144458abccc4c37a30f6, type: 3}
+  - {fileID: 4430133919018964258, guid: 9ab313ccd2e45b7408acb07314f32f6c, type: 3}
+  scoreGoals: c80000002c010000f4010000
+  endGameRequirements:
+    gameType: 0
+    counterValue: 15
+  levelGoals:
+  - goalSprite: {fileID: 21300000, guid: 7b28df1c575c5b74185efcc936384cae, type: 3}
+    goalKind: 1
+    numberNeeded: 25
+    numberCollected: 0
+    matchValue: Orange
+    scoreNeeded: 603
