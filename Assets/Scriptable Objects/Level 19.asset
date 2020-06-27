@@ -24,7 +24,7 @@ MonoBehaviour:
   scoreGoals: b3030000e8030000
   endGameRequirements:
     gameType: 0
-    counterValue: 23
+    counterValue: 33
   levelGoals:
   - goalSprite: {fileID: 21300000, guid: e20375434159baa4194c09820c121e11, type: 3}
     goalKind: 1

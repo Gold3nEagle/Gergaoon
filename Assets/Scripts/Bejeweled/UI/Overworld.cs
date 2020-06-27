@@ -9,6 +9,27 @@ public class Overworld : MonoBehaviour
 
     public Text totalCandyDisplay, totalLivesDisplay;
     public GameObject pointerAnim;
+    GameData gameData;
+
+
+    private void Awake()
+    {
+        gameData = FindObjectOfType<GameData>();
+         
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            if (!PlayerPrefs.HasKey("firstMatch3"))
+            {
+                PlayerPrefs.SetInt("firstMatch3", 1);
+                PlayerPrefs.SetInt("totalLives", 3);
+                PlayerPrefs.SetInt("DestroyBoost", 3);
+                PlayerPrefs.SetInt("ColorBombBoost", 3);
+                gameData.CheckLevels();
+            } 
+        }
+        gameData.CheckLevels();
+
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -16,35 +37,10 @@ public class Overworld : MonoBehaviour
         //PlayerPrefs.SetInt("totalCandy", 100000); 
         //PlayerPrefs.SetInt("totalLives", 3);
 
-        DisplayTotalCandy();
-        if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            if (!PlayerPrefs.HasKey("firstMatch3"))
-            {
-                PlayerPrefs.SetInt("firstMatch3", 1);
-                PlayerPrefs.SetInt("totalLives", 3);
-                PlayerPrefs.SetInt("DestroyBoost", 3);
-                PlayerPrefs.SetInt("ColorBombBoost", 3);
-            }
-            DisplayTotalLives();
-        }
+        DisplayTotalCandy(); 
+        DisplayTotalLives(); 
     }
 
-    private void OnEnable()
-    {
-        DisplayTotalCandy();
-        if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            if (!PlayerPrefs.HasKey("firstMatch3"))
-            {
-                PlayerPrefs.SetInt("firstMatch3", 1);
-                PlayerPrefs.SetInt("totalLives", 3);
-                PlayerPrefs.SetInt("DestroyBoost", 3);
-                PlayerPrefs.SetInt("ColorBombBoost", 3);
-            }
-            DisplayTotalLives();
-        }
-    }
 
     public void DisplayTotalCandy()
     {

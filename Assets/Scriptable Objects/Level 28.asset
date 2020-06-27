@@ -75,14 +75,14 @@ MonoBehaviour:
   - {fileID: 7970639084956933007, guid: 41def8558e545a345b2df0a232d8e140, type: 3}
   - {fileID: 9142456478226315733, guid: 9245b9a00953144458abccc4c37a30f6, type: 3}
   - {fileID: 4430133919018964258, guid: 9ab313ccd2e45b7408acb07314f32f6c, type: 3}
-  scoreGoals: c80000002c010000f4010000
+  scoreGoals: c80000004101000090010000
   endGameRequirements:
     gameType: 0
-    counterValue: 15
+    counterValue: 40
   levelGoals:
   - goalSprite: {fileID: 21300000, guid: 7b28df1c575c5b74185efcc936384cae, type: 3}
     goalKind: 1
     numberNeeded: 25
     numberCollected: 0
     matchValue: Orange
-    scoreNeeded: 603
+    scoreNeeded: 321

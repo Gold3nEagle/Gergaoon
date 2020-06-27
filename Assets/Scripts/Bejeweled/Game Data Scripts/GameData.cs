@@ -16,21 +16,23 @@ public class GameData : MonoBehaviour
 {
     public static GameData gameData;
     public SaveData saveData;
+    int totalLevels = 35;
 
     // Start is called before the first frame update
     void Awake()
     {
-        if(gameData == null)
+        if (gameData == null)
         {
             DontDestroyOnLoad(gameObject);
             gameData = this;
-        } else
+        }
+        else
         {
             Destroy(gameObject);
         }
         Load();
     }
-     
+
 
     public void Save()
     {
@@ -45,30 +47,63 @@ public class GameData : MonoBehaviour
 
     public void Load()
     {
-        if(File.Exists(Application.persistentDataPath + "/player.geagle"))
+        if (File.Exists(Application.persistentDataPath + "/player.geagle"))
         {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/player.geagle", FileMode.Open);
             saveData = formatter.Deserialize(file) as SaveData;
             file.Close();
             Debug.Log("Progress Loaded!");
-        } else
+        }
+        else
         {
             saveData = new SaveData();
-            saveData.isActive = new bool[20];
-            saveData.stars = new int[20];
-            saveData.highScores = new int[20];
+            saveData.isActive = new bool[totalLevels];
+            saveData.stars = new int[totalLevels];
+            saveData.highScores = new int[totalLevels];
             saveData.isActive[0] = true;
+        }
+    }
+
+    public void CheckLevels()
+    {
+        if (saveData.isActive.Length < totalLevels)
+        {
+            int lastLevel = 0;
+            for (int i = 0; i < saveData.isActive.Length; i++)
+            {
+                if (saveData.isActive[i] == true)
+                {
+                    lastLevel++;
+                }
+            }
+
+            saveData.isActive = new bool[totalLevels];
+            saveData.stars = new int[totalLevels];
+            saveData.highScores = new int[totalLevels];
+
+            for (int i = 0; i <= lastLevel; i++)
+            {
+                saveData.isActive[i] = true;
+            }
+
+            for (int i = lastLevel; i <= saveData.isActive.Length; i++)
+            {
+                saveData.isActive[i] = false;
+            }
+
+            Debug.Log("Reconfigured Save File");
+            Save(); 
         }
     }
 
     private void OnApplicationQuit()
     {
-       //Save();
+        //Save();
     }
 
     private void OnDisable()
     {
         //Save();
-    } 
+    }
 }
