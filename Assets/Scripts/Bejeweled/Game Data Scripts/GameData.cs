@@ -69,15 +69,8 @@ public class GameData : MonoBehaviour
     {
         if (saveData.isActive.Length < totalLevels)
         {
-            int lastLevel = 0;
-            for (int i = 0; i < saveData.isActive.Length; i++)
-            {
-                if (saveData.isActive[i] == true)
-                {
-                    lastLevel++;
-                }
-            }
-
+            int lastLevel = GetLatestUnlockedLevel(); 
+             
             saveData.isActive = new bool[totalLevels];
             saveData.stars = new int[totalLevels];
             saveData.highScores = new int[totalLevels];
@@ -95,15 +88,19 @@ public class GameData : MonoBehaviour
             Debug.Log("Reconfigured Save File");
             Save(); 
         }
-    }
+    } 
 
-    private void OnApplicationQuit()
+    public int GetLatestUnlockedLevel()
     {
-        //Save();
-    }
+        int lastLevel = 0;
+        for (int i = 0; i < saveData.isActive.Length; i++)
+        {
+            if (saveData.isActive[i] == true)
+            {
+                lastLevel++;
+            }
+        }
 
-    private void OnDisable()
-    {
-        //Save();
+        return lastLevel;
     }
 }

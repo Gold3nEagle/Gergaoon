@@ -26,6 +26,8 @@ public class EndGameManager : MonoBehaviour
     private Board board;
     public MusicController musicController;
     public SfxController sfx;
+    public bool doubleRewards = false;
+    public AdsScript ads;
 
     int matchesCounter;
     Overworld overWorld;
@@ -128,7 +130,8 @@ public class EndGameManager : MonoBehaviour
          
         yield return new WaitForSeconds(3f);
         youWinPanel.SetActive(true);
-        board.currentState = GameState.win; 
+        board.currentState = GameState.win;
+        doubleRewards = true;
     }
 
     IEnumerator CalculateScore()
@@ -201,4 +204,10 @@ public class EndGameManager : MonoBehaviour
             
         }
     }
+
+    public void WatchedRewarded()
+    {
+        GameObject.Find("DoubleRewardsButton").SetActive(false);
+    }
+
 }

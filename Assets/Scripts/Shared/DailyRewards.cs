@@ -11,13 +11,14 @@ public class DailyRewards : MonoBehaviour
     string url = "www.google.com";
     string urlDate = "http://worldclockapi.com/api/json/est/now";
     string startDate, startTime;
+     
 
-    public List<int> rewardCoin;
     public List<Button> rewardButton;
-
-    public Text buttonText;
-    public bool delete;
-    int coins = 0;
+    public GameObject rewardsPanel;
+    public Overworld overWorld;
+    public NotificationsManager notificationsManager;
+     
+    public bool delete; 
 
     private void Start()
     {
@@ -25,8 +26,7 @@ public class DailyRewards : MonoBehaviour
         {
             PlayerPrefs.DeleteAll();
         }
-
-        buttonText.text = coins.ToString();
+         
         StartCoroutine(CheckInternet());
     }
 
@@ -57,26 +57,28 @@ public class DailyRewards : MonoBehaviour
         startTime = splitDate[1].Substring(11, 5);
         Debug.Log(startDate);
         Debug.Log(startTime);
+        rewardsPanel.SetActive(true);
         DailyRewardCheck();
+
     }
 
     public void DailyRewardCheck()
     {
 
-        string dateOld = PlayerPrefs.GetString("PlayDateOld");
+        string oldPlayDate = PlayerPrefs.GetString("OldPlayDate");
 
-        if (string.IsNullOrEmpty(dateOld) && !PlayerPrefs.HasKey("PlayDateOld"))
+        if (string.IsNullOrEmpty(oldPlayDate) && !PlayerPrefs.HasKey("OldPlayDate"))
         {
             Debug.Log("First Time Opening The Game.");
             rewardButton[0].interactable = true;
-            PlayerPrefs.SetString("PlayDateOld", startDate);
+            PlayerPrefs.SetString("OldPlayDate", startDate);
             PlayerPrefs.SetInt("PlayGameCount", 1);
         }
         else
         {
             DateTime currentDate = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd"));
             //DateTime _dateNow = Convert.ToDateTime(sDate);
-            DateTime oldRecordedDate = Convert.ToDateTime(dateOld);
+            DateTime oldRecordedDate = Convert.ToDateTime(oldPlayDate);
 
             TimeSpan difference = currentDate.Subtract(oldRecordedDate);
 
@@ -85,34 +87,63 @@ public class DailyRewards : MonoBehaviour
                 int gameCount = PlayerPrefs.GetInt("PlayGameCount");
                 if (gameCount == 1)
                 {
-                    rewardButton[1].interactable = true;
+                    rewardButton[0].interactable = true;
                     PlayerPrefs.SetInt("PlayGameCount", 2);
                 }
                 else if (gameCount == 2)
                 {
-                    rewardButton[2].interactable = true;
+                    rewardButton[1].interactable = true;
                 }
                 Debug.Log("Other days whatever that means");
-                PlayerPrefs.SetString("PlayDateOld", currentDate.ToString());
+                PlayerPrefs.SetString("OldPlayDate", currentDate.ToString());
 
             }
             else if (difference.Days >= 2)
             {
-                rewardButton[0].interactable = true;
+                rewardButton[2].interactable = true;
                 PlayerPrefs.SetInt("PlayGameCount", 1);
-                PlayerPrefs.SetString("PlayDateOld", currentDate.ToString());
+                PlayerPrefs.SetString("OldPlayDate", currentDate.ToString());
             }
         }
     }
 
-    public void Reward(int count)
+    public void RewardLives()
     {
-        coins += rewardCoin[count];
-        buttonText.text = coins.ToString();
+        int totalLives = PlayerPrefs.GetInt("totalLives");
+        totalLives += 2;
+        PlayerPrefs.SetInt("totalLives", totalLives);
+        notificationsManager.SendRewardNotification();
         Button clickButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
         clickButton.interactable = false;
+        overWorld.DisplayTotalLives();
+        rewardsPanel.SetActive(false);
+    }
+
+    public void RewardCandies()
+    {
+        int totalCandy = PlayerPrefs.GetInt("totalCandy");
+        totalCandy += 1000;
+        PlayerPrefs.SetInt("totalCandy", totalCandy);
+        notificationsManager.SendRewardNotification();
+        Button clickButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
+        clickButton.interactable = false;
+        overWorld.DisplayTotalCandy();
+        rewardsPanel.SetActive(false);
+    }
+
+    public void RewardRainbow()
+    {
+        int colorBomb = PlayerPrefs.GetInt("ColorBombBoost");
+        colorBomb += 3;
+        PlayerPrefs.SetInt("ColorBombBoost", colorBomb);
+        notificationsManager.SendRewardNotification();
+        Button clickButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
+        clickButton.interactable = false;
+        rewardsPanel.SetActive(false);
     }
 }
+
+
 
 
 //private IEnumerator CheckInternet()

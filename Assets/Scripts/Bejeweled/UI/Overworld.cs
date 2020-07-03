@@ -10,6 +10,7 @@ public class Overworld : MonoBehaviour
     public Text totalCandyDisplay, totalLivesDisplay;
     public GameObject pointerAnim;
     GameData gameData;
+    Camera mainCamera;
 
 
     private void Awake()
@@ -36,6 +37,12 @@ public class Overworld : MonoBehaviour
     {
         //PlayerPrefs.SetInt("totalCandy", 100000); 
         //PlayerPrefs.SetInt("totalLives", 3);
+        mainCamera = Camera.main;
+        int latestLevel = gameData.GetLatestUnlockedLevel();
+         
+        GameObject neededPosition = GameObject.Find("Level Prefab " + "(" + latestLevel.ToString() + ")");
+
+        mainCamera.transform.position = new Vector3(neededPosition.transform.position.x, neededPosition.transform.position.y, -10);
 
         DisplayTotalCandy(); 
         DisplayTotalLives(); 

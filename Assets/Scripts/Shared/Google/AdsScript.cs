@@ -28,7 +28,9 @@ public class AdsScript : MonoBehaviour
     private InterstitialAd interstitial;
     private RewardedAd rewardedAd;
     Score gameScore;
+    public ScoreManager matchScore;
     Overworld overWorld;
+    public EndGameManager endGame;
 
     // Start is called before the first frame update
     void Start()
@@ -107,17 +109,29 @@ public class AdsScript : MonoBehaviour
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         if (currentScene == 1 || currentScene == 3)
         {
-            int totalCandy = PlayerPrefs.GetInt("totalCandy");
-            totalCandy += 50;
-            PlayerPrefs.SetInt("totalCandy", totalCandy);
-            if (currentScene == 1)
+            if (endGame.doubleRewards == true)
             {
-                gameScore.DisplayTotalCandy();
+                int totalCandy = PlayerPrefs.GetInt("totalCandy");
+                int totalScore = matchScore.GetScore();
+                totalScore = totalScore * 2;
+                totalCandy += totalScore;
+                PlayerPrefs.SetInt("totalCandy", totalCandy);
+                endGame.WatchedRewarded();
             }
             else
             {
-                overWorld = FindObjectOfType<Overworld>();
-                overWorld.DisplayTotalCandy();
+                int totalCandy = PlayerPrefs.GetInt("totalCandy");
+                totalCandy += 100;
+                PlayerPrefs.SetInt("totalCandy", totalCandy);
+                if (currentScene == 1)
+                {
+                    gameScore.DisplayTotalCandy();
+                }
+                else
+                {
+                    overWorld = FindObjectOfType<Overworld>();
+                    overWorld.DisplayTotalCandy();
+                }
             }
         }
         else if (currentScene == 2)

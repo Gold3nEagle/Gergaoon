@@ -2,40 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Notifications.Android;
+using UnityEngine.SceneManagement;
 
 public class NotificationsManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        CreateNotificationChannel();
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            RetentionNotification();
+        }
+    } 
 
     void CreateNotificationChannel()
     {
         var channel = new AndroidNotificationChannel()
         {
-            Id = "RegainLife",
-            Name = "Life Channel",
+            Id = "default_channel",
+            Name = "DailyNotification",
             Importance = Importance.High,
-            Description = "Notifies the player when a life is regained",
+            Description = "For daily rewarded notifications",
         };
         AndroidNotificationCenter.RegisterNotificationChannel(channel);
     }
 
-    void SendNotification()
+    public void SendRewardNotification()
     {
         var notification = new AndroidNotification();
-        notification.Title = "Your Title";
-        notification.Text = "Your Text";
-        notification.FireTime = System.DateTime.Now.AddMinutes(1);
+        notification.Title = "قرقاعون";
+        notification.Text = "احصل على جائزتك اليومية المجانية الآن!";
+        notification.LargeIcon = "largeIcon";
+        notification.FireTime = System.DateTime.Now.AddDays(1);
 
-        AndroidNotificationCenter.SendNotification(notification, "channel_id");
+        AndroidNotificationCenter.SendNotification(notification, "default_channel");
+    }
+
+    public void RetentionNotification()
+    {
+        var notification = new AndroidNotification();
+        notification.Title = "قرقاعون";
+        notification.Text = "تقدر تجمع حلوى أكثر اليوم؟";
+        notification.LargeIcon = "largeIcon";
+        notification.FireTime = System.DateTime.Now.AddDays(5);
+
+        AndroidNotificationCenter.SendNotification(notification, "default_channel");
     }
 }

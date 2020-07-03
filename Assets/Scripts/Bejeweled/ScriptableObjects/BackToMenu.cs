@@ -75,5 +75,5 @@ public class BackToMenu : MonoBehaviour
         yield return new WaitForSeconds(waitTime); 
         levelLoader.LoadLevel(2);
 
-    } 
+    }  
 }
