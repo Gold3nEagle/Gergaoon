@@ -10,71 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d695883d1f730ab41ae93e1e1ef6174e, type: 3}
-  m_Name: Level 37
+  m_Name: Level 44
   m_EditorClassIdentifier: 
-  width: 10
+  width: 5
   height: 10
-  boardLayout:
-  - x: 1
-    y: 1
-    tileKind: 1
-  - x: 2
-    y: 1
-    tileKind: 1
-  - x: 1
-    y: 2
-    tileKind: 1
-  - x: 1
-    y: 7
-    tileKind: 1
-  - x: 1
-    y: 8
-    tileKind: 1
-  - x: 2
-    y: 8
-    tileKind: 1
-  - x: 7
-    y: 7
-    tileKind: 1
-  - x: 6
-    y: 8
-    tileKind: 1
-  - x: 7
-    y: 8
-    tileKind: 1
-  - x: 6
-    y: 1
-    tileKind: 1
-  - x: 7
-    y: 1
-    tileKind: 1
-  - x: 7
-    y: 2
-    tileKind: 1
-  - x: 4
-    y: 3
-    tileKind: 4
-  - x: 3
-    y: 4
-    tileKind: 4
-  - x: 4
-    y: 4
-    tileKind: 4
-  - x: 5
-    y: 4
-    tileKind: 4
-  - x: 5
-    y: 5
-    tileKind: 4
-  - x: 4
-    y: 5
-    tileKind: 4
-  - x: 3
-    y: 5
-    tileKind: 4
-  - x: 4
-    y: 6
-    tileKind: 4
+  boardLayout: []
   breakableHitPoints: 3
   dots:
   - {fileID: 537089306582376857, guid: 3cb7eaca87ae92d4e87887cd416ddaae, type: 3}

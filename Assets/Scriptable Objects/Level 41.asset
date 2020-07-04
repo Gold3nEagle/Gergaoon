@@ -10,118 +10,58 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d695883d1f730ab41ae93e1e1ef6174e, type: 3}
-  m_Name: Level 36
+  m_Name: Level 41
   m_EditorClassIdentifier: 
-  width: 10
-  height: 10
+  width: 7
+  height: 7
   boardLayout:
-  - x: 0
-    y: 4
+  - x: 3
+    y: 1
+    tileKind: 1
+  - x: 4
+    y: 1
+    tileKind: 1
+  - x: 5
+    y: 1
+    tileKind: 1
+  - x: 3
+    y: 2
+    tileKind: 1
+  - x: 4
+    y: 2
+    tileKind: 1
+  - x: 5
+    y: 2
+    tileKind: 1
+  - x: 4
+    y: 3
+    tileKind: 1
+  - x: 5
+    y: 3
+    tileKind: 1
+  - x: 2
+    y: 3
     tileKind: 1
   - x: 1
+    y: 3
+    tileKind: 1
+  - x: 3
     y: 4
     tileKind: 1
   - x: 2
     y: 4
     tileKind: 1
-  - x: 0
-    y: 5
-    tileKind: 1
   - x: 1
-    y: 5
-    tileKind: 1
-  - x: 2
-    y: 5
-    tileKind: 1
-  - x: 0
-    y: 6
-    tileKind: 1
-  - x: 1
-    y: 6
-    tileKind: 1
-  - x: 2
-    y: 6
-    tileKind: 1
-  - x: 0
-    y: 7
-    tileKind: 1
-  - x: 1
-    y: 7
-    tileKind: 1
-  - x: 2
-    y: 7
-    tileKind: 1
-  - x: 0
-    y: 8
-    tileKind: 1
-  - x: 1
-    y: 8
-    tileKind: 1
-  - x: 2
-    y: 8
-    tileKind: 1
-  - x: 0
-    y: 9
-    tileKind: 1
-  - x: 1
-    y: 9
-    tileKind: 1
-  - x: 2
-    y: 9
-    tileKind: 1
-  - x: 7
     y: 4
     tileKind: 1
-  - x: 8
-    y: 4
-    tileKind: 1
-  - x: 9
-    y: 4
-    tileKind: 1
-  - x: 7
+  - x: 1
     y: 5
     tileKind: 1
-  - x: 8
+  - x: 2
     y: 5
     tileKind: 1
-  - x: 9
+  - x: 3
     y: 5
-    tileKind: 1
-  - x: 7
-    y: 6
-    tileKind: 1
-  - x: 8
-    y: 6
-    tileKind: 1
-  - x: 9
-    y: 6
-    tileKind: 1
-  - x: 7
-    y: 7
-    tileKind: 1
-  - x: 8
-    y: 7
-    tileKind: 1
-  - x: 9
-    y: 7
-    tileKind: 1
-  - x: 7
-    y: 8
-    tileKind: 1
-  - x: 8
-    y: 8
-    tileKind: 1
-  - x: 9
-    y: 8
-    tileKind: 1
-  - x: 7
-    y: 9
-    tileKind: 1
-  - x: 8
-    y: 9
-    tileKind: 1
-  - x: 9
-    y: 9
     tileKind: 1
   breakableHitPoints: 3
   dots:

@@ -56,8 +56,7 @@ public class DailyRewards : MonoBehaviour
         startDate = splitDate[1].Substring(0, 10);
         startTime = splitDate[1].Substring(11, 5);
         Debug.Log(startDate);
-        Debug.Log(startTime);
-        rewardsPanel.SetActive(true);
+        Debug.Log(startTime); 
         DailyRewardCheck();
 
     }
@@ -69,6 +68,7 @@ public class DailyRewards : MonoBehaviour
 
         if (string.IsNullOrEmpty(oldPlayDate) && !PlayerPrefs.HasKey("OldPlayDate"))
         {
+            rewardsPanel.SetActive(true);
             Debug.Log("First Time Opening The Game.");
             rewardButton[0].interactable = true;
             PlayerPrefs.SetString("OldPlayDate", startDate);
@@ -84,6 +84,7 @@ public class DailyRewards : MonoBehaviour
 
             if (difference.Days >= 1 && difference.Days < 2)
             {
+                rewardsPanel.SetActive(true);
                 int gameCount = PlayerPrefs.GetInt("PlayGameCount");
                 if (gameCount == 1)
                 {
@@ -92,6 +93,7 @@ public class DailyRewards : MonoBehaviour
                 }
                 else if (gameCount == 2)
                 {
+                    rewardsPanel.SetActive(true);
                     rewardButton[1].interactable = true;
                 }
                 Debug.Log("Other days whatever that means");
@@ -100,6 +102,7 @@ public class DailyRewards : MonoBehaviour
             }
             else if (difference.Days >= 2)
             {
+                rewardsPanel.SetActive(true);
                 rewardButton[2].interactable = true;
                 PlayerPrefs.SetInt("PlayGameCount", 1);
                 PlayerPrefs.SetString("OldPlayDate", currentDate.ToString());
