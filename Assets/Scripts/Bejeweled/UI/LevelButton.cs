@@ -60,8 +60,7 @@ public class LevelButton : MonoBehaviour
     void ActivateStars()
     {
         for (int i = 0; i < starsActive; i++)
-        {
-
+        { 
             stars[i].enabled = true;
         }
     }
@@ -88,15 +87,13 @@ public class LevelButton : MonoBehaviour
     } 
 
     public void ConfirmPanel(int level)
-    {
-        Debug.Log("Confirm Panel OK");
+    { 
         totalLives = PlayerPrefs.GetInt("totalLives");
-        if (level < 33)
+        if (level < 42)
         {
             if (totalLives == 0)
             {
-                overWorld.ShowPointer();
-                Debug.Log("No Lives!");
+                overWorld.ShowPointer(); 
             }
             else
             {
@@ -104,17 +101,14 @@ public class LevelButton : MonoBehaviour
                 confirmPanel.SetActive(true);
             }
         } else
-        {
-            Debug.Log("Else OK");
+        { 
             underDevPanel.SetActive(true);
         }
     }
 
     public void CancelUnderDev()
     {
-        underDevPanel.SetActive(false);
-        //Liked game dude?
-    
+        underDevPanel.SetActive(false);  
     }
 
 }
