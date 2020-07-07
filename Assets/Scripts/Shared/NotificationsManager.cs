@@ -33,7 +33,7 @@ public class NotificationsManager : MonoBehaviour
         var notification = new AndroidNotification();
         notification.Title = "قرقاعون";
         notification.Text = "احصل على جائزتك اليومية المجانية الآن!";
-        notification.LargeIcon = "largeIcon";
+        notification.LargeIcon = "icon_0";
         notification.FireTime = System.DateTime.Now.AddDays(1);
 
         AndroidNotificationCenter.SendNotification(notification, "default_channel");
@@ -44,7 +44,7 @@ public class NotificationsManager : MonoBehaviour
         var notification = new AndroidNotification();
         notification.Title = "قرقاعون";
         notification.Text = "تقدر تجمع حلوى أكثر اليوم؟";
-        notification.LargeIcon = "largeIcon";
+        notification.LargeIcon = "icon_0";
         notification.FireTime = System.DateTime.Now.AddDays(5);
 
         AndroidNotificationCenter.SendNotification(notification, "default_channel");

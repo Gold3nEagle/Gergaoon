@@ -30,24 +30,26 @@ public class Overworld : MonoBehaviour
         }
         gameData.CheckLevels();
 
+        //PlayerPrefs.SetInt("totalCandy", 100000); 
+        //PlayerPrefs.SetInt("totalLives", 3); 
+
+        DisplayTotalCandy();
+        DisplayTotalLives();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("totalCandy", 100000); 
-        PlayerPrefs.SetInt("totalLives", 3);
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             mainCamera = Camera.main;
-            int latestLevel = gameData.GetLatestUnlockedLevel() - 2;
+            int latestLevel = gameData.GetLatestUnlockedLevel();
+            if (latestLevel > 49)
+                latestLevel -= 2;
 
             GameObject neededPosition = GameObject.Find("Level Prefab " + "(" + latestLevel.ToString() + ")");
-
             mainCamera.transform.position = new Vector3(neededPosition.transform.position.x, neededPosition.transform.position.y, -10);
         }
-        DisplayTotalCandy(); 
-        DisplayTotalLives(); 
     }
 
 

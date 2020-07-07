@@ -4,35 +4,35 @@ using System.Collections;
 
 public class Anchor : MonoBehaviour
 {
-    [MenuItem("UI/Anchor Around Object")]
-    static void uGUIAnchorAroundObject()
-    {
-        var o = Selection.activeGameObject;
-        if (o != null && o.GetComponent<RectTransform>() != null)
-        {
-            var r = o.GetComponent<RectTransform>();
-            var p = o.transform.parent.GetComponent<RectTransform>();
+    //[menuitem("ui/anchor around object")]
+    //static void uguianchoraroundobject()
+    //{
+    //    var o = selection.activegameobject;
+    //    if (o != null && o.getcomponent<recttransform>() != null)
+    //    {
+    //        var r = o.getcomponent<recttransform>();
+    //        var p = o.transform.parent.getcomponent<recttransform>();
 
-            var offsetMin = r.offsetMin;
-            var offsetMax = r.offsetMax;
-            var _anchorMin = r.anchorMin;
-            var _anchorMax = r.anchorMax;
+    //        var offsetmin = r.offsetmin;
+    //        var offsetmax = r.offsetmax;
+    //        var _anchormin = r.anchormin;
+    //        var _anchormax = r.anchormax;
 
-            var parent_width = p.rect.width;
-            var parent_height = p.rect.height;
+    //        var parent_width = p.rect.width;
+    //        var parent_height = p.rect.height;
 
-            var anchorMin = new Vector2(_anchorMin.x + (offsetMin.x / parent_width),
-                                        _anchorMin.y + (offsetMin.y / parent_height));
-            var anchorMax = new Vector2(_anchorMax.x + (offsetMax.x / parent_width),
-                                        _anchorMax.y + (offsetMax.y / parent_height));
+    //        var anchormin = new vector2(_anchormin.x + (offsetmin.x / parent_width),
+    //                                    _anchormin.y + (offsetmin.y / parent_height));
+    //        var anchormax = new vector2(_anchormax.x + (offsetmax.x / parent_width),
+    //                                    _anchormax.y + (offsetmax.y / parent_height));
 
-            r.anchorMin = anchorMin;
-            r.anchorMax = anchorMax;
+    //        r.anchormin = anchormin;
+    //        r.anchormax = anchormax;
 
-            r.offsetMin = new Vector2(0, 0);
-            r.offsetMax = new Vector2(0, 0);
-            r.pivot = new Vector2(0.5f, 0.5f);
+    //        r.offsetmin = new vector2(0, 0);
+    //        r.offsetmax = new vector2(0, 0);
+    //        r.pivot = new vector2(0.5f, 0.5f);
 
-        }
-    }
+    //    }
+    //}
 }
