@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class PowerUps : MonoBehaviour
 {
 
-    public bool toggleBoost, destroyBoost, colorBombBoost;
-    public int destroyBoostNum, colorBombBoostNum;
+    public bool toggleBoost, destroyBoost, colorBombBoost, adjacentBombBoost;
+    public int destroyBoostNum, colorBombBoostNum, adjacentBombBoostNum;
 
-    public Button destroyBoostButton, colorBombBoostButton;
-    public Text destroyNumText, colorBombNumText;
+    public Button destroyBoostButton, colorBombBoostButton, adjacentBombBoostButton;
+    public Text destroyNumText, colorBombNumText, adjacentBombNumText;
 
     // Start is called before the first frame update
     void Start()
@@ -18,18 +18,26 @@ public class PowerUps : MonoBehaviour
 
         //  PlayerPrefs.SetInt("ColorBombBoost", 100);
         //  PlayerPrefs.SetInt("DestroyBoost", 100); 
+        //  PlayerPrefs.SetInt("AdjacentBoost", 100); 
         destroyBoostNum = GetDestroyBoostNum();
         colorBombBoostNum = GetColorBombBoostNum();
+        adjacentBombBoostNum = GetAdjacentBoostNum();
 
         DisplayColorBombNum();
         DisplayDestroyNum();
+        DisplayAdjacentBombNum();
 
         if (destroyBoostNum == 0)
             destroyBoostButton.interactable = false;
 
         if (colorBombBoostNum == 0)
-            colorBombBoostButton.interactable = false; 
-    } 
+            colorBombBoostButton.interactable = false;
+
+        if(adjacentBombBoostNum == 0)
+        {
+            adjacentBombBoostButton.interactable = false;
+        }
+    }
 
 
     public void ColorBombBoost()
@@ -43,10 +51,27 @@ public class PowerUps : MonoBehaviour
 
     public void DestroyBoost()
     {
-        if(GetDestroyBoostNum() > 0) { 
-        toggleBoost = true;
-        destroyBoost = true;
+        if (GetDestroyBoostNum() > 0) {
+            toggleBoost = true;
+            destroyBoost = true;
         }
+    }
+
+    public void AdjacentBombBoost()
+    {
+        if(GetAdjacentBoostNum() > 0)
+        {
+            toggleBoost = true;
+            adjacentBombBoost = true;
+        }
+    }
+
+
+    public int GetAdjacentBoostNum()
+    {
+        adjacentBombBoostNum = PlayerPrefs.GetInt("AdjacentBoost");
+
+        return adjacentBombBoostNum;
     }
 
     public int GetDestroyBoostNum()
@@ -73,6 +98,11 @@ public class PowerUps : MonoBehaviour
         colorBombNumText.text = GetColorBombBoostNum().ToString();
     }
 
+    public void DisplayAdjacentBombNum()
+    {
+        adjacentBombNumText.text = GetAdjacentBoostNum().ToString();
+    }
+
     public void DecreaseDestroyNum()
     {
         destroyBoostNum = GetDestroyBoostNum() - 1;
@@ -85,6 +115,13 @@ public class PowerUps : MonoBehaviour
         colorBombBoostNum = GetColorBombBoostNum() - 1;
         PlayerPrefs.SetInt("ColorBombBoost", colorBombBoostNum);
         DisplayColorBombNum();
+    }
+
+    public void DecreaseAdjacentNum()
+    {
+        adjacentBombBoostNum = GetAdjacentBoostNum() - 1;
+        PlayerPrefs.SetInt("AdjacentBoost", adjacentBombBoostNum);
+        DisplayAdjacentBombNum();
     }
 
 }

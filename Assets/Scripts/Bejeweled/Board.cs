@@ -727,6 +727,7 @@ public class Board : MonoBehaviour
         if(currentState != GameState.pause)
             currentState = GameState.move;
         makeSlime = true;
+        //Textual Gratification
         streakValue = 1;
     }
 

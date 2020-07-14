@@ -25,6 +25,7 @@ public class Overworld : MonoBehaviour
                 PlayerPrefs.SetInt("totalLives", 3);
                 PlayerPrefs.SetInt("DestroyBoost", 3);
                 PlayerPrefs.SetInt("ColorBombBoost", 3);
+                PlayerPrefs.SetInt("AdjacentBoost", 3);
                 gameData.CheckLevels();
             } 
         }

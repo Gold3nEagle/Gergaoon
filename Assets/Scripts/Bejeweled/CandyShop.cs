@@ -8,8 +8,8 @@ public class CandyShop : MonoBehaviour
 
     public Overworld overWorld;
     int totalCandy;
-    public int destroyBoostPrice, rainbowBoostPrice;
-    public Text destroyBoostAmount, rainbowBoostAmount;
+    public int destroyBoostPrice, rainbowBoostPrice, adjacentBoostPrice;
+    public Text destroyBoostAmount, rainbowBoostAmount, adjacentBoostAmount;
 
     // Start is called before the first frame update
     void Start()
@@ -49,13 +49,30 @@ public class CandyShop : MonoBehaviour
         }
     } 
 
+    public void BuyAdjacentBoost()
+    {
+        if(totalCandy >= adjacentBoostPrice)
+        {
+            int adjacentBoostNum = PlayerPrefs.GetInt("AdjacentBoost"); ;
+            adjacentBoostNum++;
+            PlayerPrefs.SetInt("AdjacentBoost", adjacentBoostNum);
+
+            totalCandy -= rainbowBoostPrice;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            overWorld.DisplayTotalCandy();
+            DisplayBoostsAmount();
+        }
+    }
+
     void DisplayBoostsAmount()
     {
         int destroyBoostNum = PlayerPrefs.GetInt("DestroyBoost");
         int rainbowBoostNum = PlayerPrefs.GetInt("ColorBombBoost");
+        int adjacentBoostNum = PlayerPrefs.GetInt("AdjacentBoost"); ;
 
         destroyBoostAmount.text = destroyBoostNum.ToString();
         rainbowBoostAmount.text = rainbowBoostNum.ToString();
+        adjacentBoostAmount.text = adjacentBoostNum.ToString();
     }
 
 

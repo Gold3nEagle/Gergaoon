@@ -148,7 +148,10 @@ public class Dot : MonoBehaviour
             { 
                 BoostDestroyDot();
             }
-            //MakeAdjacentBomb
+            else if (powerUp.adjacentBombBoost)
+            {
+                BoostAdjacentBomb();
+            }
         }
 
         if(board.currentState == GameState.move)
@@ -174,6 +177,15 @@ public class Dot : MonoBehaviour
         MakeColorBomb();
 
         powerUp.colorBombBoost = false;
+        powerUp.toggleBoost = false;
+    }
+
+    void BoostAdjacentBomb()
+    {
+        powerUp.DecreaseAdjacentNum();
+        MakeAdjacentBomb();
+
+        powerUp.adjacentBombBoost = false;
         powerUp.toggleBoost = false;
     }
 
@@ -319,7 +331,7 @@ public class Dot : MonoBehaviour
         {
             isAdjacentBomb = true;
             GameObject marker = Instantiate(adjacentMarker, transform.position, Quaternion.identity);
-            marker.transform.parent = this.transform;
+            marker.transform.parent = gameObject.transform;
         }
     }
 }
