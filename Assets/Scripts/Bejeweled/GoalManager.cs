@@ -122,7 +122,6 @@ public class GoalManager : MonoBehaviour
             {
                 goalsCompleted++;
                 currentGoals[i].thisText.text = levelGoals[i].numberNeeded + " / " + levelGoals[i].numberNeeded;
-
             }
         }
         if (goalsCompleted >= levelGoals.Length)

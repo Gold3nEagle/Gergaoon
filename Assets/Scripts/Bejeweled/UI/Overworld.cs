@@ -31,8 +31,8 @@ public class Overworld : MonoBehaviour
         }
         gameData.CheckLevels();
 
-        //PlayerPrefs.SetInt("totalCandy", 100000); 
-        //PlayerPrefs.SetInt("totalLives", 3); 
+        PlayerPrefs.SetInt("totalCandy", 100000); 
+        PlayerPrefs.SetInt("totalLives", 3); 
 
         DisplayTotalCandy();
         DisplayTotalLives();
@@ -45,8 +45,9 @@ public class Overworld : MonoBehaviour
         {
             mainCamera = Camera.main;
             int latestLevel = gameData.GetLatestUnlockedLevel();
-            if (latestLevel > 49)
+            if (latestLevel > 65)
                 latestLevel -= 2;
+            
 
             GameObject neededPosition = GameObject.Find("Level Prefab " + "(" + latestLevel.ToString() + ")");
             mainCamera.transform.position = new Vector3(neededPosition.transform.position.x, neededPosition.transform.position.y, -10);

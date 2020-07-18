@@ -468,16 +468,15 @@ public class Board : MonoBehaviour
             DamageConcrete(column, row);
             DamageSlime(column, row);
             if (goalManager != null)
-            {
-                
+            { 
                 if (world.levels[level].levelGoals[0].goalKind == GoalKind.candyGoal)
-                {
+                { 
                     goalManager.CompareGoal(allDots[column, row].tag.ToString());
                     goalManager.UpdateCandyGoals();
                 } else
                 {
                     if (scoreManager.GetScore() >= world.levels[level].levelGoals[0].scoreNeeded)
-                    {
+                    { 
                         //Debug.Log(goalManager.levelGoals[0].scoreNeeded.ToString());
                         goalManager.UpdateScoreGoal();
                     }
