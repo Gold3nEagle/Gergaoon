@@ -33,8 +33,8 @@ public class LocalizedText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //text = GetComponent<Text>();
-        //text.text = LocalizationManager.instance.GetLocalizedValue(key);
+        text = GetComponent<Text>();
+        text.text = LocalizationManager.instance.GetLocalizedValue(key);
     }
      
 }

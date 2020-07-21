@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class MuteScript : MonoBehaviour
 {
@@ -79,6 +80,15 @@ public class MuteScript : MonoBehaviour
             " iOS:  https://apps.apple.com/us/app/%D9%82%D8%B1%D9%82%D8%A7%D8%B9%D9%88%D9%86/id1485903162?ls=1 ").SetTarget( "com.whatsapp" ).Share();
     }
 
+    public void AccessWebsite()
+    {
+        Application.OpenURL("https://geagle.tech/");
+    }
 
+    public void ResetLanguage()
+    {
+        PlayerPrefs.SetInt("Locale", 0);
+        SceneManager.LoadScene(0);
+    }
 
 }

@@ -21,10 +21,27 @@ public class LocalizationManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (PlayerPrefs.HasKey("Locale"))
+        {
+            int language = PlayerPrefs.GetInt("Locale");
+            if(language == 1)
+            {
+                LoadLocalizedText("localizedText_ar.json");
+            } else if (language == 2)
+            {
+                LoadLocalizedText("localizedText_en.json");
+            } else
+            {
+                Debug.Log("Language was Reset");
+            }
+        }
+
     }
      
     public void LoadLocalizedText(string fileName)
     {
+
         localizedText = new Dictionary<string, string>();
         string dataAsJson;
 
@@ -59,6 +76,16 @@ public class LocalizationManager : MonoBehaviour
             }
             PlayerPrefs.SetString("locale", fileName);
             Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
+
+
+        if(fileName == "localizedText_ar.json")
+        {
+            PlayerPrefs.SetInt("Locale", 1);
+        } else if (fileName == "localizedText_en.json")
+        {
+            PlayerPrefs.SetInt("Locale", 2);
+        }
+
     
         isReady = true;
     }
