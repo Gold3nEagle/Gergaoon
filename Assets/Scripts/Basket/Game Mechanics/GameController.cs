@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
     public GameObject[] balls;
     public float timeLeft;
     public Text timerText, endScoreText;
-    public GameObject EndGameObj, Lights, splashScreen, startButton, restartButton, GameBeginsObj, colliderObj, scoreObject, sparksObj, exitButton;  
+    public GameObject EndGameObj, Lights, splashScreen, startButton, restartButton, GameBeginsObj, colliderObj, scoreObject, sparksObj, exitButton, gameCharacters;  
     
     public int ballSpeed;
 
@@ -151,10 +151,11 @@ public class GameController : MonoBehaviour {
 
     IEnumerator ShowScore()
     {
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(2.0f);
         colliderObj.SetActive(true); 
         hatController.ToggleControl(false);
         hatController.HatEndPosition();
+        gameCharacters.SetActive(true);
         sparksObj.SetActive(true);
         Quaternion spawnRotation = Quaternion.identity;
         Vector3 spawnPosition = new Vector3(4, 8);

@@ -87,7 +87,7 @@ public class MuteScript : MonoBehaviour
 
     public void ResetLanguage()
     {
-        PlayerPrefs.SetInt("Locale", 0);
+        PlayerPrefs.SetInt("LanguageNum", 0);
         SceneManager.LoadScene(0);
     }
 

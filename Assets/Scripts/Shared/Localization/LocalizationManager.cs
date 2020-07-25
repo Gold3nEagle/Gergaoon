@@ -22,9 +22,9 @@ public class LocalizationManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (PlayerPrefs.HasKey("Locale"))
+        if (PlayerPrefs.HasKey("LanguageNum"))
         {
-            int language = PlayerPrefs.GetInt("Locale");
+            int language = PlayerPrefs.GetInt("LanguageNum");
             if(language == 1)
             {
                 LoadLocalizedText("localizedText_ar.json");
@@ -80,10 +80,10 @@ public class LocalizationManager : MonoBehaviour
 
         if(fileName == "localizedText_ar.json")
         {
-            PlayerPrefs.SetInt("Locale", 1);
+            PlayerPrefs.SetInt("LanguageNum", 1);
         } else if (fileName == "localizedText_en.json")
         {
-            PlayerPrefs.SetInt("Locale", 2);
+            PlayerPrefs.SetInt("LanguageNum", 2);
         }
 
     

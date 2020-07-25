@@ -18,7 +18,7 @@ public class EndGameRequirements
 
 public class EndGameManager : MonoBehaviour
 {
-    public GameObject movesLabel, timeLabel, youWinPanel, tryAgainPanel, sparksEffect, movesFlash;
+    public GameObject movesLabel, timeLabel, youWinPanel, tryAgainPanel, sparksEffect, movesFlash, gameCharacters;
     public Text counter;
     public EndGameRequirements requirements;
     public int currentCounterValue;
@@ -28,6 +28,8 @@ public class EndGameManager : MonoBehaviour
     public SfxController sfx;
     public bool doubleRewards = false;
     public AdsScript ads;
+    CharacterAnimation charAnims;
+    public SpriteRenderer boySad, girlSad, boyHappy, girlHappy;
 
     int matchesCounter;
     Overworld overWorld;
@@ -38,7 +40,7 @@ public class EndGameManager : MonoBehaviour
     void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
-        board = FindObjectOfType<Board>();
+        board = FindObjectOfType<Board>(); 
         SetGameType();
         Setup();
     }
@@ -96,6 +98,14 @@ public class EndGameManager : MonoBehaviour
 
     public void WinGame()
     {
+        gameCharacters.SetActive(true);
+        charAnims = FindObjectOfType<CharacterAnimation>();
+        boyHappy.enabled = true;
+        girlHappy.enabled = true;
+        boySad.enabled = false;
+        girlSad.enabled = false;
+        charAnims.HappyAnimation();
+
         sparksEffect.SetActive(true);
         musicController.PlayCheeringSound();
 
@@ -158,6 +168,13 @@ public class EndGameManager : MonoBehaviour
 
     public void LoseGame()
     {
+        gameCharacters.SetActive(true);
+        charAnims = FindObjectOfType<CharacterAnimation>();
+        boyHappy.enabled = false;
+        girlHappy.enabled = false;
+        boySad.enabled = true;
+        girlSad.enabled = true;
+        charAnims.SadAnimation();
         tryAgainPanel.SetActive(true);
         board.currentState = GameState.lose;
         overWorld = FindObjectOfType<Overworld>();
@@ -182,6 +199,7 @@ public class EndGameManager : MonoBehaviour
             counter.text = currentCounterValue.ToString();
             AnimationController animationController = GameObject.Find("FadePanel").GetComponent<AnimationController>();
             animationController.Restart();
+            gameCharacters.SetActive(false);
             tryAgainPanel.SetActive(false);
         } else
         {

@@ -73,7 +73,7 @@ public class AnimationController : MonoBehaviour
 
     public void GameOver()
     {
-        secondAnimator.SetBool("IsGameOver", true);
+        //secondAnimator.SetBool("IsGameOver", true);
     }
 
     public void Restart()
