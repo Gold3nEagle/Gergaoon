@@ -9,7 +9,8 @@ public class LocalizedEditor : EditorWindow
 
     public LocalizationData localizationData;
 
-    
+    Vector2 scrollPos;
+
 
     private string gameDataProjectFilePath = "/StreamingAssets/data.json";
 
@@ -24,7 +25,10 @@ public class LocalizedEditor : EditorWindow
 
     private void OnGUI()
     {
-        if(localizationData != null)
+        GUILayout.BeginVertical();
+        scrollPos = GUILayout.BeginScrollView(scrollPos, false, true, GUILayout.MinWidth(400), GUILayout.MaxWidth(1000), GUILayout.MinHeight(200), GUILayout.MaxHeight(1000), GUILayout.ExpandHeight(true));
+
+        if (localizationData != null)
         {
             SerializedObject serializedObject = new SerializedObject(this);
             SerializedProperty serializedProperty = serializedObject.FindProperty("localizationData");
@@ -46,6 +50,8 @@ public class LocalizedEditor : EditorWindow
         {
             CreateNewData();
         }
+        GUILayout.EndScrollView();
+        GUILayout.EndVertical();
     }
 
     private void LoadGameData()

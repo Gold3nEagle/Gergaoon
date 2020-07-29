@@ -22,20 +22,13 @@ public class LevelLoader : MonoBehaviour
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
         loadingScreen.SetActive(true);
 
-        switch (sceneIndex)
+        if(sceneIndex == 3)
         {
-            case 0:
-                Screen.orientation = ScreenOrientation.Portrait;
-                break;
-
-            case 1:
-                Screen.orientation = ScreenOrientation.LandscapeLeft;
-                break;
-
-            case 2:
-                Screen.orientation = ScreenOrientation.Portrait;
-                break;
-        }
+            Screen.orientation = ScreenOrientation.LandscapeLeft;
+        } else
+        {
+            Screen.orientation = ScreenOrientation.Portrait;
+        } 
 
         while (!operation.isDone)
         {

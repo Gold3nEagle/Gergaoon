@@ -11,14 +11,11 @@ public class PowerUps : MonoBehaviour
 
     public Button destroyBoostButton, colorBombBoostButton, adjacentBombBoostButton;
     public Text destroyNumText, colorBombNumText, adjacentBombNumText;
+    public GameObject instructionText;
 
     // Start is called before the first frame update
     void Start()
-    {
-
-        //  PlayerPrefs.SetInt("ColorBombBoost", 100);
-        //  PlayerPrefs.SetInt("DestroyBoost", 100); 
-        //  PlayerPrefs.SetInt("AdjacentBoost", 100); 
+    { 
         destroyBoostNum = GetDestroyBoostNum();
         colorBombBoostNum = GetColorBombBoostNum();
         adjacentBombBoostNum = GetAdjacentBoostNum();
@@ -44,6 +41,7 @@ public class PowerUps : MonoBehaviour
     {
         if (GetColorBombBoostNum() > 0)
         {
+            instructionText.SetActive(true);
             toggleBoost = true;
             colorBombBoost = true;
         }
@@ -52,6 +50,7 @@ public class PowerUps : MonoBehaviour
     public void DestroyBoost()
     {
         if (GetDestroyBoostNum() > 0) {
+            instructionText.SetActive(true);
             toggleBoost = true;
             destroyBoost = true;
         }
@@ -61,6 +60,7 @@ public class PowerUps : MonoBehaviour
     {
         if(GetAdjacentBoostNum() > 0)
         {
+            instructionText.SetActive(true);
             toggleBoost = true;
             adjacentBombBoost = true;
         }
@@ -107,6 +107,7 @@ public class PowerUps : MonoBehaviour
     {
         destroyBoostNum = GetDestroyBoostNum() - 1;
         PlayerPrefs.SetInt("DestroyBoost", destroyBoostNum);
+        instructionText.SetActive(false);
         DisplayDestroyNum();
     }
 
@@ -114,6 +115,7 @@ public class PowerUps : MonoBehaviour
     {
         colorBombBoostNum = GetColorBombBoostNum() - 1;
         PlayerPrefs.SetInt("ColorBombBoost", colorBombBoostNum);
+        instructionText.SetActive(false);
         DisplayColorBombNum();
     }
 
@@ -121,6 +123,7 @@ public class PowerUps : MonoBehaviour
     {
         adjacentBombBoostNum = GetAdjacentBoostNum() - 1;
         PlayerPrefs.SetInt("AdjacentBoost", adjacentBombBoostNum);
+        instructionText.SetActive(false);
         DisplayAdjacentBombNum();
     }
 
