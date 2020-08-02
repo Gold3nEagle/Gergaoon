@@ -11,7 +11,7 @@ public class CharacterAnimation : MonoBehaviour
     private void Awake()
     {
 
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             IdleAnimation();
         } else if(SceneManager.GetActiveScene().buildIndex == 3)

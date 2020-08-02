@@ -91,7 +91,7 @@ public class LevelButton : MonoBehaviour
         totalLives = PlayerPrefs.GetInt("totalLives");
         if (level < 81)
         {
-            if (totalLives == 0)
+            if (totalLives <= 0)
             {
                 overWorld.ShowPointer(); 
             }

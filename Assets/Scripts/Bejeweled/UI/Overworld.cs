@@ -23,9 +23,9 @@ public class Overworld : MonoBehaviour
             {
                 PlayerPrefs.SetInt("firstMatch3", 1);
                 PlayerPrefs.SetInt("totalLives", 3);
-                PlayerPrefs.SetInt("DestroyBoost", 3);
-                PlayerPrefs.SetInt("ColorBombBoost", 3);
-                PlayerPrefs.SetInt("AdjacentBoost", 3);
+                PlayerPrefs.SetInt("DestroyBoost", 1);
+                PlayerPrefs.SetInt("ColorBombBoost", 1);
+                PlayerPrefs.SetInt("AdjacentBoost", 1);
                 gameData.CheckLevels();
             } 
         }
@@ -45,7 +45,11 @@ public class Overworld : MonoBehaviour
         {
             mainCamera = Camera.main;
             int latestLevel = gameData.GetLatestUnlockedLevel();
-            if (latestLevel > 65)
+
+            if(latestLevel >= 17)
+                //Unlock Basket Game and show celebration!
+
+            if (latestLevel > 75)
                 latestLevel -= 2;
             
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Purchasing;
+using UnityEngine.SceneManagement;
 
 
 public class IAPManager : MonoBehaviour, IStoreListener
@@ -12,8 +13,8 @@ public class IAPManager : MonoBehaviour, IStoreListener
 
     //Step 1 create your products
     private string removeAds = "remove_ads";
-    private string candy50K = "candy_50K";
-    private string candy100K = "candy_100K";
+    private string candy50K = "candy_50k";
+    private string candy100K = "candy_100k";
 
 
 
@@ -67,11 +68,19 @@ public class IAPManager : MonoBehaviour, IStoreListener
         else if (String.Equals(args.purchasedProduct.definition.id, candy50K, StringComparison.Ordinal))
         {
             Debug.Log("Add 50K candy");
+            int totalCandy = PlayerPrefs.GetInt("totalCandy");
+            totalCandy += 50000;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         else if (String.Equals(args.purchasedProduct.definition.id, candy100K, StringComparison.Ordinal))
         {
             Debug.Log("Add 100K candy");
+            int totalCandy = PlayerPrefs.GetInt("totalCandy");
+            totalCandy += 100000;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         else

@@ -9,7 +9,7 @@ public class CandyShop : MonoBehaviour
     public Overworld overWorld;
     int totalCandy;
     public int destroyBoostPrice, rainbowBoostPrice, adjacentBoostPrice;
-    public Text destroyBoostAmount, rainbowBoostAmount, adjacentBoostAmount;
+    public Text destroyBoostAmount, rainbowBoostAmount, adjacentBoostAmount; 
 
     // Start is called before the first frame update
     void Start()
@@ -73,8 +73,6 @@ public class CandyShop : MonoBehaviour
         destroyBoostAmount.text = destroyBoostNum.ToString();
         rainbowBoostAmount.text = rainbowBoostNum.ToString();
         adjacentBoostAmount.text = adjacentBoostNum.ToString();
-    }
-
-
+    } 
 
 }
