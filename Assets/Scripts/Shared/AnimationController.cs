@@ -55,8 +55,8 @@ public class AnimationController : MonoBehaviour
 
     public void ShowOptions()
     {
-        animator.SetBool("IsShown", true); 
-        if(scene == "Bejeweled")
+        animator.SetBool("IsShown", true);
+        if (SceneManager.GetActiveScene().name == "Bejeweled")
         {
             secondAnimator.SetBool("IsOpen", false);
             StartCoroutine(GameStartCo());

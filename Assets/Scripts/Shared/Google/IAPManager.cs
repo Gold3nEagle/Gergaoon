@@ -42,7 +42,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
     //Step 3 Create methods
 
     public void RemoveAds()
-    {
+    { 
         BuyProductID(removeAds);
     }
 
@@ -102,7 +102,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
     //**************************** Dont worry about these methods ***********************************
     private void Awake()
     {
-        TestSingleton();
+        //TestSingleton();
     }
 
     void Start()

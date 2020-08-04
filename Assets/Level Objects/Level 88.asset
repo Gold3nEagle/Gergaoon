@@ -12,57 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d695883d1f730ab41ae93e1e1ef6174e, type: 3}
   m_Name: Level 88
   m_EditorClassIdentifier: 
-  width: 5
+  width: 6
   height: 8
-  boardLayout:
-  - x: 0
-    y: 2
-    tileKind: 1
-  - x: 0
-    y: 3
-    tileKind: 1
-  - x: 1
-    y: 3
-    tileKind: 1
-  - x: 1
-    y: 4
-    tileKind: 1
-  - x: 2
-    y: 3
-    tileKind: 1
-  - x: 2
-    y: 4
-    tileKind: 1
-  - x: 3
-    y: 3
-    tileKind: 1
-  - x: 3
-    y: 4
-    tileKind: 1
-  - x: 4
-    y: 3
-    tileKind: 1
-  - x: 4
-    y: 4
-    tileKind: 1
-  - x: 5
-    y: 3
-    tileKind: 1
-  - x: 5
-    y: 4
-    tileKind: 1
-  - x: 6
-    y: 3
-    tileKind: 1
-  - x: 6
-    y: 4
-    tileKind: 1
-  - x: 7
-    y: 2
-    tileKind: 1
-  - x: 7
-    y: 3
-    tileKind: 1
+  boardLayout: []
   breakableHitPoints: 1
   dots:
   - {fileID: 537089306582376857, guid: 3cb7eaca87ae92d4e87887cd416ddaae, type: 3}
@@ -70,15 +22,14 @@ MonoBehaviour:
   - {fileID: 9142456478226315733, guid: 9245b9a00953144458abccc4c37a30f6, type: 3}
   - {fileID: 4910204475911169603, guid: a8fa13b837f69c643a5686340cbe5168, type: 3}
   - {fileID: 3116818877187447601, guid: 3fa4c3e91cf8d4f4fbb9b1e51d3023f8, type: 3}
-  - {fileID: 4430133919018964258, guid: 9ab313ccd2e45b7408acb07314f32f6c, type: 3}
-  scoreGoals: 96000000fa00000090010000
+  scoreGoals: 9600000082020000bc020000
   endGameRequirements:
     gameType: 0
-    counterValue: 25
+    counterValue: 86
   levelGoals:
   - goalSprite: {fileID: 21300000, guid: 164ca70928c8c494a82e90e1393e588b, type: 3}
-    goalKind: 0
+    goalKind: 1
     numberNeeded: 22
-    numberCollected: 22
+    numberCollected: 0
     matchValue: Lock
-    scoreNeeded: 1111
+    scoreNeeded: 642
