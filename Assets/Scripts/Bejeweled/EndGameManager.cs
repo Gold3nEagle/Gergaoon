@@ -31,7 +31,7 @@ public class EndGameManager : MonoBehaviour
     CharacterAnimation charAnims;
     public SpriteRenderer boySad, girlSad, boyHappy, girlHappy;
 
-    int matchesCounter;
+    int noMoreMatchesCounter;
     Overworld overWorld;
     ScoreManager scoreManager;
 
@@ -98,6 +98,7 @@ public class EndGameManager : MonoBehaviour
 
     public void WinGame()
     {
+        tryAgainPanel.SetActive(false);
         gameCharacters.SetActive(true);
         charAnims = FindObjectOfType<CharacterAnimation>();
         boyHappy.enabled = true;
@@ -119,11 +120,11 @@ public class EndGameManager : MonoBehaviour
         if (board.CheckForMatches())
         {
             StartCoroutine(CheckForEnd());
-            matchesCounter = 0;
+            noMoreMatchesCounter = 0;
         } else
         {
-            matchesCounter++;
-            if(matchesCounter >= 5)
+            noMoreMatchesCounter++;
+            if(noMoreMatchesCounter >= 5)
             {
                 StartCoroutine(ShowWinPanel());
             } else
@@ -165,7 +166,7 @@ public class EndGameManager : MonoBehaviour
 
         yield return null;
     }
-
+     
     public void LoseGame()
     {
         gameCharacters.SetActive(true);

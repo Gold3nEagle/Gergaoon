@@ -10,6 +10,7 @@ public class GoalPanel : MonoBehaviour
     public Sprite thisSprite;
     public Text thisText;
     public string thisString;
+    public GameObject finishedSprite;
 
     // Start is called before the first frame update
     void Start()

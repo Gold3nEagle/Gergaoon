@@ -82,7 +82,7 @@ public class GoalManager : MonoBehaviour
                 //Set the image and text of the goal
                 GoalPanel panel = goal.GetComponent<GoalPanel>();
                 panel.thisSprite = levelGoals[i].goalSprite;
-                panel.thisString = "0 / " + levelGoals[i].numberNeeded;
+                panel.thisString = levelGoals[i].numberNeeded.ToString();
 
                 //Create a new Goal Panel at the goalGame position
                 GameObject gameGoal = Instantiate(goalPrefab, goalGameParent.transform.position, Quaternion.identity);
@@ -90,7 +90,7 @@ public class GoalManager : MonoBehaviour
                 panel = gameGoal.GetComponent<GoalPanel>();
                 currentGoals.Add(panel);
                 panel.thisSprite = levelGoals[i].goalSprite;
-                panel.thisString = "0 / " + levelGoals[i].numberNeeded;
+                panel.thisString = levelGoals[i].numberNeeded.ToString();
             }
         }
         else
@@ -117,11 +117,14 @@ public class GoalManager : MonoBehaviour
 
         for (int i = 0; i < levelGoals.Length; i++)
         {
-            currentGoals[i].thisText.text = levelGoals[i].numberCollected + " / " + levelGoals[i].numberNeeded;
+            //currentGoals[i].thisText.text = levelGoals[i].numberCollected + " / " + levelGoals[i].numberNeeded;
+            currentGoals[i].thisText.text = (levelGoals[i].numberNeeded - levelGoals[i].numberCollected).ToString();
             if (levelGoals[i].numberCollected >= levelGoals[i].numberNeeded)
             {
                 goalsCompleted++;
-                currentGoals[i].thisText.text = levelGoals[i].numberNeeded + " / " + levelGoals[i].numberNeeded;
+                //currentGoals[i].thisText.text = levelGoals[i].numberNeeded + " / " + levelGoals[i].numberNeeded;
+                currentGoals[i].thisText.enabled = false;
+                currentGoals[i].finishedSprite.SetActive(true);
             }
         }
         if (goalsCompleted >= levelGoals.Length)
