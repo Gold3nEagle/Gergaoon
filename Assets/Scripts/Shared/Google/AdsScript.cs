@@ -106,14 +106,13 @@ public class AdsScript : MonoBehaviour
 
     public void HandleUserEarnedReward(object sender, Reward args)
     {
-        int currentScene = SceneManager.GetActiveScene().buildIndex;
-        if (currentScene == 1 || currentScene == 3)
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "Bejeweled" || currentScene == "GameScene")
         {
             if (endGame.doubleRewards == true)
             {
                 int totalCandy = PlayerPrefs.GetInt("totalCandy");
                 int totalScore = matchScore.GetScore();
-                totalScore = totalScore * 2;
                 totalCandy += totalScore;
                 PlayerPrefs.SetInt("totalCandy", totalCandy);
                 endGame.WatchedRewarded();
@@ -123,7 +122,7 @@ public class AdsScript : MonoBehaviour
                 int totalCandy = PlayerPrefs.GetInt("totalCandy");
                 totalCandy += 100;
                 PlayerPrefs.SetInt("totalCandy", totalCandy);
-                if (currentScene == 1)
+                if (currentScene == "GameScene")
                 {
                     gameScore.DisplayTotalCandy();
                 }
@@ -134,7 +133,7 @@ public class AdsScript : MonoBehaviour
                 }
             }
         }
-        else if (currentScene == 2)
+        else if (currentScene == "OverWorld")
         {
             overWorld = FindObjectOfType<Overworld>();
             int totalLives = PlayerPrefs.GetInt("totalLives");

@@ -54,7 +54,6 @@ public class GoalManager : MonoBehaviour
 
                         if (levelGoals[0].goalKind == GoalKind.candyGoal)
                         {
-                            Debug.Log("We FINALLY got here!");
                             for (int i = 0; i < levelGoals.Length; i++)
                             {
                                 levelGoals[i].numberCollected = 0;
@@ -130,7 +129,6 @@ public class GoalManager : MonoBehaviour
         if (goalsCompleted >= levelGoals.Length)
         {
             endGame.WinGame();
-            Debug.Log("You won!");
         }
     }
 
