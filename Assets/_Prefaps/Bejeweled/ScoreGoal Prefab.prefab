@@ -169,6 +169,7 @@ MonoBehaviour:
   thisSprite: {fileID: 0}
   thisText: {fileID: 2224000782208338148}
   thisString: 
+  finishedSprite: {fileID: 0}
 --- !u!1 &2224000782208338150
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +248,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 0
+  m_Text: 0000
 --- !u!114 &4725333641158805856
 MonoBehaviour:
   m_ObjectHideFlags: 0

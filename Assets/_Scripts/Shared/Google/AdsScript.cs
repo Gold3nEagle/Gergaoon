@@ -108,7 +108,7 @@ public class AdsScript : MonoBehaviour
     {
         string currentScene = SceneManager.GetActiveScene().name;
         if (currentScene == "Bejeweled" || currentScene == "GameScene")
-        {
+        { 
             if (endGame.doubleRewards == true)
             {
                 int totalCandy = PlayerPrefs.GetInt("totalCandy");
@@ -118,7 +118,7 @@ public class AdsScript : MonoBehaviour
                 endGame.WatchedRewarded();
             }
             else
-            {
+            { 
                 int totalCandy = PlayerPrefs.GetInt("totalCandy");
                 totalCandy += 250;
                 PlayerPrefs.SetInt("totalCandy", totalCandy);

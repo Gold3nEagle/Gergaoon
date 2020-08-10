@@ -28,7 +28,7 @@ MonoBehaviour:
     counterValue: 86
   levelGoals:
   - goalSprite: {fileID: 21300000, guid: 164ca70928c8c494a82e90e1393e588b, type: 3}
-    goalKind: 1
+    goalKind: 0
     numberNeeded: 22
     numberCollected: 0
     matchValue: Lock
