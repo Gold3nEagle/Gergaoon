@@ -21,6 +21,7 @@ TagManager:
   - Chocolate
   - Lock
   - Music
+  - WiggleButton
   layers:
   - Default
   - TransparentFX

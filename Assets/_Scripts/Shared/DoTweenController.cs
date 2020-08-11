@@ -14,10 +14,11 @@ public class DoTweenController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (gameObject.GetComponent<Button>() != null)
+
+        if (gameObject.CompareTag("WiggleButton"))
         {
             Wiggle();
-        }
+        } 
     }
 
     public void OnEnable()

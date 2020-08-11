@@ -20,6 +20,7 @@ public class Dot : MonoBehaviour
     private HintManager hintManager;
     private FindMatches findMatches;
     private EndGameManager endGameManager;
+    private DamageDestroy damageDestroy;
     private Board board; 
     private Vector2 firstTouchPosition, finalTouchPosition, tempPosition;
 
@@ -31,6 +32,7 @@ public class Dot : MonoBehaviour
     {
         endGameManager = FindObjectOfType<EndGameManager>();
         powerUp = FindObjectOfType<PowerUps>();
+        damageDestroy = FindObjectOfType<DamageDestroy>();
 
         board = GameObject.FindWithTag("Board").GetComponent<Board>(); 
 
@@ -124,7 +126,7 @@ public class Dot : MonoBehaviour
                 {
                     endGameManager.DecreaseCounterValue();
                 }
-                board.DestroyMatches();
+                damageDestroy.DestroyMatches();
             } 
         } 
     }

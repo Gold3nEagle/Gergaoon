@@ -18669,12 +18669,12 @@ PrefabInstance:
     - target: {fileID: 4477163356014859679, guid: bf44a237d56e2c64fac218087414b142,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 150.56714
       objectReference: {fileID: 0}
     - target: {fileID: 4477163356014859679, guid: bf44a237d56e2c64fac218087414b142,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 267.67505
       objectReference: {fileID: 0}
     - target: {fileID: 4477163356014859679, guid: bf44a237d56e2c64fac218087414b142,
         type: 3}
@@ -18715,6 +18715,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 8.550781
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477967289835385580, guid: bf44a237d56e2c64fac218087414b142,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8980392
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477967289835385580, guid: bf44a237d56e2c64fac218087414b142,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.25490198
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477967289835385580, guid: bf44a237d56e2c64fac218087414b142,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.28627452
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf44a237d56e2c64fac218087414b142, type: 3}
@@ -52220,7 +52235,7 @@ GameObject:
   - component: {fileID: 1056199213}
   m_Layer: 5
   m_Name: PlayButton
-  m_TagString: Untagged
+  m_TagString: WiggleButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63043,6 +63058,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
       objectReference: {fileID: 0}
+    - target: {fileID: 1898428746544594328, guid: c15b84ea4320af04384192dc17e7018b,
+        type: 3}
+      propertyPath: m_TagString
+      value: WiggleButton
+      objectReference: {fileID: 0}
     - target: {fileID: 4453972526718883734, guid: c15b84ea4320af04384192dc17e7018b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -64654,7 +64674,7 @@ GameObject:
   - component: {fileID: 1318325229}
   m_Layer: 5
   m_Name: Play
-  m_TagString: Untagged
+  m_TagString: WiggleButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112672,6 +112692,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7949739079447191990, guid: e80407516bd2df5428fb2ca034f0b86d,
         type: 3}
+    - target: {fileID: 3727266936027943759, guid: 91a2ef5e930ceb542a4e2c708259e3ca,
+        type: 3}
+      propertyPath: m_TagString
+      value: WiggleButton
+      objectReference: {fileID: 0}
     - target: {fileID: 3727266936491504397, guid: 91a2ef5e930ceb542a4e2c708259e3ca,
         type: 3}
       propertyPath: m_Name

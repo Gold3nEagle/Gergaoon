@@ -2575,7 +2575,7 @@ GameObject:
   - component: {fileID: 1414942012}
   m_Layer: 5
   m_Name: StartGameBtn
-  m_TagString: Untagged
+  m_TagString: WiggleButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4868,6 +4868,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: -171
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477967289835385580, guid: bf44a237d56e2c64fac218087414b142,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8980392
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477967289835385580, guid: bf44a237d56e2c64fac218087414b142,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.25490198
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477967289835385580, guid: bf44a237d56e2c64fac218087414b142,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.28627452
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf44a237d56e2c64fac218087414b142, type: 3}
