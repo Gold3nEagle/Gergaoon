@@ -67,7 +67,10 @@ MonoBehaviour:
     type: 3}
   adjacentMarker: {fileID: 5964863732808059288, guid: 0c9f99440a1cfee4db6fb7bcd7cf93af,
     type: 3}
-  boost: 0
+  colorBombParticle: {fileID: 1098245772625174, guid: d350ad29b27c64ecbad769fd1feff30a,
+    type: 3}
+  bombsParticle: {fileID: 1946409831965702, guid: 27c09fea11be34b148f96c4e2b673aa3,
+    type: 3}
 --- !u!212 &7259822560926479419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -82,6 +85,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

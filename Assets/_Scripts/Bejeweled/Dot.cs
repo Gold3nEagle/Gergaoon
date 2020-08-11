@@ -15,7 +15,7 @@ public class Dot : MonoBehaviour
 
     [Header("Powerups")]
     public bool isColumnBomb, isRowBomb, isColorBomb, isAdjacentBomb;
-    public GameObject rowArrow, columnArrow, colorBomb, adjacentMarker;
+    public GameObject rowArrow, columnArrow, colorBomb, adjacentMarker, colorBombParticle, bombsParticle;
 
     private HintManager hintManager;
     private FindMatches findMatches;
@@ -302,7 +302,9 @@ public class Dot : MonoBehaviour
         if(!isColumnBomb && !isColorBomb && !isAdjacentBomb) { 
         isRowBomb = true;
         GameObject arrow = Instantiate(rowArrow, transform.position, Quaternion.identity);
-        arrow.transform.parent = gameObject.transform;
+            GameObject particle = Instantiate(bombsParticle, transform.position, Quaternion.identity);
+            particle.transform.parent = gameObject.transform;
+            arrow.transform.parent = gameObject.transform;
         }
     }
 
@@ -312,6 +314,8 @@ public class Dot : MonoBehaviour
         {
             isColumnBomb = true;
             GameObject arrow = Instantiate(columnArrow, transform.position, Quaternion.identity);
+            GameObject particle = Instantiate(bombsParticle, transform.position, Quaternion.identity);
+            particle.transform.parent = gameObject.transform;
             arrow.transform.parent = gameObject.transform;
         }
     }
@@ -322,6 +326,8 @@ public class Dot : MonoBehaviour
         {
             isColorBomb = true;
             GameObject color = Instantiate(colorBomb, transform.position, Quaternion.identity);
+            GameObject particle = Instantiate(colorBombParticle, transform.position, Quaternion.identity);
+            particle.transform.parent = gameObject.transform;
             color.transform.parent = gameObject.transform;
             gameObject.tag = "Color";
         }
@@ -333,6 +339,8 @@ public class Dot : MonoBehaviour
         {
             isAdjacentBomb = true;
             GameObject marker = Instantiate(adjacentMarker, transform.position, Quaternion.identity);
+            GameObject particle = Instantiate(bombsParticle, transform.position, Quaternion.identity);
+            particle.transform.parent = gameObject.transform;
             marker.transform.parent = gameObject.transform;
         }
     }
