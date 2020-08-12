@@ -30,12 +30,26 @@ public class NotificationsManager : MonoBehaviour
 
     public void SendRewardNotification()
     {
-        var notification = new AndroidNotification();
-        notification.Title = "قرقاعون";
-        notification.Text = "احصل على جائزتك اليومية المجانية الآن!";
-        notification.LargeIcon = "icon_0";
-        notification.FireTime = System.DateTime.Now.AddDays(1);
+        var notification = new AndroidNotification(); ;
 
+        if (PlayerPrefs.HasKey("LanguageNum"))
+        {
+            int language = PlayerPrefs.GetInt("LanguageNum");
+            if (language == 1)
+            {
+                notification.Title = "قرقاعون";
+                notification.Text = "احصل على جائزتك اليومية المجانية الآن!";
+                notification.LargeIcon = "icon_0";
+                notification.FireTime = System.DateTime.Now.AddDays(1);
+            }
+            else if (language == 2)
+            {
+                notification.Title = "Gergaoon";
+                notification.Text = "Come Back And Get Your Daily Reward Now!";
+                notification.LargeIcon = "icon_0";
+                notification.FireTime = System.DateTime.Now.AddDays(1);
+            }
+        }  
         AndroidNotificationCenter.SendNotification(notification, "default_channel");
     }
 

@@ -16,6 +16,7 @@ public class MuteScript : MonoBehaviour
     void Start()
     {
         buttonImage = GetComponent<Image>();
+
     }
 
     public void MuteAll()
@@ -71,13 +72,35 @@ public class MuteScript : MonoBehaviour
         // To avoid memory leaks
         Destroy(ss);
 
-        new NativeShare().AddFile(filePath).SetSubject("Subject goes here").SetText("Text goes here").Share();
+        if (PlayerPrefs.HasKey("LanguageNum"))
+        {
+            int language = PlayerPrefs.GetInt("LanguageNum");
+            if (language == 1)
+            {
 
-        // Share on WhatsApp only, if installed (Android only)
-        if( NativeShare.TargetExists( "com.whatsapp" ) )
-        new NativeShare().AddFile( filePath ).SetText(" حمل لعبة قرقاعون على الأندرويد والآيفون! " + 
-            " Android:  https://play.google.com/store/apps/details?id=com.goldeneagle.gergaoon " +
-            " iOS:  https://apps.apple.com/us/app/%D9%82%D8%B1%D9%82%D8%A7%D8%B9%D9%88%D9%86/id1485903162?ls=1 ").SetTarget( "com.whatsapp" ).Share();
+                new NativeShare().AddFile(filePath).SetSubject("Subject").SetText(" حمل لعبة قرقاعون على الأندرويد والآيفون! " +
+                        " Android:  https://play.google.com/store/apps/details?id=com.goldeneagle.gergaoon " +
+                        " iOS:  https://apps.apple.com/us/app/%D9%82%D8%B1%D9%82%D8%A7%D8%B9%D9%88%D9%86/id1485903162?ls=1 ").Share();
+
+                // Share on WhatsApp only, if installed (Android only)
+                if (NativeShare.TargetExists("com.whatsapp"))
+                    new NativeShare().AddFile(filePath).SetText(" حمل لعبة قرقاعون على الأندرويد والآيفون! " +
+                        " Android:  https://play.google.com/store/apps/details?id=com.goldeneagle.gergaoon " +
+                        " iOS:  https://apps.apple.com/us/app/%D9%82%D8%B1%D9%82%D8%A7%D8%B9%D9%88%D9%86/id1485903162?ls=1 ").SetTarget("com.whatsapp").Share();
+            }
+            else if (language == 2)
+            {
+                new NativeShare().AddFile(filePath).SetSubject("Subject").SetText("Download Gergaoon Now On Android & iOS!" +
+                        " Android:  https://play.google.com/store/apps/details?id=com.goldeneagle.gergaoon " +
+                        " iOS:  https://apps.apple.com/us/app/%D9%82%D8%B1%D9%82%D8%A7%D8%B9%D9%88%D9%86/id1485903162?ls=1 ").Share();
+
+                // Share on WhatsApp only, if installed (Android only)
+                if (NativeShare.TargetExists("com.whatsapp"))
+                    new NativeShare().AddFile(filePath).SetText("Download Gergaoon Now On Android & iOS!" +
+                        " Android:  https://play.google.com/store/apps/details?id=com.goldeneagle.gergaoon " +
+                        " iOS:  https://apps.apple.com/us/app/%D9%82%D8%B1%D9%82%D8%A7%D8%B9%D9%88%D9%86/id1485903162?ls=1 ").SetTarget("com.whatsapp").Share();
+            }
+        } 
     }
 
     public void AccessWebsite()
