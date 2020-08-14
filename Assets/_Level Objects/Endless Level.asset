@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d695883d1f730ab41ae93e1e1ef6174e, type: 3}
+  m_Name: Endless Level
+  m_EditorClassIdentifier: 
+  width: 7
+  height: 10
+  boardLayout: []
+  breakableHitPoints: 0
+  dots:
+  - {fileID: 537089306582376857, guid: c6c07c1fc70f88c46aa043dfe0b5e8ab, type: 3}
+  - {fileID: 9142456478226315733, guid: 0e363aeb0caa7e448bbcc56b15ce7b05, type: 3}
+  - {fileID: 7970639084956933007, guid: a90b85da8e1d4b54798148fe8081377d, type: 3}
+  - {fileID: 3116818877187447601, guid: 50ea3594c44478349a3d21e7f3c8a78e, type: 3}
+  - {fileID: 4430133919018964258, guid: be2c91aedc1efdb46addc58ac8736127, type: 3}
+  - {fileID: 4910204475911169603, guid: d9cafeab06aef4f4cbf8658c6423c608, type: 3}
+  scoreGoals: 7f969800
+  endGameRequirements:
+    gameType: 0
+    counterValue: 30
+  levelGoals:
+  - goalSprite: {fileID: 0}
+    goalKind: 1
+    numberNeeded: 0
+    numberCollected: 0
+    matchValue: 
+    scoreNeeded: 9999999

@@ -54,9 +54,9 @@ public class AnimationController : MonoBehaviour
     }
 
     public void ShowOptions()
-    {
+    { 
         animator.SetBool("IsShown", true);
-        if (SceneManager.GetActiveScene().name == "Bejeweled")
+        if (scene == "Bejeweled" || scene == "Endless")
         {
             secondAnimator.SetBool("IsOpen", false);
             StartCoroutine(GameStartCo());
@@ -65,8 +65,15 @@ public class AnimationController : MonoBehaviour
 
     IEnumerator GameStartCo()
     {
-        Board board = FindObjectOfType<Board>();
-        board.currentState = GameState.move;
+        if(scene == "Bejeweled")
+        {
+            Board board = FindObjectOfType<Board>();
+            board.currentState = GameState.move;
+        } else
+        {
+            EndlessBoard board = FindObjectOfType<EndlessBoard>();
+            board.currentState = GameState.move;
+        } 
         yield return new WaitForSeconds(0.5f); 
         secondAnimator.SetBool("IsGameOver", false);
     } 
