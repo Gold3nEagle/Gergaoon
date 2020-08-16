@@ -31,8 +31,8 @@ public class Overworld : MonoBehaviour
         }
         gameData.CheckLevels();
 
-        PlayerPrefs.SetInt("totalCandy", 100000);
-        PlayerPrefs.SetInt("totalLives", 3);
+        //PlayerPrefs.SetInt("totalCandy", 100000);
+        //PlayerPrefs.SetInt("totalLives", 3);
 
         DisplayTotalCandy();
         DisplayTotalLives();
@@ -49,7 +49,7 @@ public class Overworld : MonoBehaviour
             if(latestLevel >= 17)
                 //Unlock Basket Game and show celebration!
 
-            if (latestLevel > 75)
+            if (latestLevel > 100)
                 latestLevel -= 2;
             
 
@@ -75,6 +75,14 @@ public class Overworld : MonoBehaviour
     public void DisplayTotalLives()
     {
         int totalLives = PlayerPrefs.GetInt("totalLives");
+
+        if (totalLives < 0)
+        {
+            totalLives = 0;
+            PlayerPrefs.SetInt("totalLives", 0);
+            DisplayTotalLives();
+        }
+
         totalLivesDisplay.text = totalLives.ToString();
     }
 

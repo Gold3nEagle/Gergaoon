@@ -51,7 +51,12 @@ public class BackToMenu : MonoBehaviour
     public void LoseOK()
     { 
         int totalLives = PlayerPrefs.GetInt("totalLives");
-        totalLives--;
+ 
+            totalLives--;
+
+        if (totalLives < 0)
+            totalLives = 0;
+
         PlayerPrefs.SetInt("totalLives", totalLives);
 
         if (adsEnabled == false)
