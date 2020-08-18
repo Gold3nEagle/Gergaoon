@@ -32,7 +32,7 @@ public class Overworld : MonoBehaviour
         gameData.CheckLevels();
 
         //PlayerPrefs.SetInt("totalCandy", 100000);
-        //PlayerPrefs.SetInt("totalLives", 4);
+        //PlayerPrefs.SetInt("totalLives", 3);
 
         DisplayTotalCandy(); 
     }

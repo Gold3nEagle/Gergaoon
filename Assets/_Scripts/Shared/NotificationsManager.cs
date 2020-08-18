@@ -9,24 +9,24 @@ public class NotificationsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CreateNotificationChannel();
-        if(SceneManager.GetActiveScene().buildIndex == 0)
-        {
-            RetentionNotification();
-        }
+        CreateNotificationChannel();  
+        SendRetentionNotification();
+        SendLivesReplenishedNotification();
     } 
 
     void CreateNotificationChannel()
     {
-        var channel = new AndroidNotificationChannel()
+        var defaultChannel = new AndroidNotificationChannel()
         {
             Id = "default_channel",
             Name = "DailyNotification",
             Importance = Importance.High,
             Description = "For daily rewarded notifications",
         };
-        AndroidNotificationCenter.RegisterNotificationChannel(channel);
+         
+        AndroidNotificationCenter.RegisterNotificationChannel(defaultChannel);
     }
+
 
     public void SendRewardNotification()
     {
@@ -53,14 +53,57 @@ public class NotificationsManager : MonoBehaviour
         AndroidNotificationCenter.SendNotification(notification, "default_channel");
     }
 
-    public void RetentionNotification()
+    public void SendRetentionNotification()
     {
-        var notification = new AndroidNotification();
-        notification.Title = "قرقاعون";
-        notification.Text = "تقدر تجمع حلوى أكثر اليوم؟";
-        notification.LargeIcon = "icon_0";
-        notification.FireTime = System.DateTime.Now.AddDays(5);
 
-        AndroidNotificationCenter.SendNotification(notification, "default_channel");
+        var notificationRetention = new AndroidNotification();
+
+        if (PlayerPrefs.HasKey("LanguageNum"))
+        {
+            int language = PlayerPrefs.GetInt("LanguageNum");
+            if (language == 1)
+            {
+                notificationRetention.Title = "قرقاعون";
+                notificationRetention.Text = "تقدر تجمع حلوى أكثر اليوم؟";
+                notificationRetention.LargeIcon = "icon_0";
+                notificationRetention.FireTime = System.DateTime.Now.AddDays(5);
+            }
+            else if (language == 2)
+            {
+                notificationRetention.Title = "Gergaoon";
+                notificationRetention.Text = "How much candy can you collect NOW?";
+                notificationRetention.LargeIcon = "icon_0";
+                notificationRetention.FireTime = System.DateTime.Now.AddDays(5);
+            }
+        }
+        AndroidNotificationCenter.SendNotification(notificationRetention, "default_channel");
     }
+
+    public void SendLivesReplenishedNotification()
+    { 
+        var notificationRestoreLives = new AndroidNotification();
+
+        if (PlayerPrefs.HasKey("LanguageNum"))
+        {
+            int language = PlayerPrefs.GetInt("LanguageNum");
+            if (language == 1)
+            {
+                notificationRestoreLives.Title = "قرقاعون";
+                notificationRestoreLives.Text = "لقد امتلأ عداد المحاولات! حياك العب!";
+                notificationRestoreLives.LargeIcon = "icon_0";
+                notificationRestoreLives.FireTime = System.DateTime.Now.AddHours(2);
+
+            }
+            else if (language == 2)
+            {
+                notificationRestoreLives.Title = "Gergaoon";
+                notificationRestoreLives.Text = "Tries Replenished! Come Play!";
+                notificationRestoreLives.LargeIcon = "icon_0";
+                notificationRestoreLives.FireTime = System.DateTime.Now.AddHours(2);
+            }
+
+        }
+        AndroidNotificationCenter.SendNotification(notificationRestoreLives, "default_channel");
+    }
+
 }

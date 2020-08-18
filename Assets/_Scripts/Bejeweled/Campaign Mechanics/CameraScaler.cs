@@ -20,6 +20,15 @@ public class CameraScaler : MonoBehaviour
         }
     }
 
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            RepositionCamera(board.width - 1, board.height - 1);
+        }
+    }
+
     void RepositionCamera(float x, float y)
     {
         Vector3 tempPosition = new Vector3(x / 2, y / 2 + yOffset, cameraOffset);

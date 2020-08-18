@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraOffset: -10
   aspectRatio: 0.5625
-  padding: 1.23
+  padding: 1.9
   yOffset: 1
 --- !u!1 &223844110
 GameObject:
@@ -1295,8 +1295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -3.7, y: -28.800049}
-  m_SizeDelta: {x: 402.3, y: 100.2}
+  m_AnchoredPosition: {x: 0.000030517578, y: -20}
+  m_SizeDelta: {x: 429.99896, y: 120.99986}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &261652580
 MonoBehaviour:
@@ -1715,7 +1715,7 @@ PrefabInstance:
     - target: {fileID: 3687824727301750024, guid: bf44a237d56e2c64fac218087414b142,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.7999878
+      value: 1.8000488
       objectReference: {fileID: 0}
     - target: {fileID: 3687824727301750024, guid: bf44a237d56e2c64fac218087414b142,
         type: 3}
@@ -3034,7 +3034,7 @@ MonoBehaviour:
   m_Sprite: {fileID: -1398673877809080845, guid: de3d6120db13e1548b9fade543de4fac,
     type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -6633,7 +6633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 16.900024, y: 5.7001953}
+  m_AnchoredPosition: {x: 16.900146, y: 5.7001953}
   m_SizeDelta: {x: 153.9, y: 113.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1734282853
