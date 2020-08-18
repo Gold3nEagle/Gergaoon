@@ -52,10 +52,13 @@ public class BackToMenu : MonoBehaviour
     { 
         int totalLives = PlayerPrefs.GetInt("totalLives");
  
+        if(totalLives > 1)
+        {
             totalLives--;
-
-        if (totalLives < 0)
+        } else if(totalLives <= 1)
+        {
             totalLives = 0;
+        } 
 
         PlayerPrefs.SetInt("totalLives", totalLives);
 

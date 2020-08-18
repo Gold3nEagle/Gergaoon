@@ -139,7 +139,8 @@ public class AdsScript : MonoBehaviour
             int totalLives = PlayerPrefs.GetInt("totalLives");
             totalLives++;
             PlayerPrefs.SetInt("totalLives", totalLives);
-            overWorld.DisplayTotalLives();
+            RegenerateLives lifeRegan = FindObjectOfType<RegenerateLives>();
+            lifeRegan.DisplayTotalLives();
         }
 
     }

@@ -22,7 +22,7 @@ public class Overworld : MonoBehaviour
             if (!PlayerPrefs.HasKey("firstMatch3"))
             {
                 PlayerPrefs.SetInt("firstMatch3", 1);
-                PlayerPrefs.SetInt("totalLives", 3);
+                PlayerPrefs.SetInt("totalLives", 5);
                 PlayerPrefs.SetInt("DestroyBoost", 1);
                 PlayerPrefs.SetInt("ColorBombBoost", 1);
                 PlayerPrefs.SetInt("AdjacentBoost", 1);
@@ -32,10 +32,9 @@ public class Overworld : MonoBehaviour
         gameData.CheckLevels();
 
         //PlayerPrefs.SetInt("totalCandy", 100000);
-        //PlayerPrefs.SetInt("totalLives", 3);
+        //PlayerPrefs.SetInt("totalLives", 4);
 
-        DisplayTotalCandy();
-        DisplayTotalLives();
+        DisplayTotalCandy(); 
     }
 
     // Start is called before the first frame update
@@ -49,7 +48,7 @@ public class Overworld : MonoBehaviour
             if(latestLevel >= 17)
                 //Unlock Basket Game and show celebration!
 
-            if (latestLevel > 100)
+            if (latestLevel > 125)
                 latestLevel -= 2;
             
 
@@ -71,21 +70,7 @@ public class Overworld : MonoBehaviour
 
         return totalCandy;
     }
-
-    public void DisplayTotalLives()
-    {
-        int totalLives = PlayerPrefs.GetInt("totalLives");
-
-        if (totalLives < 0)
-        {
-            totalLives = 0;
-            PlayerPrefs.SetInt("totalLives", 0);
-            DisplayTotalLives();
-        }
-
-        totalLivesDisplay.text = totalLives.ToString();
-    }
-
+     
     public void ShowPointer()
     { 
         pointerAnim.SetActive(true);

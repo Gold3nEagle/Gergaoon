@@ -117,8 +117,7 @@ public class DailyRewards : MonoBehaviour
         PlayerPrefs.SetInt("totalLives", totalLives);
         notificationsManager.SendRewardNotification();
         Button clickButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
-        clickButton.interactable = false;
-        overWorld.DisplayTotalLives();
+        clickButton.interactable = false; 
         rewardsPanel.SetActive(false);
     }
 
