@@ -41,9 +41,9 @@ public class RegenerateLives : MonoBehaviour
     float TotalTimeForRestLife = 15f * 60;  //8 minutes for restore life
     bool startTimer;
     DateTime templateTime;
-
-
-    void Awake()
+ 
+        // Start is called before the first frame update
+        void Start()
     {
         RestLifeTimer = PlayerPrefs.GetFloat("RestLifeTimer");
         DateOfExit = PlayerPrefs.GetString("DateOfExit");
@@ -63,15 +63,7 @@ public class RegenerateLives : MonoBehaviour
             PlayerPrefs.Save();
         }
 
-        if (name == "Lifes")
-        {
-            lifeText.text = "" + GetLife();
-        }
 
-    }
-        // Start is called before the first frame update
-        void Start()
-    { 
         GetServerTime();
         TotalTimeForRestLife = TotalTimeForRestLifeHours * 60 * 60 + TotalTimeForRestLifeMin * 60 + TotalTimeForRestLifeSec;
     }
@@ -206,19 +198,13 @@ public class RegenerateLives : MonoBehaviour
     void OnApplicationPause(bool pauseStatus)
     {
         if (pauseStatus)
-        {
-            //	StopCoroutine("TimeCount");
+        { 
             DateOfExit = serverTime.ToString();
-            //print(InitScript.DateOfExit);
-
-            //			PlayerPrefs.SetString("DateOfExit",ServerTime.THIS.serverTime.ToString());
-            //			PlayerPrefs.Save();
+            PlayerPrefs.SetString("DateOfExit", DateOfExit); 
         }
         else
         {
-            startTimer = false;
-            // InitScript.today = ServerTime.THIS.serverTime;
-            //		MainMenu.DateOfExit = PlayerPrefs.GetString("DateOfExit");
+            startTimer = false; 
         }
     }
  

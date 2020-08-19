@@ -22,7 +22,7 @@ public class Overworld : MonoBehaviour
             if (!PlayerPrefs.HasKey("firstMatch3"))
             {
                 PlayerPrefs.SetInt("firstMatch3", 1);
-                PlayerPrefs.SetInt("totalLives", 5);
+                PlayerPrefs.SetInt("totalLives", 3);
                 PlayerPrefs.SetInt("DestroyBoost", 1);
                 PlayerPrefs.SetInt("ColorBombBoost", 1);
                 PlayerPrefs.SetInt("AdjacentBoost", 1);

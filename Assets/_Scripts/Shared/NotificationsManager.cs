@@ -9,9 +9,7 @@ public class NotificationsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CreateNotificationChannel();  
-        SendRetentionNotification();
-        SendLivesReplenishedNotification();
+        CreateNotificationChannel();   
     } 
 
     void CreateNotificationChannel()
@@ -104,6 +102,13 @@ public class NotificationsManager : MonoBehaviour
 
         }
         AndroidNotificationCenter.SendNotification(notificationRestoreLives, "default_channel");
+    }
+
+
+    private void OnApplicationQuit()
+    {
+        SendRetentionNotification();
+        SendLivesReplenishedNotification();
     }
 
 }
