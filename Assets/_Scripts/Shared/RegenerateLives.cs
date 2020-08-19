@@ -233,6 +233,7 @@ public class RegenerateLives : MonoBehaviour
             lifes = CapOfLife;
         PlayerPrefs.SetInt("totalLives", lifes);
         PlayerPrefs.Save();
+        DisplayTotalLives();
        
     }
 

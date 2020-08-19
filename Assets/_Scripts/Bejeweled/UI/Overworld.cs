@@ -83,4 +83,22 @@ public class Overworld : MonoBehaviour
         pointerAnim.SetActive(false);
     }
 
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.G))
+        {
+            Debug.Log("Cheating eh?");
+            int totalCandy = PlayerPrefs.GetInt("totalCandy");
+            totalCandy += 10000;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            DisplayTotalCandy();
+
+            RegenerateLives lifeRegan = FindObjectOfType<RegenerateLives>();
+            lifeRegan.AddLife(10); 
+
+        }
+    }
+
+
 }
