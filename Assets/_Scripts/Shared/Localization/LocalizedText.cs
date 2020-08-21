@@ -34,7 +34,7 @@ public class LocalizedText : MonoBehaviour
     void Start()
     {
         text = GetComponent<Text>();
-        text.text = LocalizationManager.instance.GetLocalizedValue(key);
+        text.text = LocaleManager.instance.GetLocalizedValue(key);
     }
      
 }

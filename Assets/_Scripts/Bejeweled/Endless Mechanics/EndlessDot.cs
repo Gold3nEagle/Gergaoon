@@ -121,7 +121,7 @@ public class EndlessDot : MonoBehaviour
                 column = previousColumn;
                 yield return new WaitForSeconds(.5f);
                 board.currentDot = null;
-                board.currentState = GameState.move;
+                board.currentState = GameStatus.move;
             }
             else
             {
@@ -159,7 +159,7 @@ public class EndlessDot : MonoBehaviour
             }
         }
 
-        if (board.currentState == GameState.move)
+        if (board.currentState == GameStatus.move)
         {
             firstTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //  Debug.Log(firstTouchPosition);
@@ -196,7 +196,7 @@ public class EndlessDot : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (board.currentState == GameState.move)
+        if (board.currentState == GameStatus.move)
         {
             finalTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             CalculateAngle();
@@ -207,7 +207,7 @@ public class EndlessDot : MonoBehaviour
     {
         if (Mathf.Abs(finalTouchPosition.y - firstTouchPosition.y) > swipeResist || Mathf.Abs(finalTouchPosition.x - firstTouchPosition.x) > swipeResist)
         {
-            board.currentState = GameState.wait;
+            board.currentState = GameStatus.wait;
             swipeAngle = Mathf.Atan2(finalTouchPosition.y - firstTouchPosition.y, finalTouchPosition.x - firstTouchPosition.x) * 180 / Mathf.PI;
             // Debug.Log(swipeAngle);
             MovePieces();
@@ -215,7 +215,7 @@ public class EndlessDot : MonoBehaviour
         }
         else
         {
-            board.currentState = GameState.move;
+            board.currentState = GameStatus.move;
         }
     }
 
@@ -234,7 +234,7 @@ public class EndlessDot : MonoBehaviour
             }
             else
             {
-                board.currentState = GameState.move;
+                board.currentState = GameStatus.move;
             } 
     }
 
@@ -258,7 +258,7 @@ public class EndlessDot : MonoBehaviour
         }
         else
         {
-            board.currentState = GameState.move;
+            board.currentState = GameStatus.move;
         }
     }
 

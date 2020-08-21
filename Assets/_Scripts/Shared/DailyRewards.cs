@@ -110,18 +110,19 @@ public class DailyRewards : MonoBehaviour
         }
     }
 
-    public void RewardLives()
+    public void DayOneReward()
     {
-        int totalLives = PlayerPrefs.GetInt("totalLives");
-        totalLives += 2;
-        PlayerPrefs.SetInt("totalLives", totalLives);
+        int totalCandy = PlayerPrefs.GetInt("totalCandy");
+        totalCandy += 500;
+        PlayerPrefs.SetInt("totalCandy", totalCandy);
         notificationsManager.SendRewardNotification();
         Button clickButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
-        clickButton.interactable = false; 
+        clickButton.interactable = false;
+        overWorld.DisplayTotalCandy();
         rewardsPanel.SetActive(false);
     }
 
-    public void RewardCandies()
+    public void DayTwoReward()
     {
         int totalCandy = PlayerPrefs.GetInt("totalCandy");
         totalCandy += 1000;
@@ -133,14 +134,15 @@ public class DailyRewards : MonoBehaviour
         rewardsPanel.SetActive(false);
     }
 
-    public void RewardRainbow()
+    public void DayThreeReward()
     {
-        int colorBomb = PlayerPrefs.GetInt("ColorBombBoost");
-        colorBomb += 3;
-        PlayerPrefs.SetInt("ColorBombBoost", colorBomb);
+        int totalCandy = PlayerPrefs.GetInt("totalCandy");
+        totalCandy += 2000;
+        PlayerPrefs.SetInt("totalCandy", totalCandy);
         notificationsManager.SendRewardNotification();
         Button clickButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
         clickButton.interactable = false;
+        overWorld.DisplayTotalCandy();
         rewardsPanel.SetActive(false);
     }
 }

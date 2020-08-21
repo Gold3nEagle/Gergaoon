@@ -9,7 +9,7 @@ public class StartupManager : MonoBehaviour
     private IEnumerator Start()
     {
 
-        while (!LocalizationManager.instance.GetIsReady()) { 
+        while (!LocaleManager.instance.GetIsReady()) { 
 
         yield return null;
         }

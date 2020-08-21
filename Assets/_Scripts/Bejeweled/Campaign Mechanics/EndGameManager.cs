@@ -79,7 +79,7 @@ public class EndGameManager : MonoBehaviour
 
     public void DecreaseCounterValue()
     {
-        if (board.currentState != GameState.pause)
+        if (board.currentState != GameStatus.pause)
         {
             currentCounterValue--;
             counter.text = currentCounterValue.ToString();
@@ -89,7 +89,7 @@ public class EndGameManager : MonoBehaviour
                 movesFlash.SetActive(true);
             }
 
-            if (currentCounterValue <= 0 && board.currentState != GameState.win)
+            if (currentCounterValue <= 0 && board.currentState != GameStatus.win)
             {
                 LoseGame();
             }
@@ -141,7 +141,7 @@ public class EndGameManager : MonoBehaviour
          
         yield return new WaitForSeconds(3f);
         youWinPanel.SetActive(true);
-        board.currentState = GameState.win;
+        board.currentState = GameStatus.win;
         doubleRewards = true;
     }
 
@@ -176,16 +176,23 @@ public class EndGameManager : MonoBehaviour
         boySad.enabled = true;
         girlSad.enabled = true;
         charAnims.SadAnimation();
-        tryAgainPanel.SetActive(true);
-        board.currentState = GameState.lose;
+        board.currentState = GameStatus.lose;
         overWorld = FindObjectOfType<Overworld>();
         Debug.Log("Time is up LOSO!");
         currentCounterValue = 0;
         counter.text = currentCounterValue.ToString();
+        StartCoroutine(ShowLosingPanel());
         AnimationController animationController = GameObject.Find("FadePanel").GetComponent<AnimationController>();
         animationController.GameOver();
 
     }
+
+    IEnumerator ShowLosingPanel()
+    {
+        yield return new WaitForSeconds(1f); 
+        tryAgainPanel.SetActive(true);
+    }
+
 
     public void IncreaseCounter()
     {

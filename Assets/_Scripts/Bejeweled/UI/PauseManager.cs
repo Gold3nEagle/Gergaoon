@@ -24,13 +24,13 @@ public class PauseManager : MonoBehaviour
         {
             pausePanel.SetActive(true);
             Debug.Log("PauseManager Pause");
-            board.currentState = GameState.pause;
+            board.currentState = GameStatus.pause;
         }
 
         if(!paused && pausePanel.activeInHierarchy)
         {
             pausePanel.SetActive(false);
-            board.currentState = GameState.move;
+            board.currentState = GameStatus.move;
         }
 
     }

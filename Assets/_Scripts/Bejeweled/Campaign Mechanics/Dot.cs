@@ -119,7 +119,7 @@ public class Dot : MonoBehaviour
                 column = previousColumn;
                 yield return new WaitForSeconds(.5f);
                 board.currentDot = null;
-                board.currentState = GameState.move;
+                board.currentState = GameStatus.move;
             } else
             {
                 if(endGameManager.requirements.gameType == GameType.Moves)
@@ -156,7 +156,7 @@ public class Dot : MonoBehaviour
             }
         }
 
-        if(board.currentState == GameState.move)
+        if(board.currentState == GameStatus.move)
         { 
         firstTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //  Debug.Log(firstTouchPosition);
@@ -193,7 +193,7 @@ public class Dot : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (board.currentState == GameState.move)
+        if (board.currentState == GameStatus.move)
         {
             finalTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             CalculateAngle();
@@ -204,14 +204,14 @@ public class Dot : MonoBehaviour
     {
         if (Mathf.Abs(finalTouchPosition.y - firstTouchPosition.y) > swipeResist || Mathf.Abs(finalTouchPosition.x - firstTouchPosition.x) > swipeResist)
         {
-            board.currentState = GameState.wait;
+            board.currentState = GameStatus.wait;
             swipeAngle = Mathf.Atan2(finalTouchPosition.y - firstTouchPosition.y, finalTouchPosition.x - firstTouchPosition.x) * 180 / Mathf.PI;
             // Debug.Log(swipeAngle);
             MovePieces();  
             board.currentDot = this;
         } else
         {
-            board.currentState = GameState.move;
+            board.currentState = GameStatus.move;
         }
     }
 
@@ -232,12 +232,12 @@ public class Dot : MonoBehaviour
             }
             else
             {
-                board.currentState = GameState.move;
+                board.currentState = GameStatus.move;
             }
         }
         else
         {
-            board.currentState = GameState.move;
+            board.currentState = GameStatus.move;
         }
     }
 
@@ -261,7 +261,7 @@ public class Dot : MonoBehaviour
         }
         else
         {
-            board.currentState = GameState.move;
+            board.currentState = GameStatus.move;
         }
         }
 

@@ -68,11 +68,11 @@ public class AnimationController : MonoBehaviour
         if(scene == "Bejeweled")
         {
             Board board = FindObjectOfType<Board>();
-            board.currentState = GameState.move;
+            board.currentState = GameStatus.move;
         } else
         {
             EndlessBoard board = FindObjectOfType<EndlessBoard>();
-            board.currentState = GameState.move;
+            board.currentState = GameStatus.move;
         } 
         yield return new WaitForSeconds(0.5f); 
         secondAnimator.SetBool("IsGameOver", false);

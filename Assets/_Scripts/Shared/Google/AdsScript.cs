@@ -120,7 +120,7 @@ public class AdsScript : MonoBehaviour
             else
             { 
                 int totalCandy = PlayerPrefs.GetInt("totalCandy");
-                totalCandy += 250;
+                totalCandy += 500;
                 PlayerPrefs.SetInt("totalCandy", totalCandy);
                 if (currentScene == "GameScene")
                 {

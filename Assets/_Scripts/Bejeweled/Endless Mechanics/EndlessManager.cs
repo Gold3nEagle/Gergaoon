@@ -63,7 +63,7 @@ public class EndlessManager : MonoBehaviour
 
     public void DecreaseCounterValue()
     {
-        if (board.currentState != GameState.pause)
+        if (board.currentState != GameStatus.pause)
         {
             currentCounterValue--;
             counter.text = currentCounterValue.ToString();
@@ -73,7 +73,7 @@ public class EndlessManager : MonoBehaviour
                 movesFlash.SetActive(true);
             }
 
-            if (currentCounterValue <= 0 && board.currentState != GameState.win)
+            if (currentCounterValue <= 0 && board.currentState != GameStatus.win)
             {
                 LoseGame();
             }
@@ -120,7 +120,7 @@ public class EndlessManager : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
         youWinPanel.SetActive(true);
-        board.currentState = GameState.win;
+        board.currentState = GameStatus.win;
         doubleRewards = true;
     }
 
@@ -149,7 +149,7 @@ public class EndlessManager : MonoBehaviour
     public void LoseGame()
     {
         tryAgainPanel.SetActive(true);
-        board.currentState = GameState.lose;
+        board.currentState = GameStatus.lose;
         overWorld = FindObjectOfType<Overworld>();
         Debug.Log("Time is up LOSO!");
         currentCounterValue = 0;

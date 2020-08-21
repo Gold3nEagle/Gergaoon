@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public enum GameState
+public enum GameStatus
 {
     wait,
     move,
@@ -44,7 +44,7 @@ public class Board : MonoBehaviour
     public int level;
 
 
-    public GameState currentState = GameState.move;
+    public GameStatus currentState = GameStatus.move;
     public TileType[] boardLayout;
     public int height, width, offSet;
 
@@ -107,7 +107,7 @@ public class Board : MonoBehaviour
         blankSpaces = new bool[width, height];
         allDots = new GameObject[width, height];
         boardSetup.SetUp();
-        currentState = GameState.pause;
+        currentState = GameStatus.pause;
     } 
 
     public bool MatchesAt(int column, int row, GameObject piece)
@@ -384,8 +384,8 @@ public class Board : MonoBehaviour
             StartCoroutine(ShuffleBoard());
             Debug.Log("DeadLocked!!!");
         }
-        if(currentState != GameState.pause)
-            currentState = GameState.move;
+        if(currentState != GameStatus.pause)
+            currentState = GameStatus.move;
         makeSlime = true;
         //Textual Gratification
         streakValue = 1;

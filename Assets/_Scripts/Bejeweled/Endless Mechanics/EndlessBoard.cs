@@ -11,7 +11,7 @@ public class EndlessBoard : MonoBehaviour
     public int level;
 
 
-    public GameState currentState = GameState.move;
+    public GameStatus currentState = GameStatus.move;
     public TileType[] boardLayout;
     public int height, width, offSet;
 
@@ -59,7 +59,7 @@ public class EndlessBoard : MonoBehaviour
         boardSetup = FindObjectOfType<BoardSetup>();
         allDots = new GameObject[width, height];
         SetUp();
-        currentState = GameState.pause;
+        currentState = GameStatus.pause;
     }
 
 
@@ -352,8 +352,8 @@ public class EndlessBoard : MonoBehaviour
         {
             Debug.Log("DeadLocked!!! PLAYER LOSES!");
         }
-        if (currentState != GameState.pause)
-            currentState = GameState.move; 
+        if (currentState != GameStatus.pause)
+            currentState = GameStatus.move; 
         //Textual Gratification
         streakValue = 1;
     }
