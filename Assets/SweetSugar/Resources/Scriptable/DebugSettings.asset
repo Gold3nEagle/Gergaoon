@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5cbfa6fdb7e34825a1125345455d6f5, type: 3}
+  m_Name: DebugSettings
+  m_EditorClassIdentifier: 
+  BonusCombinesShowLog: 0
+  DestroyLog: 0
+  FallingLog: 0
+  AI: 0
+  TimeScaleUI: 1
+  TimeScaleItems: 1
+  ShowLogImmediately: 0
+  enableHotkeys: 1
+  Win: 119
+  Lose: 108
+  Restart: 114
+  SubSwitch: 115
+  Back: 27
+  Regen: 32
+  TestLanguage: 10

@@ -1,9 +1,2 @@
 lastUpgrade=00962
 proj.pluginVersion=0.9.62
-proj.AppId=403108180917
-and.BundleId=com.goldeneagle.gergaoon
-proj.classDir=Assets
-proj.ConstantsClassName=GPGSIds
-and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0d%0a%3c%21--%0d%0aGoogle+Play+game+services+IDs.%0d%0aSave+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.%0d%0a--%3e%0d%0a%3cresources%3e%0d%0a++%3c%21--+app_id+--%3e%0d%0a++%3cstring+name%3d%22app_id%22+translatable%3d%22false%22%3e403108180917%3c%2fstring%3e%0d%0a++%3c%21--+package_name+--%3e%0d%0a++%3cstring+name%3d%22package_name%22+translatable%3d%22false%22%3ecom.goldeneagle.gergaoon%3c%2fstring%3e%0d%0a++%3c%21--+achievement+50+Candies%21+--%3e%0d%0a++%3cstring+name%3d%22achievement_50_candies%22+translatable%3d%22false%22%3eCgkItef62N0LEAIQBA%3c%2fstring%3e%0d%0a++%3c%21--+achievement+100+Candies%21+--%3e%0d%0a++%3cstring+name%3d%22achievement_100_candies%22+translatable%3d%22false%22%3eCgkItef62N0LEAIQBQ%3c%2fstring%3e%0d%0a++%3c%21--+achievement+Professional+--%3e%0d%0a++%3cstring+name%3d%22achievement_professional%22+translatable%3d%22false%22%3eCgkItef62N0LEAIQBg%3c%2fstring%3e%0d%0a++%3c%21--+achievement+Survival+of+the+Fittest%21+--%3e%0d%0a++%3cstring+name%3d%22achievement_survival_of_the_fittest%22+translatable%3d%22false%22%3eCgkItef62N0LEAIQCA%3c%2fstring%3e%0d%0a++%3c%21--+achievement+You+did+your+best+--%3e%0d%0a++%3cstring+name%3d%22achievement_you_did_your_best%22+translatable%3d%22false%22%3eCgkItef62N0LEAIQCQ%3c%2fstring%3e%0d%0a++%3c%21--+leaderboard+%d9%85%d8%ac%d9%85%d9%88%d8%b9+%d8%a7%d9%84%d9%86%d9%82%d8%a7%d8%b7%21+--%3e%0d%0a++%3cstring+name%3d%22leaderboard%22+translatable%3d%22false%22%3eCgkItef62N0LEAIQAw%3c%2fstring%3e%0d%0a%3c%2fresources%3e%0d%0a
-and.ClientId=
-android.SetupDone=true

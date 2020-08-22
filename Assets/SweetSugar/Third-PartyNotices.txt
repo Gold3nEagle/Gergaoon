@@ -1,0 +1,15 @@
+Sweet sugar is governed by the Asset Store EULA; however, the following components are governed by the licenses indicated below:
+
+A. LeanTween
+    - MIT license 
+    - License details available in Assets/SweetSugar/LeanTween/License.txt
+
+B. TextMesh Pro asset 
+    - Asset Store EULA
+    - License details available here: https://unity3d.com/es/legal/as_terms
+
+D. Unity Reorderable List
+    - MIT license 
+    - License details available here: https://github.com/cfoulston/Unity-Reorderable-List/blob/master/LICENSE
+
+

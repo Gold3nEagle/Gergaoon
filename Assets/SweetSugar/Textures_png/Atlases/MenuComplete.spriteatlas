@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MenuComplete
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 2dbba8a900759409aa6a238f07aa3710, type: 3}
+    - {fileID: 2800000, guid: aad0eac933abe4e46ac9d898587f66ff, type: 3}
+    - {fileID: 2800000, guid: 9f738bb1ab53044ce8a2a749f588731a, type: 3}
+    - {fileID: 2800000, guid: f3dc5e88d2bc4440fa5a748dd53ed9c7, type: 3}
+    - {fileID: 102900000, guid: 4f876bc3bab8c47c3bc6051960ec4e72, type: 3}
+    - {fileID: 2800000, guid: 0922904af8b1d4f92862e3434794d200, type: 3}
+    - {fileID: 102900000, guid: 91b037be8ede34b43aa0fbee67a238ee, type: 3}
+    totalSpriteSurfaceArea: 3228256
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 13984e115092d5944973eaaf6c7e2cb6, type: 3}
+  - {fileID: 21300000, guid: 4ca7907116890f74482c480eeea345d7, type: 3}
+  - {fileID: 21300000, guid: 9f738bb1ab53044ce8a2a749f588731a, type: 3}
+  - {fileID: 21300000, guid: 8b8ffe522f2cb4ee89fa0490d35d4074, type: 3}
+  - {fileID: 21300000, guid: d14a9272e60184071b47f46ae4a4ef05, type: 3}
+  - {fileID: 21300000, guid: 06b0af64104d94c00a2fc58fcd819080, type: 3}
+  - {fileID: 21300000, guid: 5282532549d3341d98eb34c992062e66, type: 3}
+  - {fileID: 21300000, guid: d1388426b35494a1c92be10b47420c09, type: 3}
+  - {fileID: 21300000, guid: 15552a6695fe74e23983b12b1f490d3d, type: 3}
+  - {fileID: 21300000, guid: 1134842780b80ad499c3aa604144bdcd, type: 3}
+  - {fileID: 21300000, guid: 9d084ab78d6ea194eb208e20f78d5d51, type: 3}
+  - {fileID: 21300000, guid: f3dc5e88d2bc4440fa5a748dd53ed9c7, type: 3}
+  - {fileID: 21300000, guid: ca5ad9b8030ad42838eeefb9c44f9145, type: 3}
+  - {fileID: 21300000, guid: 2dbba8a900759409aa6a238f07aa3710, type: 3}
+  - {fileID: 21300000, guid: aad0eac933abe4e46ac9d898587f66ff, type: 3}
+  - {fileID: 21300000, guid: 0922904af8b1d4f92862e3434794d200, type: 3}
+  - {fileID: 21300000, guid: 2dbc952b9a909485d8e33f8def59b14b, type: 3}
+  - {fileID: 21300000, guid: e0fdfd7b623794a19b62ab9c07412040, type: 3}
+  - {fileID: 21300000, guid: 0ba8c0bbf73743b4f9c9bb707570327f, type: 3}
+  - {fileID: 21300000, guid: d2ca30adfcc684ce8b15d3e4be9adc46, type: 3}
+  - {fileID: 21300000, guid: 10a8954efb9727a418c3d0ce5e1bf639, type: 3}
+  - {fileID: 21300000, guid: 8d0d3bff18fcb41b9b10c7488df63d03, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - character_info_complete
+  - character_info
+  - orange_banner
+  - character_main_hand
+  - Star_03
+  - Star_01
+  - happy_face
+  - complete_hand
+  - win_banne_02
+  - complete_hand-3
+  - hat
+  - character_main
+  - sad_face
+  - blue_banner
+  - main_button
+  - white_circle
+  - character_hair
+  - grey_stars
+  - tear
+  - Star_02
+  - sad_face2
+  - body
+  m_Tag: MenuComplete
+  m_IsVariant: 0

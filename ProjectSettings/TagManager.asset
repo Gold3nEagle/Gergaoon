@@ -4,24 +4,18 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Bomb
-  - Hat
-  - totalCoins
-  - scoreNum
-  - Blue
-  - Green
-  - Indigo
-  - Orange
-  - Red
-  - Yellow
-  - Color
-  - Breakable
-  - Board
-  - Concrete
-  - Chocolate
-  - Lock
-  - Music
-  - WiggleButton
+  - Item
+  - FxTemporaire
+  - HORIZONTAL_STRIPED
+  - VERTICAL_STRIPED
+  - MARMALADE
+  - PACKAGE
+  - MULTICOLOR
+  - INGREDIENT
+  - SPIRAL
+  - MarmaladeAnimation
+  - Multicolor_firework
+  - Simple_firework
   layers:
   - Default
   - TransparentFX
@@ -31,8 +25,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Item
+  - LevelPin
   - 
   - 
   - 
@@ -60,14 +54,23 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 3820239365
+    uniqueID: 1484519475
     locked: 0
   - name: Front
-    uniqueID: 1831247801
+    uniqueID: 791713731
     locked: 0
   - name: Player
-    uniqueID: 1525669723
+    uniqueID: 1955409035
     locked: 0
   - name: Sparks
-    uniqueID: 848685485
+    uniqueID: 2677584297
+    locked: 0
+  - name: Arrow
+    uniqueID: 2226258467
+    locked: 0
+  - name: Item mask
+    uniqueID: 1397149363
+    locked: 0
+  - name: UI
+    uniqueID: 58496801
     locked: 0

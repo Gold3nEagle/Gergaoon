@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6692a821894544af38c92ddac65002d3, type: 3}
+  m_Name: TargetEditorScriptable
+  m_EditorClassIdentifier: 
+  targets:
+  - name: CollectItems
+    Description: Collect the items
+    descriptionLocalizationRefrence: 55
+    FailedDescription: You didn't collect the items
+    failedLocalizationRefrence: 56
+    prefabs:
+    - {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
+  - name: Ingredients
+    Description: Collect Ingredients
+    descriptionLocalizationRefrence: 57
+    FailedDescription: You didn't collect the ingredients
+    failedLocalizationRefrence: 58
+    prefabs:
+    - {fileID: 1258960060683140, guid: 48e79583038de4d07a085ff94b52d4d0, type: 3}
+  - name: SugarSquare
+    Description: Destroy sugar squares
+    descriptionLocalizationRefrence: 59
+    FailedDescription: You didn't destroy the sugar squares
+    failedLocalizationRefrence: 60
+    prefabs:
+    - {fileID: 1055345148094608, guid: 4ebed1d82b94548d0ab47103e3f205e5, type: 3}
+  - name: JellyBlock
+    Description: Spread the jelly everywhere
+    descriptionLocalizationRefrence: 61
+    FailedDescription: You didn't spread the jelly
+    failedLocalizationRefrence: 62
+    prefabs:
+    - {fileID: 1491958887448974, guid: a30bc3dfa7cc24355a551baa872b9b71, type: 3}
+  - name: SolidBlock
+    Description: Destroy solid blocks
+    descriptionLocalizationRefrence: 63
+    FailedDescription: You didn't destroy all blocks
+    failedLocalizationRefrence: 64
+    prefabs:
+    - {fileID: 1793582136509744, guid: 9dbfaa88340224d8eb06d56878decb22, type: 3}

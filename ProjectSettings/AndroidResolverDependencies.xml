@@ -75,8 +75,6 @@
     <file>Assets/Plugins/Android/com.google.firebase.firebase-iid-interop-17.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-measurement-connector-18.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-messaging-20.1.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-messaging-unity-6.10.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.games.gpgs-plugin-support-0.9.62.aar</file>
     <file>Assets/Plugins/Android/javax.inject.javax.inject-1.jar</file>
   </files>
   <settings>
