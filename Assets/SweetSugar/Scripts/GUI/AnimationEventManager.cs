@@ -13,14 +13,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
-#if UNITY_ADS
-using UnityEngine.Advertisements;
-#endif
-
-
-
-
+ 
+ 
 
 namespace SweetSugar.Scripts.GUI
 {
@@ -53,9 +47,8 @@ namespace SweetSugar.Scripts.GUI
             }
             if (name == "PreFailed")
             {
-//            SoundBase.Instance.PlayOneShot(SoundBase.Instance.gameOver[0]);
-                transform.Find("Banner/Buttons/Video").gameObject.SetActive(false);
-                transform.Find("Banner/Buttons/Buy").GetComponent<Button>().interactable = true;
+                //SoundBase.Instance.PlayOneShot(SoundBase.Instance.gameOver[0]);
+                //transform.Find("Banner/Buttons/Video").gameObject.SetActive(false);
 
                 GetComponent<Animation>().Play();
             }
@@ -217,7 +210,7 @@ namespace SweetSugar.Scripts.GUI
             }
             if (name == "PreFailed")
             {
-                transform.Find("Banner/Buttons/Video").gameObject.SetActive(false);
+                //transform.Find("Banner/Buttons/Video").gameObject.SetActive(false);
                 CloseMenu();
             }
 
@@ -246,16 +239,8 @@ namespace SweetSugar.Scripts.GUI
         {
             if (name == "PreFailed" && LevelManager.THIS.gameStatus != GameState.Playing)
             {
-                GetComponent<Animation>()["bannerFailed"].speed = 0;
-#if UNITY_ADS
+                GetComponent<Animation>()["bannerFailed"].speed = 0; 
 
-			if (AdsManager.THIS.enableUnityAds) {
-
-				if (AdsManager.THIS.GetRewardedUnityAdsReady ()) {
-					transform.Find ("Banner/Buttons/Video").gameObject.SetActive (true);
-				}
-			}
-#endif
             }
         }
 
@@ -328,8 +313,20 @@ namespace SweetSugar.Scripts.GUI
             {
 //            LevelManager.THIS.gameStatus = GameState.Map;
                 PlayerPrefs.SetInt("OpenLevel", LevelManager.THIS.currentLevel + 1);
+
+                GameData gameData;
+                gameData = FindObjectOfType<GameData>();
+
+                if (gameData != null)
+                {
+                    gameData.saveData.isActive[LevelManager.THIS.currentLevel + 1] = true;
+                    gameData.Save();
+                }
+                
+                SceneManager.LoadScene("Overworld");
+
                 CrosssceneData.openNextLevel = true;
-                SceneManager.LoadScene(Resources.Load<MapSwitcher>("Scriptable/MapSwitcher").GetSceneName());
+                //SceneManager.LoadScene(Resources.Load<MapSwitcher>("Scriptable/MapSwitcher").GetSceneName());
             }
             if (gameObject.name == "MenuFailed")
             {

@@ -18,24 +18,23 @@ namespace SweetSugar.Scripts.GUI
 
         public void StartGame()
         {
-            if (InitScript.lifes > 0)
-            {
-                InitScript.Instance.SpendLife(1);
+            //if (InitScript.lifes > 0)
+            //{
+            //    InitScript.Instance.SpendLife(1);
                 LevelManager.THIS.gameStatus = GameState.PrepareGame;
-            }
-            else
-            {
-                BuyLifeShop();
-            }
-
+            //}
+            //else
+            //{
+            //    BuyLifeShop();
+            //} 
         }
 
-        public void BuyLifeShop()
-        {
+        //public void BuyLifeShop()
+        //{
 
-            if (InitScript.lifes < InitScript.Instance.CapOfLife)
-                MenuReference.THIS.LiveShop.gameObject.SetActive(true);
+        //    if (InitScript.lifes < InitScript.Instance.CapOfLife)
+        //        MenuReference.THIS.LiveShop.gameObject.SetActive(true);
 
-        }
+        //}
     }
 }
