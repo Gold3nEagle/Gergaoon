@@ -16,8 +16,8 @@ namespace SweetSugar.Scripts.GUI
         int currentDay;
         void OnEnable()
         {
-            if (ServerTime.THIS.dateReceived)
-                CheckDaily();
+            //if (ServerTime.THIS.dateReceived)
+            //    CheckDaily();
         }
 
         private void CheckDaily()

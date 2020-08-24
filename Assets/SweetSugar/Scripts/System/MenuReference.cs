@@ -28,10 +28,10 @@ namespace SweetSugar.Scripts.System
 
         }
 
-        private void Start()
-        {
-            ShowDailyReward();
-        }
+        //private void Start()
+        //{
+        //    ShowDailyReward();
+        //}
 
         public void HideAll()
         {
@@ -43,29 +43,29 @@ namespace SweetSugar.Scripts.System
             }
         }
 
-        private static void ShowDailyReward()
-        {
-            if (!ServerTime.THIS.dateReceived)
-            {
-                ServerTime.OnDateReceived += ShowDailyReward;
-                return;
-            }
+        //private static void ShowDailyReward()
+        //{
+        //    if (!ServerTime.THIS.dateReceived)
+        //    {
+        //        ServerTime.OnDateReceived += ShowDailyReward;
+        //        return;
+        //    }
 
-            var DateReward = PlayerPrefs.GetString("DateReward", default(DateTime).ToString());
-            var dateTimeReward = DateTime.Parse(DateReward);
-            DateTime testDate = ServerTime.THIS.serverTime;
+        //    var DateReward = PlayerPrefs.GetString("DateReward", default(DateTime).ToString());
+        //    var dateTimeReward = DateTime.Parse(DateReward);
+        //    DateTime testDate = ServerTime.THIS.serverTime;
 
-            if (LevelManager.GetGameStatus() == GameState.Map)
-            {
-                if (DateReward == "" || DateReward == default(DateTime).ToString())
-                    InitScript.Instance.DailyMenu.SetActive(true);
-                else
-                {
-                    var timePassedDaily = testDate.Subtract(dateTimeReward).TotalDays;
-                    if (timePassedDaily >= 1)
-                        InitScript.Instance.DailyMenu.SetActive(true);
-                }
-            }
-        }
+        //    if (LevelManager.GetGameStatus() == GameState.Map)
+        //    {
+        //        if (DateReward == "" || DateReward == default(DateTime).ToString())
+        //            InitScript.Instance.DailyMenu.SetActive(true);
+        //        else
+        //        {
+        //            var timePassedDaily = testDate.Subtract(dateTimeReward).TotalDays;
+        //            if (timePassedDaily >= 1)
+        //                InitScript.Instance.DailyMenu.SetActive(true);
+        //        }
+        //    }
+        //}
     }
 }

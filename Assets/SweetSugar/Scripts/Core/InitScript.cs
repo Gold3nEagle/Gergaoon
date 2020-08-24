@@ -74,7 +74,7 @@ namespace SweetSugar.Scripts.Core
         public bool losingLifeEveryGame;
 
         //daily reward popup reference
-        public GameObject DailyMenu;
+        //public GameObject DailyMenu;
 
         // Use this for initialization
         void Awake()
