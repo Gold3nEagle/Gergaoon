@@ -36,20 +36,19 @@ namespace SweetSugar.Scripts.GUI
                 //            SoundBase.Instance.PlayOneShot(SoundBase.Instance.swish[0]);
 
             }
-            if (name == "MenuPlay")
+            if (name == "MenuFailed")
             {
-
+                CharacterAnimation characterAnimation = FindObjectOfType<CharacterAnimation>();
+                characterAnimation.SadAnimation();
             }
-
-            if (name == "PrePlay")
-            {
-                // GameObject
-            }
+             
             if (name == "PreFailed")
             {
                 //SoundBase.Instance.PlayOneShot(SoundBase.Instance.gameOver[0]);
                 //transform.Find("Banner/Buttons/Video").gameObject.SetActive(false);
 
+                CharacterAnimation characterAnimation = FindObjectOfType<CharacterAnimation>();
+                characterAnimation.SadAnimation();
                 GetComponent<Animation>().Play();
             }
 
