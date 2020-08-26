@@ -32,6 +32,15 @@ public class BackToMenu : MonoBehaviour
         { 
             gameData.saveData.isActive[currentLevel] = true;
             gameData.Save();
+
+            int latestLevel = gameData.GetLatestUnlockedLevel();
+            if(currentLevel <= latestLevel && currentLevel >= latestLevel - 2)
+            {
+                //Giving Candy to the player
+                int totalCandy = PlayerPrefs.GetInt("totalCandy");
+                totalCandy += 100;
+                PlayerPrefs.SetInt("totalCandy", totalCandy);
+            }
         }
 
         if (adsEnabled == false)

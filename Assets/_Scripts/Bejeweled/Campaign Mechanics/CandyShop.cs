@@ -8,8 +8,8 @@ public class CandyShop : MonoBehaviour
 
     public Overworld overWorld;
     int totalCandy;
-    public int destroyBoostPrice, rainbowBoostPrice, adjacentBoostPrice;
-    public Text destroyBoostAmount, rainbowBoostAmount, adjacentBoostAmount; 
+    public int extraMovesPrice, freeMovePrice, explodeAreaPrice, removeCandyPrice;
+    public Text extraMovesAmount, freeMoveAmount, explodeAreaAmount, removeCandyAmount; 
 
     // Start is called before the first frame update
     void Start()
@@ -19,45 +19,60 @@ public class CandyShop : MonoBehaviour
     }
 
 
-    public void BuyDestroyBoost()
+    public void BuyExtraMoves()
     {
-        if(totalCandy >= destroyBoostPrice)
+        if(totalCandy >= extraMovesPrice)
         { 
-            int destroyBoostNum = PlayerPrefs.GetInt("DestroyBoost");
-            destroyBoostNum++;
-            PlayerPrefs.SetInt("DestroyBoost", destroyBoostNum);
+            int extraMovesBoostNum = PlayerPrefs.GetInt("ExtraMoves");
+            extraMovesBoostNum++;
+            PlayerPrefs.SetInt("ExtraMoves", extraMovesBoostNum);
 
-            totalCandy -= destroyBoostPrice;
+            totalCandy -= extraMovesPrice;
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
         }
     }
 
-    public void BuyRainbowBoost()
+    public void BuyFreeMove()
     {
-        if(totalCandy >= rainbowBoostPrice)
+        if(totalCandy >= freeMovePrice)
         {
-            int rainbowBoostNum = PlayerPrefs.GetInt("ColorBombBoost");
-            rainbowBoostNum++;
-            PlayerPrefs.SetInt("ColorBombBoost", rainbowBoostNum);
+            int freeMoveNum = PlayerPrefs.GetInt("FreeMove");
+            freeMoveNum++;
+            PlayerPrefs.SetInt("FreeMove", freeMoveNum);
 
-            totalCandy -= rainbowBoostPrice;
+            totalCandy -= freeMovePrice;
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
         }
     } 
 
-    public void BuyAdjacentBoost()
+    public void BuyExplodeArea()
     {
-        if(totalCandy >= adjacentBoostPrice)
+        if(totalCandy >= explodeAreaPrice)
         {
-            int adjacentBoostNum = PlayerPrefs.GetInt("AdjacentBoost"); ;
-            adjacentBoostNum++;
-            PlayerPrefs.SetInt("AdjacentBoost", adjacentBoostNum);
+            int explodeAreaNum = PlayerPrefs.GetInt("ExplodeArea"); ;
+            explodeAreaNum++;
+            PlayerPrefs.SetInt("ExplodeArea", explodeAreaNum);
 
-            totalCandy -= rainbowBoostPrice;
+            totalCandy -= freeMovePrice;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            overWorld.DisplayTotalCandy();
+            DisplayBoostsAmount();
+        }
+    }
+
+    public void BuyRemoveCandy()
+    {
+        if (totalCandy >= removeCandyPrice)
+        {
+            int removeCandyNum = PlayerPrefs.GetInt("Bomb"); ;
+            removeCandyNum++;
+            PlayerPrefs.SetInt("Bomb", removeCandyNum);
+
+            totalCandy -= freeMovePrice;
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
@@ -66,13 +81,16 @@ public class CandyShop : MonoBehaviour
 
     void DisplayBoostsAmount()
     {
-        int destroyBoostNum = PlayerPrefs.GetInt("DestroyBoost");
-        int rainbowBoostNum = PlayerPrefs.GetInt("ColorBombBoost");
-        int adjacentBoostNum = PlayerPrefs.GetInt("AdjacentBoost"); ;
+        int extraMovesBoostNum = PlayerPrefs.GetInt("ExtraMoves");
+        int freeMoveNum = PlayerPrefs.GetInt("FreeMove");
+        int explodeAreaNum = PlayerPrefs.GetInt("ExplodeArea");
+        int removeCandyNum = PlayerPrefs.GetInt("Bomb");
 
-        destroyBoostAmount.text = destroyBoostNum.ToString();
-        rainbowBoostAmount.text = rainbowBoostNum.ToString();
-        adjacentBoostAmount.text = adjacentBoostNum.ToString();
+
+        extraMovesAmount.text = extraMovesBoostNum.ToString();
+        freeMoveAmount.text = freeMoveNum.ToString();
+        explodeAreaAmount.text = explodeAreaNum.ToString();
+        removeCandyAmount.text = removeCandyNum.ToString();
     } 
 
 }

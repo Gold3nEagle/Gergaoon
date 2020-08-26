@@ -80,7 +80,10 @@ namespace SweetSugar.Scripts.GUI.Boost
             }
             else
             {
-                OpenBoostShop(boostProduct, ActivateBoost);
+                //Watch an Ad to get a booster?
+
+                //Below line is used as a mock for an in-game shop.
+                //OpenBoostShop(boostProduct, ActivateBoost);
             }
 
             if (boostCount != null)
@@ -173,12 +176,13 @@ namespace SweetSugar.Scripts.GUI.Boost
 
         private int BoostCount()
         {
-            // Debug.Log("boost count " + PlayerPrefs.GetInt("" + type));
+            Debug.Log("boost type " + type);
             return PlayerPrefs.GetInt("" + type);
         }
 
         private static void OpenBoostShop(BoostProduct boost, Action callback)
         {
+            Debug.Log(boost + " The boost attribute"); 
             BoostShop.SetBoost(boost, callback);
         }
 
