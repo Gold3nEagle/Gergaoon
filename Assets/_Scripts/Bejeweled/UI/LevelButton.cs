@@ -97,8 +97,7 @@ public class LevelButton : MonoBehaviour
             }
             else
             {
-                confirmPanel.GetComponent<ConfirmPanel>().level = level;
-                confirmPanel.SetActive(true);
+                LoadChosenLevel(level);
             }
         } else
         { 
@@ -109,6 +108,19 @@ public class LevelButton : MonoBehaviour
     public void CancelUnderDev()
     {
         underDevPanel.SetActive(false);  
+    }
+
+
+    void LoadChosenLevel(int chosenLevel)
+    {
+
+        LevelLoader levelLoader = FindObjectOfType<LevelLoader>();
+        PlayerPrefs.SetInt("currentLevel", chosenLevel);
+
+        GameObject mainMusicGO = GameObject.FindGameObjectWithTag("Music");
+        Destroy(mainMusicGO);
+
+        levelLoader.LoadLevel(4);
     }
 
 }

@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class BackToMenu : MonoBehaviour
 { 
-    private GameData gameData;
-    private Board board;
+    private GameData gameData; 
     public LevelLoader levelLoader;
     public AdsScript adScript;
+    int currentLevel;
     private int adsNum;
     private bool adsEnabled = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        gameData = FindObjectOfType<GameData>();
-        board = FindObjectOfType<Board>();
+        currentLevel = PlayerPrefs.GetInt("currentLevel");
+        gameData = FindObjectOfType<GameData>(); 
         adsNum = PlayerPrefs.GetInt("IAPAds");
         if(adsNum == 1)
         {
@@ -25,16 +25,18 @@ public class BackToMenu : MonoBehaviour
     }
 
     public void WinOK()
-    { 
+    {
+        int currentLevel = PlayerPrefs.GetInt("currentLevel");
+
         if (gameData != null)
-        {
-            gameData.saveData.isActive[board.level + 1] = true;
+        { 
+            gameData.saveData.isActive[currentLevel] = true;
             gameData.Save();
         }
 
         if (adsEnabled == false)
         {
-            if (board.level % 3 == 0)
+            if (currentLevel % 3 == 0)
             { 
                 adScript.ShowInterstitialAd();
                 StartCoroutine(GoToMenu(3));
@@ -64,7 +66,7 @@ public class BackToMenu : MonoBehaviour
 
         if (adsEnabled == false)
         {
-            if (board.level % 3 == 0)
+            if (currentLevel % 3 == 0)
             { 
                 adScript.ShowInterstitialAd();
                 StartCoroutine(GoToMenu(3));
@@ -80,6 +82,10 @@ public class BackToMenu : MonoBehaviour
 
     IEnumerator GoToMenu(int waitTime)
     {
+        GameObject musicGameObject = GameObject.Find("Music");
+        Destroy(musicGameObject);
+
+
         yield return new WaitForSeconds(waitTime); 
         levelLoader.LoadLevel(2);
 

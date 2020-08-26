@@ -28857,8 +28857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb53cf36ffe37d647830e3c783322eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  matchScore: {fileID: 0}
-  endGame: {fileID: 0}
 --- !u!114 &571256511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67418,7 +67416,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 848685485
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -110103,8 +110101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb53cf36ffe37d647830e3c783322eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  matchScore: {fileID: 0}
-  endGame: {fileID: 0}
 --- !u!1 &2103584870
 GameObject:
   m_ObjectHideFlags: 0

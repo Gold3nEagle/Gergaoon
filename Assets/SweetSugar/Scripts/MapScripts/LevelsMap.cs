@@ -84,7 +84,9 @@ namespace SweetSugar.Scripts.MapScripts
 
         public int GetLastestReachedLevel()
         {//1.3.3
-            return GetMapLevels().Where(l => !l.IsLocked).Select(l => l.Number).Max();
+            //return GetMapLevels().Where(l => !l.IsLocked).Select(l => l.Number).Max();
+            int latestLevel = PlayerPrefs.GetInt("currentLevel");
+            return latestLevel;
         }
 
         private void SetCameraToCharacter()
