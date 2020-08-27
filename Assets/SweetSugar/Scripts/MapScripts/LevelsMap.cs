@@ -112,6 +112,8 @@ namespace SweetSugar.Scripts.MapScripts
 
         public static void CompleteLevel(int number, int starsCount)
         {
+            Debug.Log("Level iss " + number);
+            Debug.Log("Stars count iss " + starsCount);
             CompleteLevelInternal(number, starsCount);
         }
 
@@ -171,6 +173,10 @@ namespace SweetSugar.Scripts.MapScripts
 
         private static void CompleteLevelInternal(int number, int starsCount)
         {
+
+            Debug.Log("Level is " + number);
+            Debug.Log("Stars count is " + starsCount);
+
             if (IsLevelLocked(number))
             {
                 Debug.Log(string.Format("Can't complete locked level {0}.", number));

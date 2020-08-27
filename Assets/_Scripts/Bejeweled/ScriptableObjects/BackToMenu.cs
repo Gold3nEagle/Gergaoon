@@ -99,4 +99,9 @@ public class BackToMenu : MonoBehaviour
         levelLoader.LoadLevel(2);
 
     }  
+
+    public void SetStars(int level, int stars)
+    {
+        gameData.saveData.stars[level -1 ] = stars;
+    }
 }

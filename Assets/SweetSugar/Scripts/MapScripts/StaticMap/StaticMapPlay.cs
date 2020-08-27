@@ -15,6 +15,7 @@ namespace SweetSugar.Scripts.MapScripts
         {
             level = LevelsMap._instance.GetLastestReachedLevel();
             text.text = LocalizationManager.GetText(83, "Level") + " " + level;
+            InitScript.OpenMenuPlay(level);
         }
 
         public void PressPlay()

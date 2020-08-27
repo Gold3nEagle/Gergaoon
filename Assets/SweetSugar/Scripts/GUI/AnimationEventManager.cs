@@ -28,6 +28,8 @@ namespace SweetSugar.Scripts.GUI
 
         bool WaitForAksFriends;
         Dictionary<string, string> parameters;
+         
+
 
         void OnEnable()
         {
@@ -248,14 +250,24 @@ namespace SweetSugar.Scripts.GUI
         /// </summary>
         IEnumerator MenuComplete()
         {
+
+            int starsReceived = 0;
+            int currentLevel = LevelManager.THIS.currentLevel;
+
             for (var i = 1; i <= LevelManager.THIS.stars; i++)
             {
                 //  SoundBase.Instance.audio.PlayOneShot( SoundBase.Instance.scoringStar );
                 transform.Find("Image").Find("Star" + i).gameObject.SetActive(true);
                 SoundBase.Instance.PlayOneShot(SoundBase.Instance.star[i - 1]);
                 yield return new WaitForSeconds(0.5f);
-            }
-        }
+                starsReceived++;
+            } 
+
+            BackToMenu registerStars = FindObjectOfType<BackToMenu>();
+            registerStars.SetStars(currentLevel, starsReceived);
+
+
+        }  
 
         /// <summary>
         /// Complete popup animation
@@ -313,16 +325,16 @@ namespace SweetSugar.Scripts.GUI
 //            LevelManager.THIS.gameStatus = GameState.Map;
                 PlayerPrefs.SetInt("OpenLevel", LevelManager.THIS.currentLevel + 1);
 
-                GameData gameData;
-                gameData = FindObjectOfType<GameData>();
+                //GameData gameData;
+                //gameData = FindObjectOfType<GameData>();
 
-                if (gameData != null)
-                {
-                    gameData.saveData.isActive[LevelManager.THIS.currentLevel + 1] = true;
-                    gameData.Save();
-                }
+                //if (gameData != null)
+                //{
+                //    gameData.saveData.isActive[LevelManager.THIS.currentLevel + 1] = true;
+                //    gameData.Save();
+                //}
                 
-                SceneManager.LoadScene("Overworld");
+                //SceneManager.LoadScene("Overworld");
 
                 CrosssceneData.openNextLevel = true;
                 //SceneManager.LoadScene(Resources.Load<MapSwitcher>("Scriptable/MapSwitcher").GetSceneName());
@@ -346,7 +358,7 @@ namespace SweetSugar.Scripts.GUI
                 BackToMap();
             }
             else if (gameObject.name == "Settings" && LevelManager.GetGameStatus() == GameState.Map)
-                SceneManager.LoadScene("main");
+                BackToMap();
 
             //        SoundBase.Instance.PlayOneShot(SoundBase.Instance.swish[1]);
 
@@ -412,8 +424,10 @@ namespace SweetSugar.Scripts.GUI
             // LevelManager.THIS.gameStatus = GameState.GameOver;
             // CloseMenu();
             gameObject.SetActive(false);
-            LevelManager.THIS.gameStatus = GameState.Map;
-            SceneManager.LoadScene(Resources.Load<MapSwitcher>("Scriptable/MapSwitcher").GetSceneName());
+            LevelManager.THIS.gameStatus = GameState.Map; 
+            BackToMenu gotoScene = FindObjectOfType<BackToMenu>();
+            gotoScene.LoseOK();
+
         }
 
         public void Next()

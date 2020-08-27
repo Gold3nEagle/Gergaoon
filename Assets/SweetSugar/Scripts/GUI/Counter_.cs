@@ -95,7 +95,7 @@ namespace SweetSugar.Scripts.GUI
                         txt.transform.localScale = Vector3.one;
                         if (ThisLevelData.limit <= 5)
                         {
-                            txt.color = new Color(255f / 255f, 132f / 255, 222f / 255);
+                            txt.color = new Color(255f / 255f, 8f / 255, 1f / 255);
                             txt.outlineColor = Color.white;
                             if (!alert)
                             {

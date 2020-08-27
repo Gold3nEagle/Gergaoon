@@ -176,7 +176,6 @@ namespace SweetSugar.Scripts.GUI.Boost
 
         private int BoostCount()
         {
-            Debug.Log("boost type " + type);
             return PlayerPrefs.GetInt("" + type);
         }
 
