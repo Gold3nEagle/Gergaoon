@@ -24,7 +24,7 @@ MonoBehaviour:
     m_FamilyName: Kharabeesh
     m_StyleName: "\x7F"
     m_PointSize: 43
-    m_Scale: 1
+    m_Scale: 1.4
     m_LineHeight: 60.95166
     m_AscentLine: 43.041992
     m_CapLine: 26
@@ -5542,6 +5542,7 @@ Texture2D:
   m_TextureFormat: 1
   m_MipCount: 1
   m_IsReadable: 1
+  m_IgnoreMasterTextureLimit: 0
   m_StreamingMipmaps: 0
   m_StreamingMipmapsPriority: 0
   m_AlphaIsTransparency: 0

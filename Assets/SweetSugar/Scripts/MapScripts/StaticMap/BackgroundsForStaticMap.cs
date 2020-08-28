@@ -16,7 +16,8 @@ namespace SweetSugar.Scripts.GUI
         void OnEnable ()
         {
             {
-                var backgroundSpriteNum = (int) (LevelsMap._instance.GetLastestReachedLevel() / 20f - 0.01f);
+                int currentLevel = PlayerPrefs.GetInt("currentLevel");
+                var backgroundSpriteNum = (int) (currentLevel / 20f - 0.01f);
                 if(pictures.Length > backgroundSpriteNum)
                     GetComponent<Image>().sprite = pictures[backgroundSpriteNum];
             }

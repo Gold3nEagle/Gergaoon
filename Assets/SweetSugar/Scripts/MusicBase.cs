@@ -66,8 +66,8 @@ namespace SweetSugar.Scripts
             {
                 audioSource.clip = music[0];
             }
-            if(!audioSource.isPlaying)
-                audioSource.Play();
+            //if(!audioSource.isPlaying)
+                //audioSource.Play();
         }
 
         // Update is called once per frame
