@@ -14,6 +14,15 @@ public class LocaleManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+
+        if(Application.systemLanguage == SystemLanguage.Arabic)
+        {
+            PlayerPrefs.SetInt("LanguageNum", 1);
+        } else
+        {
+            PlayerPrefs.SetInt("LanguageNum", 2);
+        }
+
         if (instance == null)
         {
             instance = this;

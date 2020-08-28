@@ -459,7 +459,7 @@ PrefabInstance:
     - target: {fileID: 6597904615905319413, guid: e1dc121b9bfa0b242882e7e44345c282,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.6500015
+      value: 2.6500092
       objectReference: {fileID: 0}
     - target: {fileID: 6597904615905319413, guid: e1dc121b9bfa0b242882e7e44345c282,
         type: 3}
@@ -4664,6 +4664,7 @@ GameObject:
   - component: {fileID: 1068039212}
   - component: {fileID: 1068039211}
   - component: {fileID: 1068039210}
+  - component: {fileID: 1068039213}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -4733,8 +4734,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1708212357}
-        m_MethodName: LoseOK
+      - m_Target: {fileID: 1068039213}
+        m_MethodName: LoadTempScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4793,6 +4794,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068039208}
   m_CullTransparentMesh: 0
+--- !u!114 &1068039213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068039208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 629f160451d34d243a7daf6c3408734b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1079150451
 GameObject:
   m_ObjectHideFlags: 0
@@ -6618,8 +6631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb53cf36ffe37d647830e3c783322eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  matchScore: {fileID: 1849165860}
-  endGame: {fileID: 1708212356}
 --- !u!114 &1708212359
 MonoBehaviour:
   m_ObjectHideFlags: 0

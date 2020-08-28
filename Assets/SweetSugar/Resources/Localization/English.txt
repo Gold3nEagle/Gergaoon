@@ -56,8 +56,8 @@
 56 : You didn't collect the items
 57 : Collect Ingredients
 58 : You didn't collect the ingredients
-59 : Destroy sugar squares
-60 : You didn't destroy the sugar squares
+59 : Destroy sugar stars
+60 : You didn't destroy the sugar stars
 61 : Spread the jelly everywhere
 62 : You didn't spread the jelly
 63 : Destroy solid blocks

@@ -8,7 +8,7 @@ public class ConfirmPanel : MonoBehaviour
 {
 
     [Header("Level Information")]
-    //public string levelToLoad;
+    public string levelToLoad;
     public int level;
     private GameData gameData;
     private int starsActive;
@@ -65,10 +65,10 @@ public class ConfirmPanel : MonoBehaviour
 
     public void Play()
     {
-        gameData.Save();
+        //gameData.Save();
         PlayerPrefs.SetInt("Current Level", level - 1);
-        //SceneManager.LoadScene(levelToLoad);
-        levelLoader.LoadLevel(4);
+        SceneManager.LoadScene(levelToLoad);
+        //levelLoader.LoadLevel(4);
     }
      
 
