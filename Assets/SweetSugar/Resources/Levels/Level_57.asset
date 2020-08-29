@@ -34,7 +34,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 472
+          y: 445
           width: 50
           height: 50
         item:
@@ -57,8 +57,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 472
+          x: 56
+          y: 445
           width: 50
           height: 50
         item:
@@ -81,8 +81,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 472
+          x: 109
+          y: 445
           width: 50
           height: 50
         item:
@@ -100,13 +100,13 @@ MonoBehaviour:
         position: {x: 3, y: 0}
         direction: {x: 0, y: -1}
         enterSquare: 1
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 3, y: 2}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 472
+          x: 162
+          y: 445
           width: 50
           height: 50
         item:
@@ -129,8 +129,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 472
+          x: 215
+          y: 445
           width: 50
           height: 50
         item:
@@ -149,13 +149,13 @@ MonoBehaviour:
         position: {x: 5, y: 0}
         direction: {x: 0, y: -1}
         enterSquare: 1
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 5, y: 2}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 472
+          x: 268
+          y: 445
           width: 50
           height: 50
         item:
@@ -178,8 +178,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 472
+          x: 321
+          y: 445
           width: 50
           height: 50
         item:
@@ -202,8 +202,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 472
+          x: 374
+          y: 445
           width: 50
           height: 50
         item:
@@ -226,8 +226,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 472
+          x: 427
+          y: 445
           width: 50
           height: 50
         item:
@@ -251,7 +251,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 525
+          y: 497
           width: 50
           height: 50
         item:
@@ -274,8 +274,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 525
+          x: 56
+          y: 497
           width: 50
           height: 50
         item:
@@ -298,8 +298,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 525
+          x: 109
+          y: 497
           width: 50
           height: 50
         item:
@@ -322,8 +322,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 525
+          x: 162
+          y: 497
           width: 50
           height: 50
         item:
@@ -346,8 +346,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 525
+          x: 215
+          y: 497
           width: 50
           height: 50
         item:
@@ -370,8 +370,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 525
+          x: 268
+          y: 497
           width: 50
           height: 50
         item:
@@ -394,8 +394,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 525
+          x: 321
+          y: 497
           width: 50
           height: 50
         item:
@@ -418,8 +418,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 525
+          x: 374
+          y: 497
           width: 50
           height: 50
         item:
@@ -442,8 +442,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 525
+          x: 427
+          y: 497
           width: 50
           height: 50
         item:
@@ -460,14 +460,14 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 0, y: 2}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 578
+          y: 549
           width: 50
           height: 50
         item:
@@ -484,14 +484,14 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 1, y: 2}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 578
+          x: 56
+          y: 549
           width: 50
           height: 50
         item:
@@ -508,14 +508,14 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 2, y: 2}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 578
+          x: 109
+          y: 549
           width: 50
           height: 50
         item:
@@ -535,11 +535,11 @@ MonoBehaviour:
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 3, y: 0}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 578
+          x: 162
+          y: 549
           width: 50
           height: 50
         item:
@@ -562,8 +562,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 578
+          x: 215
+          y: 549
           width: 50
           height: 50
         item:
@@ -583,11 +583,11 @@ MonoBehaviour:
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 5, y: 0}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 578
+          x: 268
+          y: 549
           width: 50
           height: 50
         item:
@@ -604,14 +604,14 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 6, y: 2}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 578
+          x: 321
+          y: 549
           width: 50
           height: 50
         item:
@@ -628,14 +628,14 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 7, y: 2}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 578
+          x: 374
+          y: 549
           width: 50
           height: 50
         item:
@@ -652,14 +652,14 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 8, y: 2}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 578
+          x: 427
+          y: 549
           width: 50
           height: 50
         item:
@@ -683,7 +683,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 631
+          y: 601
           width: 50
           height: 50
         item:
@@ -706,8 +706,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 631
+          x: 56
+          y: 601
           width: 50
           height: 50
         item:
@@ -730,8 +730,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 631
+          x: 109
+          y: 601
           width: 50
           height: 50
         item:
@@ -754,8 +754,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 631
+          x: 162
+          y: 601
           width: 50
           height: 50
         item:
@@ -778,8 +778,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 631
+          x: 215
+          y: 601
           width: 50
           height: 50
         item:
@@ -802,8 +802,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 631
+          x: 268
+          y: 601
           width: 50
           height: 50
         item:
@@ -826,8 +826,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 631
+          x: 321
+          y: 601
           width: 50
           height: 50
         item:
@@ -850,8 +850,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 631
+          x: 374
+          y: 601
           width: 50
           height: 50
         item:
@@ -874,8 +874,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 631
+          x: 427
+          y: 601
           width: 50
           height: 50
         item:
@@ -899,7 +899,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 684
+          y: 653
           width: 50
           height: 50
         item:
@@ -922,8 +922,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 684
+          x: 56
+          y: 653
           width: 50
           height: 50
         item:
@@ -946,8 +946,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 684
+          x: 109
+          y: 653
           width: 50
           height: 50
         item:
@@ -970,8 +970,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 684
+          x: 162
+          y: 653
           width: 50
           height: 50
         item:
@@ -994,8 +994,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 684
+          x: 215
+          y: 653
           width: 50
           height: 50
         item:
@@ -1018,8 +1018,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 684
+          x: 268
+          y: 653
           width: 50
           height: 50
         item:
@@ -1042,8 +1042,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 684
+          x: 321
+          y: 653
           width: 50
           height: 50
         item:
@@ -1066,8 +1066,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 684
+          x: 374
+          y: 653
           width: 50
           height: 50
         item:
@@ -1090,8 +1090,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 684
+          x: 427
+          y: 653
           width: 50
           height: 50
         item:
@@ -1115,7 +1115,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 737
+          y: 705
           width: 50
           height: 50
         item:
@@ -1138,8 +1138,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 737
+          x: 56
+          y: 705
           width: 50
           height: 50
         item:
@@ -1162,8 +1162,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 737
+          x: 109
+          y: 705
           width: 50
           height: 50
         item:
@@ -1186,8 +1186,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 737
+          x: 162
+          y: 705
           width: 50
           height: 50
         item:
@@ -1210,8 +1210,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 737
+          x: 215
+          y: 705
           width: 50
           height: 50
         item:
@@ -1234,8 +1234,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 737
+          x: 268
+          y: 705
           width: 50
           height: 50
         item:
@@ -1258,8 +1258,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 737
+          x: 321
+          y: 705
           width: 50
           height: 50
         item:
@@ -1282,8 +1282,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 737
+          x: 374
+          y: 705
           width: 50
           height: 50
         item:
@@ -1306,8 +1306,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 737
+          x: 427
+          y: 705
           width: 50
           height: 50
         item:
@@ -1331,7 +1331,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 790
+          y: 757
           width: 50
           height: 50
         item:
@@ -1354,8 +1354,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 790
+          x: 56
+          y: 757
           width: 50
           height: 50
         item:
@@ -1378,8 +1378,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 790
+          x: 109
+          y: 757
           width: 50
           height: 50
         item:
@@ -1402,8 +1402,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 790
+          x: 162
+          y: 757
           width: 50
           height: 50
         item:
@@ -1426,8 +1426,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 790
+          x: 215
+          y: 757
           width: 50
           height: 50
         item:
@@ -1450,8 +1450,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 790
+          x: 268
+          y: 757
           width: 50
           height: 50
         item:
@@ -1474,8 +1474,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 790
+          x: 321
+          y: 757
           width: 50
           height: 50
         item:
@@ -1498,8 +1498,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 790
+          x: 374
+          y: 757
           width: 50
           height: 50
         item:
@@ -1522,8 +1522,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 790
+          x: 427
+          y: 757
           width: 50
           height: 50
         item:
@@ -1547,7 +1547,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 843
+          y: 809
           width: 50
           height: 50
         item:
@@ -1570,8 +1570,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 843
+          x: 56
+          y: 809
           width: 50
           height: 50
         item:
@@ -1594,8 +1594,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 843
+          x: 109
+          y: 809
           width: 50
           height: 50
         item:
@@ -1618,8 +1618,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 843
+          x: 162
+          y: 809
           width: 50
           height: 50
         item:
@@ -1642,8 +1642,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 843
+          x: 215
+          y: 809
           width: 50
           height: 50
         item:
@@ -1666,8 +1666,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 843
+          x: 268
+          y: 809
           width: 50
           height: 50
         item:
@@ -1690,8 +1690,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 843
+          x: 321
+          y: 809
           width: 50
           height: 50
         item:
@@ -1714,8 +1714,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 843
+          x: 374
+          y: 809
           width: 50
           height: 50
         item:
@@ -1738,8 +1738,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 843
+          x: 427
+          y: 809
           width: 50
           height: 50
         item:
@@ -1763,7 +1763,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 896
+          y: 861
           width: 50
           height: 50
         item:
@@ -1786,8 +1786,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 896
+          x: 56
+          y: 861
           width: 50
           height: 50
         item:
@@ -1810,8 +1810,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 896
+          x: 109
+          y: 861
           width: 50
           height: 50
         item:
@@ -1834,8 +1834,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 896
+          x: 162
+          y: 861
           width: 50
           height: 50
         item:
@@ -1858,8 +1858,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 896
+          x: 215
+          y: 861
           width: 50
           height: 50
         item:
@@ -1882,8 +1882,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 896
+          x: 268
+          y: 861
           width: 50
           height: 50
         item:
@@ -1906,8 +1906,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 896
+          x: 321
+          y: 861
           width: 50
           height: 50
         item:
@@ -1930,8 +1930,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 896
+          x: 374
+          y: 861
           width: 50
           height: 50
         item:
@@ -1954,8 +1954,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 896
+          x: 427
+          y: 861
           width: 50
           height: 50
         item:
@@ -1970,19 +1970,21 @@ MonoBehaviour:
     target:
       name: SugarSquare
       Description: Destroy sugar squares
+      descriptionLocalizationRefrence: 59
       FailedDescription: You didn't destroy the sugar squares
+      failedLocalizationRefrence: 60
       prefabs:
       - {fileID: 1055345148094608, guid: 4ebed1d82b94548d0ab47103e3f205e5, type: 3}
-      prefabPaths: []
     targetIndex: 2
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 35
+    limit: 34
     colorLimit: 5
     star1: 1000
     star2: 2000
     star3: 3000
     enableMarmalade: 0
+    selectedTutorial: 0
     currentSublevelIndex: 0
     subTargetsContainers:
     - targetPrefab: {fileID: 1533976084100574, guid: 4ebed1d82b94548d0ab47103e3f205e5,
@@ -1990,10 +1992,10 @@ MonoBehaviour:
       count: 67
       preCount: 67
       extraObject: {fileID: 0}
-      prefabPath: 
+      color: 0
     - targetPrefab: {fileID: 1711075845521044, guid: 4ebed1d82b94548d0ab47103e3f205e5,
         type: 3}
       count: 0
       preCount: 0
       extraObject: {fileID: 0}
-      prefabPath: 
+      color: 0

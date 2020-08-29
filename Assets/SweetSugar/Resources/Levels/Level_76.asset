@@ -18,10 +18,10 @@ MonoBehaviour:
     fields:
     - subLevel: 1
       maxRows: 9
-      maxCols: 11
+      maxCols: 10
       noRegenLevel: 0
       levelSquares:
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 489
+          y: 445
           width: 50
           height: 50
         item:
@@ -57,8 +57,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 489
+          x: 56
+          y: 445
           width: 50
           height: 50
         item:
@@ -81,8 +81,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 489
+          x: 109
+          y: 445
           width: 50
           height: 50
         item:
@@ -93,7 +93,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -105,8 +105,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 489
+          x: 162
+          y: 445
           width: 50
           height: 50
         item:
@@ -117,7 +117,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -129,8 +129,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 489
+          x: 215
+          y: 445
           width: 50
           height: 50
         item:
@@ -141,7 +141,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -153,8 +153,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 489
+          x: 268
+          y: 445
           width: 50
           height: 50
         item:
@@ -165,7 +165,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -177,8 +177,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 489
+          x: 321
+          y: 445
           width: 50
           height: 50
         item:
@@ -189,7 +189,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -201,8 +201,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 489
+          x: 374
+          y: 445
           width: 50
           height: 50
         item:
@@ -225,8 +225,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 489
+          x: 427
+          y: 445
           width: 50
           height: 50
         item:
@@ -249,32 +249,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 489
-          y: 489
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 0
-        blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
-        position: {x: 10, y: 0}
-        direction: {x: 0, y: -1}
-        enterSquare: 1
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 543
-          y: 489
+          x: 480
+          y: 445
           width: 50
           height: 50
         item:
@@ -298,7 +274,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 542
+          y: 497
           width: 50
           height: 50
         item:
@@ -309,7 +285,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -321,8 +297,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 542
+          x: 56
+          y: 497
           width: 50
           height: 50
         item:
@@ -333,7 +309,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -345,8 +321,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 542
+          x: 109
+          y: 497
           width: 50
           height: 50
         item:
@@ -359,18 +335,18 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 3, y: 1}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 542
+          x: 162
+          y: 497
           width: 50
           height: 50
         item:
@@ -381,9 +357,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 4, y: 1}
         direction: {x: 0, y: -1}
@@ -393,8 +369,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 542
+          x: 215
+          y: 497
           width: 50
           height: 50
         item:
@@ -405,9 +381,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 5, y: 1}
         direction: {x: 0, y: -1}
@@ -417,8 +393,32 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 542
+          x: 268
+          y: 497
+          width: 50
+          height: 50
+        item:
+          Color: 0
+          ItemType: 0
+          Texture: {fileID: 0}
+          colors: {fileID: 0}
+          Item: {fileID: 0}
+          EnableMarmaladeTargets: 0
+          TargetMarmaladePositions: []
+      - block: 1
+        blockLayer: 1
+        obstacle: 4
+        obstacleLayer: 1
+        position: {x: 6, y: 1}
+        direction: {x: 0, y: -1}
+        enterSquare: 0
+        isEnterTeleport: 0
+        teleportCoordinatesLinked: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        guiRect:
+          serializedVersion: 2
+          x: 321
+          y: 497
           width: 50
           height: 50
         item:
@@ -433,7 +433,7 @@ MonoBehaviour:
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
-        position: {x: 6, y: 1}
+        position: {x: 7, y: 1}
         direction: {x: 0, y: -1}
         enterSquare: 0
         isEnterTeleport: 0
@@ -441,8 +441,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 542
+          x: 374
+          y: 497
           width: 50
           height: 50
         item:
@@ -453,31 +453,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
-        blockLayer: 1
-        obstacle: 7
-        obstacleLayer: 1
-        position: {x: 7, y: 1}
-        direction: {x: 0, y: -1}
-        enterSquare: 1
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 381
-          y: 542
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -489,8 +465,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 542
+          x: 427
+          y: 497
           width: 50
           height: 50
         item:
@@ -513,32 +489,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 489
-          y: 542
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 1
-        blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
-        position: {x: 10, y: 1}
-        direction: {x: 0, y: -1}
-        enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 543
-          y: 542
+          x: 480
+          y: 497
           width: 50
           height: 50
         item:
@@ -562,7 +514,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 595
+          y: 549
           width: 50
           height: 50
         item:
@@ -585,8 +537,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 595
+          x: 56
+          y: 549
           width: 50
           height: 50
         item:
@@ -599,7 +551,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 2, y: 2}
         direction: {x: 0, y: -1}
@@ -609,8 +561,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 595
+          x: 109
+          y: 549
           width: 50
           height: 50
         item:
@@ -623,7 +575,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 3, y: 2}
         direction: {x: 0, y: -1}
@@ -633,8 +585,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 595
+          x: 162
+          y: 549
           width: 50
           height: 50
         item:
@@ -647,18 +599,18 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 4, y: 2}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 595
+          x: 215
+          y: 549
           width: 50
           height: 50
         item:
@@ -671,18 +623,18 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 5, y: 2}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 595
+          x: 268
+          y: 549
           width: 50
           height: 50
         item:
@@ -695,18 +647,18 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 6, y: 2}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 595
+          x: 321
+          y: 549
           width: 50
           height: 50
         item:
@@ -719,7 +671,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 7, y: 2}
         direction: {x: 0, y: -1}
@@ -729,8 +681,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 595
+          x: 374
+          y: 549
           width: 50
           height: 50
         item:
@@ -743,7 +695,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 8, y: 2}
         direction: {x: 0, y: -1}
@@ -753,8 +705,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 595
+          x: 427
+          y: 549
           width: 50
           height: 50
         item:
@@ -777,8 +729,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 489
-          y: 595
+          x: 480
+          y: 549
           width: 50
           height: 50
         item:
@@ -790,30 +742,6 @@ MonoBehaviour:
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 1
-        blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
-        position: {x: 10, y: 2}
-        direction: {x: 0, y: -1}
-        enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 543
-          y: 595
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -826,7 +754,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 648
+          y: 601
           width: 50
           height: 50
         item:
@@ -839,7 +767,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 1, y: 3}
         direction: {x: 0, y: -1}
@@ -849,8 +777,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 648
+          x: 56
+          y: 601
           width: 50
           height: 50
         item:
@@ -863,7 +791,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 2, y: 3}
         direction: {x: 0, y: -1}
@@ -873,8 +801,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 648
+          x: 109
+          y: 601
           width: 50
           height: 50
         item:
@@ -887,7 +815,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 3, y: 3}
         direction: {x: 0, y: -1}
@@ -897,8 +825,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 648
+          x: 162
+          y: 601
           width: 50
           height: 50
         item:
@@ -909,7 +837,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -921,8 +849,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 648
+          x: 215
+          y: 601
           width: 50
           height: 50
         item:
@@ -933,7 +861,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -945,8 +873,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 648
+          x: 268
+          y: 601
           width: 50
           height: 50
         item:
@@ -959,7 +887,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 6, y: 3}
         direction: {x: 0, y: -1}
@@ -969,8 +897,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 648
+          x: 321
+          y: 601
           width: 50
           height: 50
         item:
@@ -983,7 +911,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 7, y: 3}
         direction: {x: 0, y: -1}
@@ -993,8 +921,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 648
+          x: 374
+          y: 601
           width: 50
           height: 50
         item:
@@ -1017,8 +945,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 648
+          x: 427
+          y: 601
           width: 50
           height: 50
         item:
@@ -1031,7 +959,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 9, y: 3}
         direction: {x: 0, y: -1}
@@ -1041,8 +969,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 489
-          y: 648
+          x: 480
+          y: 601
           width: 50
           height: 50
         item:
@@ -1053,31 +981,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
-        blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
-        position: {x: 10, y: 3}
-        direction: {x: 0, y: -1}
-        enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 543
-          y: 648
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1090,7 +994,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 701
+          y: 653
           width: 50
           height: 50
         item:
@@ -1101,7 +1005,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1113,8 +1017,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 701
+          x: 56
+          y: 653
           width: 50
           height: 50
         item:
@@ -1127,7 +1031,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 2, y: 4}
         direction: {x: 0, y: -1}
@@ -1137,8 +1041,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 701
+          x: 109
+          y: 653
           width: 50
           height: 50
         item:
@@ -1151,7 +1055,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 3, y: 4}
         direction: {x: 0, y: -1}
@@ -1161,8 +1065,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 701
+          x: 162
+          y: 653
           width: 50
           height: 50
         item:
@@ -1173,7 +1077,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1185,8 +1089,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 701
+          x: 215
+          y: 653
           width: 50
           height: 50
         item:
@@ -1197,7 +1101,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1209,8 +1113,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 701
+          x: 268
+          y: 653
           width: 50
           height: 50
         item:
@@ -1223,7 +1127,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 6, y: 4}
         direction: {x: 0, y: -1}
@@ -1233,8 +1137,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 701
+          x: 321
+          y: 653
           width: 50
           height: 50
         item:
@@ -1247,7 +1151,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 7, y: 4}
         direction: {x: 0, y: -1}
@@ -1257,8 +1161,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 701
+          x: 374
+          y: 653
           width: 50
           height: 50
         item:
@@ -1281,8 +1185,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 701
+          x: 427
+          y: 653
           width: 50
           height: 50
         item:
@@ -1293,7 +1197,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1305,8 +1209,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 489
-          y: 701
+          x: 480
+          y: 653
           width: 50
           height: 50
         item:
@@ -1317,31 +1221,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
-        blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
-        position: {x: 10, y: 4}
-        direction: {x: 0, y: -1}
-        enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 543
-          y: 701
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1354,7 +1234,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 754
+          y: 705
           width: 50
           height: 50
         item:
@@ -1367,7 +1247,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 1, y: 5}
         direction: {x: 0, y: -1}
@@ -1377,8 +1257,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 754
+          x: 56
+          y: 705
           width: 50
           height: 50
         item:
@@ -1391,7 +1271,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 2, y: 5}
         direction: {x: 0, y: -1}
@@ -1401,8 +1281,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 754
+          x: 109
+          y: 705
           width: 50
           height: 50
         item:
@@ -1415,7 +1295,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 3, y: 5}
         direction: {x: 0, y: -1}
@@ -1425,8 +1305,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 754
+          x: 162
+          y: 705
           width: 50
           height: 50
         item:
@@ -1439,7 +1319,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 4, y: 5}
         direction: {x: 0, y: -1}
@@ -1449,8 +1329,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 754
+          x: 215
+          y: 705
           width: 50
           height: 50
         item:
@@ -1463,7 +1343,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 5, y: 5}
         direction: {x: 0, y: -1}
@@ -1473,8 +1353,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 754
+          x: 268
+          y: 705
           width: 50
           height: 50
         item:
@@ -1487,7 +1367,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 3
         obstacleLayer: 1
         position: {x: 6, y: 5}
         direction: {x: 0, y: -1}
@@ -1497,8 +1377,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 754
+          x: 321
+          y: 705
           width: 50
           height: 50
         item:
@@ -1511,7 +1391,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 7, y: 5}
         direction: {x: 0, y: -1}
@@ -1521,8 +1401,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 754
+          x: 374
+          y: 705
           width: 50
           height: 50
         item:
@@ -1545,8 +1425,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 754
+          x: 427
+          y: 705
           width: 50
           height: 50
         item:
@@ -1559,7 +1439,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 9, y: 5}
         direction: {x: 0, y: -1}
@@ -1569,8 +1449,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 489
-          y: 754
+          x: 480
+          y: 705
           width: 50
           height: 50
         item:
@@ -1581,31 +1461,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
-        blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
-        position: {x: 10, y: 5}
-        direction: {x: 0, y: -1}
-        enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 543
-          y: 754
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1618,7 +1474,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 807
+          y: 757
           width: 50
           height: 50
         item:
@@ -1641,8 +1497,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 807
+          x: 56
+          y: 757
           width: 50
           height: 50
         item:
@@ -1655,7 +1511,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 2, y: 6}
         direction: {x: 0, y: -1}
@@ -1665,8 +1521,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 807
+          x: 109
+          y: 757
           width: 50
           height: 50
         item:
@@ -1679,7 +1535,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 3, y: 6}
         direction: {x: 0, y: -1}
@@ -1689,8 +1545,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 807
+          x: 162
+          y: 757
           width: 50
           height: 50
         item:
@@ -1703,7 +1559,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 4, y: 6}
         direction: {x: 0, y: -1}
@@ -1713,8 +1569,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 807
+          x: 215
+          y: 757
           width: 50
           height: 50
         item:
@@ -1727,7 +1583,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 5, y: 6}
         direction: {x: 0, y: -1}
@@ -1737,8 +1593,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 807
+          x: 268
+          y: 757
           width: 50
           height: 50
         item:
@@ -1751,7 +1607,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 6, y: 6}
         direction: {x: 0, y: -1}
@@ -1761,8 +1617,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 807
+          x: 321
+          y: 757
           width: 50
           height: 50
         item:
@@ -1785,8 +1641,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 807
+          x: 374
+          y: 757
           width: 50
           height: 50
         item:
@@ -1799,7 +1655,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 8, y: 6}
         direction: {x: 0, y: -1}
@@ -1809,8 +1665,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 807
+          x: 427
+          y: 757
           width: 50
           height: 50
         item:
@@ -1833,8 +1689,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 489
-          y: 807
+          x: 480
+          y: 757
           width: 50
           height: 50
         item:
@@ -1845,31 +1701,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
-        blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
-        position: {x: 10, y: 6}
-        direction: {x: 0, y: -1}
-        enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 543
-          y: 807
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1882,7 +1714,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 860
+          y: 809
           width: 50
           height: 50
         item:
@@ -1893,7 +1725,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1905,8 +1737,32 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 860
+          x: 56
+          y: 809
+          width: 50
+          height: 50
+        item:
+          Color: 0
+          ItemType: 0
+          Texture: {fileID: 0}
+          colors: {fileID: 0}
+          Item: {fileID: 0}
+          EnableMarmaladeTargets: 0
+          TargetMarmaladePositions: []
+      - block: 0
+        blockLayer: 1
+        obstacle: 0
+        obstacleLayer: 1
+        position: {x: 2, y: 7}
+        direction: {x: 0, y: -1}
+        enterSquare: 0
+        isEnterTeleport: 0
+        teleportCoordinatesLinked: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        guiRect:
+          serializedVersion: 2
+          x: 109
+          y: 809
           width: 50
           height: 50
         item:
@@ -1921,30 +1777,6 @@ MonoBehaviour:
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
-        position: {x: 2, y: 7}
-        direction: {x: 0, y: -1}
-        enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 111
-          y: 860
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 1
-        blockLayer: 1
-        obstacle: 7
-        obstacleLayer: 1
         position: {x: 3, y: 7}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1953,8 +1785,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 860
+          x: 162
+          y: 809
           width: 50
           height: 50
         item:
@@ -1977,8 +1809,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 860
+          x: 215
+          y: 809
           width: 50
           height: 50
         item:
@@ -2001,8 +1833,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 860
+          x: 268
+          y: 809
           width: 50
           height: 50
         item:
@@ -2025,8 +1857,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 860
+          x: 321
+          y: 809
           width: 50
           height: 50
         item:
@@ -2037,9 +1869,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 7, y: 7}
         direction: {x: 0, y: -1}
@@ -2049,8 +1881,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 860
+          x: 374
+          y: 809
           width: 50
           height: 50
         item:
@@ -2061,7 +1893,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -2073,8 +1905,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 860
+          x: 427
+          y: 809
           width: 50
           height: 50
         item:
@@ -2097,8 +1929,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 489
-          y: 860
+          x: 480
+          y: 809
           width: 50
           height: 50
         item:
@@ -2109,31 +1941,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
-        blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
-        position: {x: 10, y: 7}
-        direction: {x: 0, y: -1}
-        enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 543
-          y: 860
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -2146,7 +1954,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 913
+          y: 861
           width: 50
           height: 50
         item:
@@ -2157,7 +1965,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -2169,8 +1977,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 57
-          y: 913
+          x: 56
+          y: 861
           width: 50
           height: 50
         item:
@@ -2193,8 +2001,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 111
-          y: 913
+          x: 109
+          y: 861
           width: 50
           height: 50
         item:
@@ -2217,8 +2025,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 165
-          y: 913
+          x: 162
+          y: 861
           width: 50
           height: 50
         item:
@@ -2231,7 +2039,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 4, y: 8}
         direction: {x: 0, y: -1}
@@ -2241,8 +2049,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 219
-          y: 913
+          x: 215
+          y: 861
           width: 50
           height: 50
         item:
@@ -2255,7 +2063,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 5, y: 8}
         direction: {x: 0, y: -1}
@@ -2265,8 +2073,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 273
-          y: 913
+          x: 268
+          y: 861
           width: 50
           height: 50
         item:
@@ -2279,7 +2087,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 7
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 6, y: 8}
         direction: {x: 0, y: -1}
@@ -2289,8 +2097,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 327
-          y: 913
+          x: 321
+          y: 861
           width: 50
           height: 50
         item:
@@ -2313,8 +2121,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 381
-          y: 913
+          x: 374
+          y: 861
           width: 50
           height: 50
         item:
@@ -2337,8 +2145,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 435
-          y: 913
+          x: 427
+          y: 861
           width: 50
           height: 50
         item:
@@ -2349,7 +2157,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -2361,32 +2169,8 @@ MonoBehaviour:
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
-          x: 489
-          y: 913
-          width: 50
-          height: 50
-        item:
-          Color: 0
-          ItemType: 0
-          Texture: {fileID: 0}
-          colors: {fileID: 0}
-          Item: {fileID: 0}
-          EnableMarmaladeTargets: 0
-          TargetMarmaladePositions: []
-      - block: 0
-        blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
-        position: {x: 10, y: 8}
-        direction: {x: 0, y: -1}
-        enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
-        guiRect:
-          serializedVersion: 2
-          x: 543
-          y: 913
+          x: 480
+          y: 861
           width: 50
           height: 50
         item:
@@ -2399,50 +2183,34 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       bombTimer: 15
     target:
-      name: CollectItems
-      Description: Collect the items
-      FailedDescription: You didn't collect the items
+      name: SugarSquare
+      Description: Destroy sugar squares
+      descriptionLocalizationRefrence: 59
+      FailedDescription: You didn't destroy the sugar squares
+      failedLocalizationRefrence: 60
       prefabs:
-      - {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
-      prefabPaths: []
-    targetIndex: 0
+      - {fileID: 1055345148094608, guid: 4ebed1d82b94548d0ab47103e3f205e5, type: 3}
+    targetIndex: 2
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 31
+    limit: 30
     colorLimit: 4
     star1: 1000
     star2: 2000
-    star3: 3000
+    star3: 2320
     enableMarmalade: 0
+    selectedTutorial: 0
     currentSublevelIndex: 0
     subTargetsContainers:
-    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
-      count: 40
-      preCount: 40
-      extraObject: {fileID: 21300000, guid: 3dda22942cfed4603a1e236fa67c317c, type: 3}
-      prefabPath: 
-    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
-      count: 40
-      preCount: 40
-      extraObject: {fileID: 21300000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
-      prefabPath: 
-    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
-      count: 40
-      preCount: 40
-      extraObject: {fileID: 21300000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
-      prefabPath: 
-    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
+    - targetPrefab: {fileID: 1533976084100574, guid: 4ebed1d82b94548d0ab47103e3f205e5,
+        type: 3}
+      count: 4
+      preCount: 4
+      extraObject: {fileID: 0}
+      color: 0
+    - targetPrefab: {fileID: 1711075845521044, guid: 4ebed1d82b94548d0ab47103e3f205e5,
+        type: 3}
       count: 0
       preCount: 0
-      extraObject: {fileID: 21300000, guid: 184e1f54b83be4d56bd5262c7c2395ff, type: 3}
-      prefabPath: 
-    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
-      count: 0
-      preCount: 0
-      extraObject: {fileID: 21300000, guid: 0f9770a23cda149a98876ec06ccb224c, type: 3}
-      prefabPath: 
-    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
-      count: 0
-      preCount: 0
-      extraObject: {fileID: 21300000, guid: 00609a7a5bb9f4a9b89633edcfd97d78, type: 3}
-      prefabPath: 
+      extraObject: {fileID: 0}
+      color: 0

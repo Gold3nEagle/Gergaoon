@@ -28,19 +28,11 @@ public class BackToMenu : MonoBehaviour
     {
         int currentLevel = PlayerPrefs.GetInt("currentLevel");
 
+        //Enable the next level
         if (gameData != null)
         { 
             gameData.saveData.isActive[currentLevel] = true;
-            gameData.Save();
-
-            int latestLevel = gameData.GetLatestUnlockedLevel();
-            if(currentLevel <= latestLevel && currentLevel >= latestLevel - 2)
-            {
-                //Giving Candy to the player
-                int totalCandy = PlayerPrefs.GetInt("totalCandy");
-                totalCandy += 100;
-                PlayerPrefs.SetInt("totalCandy", totalCandy);
-            }
+            gameData.Save(); 
         }
 
         if (adsEnabled == false)
@@ -102,6 +94,22 @@ public class BackToMenu : MonoBehaviour
 
     public void SetStars(int level, int stars)
     {
-        gameData.saveData.stars[level -1 ] = stars;
+        gameData.saveData.stars[level - 1 ] = stars;
+
+        int latestLevel = gameData.GetLatestUnlockedLevel();
+        if (currentLevel <= latestLevel && currentLevel >= latestLevel - 2)
+        {
+            //Giving Candy to the player
+            int totalCandy = PlayerPrefs.GetInt("totalCandy");
+
+            if(stars == 3)
+            {
+                stars = 4;
+            }
+
+            totalCandy += (50 * stars);
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+        }
+
     }
 }
