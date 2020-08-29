@@ -49,7 +49,7 @@ public class Overworld : MonoBehaviour
             if(latestLevel >= 17)
                 //Unlock Basket Game and show celebration!
 
-            if (latestLevel > 125)
+            if (latestLevel > 90)
                 latestLevel -= 2;
             
 
