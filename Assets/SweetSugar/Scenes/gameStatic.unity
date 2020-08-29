@@ -46391,6 +46391,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: c8003baa1f5c64645a6884376b315d2a, type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: c8003baa1f5c64645a6884376b315d2a, type: 3}
       propertyPath: destroy.Array.data[0]
       value: 
@@ -121703,7 +121707,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243469835654284118, guid: e1c8d71b852244333ad7ea451637a953,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 3fded782a2b200f499d9993b9f68bb49, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb05d65597a611d4681565c7a2aa7c0e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -121817,7 +121821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music:
   - {fileID: 8300000, guid: f5bb66b0a2c380f4da2d06ad1abbfba8, type: 3}
-  - {fileID: 8300000, guid: 3fded782a2b200f499d9993b9f68bb49, type: 3}
+  - {fileID: 8300000, guid: cb05d65597a611d4681565c7a2aa7c0e, type: 3}
   - {fileID: 8300000, guid: 2f28611f8b1f8b749866a19e61bc3094, type: 3}
   audioMixer: {fileID: 0}
 --- !u!1 &1935269172
