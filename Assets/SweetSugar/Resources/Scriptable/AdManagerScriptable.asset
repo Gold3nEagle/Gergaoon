@@ -12,23 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2f3710e9aa400bb8ad437b34b8b177, type: 3}
   m_Name: AdManagerScriptable
   m_EditorClassIdentifier: 
-  adsEvents:
-  - gameEvent: 0
-    adType: 0
-    everyLevel: 5
-    calls: 19
-  - gameEvent: 4
-    adType: 1
-    everyLevel: 2
-    calls: 0
-  - gameEvent: 10
-    adType: 0
-    everyLevel: 4
-    calls: 1
-  - gameEvent: 7
-    adType: 1
-    everyLevel: 3
-    calls: 0
+  adsEvents: []
   admobUIDAndroid: ca-app-pub-9974681578637939/6245469467
   admobUIDIOS: ca-app-pub-3940256099942544/1033173712
   admobRewardedUIDAndroid: 

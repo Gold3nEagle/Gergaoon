@@ -225,7 +225,7 @@ namespace SweetSugar.Scripts.Core
             set
             {
                 GameStatus = value;
-                AdsManager.THIS.CheckAdsEvents(value);
+                //AdsManager.THIS.CheckAdsEvents(value);
                 switch (value)
                 {
                     case GameState.PrepareGame://preparing and initializing  the game
