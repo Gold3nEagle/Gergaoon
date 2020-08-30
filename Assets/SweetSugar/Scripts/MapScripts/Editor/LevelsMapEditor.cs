@@ -49,21 +49,21 @@ namespace SweetSugar.Scripts.MapScripts.Editor
 			GUILayout.BeginVertical ("Box");
 			EditorGUILayout.LabelField ("General:");
 
-			_levelsMap.WaypointsMover.Speed = EditorGUILayout.FloatField ("Character speed", _levelsMap.WaypointsMover.Speed);
+			//_levelsMap.WaypointsMover.Speed = EditorGUILayout.FloatField ("Character speed", _levelsMap.WaypointsMover.Speed);
 
 			_levelsMap.TranslationType = (TranslationType)EditorGUILayout.EnumPopup ("Translation type", _levelsMap.TranslationType);
 
-			if (_levelsMap.WaypointsMover.Path == null)
-				_levelsMap.WaypointsMover.Path = _levelsMap.transform.Find ("Path").GetComponent<Path> ();
+			//if (_levelsMap.WaypointsMover.Path == null)
+			//	_levelsMap.WaypointsMover.Path = _levelsMap.transform.Find ("Path").GetComponent<Path> ();
 
-			Path path = _levelsMap.WaypointsMover.Path;
-			path.IsCurved = EditorGUILayout.Toggle ("Curved", path.IsCurved);
-			path.GizmosColor = EditorGUILayout.ColorField ("Gizmos Path Color", path.GizmosColor);
-			path.GizmosRadius = EditorGUILayout.FloatField ("Gizmos Path Pivot Radius", path.GizmosRadius);
+			//Path path = _levelsMap.WaypointsMover.Path;
+			//path.IsCurved = EditorGUILayout.Toggle ("Curved", path.IsCurved);
+			//path.GizmosColor = EditorGUILayout.ColorField ("Gizmos Path Color", path.GizmosColor);
+			//path.GizmosRadius = EditorGUILayout.FloatField ("Gizmos Path Pivot Radius", path.GizmosRadius);
 
-			GUILayout.EndVertical ();
+			//GUILayout.EndVertical ();
 
-			EditorUtility.SetDirty (path);
+			//EditorUtility.SetDirty (path);
 		}
 
 		private void Clear () {
