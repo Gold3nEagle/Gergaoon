@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SocialPlatforms;
-using GooglePlayGames;
+using UnityEngine.SocialPlatforms; 
 
 
 public class Score : MonoBehaviour {
 
     public Text scoreText, totalCandyDisplay;
-    public int ballValue; 
-    public GPlayServices playServ; 
+    public int ballValue;  
     public int score;
     public AudioClip[] clips;
 
@@ -58,41 +56,13 @@ public class Score : MonoBehaviour {
         PlayerPrefs.SetInt("Score", score);
         int TP = PlayerPrefs.GetInt("TP");
 
-        if (score >= 50)
-        {
-            playServ.UnlockAchievement(1);
-        }
-
-        if(score >= 100)
-        {
-            playServ.UnlockAchievement(2);
-        }
-
-        if(score >= 111)
-        {
-            playServ.UnlockAchievement(3);
-        }
-
-        if(TP >= 20)
-        {
-            playServ.UnlockAchievement(4);
-        }
-
-        if(score <= 0)
-        {
-            playServ.UnlockAchievement(5);
-        }
-
+         
         CalculateTotalCandy();
     }
 
     public void PostScore()
-    {
-#if UNITY_ANDROID
-        playServ.AddScoreToLeaderboard(GPGSIds.leaderboard, score);
-#elif UNITY_IPHONE
-        playServ.PostScoreOnLeaderBoard(score);
-#endif 
+    { 
+
     }
 
     void CalculateTotalCandy()

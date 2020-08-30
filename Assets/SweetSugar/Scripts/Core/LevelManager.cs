@@ -1,8 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using SweetSugar.Scripts.AdsEvents;
+using System.Linq; 
 using SweetSugar.Scripts.Blocks;
 using SweetSugar.Scripts.Effects;
 using SweetSugar.Scripts.GUI;

@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
-using SweetSugar.Scripts.AdsEvents;
 using SweetSugar.Scripts.Core;
 using SweetSugar.Scripts.GUI.Boost;
 using SweetSugar.Scripts.GUI.Purchasing;
@@ -131,8 +130,7 @@ namespace SweetSugar.Scripts.GUI
             else if (name == "LiveShop")
                 InitScript.Instance.currentReward = RewardsType.GetLifes;
             else if (name == "PreFailed")
-                InitScript.Instance.currentReward = RewardsType.GetGoOn;
-            AdsManager.THIS.ShowRewardedAds();
+                InitScript.Instance.currentReward = RewardsType.GetGoOn; 
             CloseMenu();
         }
 

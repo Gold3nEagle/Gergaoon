@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using SweetSugar.Scripts.AdsEvents;
+//using SweetSugar.Scripts.AdsEvents;
 using SweetSugar.Scripts.Blocks;
 using SweetSugar.Scripts.Core;
 using SweetSugar.Scripts.GUI;
@@ -72,7 +72,7 @@ namespace SweetSugar.Scripts.Editor
 
         private bool enableGoogleAdsProcessing;
         private bool enableChartboostAdsProcessing;
-        private List<AdEvents> oldList;
+        //private List<AdEvents> oldList;
         private LevelData levelData;
         private Texture[] arrows = new Texture[6];
         private Texture[] teleports = new Texture[2];
@@ -99,7 +99,7 @@ namespace SweetSugar.Scripts.Editor
 
         private void OnFocus()
         {
-            adsSettings = Resources.Load<AdManagerScriptable>("Scriptable/AdManagerScriptable");
+            //adsSettings = Resources.Load<AdManagerScriptable>("Scriptable/AdManagerScriptable");
             sceneSwitcher = Resources.Load<MapSwitcher>("Scriptable/MapSwitcher");
             levelScriptable = Resources.Load("Levels/LevelScriptable") as LevelScriptable;
             LoadLevel(levelNumber);
@@ -136,18 +136,18 @@ namespace SweetSugar.Scripts.Editor
 
                 LevelManager lm = Camera.main.GetComponent<LevelManager>();
                 InitScript initscript = Camera.main.GetComponent<InitScript>();
-                if (oldList == null)
-                {
-                    oldList = new List<AdEvents>();
-                    oldList.Clear();
-                    for (int i = 0; i < adsSettings.adsEvents.Count; i++)
-                    {
-                        oldList.Add(new AdEvents());
-                        oldList[i].adType = adsSettings.adsEvents[i].adType;
-                        oldList[i].everyLevel = adsSettings.adsEvents[i].everyLevel;
-                        oldList[i].gameEvent = adsSettings.adsEvents[i].gameEvent;
-                    }
-                }
+                //if (oldList == null)
+                //{
+                //    oldList = new List<AdEvents>();
+                //    oldList.Clear();
+                //    for (int i = 0; i < adsSettings.adsEvents.Count; i++)
+                //    {
+                //        oldList.Add(new AdEvents());
+                //        oldList[i].adType = adsSettings.adsEvents[i].adType;
+                //        oldList[i].everyLevel = adsSettings.adsEvents[i].everyLevel;
+                //        oldList[i].gameEvent = adsSettings.adsEvents[i].gameEvent;
+                //    }
+                //}
             }
 
             gotFocus = true;
@@ -590,13 +590,13 @@ namespace SweetSugar.Scripts.Editor
 
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            adsSettings.admobUIDAndroid = EditorGUILayout.TextField("Admob Interstitial ID Android ",
-                adsSettings.admobUIDAndroid, GUILayout.Width(220), GUILayout.MaxWidth(220));
+            //adsSettings.admobUIDAndroid = EditorGUILayout.TextField("Admob Interstitial ID Android ",
+            //    adsSettings.admobUIDAndroid, GUILayout.Width(220), GUILayout.MaxWidth(220));
             GUILayout.EndHorizontal();
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
-            adsSettings.admobUIDIOS = EditorGUILayout.TextField("Admob Interstitial ID iOS", adsSettings.admobUIDIOS,
-                GUILayout.Width(220), GUILayout.MaxWidth(220));
+            //adsSettings.admobUIDIOS = EditorGUILayout.TextField("Admob Interstitial ID iOS", adsSettings.admobUIDIOS,
+                //GUILayout.Width(220), GUILayout.MaxWidth(220));
             GUILayout.EndHorizontal();
             GUILayout.Space(10);
 #endif
@@ -653,54 +653,54 @@ namespace SweetSugar.Scripts.Editor
 
             GUILayout.Label("Event:               Status:                            Show every:", GUILayout.Width(350));
 
-            foreach (AdEvents item in adsSettings.adsEvents)
-            {
-                EditorGUILayout.BeginHorizontal();
-                item.gameEvent = (GameState)EditorGUILayout.EnumPopup(item.gameEvent, GUILayout.Width(100));
-                item.adType = (AdType)EditorGUILayout.EnumPopup(item.adType, GUILayout.Width(150));
-                item.everyLevel = EditorGUILayout.IntPopup(item.everyLevel, new[]
-                {
-                    "1",
-                    "2",
-                    "3",
-                    "4",
-                    "5",
-                    "6",
-                    "7",
-                    "8",
-                    "9",
-                    "10"
-                }, new[]
-                {
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6,
-                    7,
-                    8,
-                    9,
-                    10
-                }, GUILayout.Width(100));
+            //foreach (AdEvents item in adsSettings.adsEvents)
+            //{
+            //    EditorGUILayout.BeginHorizontal();
+            //    item.gameEvent = (GameState)EditorGUILayout.EnumPopup(item.gameEvent, GUILayout.Width(100));
+            //    item.adType = (AdType)EditorGUILayout.EnumPopup(item.adType, GUILayout.Width(150));
+            //    item.everyLevel = EditorGUILayout.IntPopup(item.everyLevel, new[]
+            //    {
+            //        "1",
+            //        "2",
+            //        "3",
+            //        "4",
+            //        "5",
+            //        "6",
+            //        "7",
+            //        "8",
+            //        "9",
+            //        "10"
+            //    }, new[]
+            //    {
+            //        1,
+            //        2,
+            //        3,
+            //        4,
+            //        5,
+            //        6,
+            //        7,
+            //        8,
+            //        9,
+            //        10
+            //    }, GUILayout.Width(100));
 
-                EditorGUILayout.EndHorizontal();
-            }
+            //    EditorGUILayout.EndHorizontal();
+            //}
 
             EditorGUILayout.Space();
 
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("Add"))
             {
-                AdEvents adevent = new AdEvents();
-                adevent.everyLevel = 1;
-                adsSettings.adsEvents.Add(adevent);
+                //AdEvents adevent = new AdEvents();
+                //adevent.everyLevel = 1;
+                //adsSettings.adsEvents.Add(adevent);
             }
 
             if (GUILayout.Button("Delete"))
             {
-                if (adsSettings.adsEvents.Count > 0)
-                    adsSettings.adsEvents.Remove(adsSettings.adsEvents[adsSettings.adsEvents.Count - 1]);
+                //if (adsSettings.adsEvents.Count > 0)
+                //    adsSettings.adsEvents.Remove(adsSettings.adsEvents[adsSettings.adsEvents.Count - 1]);
             }
 
 
@@ -708,7 +708,7 @@ namespace SweetSugar.Scripts.Editor
 
             if (GUILayout.Button("Save"))
             {   
-                EditorUtility.SetDirty(adsSettings);
+                //EditorUtility.SetDirty(adsSettings);
                 AssetDatabase.SaveAssets();
             }
 
@@ -2397,7 +2397,7 @@ namespace SweetSugar.Scripts.Editor
         private Texture2D packageTexture;
         private GUISkin customSkin;
         private MenuReference menuReference;
-        private AdManagerScriptable adsSettings;
+        //private AdManagerScriptable adsSettings;
         private int selectedTutorial;
         private MapSwitcher sceneSwitcher;
 
