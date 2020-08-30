@@ -1,13 +1,12 @@
 <dependencies>
   <packages>
     <package>com.google.android.gms:play-services-ads:18.3.0</package>
-    <package>com.google.firebase:firebase-analytics:17.2.1</package>
-    <package>com.google.firebase:firebase-analytics-unity:6.10.0</package>
-    <package>com.google.firebase:firebase-app-unity:6.10.0</package>
+    <package>com.google.firebase:firebase-analytics:17.4.1</package>
+    <package>com.google.firebase:firebase-analytics-unity:6.15.2</package>
+    <package>com.google.firebase:firebase-app-unity:6.15.2</package>
     <package>com.google.firebase:firebase-common:19.3.0</package>
-    <package>com.google.firebase:firebase-messaging:20.1.0</package>
-    <package>com.google.firebase:firebase-messaging-unity:6.10.0</package>
-    <package>com.google.games:gpgs-plugin-support:0.9.62</package>
+    <package>com.google.firebase:firebase-messaging:20.1.7</package>
+    <package>com.google.firebase:firebase-messaging-unity:6.15.2</package>
   </packages>
   <files>
     <file>Assets/Plugins/Android/androidx.annotation.annotation-1.1.0.jar</file>
@@ -45,36 +44,33 @@
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-18.3.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-ads-identifier-17.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-18.3.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-auth-16.0.1.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-auth-api-phone-16.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-auth-base-16.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-base-17.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-basement-17.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-drive-16.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-games-16.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-gass-18.3.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-17.2.1.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-api-17.2.1.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-17.2.1.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-impl-17.2.1.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-17.2.1.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-17.2.1.aar</file>
-    <file>Assets/Plugins/Android/com.google.android.gms.play-services-nearby-16.0.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-17.4.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-api-17.4.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-17.4.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-impl-17.4.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-17.4.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-17.4.1.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-stats-17.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-tasks-17.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.auto.value.auto-value-annotations-1.6.5.jar</file>
     <file>Assets/Plugins/Android/com.google.dagger.dagger-2.24.jar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-analytics-17.2.1.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-analytics-unity-6.10.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-app-unity-6.10.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-analytics-17.4.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-analytics-unity-6.15.2.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-app-unity-6.15.2.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-common-19.3.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-components-16.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-datatransport-17.0.3.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-encoders-json-16.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-iid-20.0.2.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-iid-20.1.7.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-iid-interop-17.0.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-installations-16.3.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-installations-interop-16.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.firebase.firebase-measurement-connector-18.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.google.firebase.firebase-messaging-20.1.0.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-messaging-20.1.7.aar</file>
+    <file>Assets/Plugins/Android/com.google.firebase.firebase-messaging-unity-6.15.2.aar</file>
     <file>Assets/Plugins/Android/javax.inject.javax.inject-1.jar</file>
   </files>
   <settings>
@@ -84,6 +80,7 @@
     <setting name="gradleBuildEnabled" value="True" />
     <setting name="gradleTemplateEnabled" value="False" />
     <setting name="installAndroidPackages" value="True" />
+    <setting name="localMavenRepoDir" value="Assets/GeneratedLocalRepo" />
     <setting name="packageDir" value="Assets/Plugins/Android" />
     <setting name="patchAndroidManifest" value="True" />
     <setting name="patchMainTemplateGradle" value="True" />

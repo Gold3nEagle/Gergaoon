@@ -69,7 +69,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         {
             Debug.Log("Add 50K candy");
             int totalCandy = PlayerPrefs.GetInt("totalCandy");
-            totalCandy += 50000;
+            totalCandy += 5000;
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -78,7 +78,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         {
             Debug.Log("Add 100K candy");
             int totalCandy = PlayerPrefs.GetInt("totalCandy");
-            totalCandy += 100000;
+            totalCandy += 10000;
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

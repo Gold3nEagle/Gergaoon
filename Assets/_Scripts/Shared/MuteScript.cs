@@ -53,6 +53,9 @@ public class MuteScript : MonoBehaviour
 
     }
 
+    
+
+
     public void ShareGame()
     {
         StartCoroutine(TakeSSAndShare());

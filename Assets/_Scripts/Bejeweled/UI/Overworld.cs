@@ -28,6 +28,8 @@ public class Overworld : MonoBehaviour
                 PlayerPrefs.SetInt("ExplodeArea", 1);
                 PlayerPrefs.SetInt("Bomb", 1);
                 gameData.CheckLevels();
+
+                PlayerPrefs.SetInt("BeenRated", 0);
             } 
         }
         gameData.CheckLevels();
