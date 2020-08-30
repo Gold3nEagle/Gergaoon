@@ -108,6 +108,7 @@ public class BackToMenu : MonoBehaviour
             }
 
             totalCandy += (50 * stars);
+            PlayerPrefs.SetInt("DoubleReward", (stars * 50));
             PlayerPrefs.SetInt("totalCandy", totalCandy);
         }
 
