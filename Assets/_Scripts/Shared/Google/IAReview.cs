@@ -17,7 +17,7 @@ public class IAReview : MonoBehaviour
         timesPlayed++;
         PlayerPrefs.SetInt("firstMatch3", timesPlayed);
 
-        if (timesPlayed > 5 && beenRated == 0) ;
+        if (timesPlayed > 5 && beenRated == 0) 
         {
             StartCoroutine(ReviewGame());  
         } 
@@ -47,7 +47,11 @@ public class IAReview : MonoBehaviour
         // The flow has finished. The API does not indicate whether the user
         // reviewed or not, or even whether the review dialog was shown. Thus, no
         // matter the result, we continue our app flow.
-        PlayerPrefs.SetInt("BeenRated", 1);
     }
      
+
+    public void ShowReviewInstance()
+    {
+
+    }
 }

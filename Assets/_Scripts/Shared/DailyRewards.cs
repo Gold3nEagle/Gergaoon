@@ -51,12 +51,16 @@ public class DailyRewards : MonoBehaviour
         WWW www = new WWW(urlDate);
         yield return www;
 
-        string[] splitDate = www.text.Split(new string[] { "currentDateTime\":\"" }, StringSplitOptions.None);
+        //string[] splitDate = www.text.Split(new string[] { "currentDateTime\":\"" }, StringSplitOptions.None);
 
-        startDate = splitDate[1].Substring(0, 10);
-        startTime = splitDate[1].Substring(11, 5);
+        //startDate = splitDate[1].Substring(0, 10);
+        //startTime = splitDate[1].Substring(11, 5);
+        //Debug.Log(startDate);
+        //Debug.Log(startTime); 
+
+        startDate = DateTime.Now.ToString("yyyy-MM-dd");
         Debug.Log(startDate);
-        Debug.Log(startTime); 
+
         DailyRewardCheck();
 
     }
