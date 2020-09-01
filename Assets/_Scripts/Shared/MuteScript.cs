@@ -48,13 +48,9 @@ public class MuteScript : MonoBehaviour
         PlayerPrefs.SetInt("BeenRated", 1);
 
         int totalCandy = PlayerPrefs.GetInt("totalCandy");
-        totalCandy += 10;
-        PlayerPrefs.SetInt("totalCandy", totalCandy);
-
-    }
-
-    
-
+        totalCandy += 100;
+        PlayerPrefs.SetInt("totalCandy", totalCandy); 
+    } 
 
     public void ShareGame()
     {

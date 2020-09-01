@@ -18,7 +18,7 @@ public class AnimationController : MonoBehaviour
         scene = SceneManager.GetActiveScene().name;
         timesPlayed = PlayerPrefs.GetInt("TP");
         IsRated = PlayerPrefs.GetInt("BeenRated");
-        if (scene == "GameScene")
+        if (scene == "GameScene" || scene == "OverWorld")
         {
             RateGame();
             //LBPointer();
@@ -28,9 +28,11 @@ public class AnimationController : MonoBehaviour
 
     public void RateGame()
     {
+
         timesPlayed++;
         PlayerPrefs.SetInt("TP", timesPlayed);
-        if (timesPlayed >= 1 && IsRated == 0) {  
+        Debug.Log(timesPlayed +" Rated or not?   " +  IsRated);
+        if (timesPlayed >= 3 && IsRated == 0) {  
         animator.SetBool("IsOpen", true);
         PlayerPrefs.SetInt("BeenRated", 1);
         }
