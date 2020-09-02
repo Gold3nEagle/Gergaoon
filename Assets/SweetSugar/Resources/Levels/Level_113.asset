@@ -34,7 +34,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 445
+          y: 563
           width: 50
           height: 50
         item:
@@ -58,7 +58,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 445
+          y: 563
           width: 50
           height: 50
         item:
@@ -71,7 +71,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 2, y: 0}
         direction: {x: 0, y: -1}
@@ -82,7 +82,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 445
+          y: 563
           width: 50
           height: 50
         item:
@@ -106,7 +106,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 445
+          y: 563
           width: 50
           height: 50
         item:
@@ -119,7 +119,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 4, y: 0}
         direction: {x: 0, y: -1}
@@ -130,7 +130,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 445
+          y: 563
           width: 50
           height: 50
         item:
@@ -154,7 +154,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 445
+          y: 563
           width: 50
           height: 50
         item:
@@ -167,7 +167,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 6, y: 0}
         direction: {x: 0, y: -1}
@@ -178,7 +178,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 445
+          y: 563
           width: 50
           height: 50
         item:
@@ -202,7 +202,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 445
+          y: 563
           width: 50
           height: 50
         item:
@@ -226,7 +226,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 445
+          y: 563
           width: 50
           height: 50
         item:
@@ -250,7 +250,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 497
+          y: 615
           width: 50
           height: 50
         item:
@@ -263,7 +263,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 1, y: 1}
         direction: {x: 0, y: -1}
@@ -274,7 +274,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 497
+          y: 615
           width: 50
           height: 50
         item:
@@ -298,7 +298,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 497
+          y: 615
           width: 50
           height: 50
         item:
@@ -311,7 +311,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 3, y: 1}
         direction: {x: 0, y: -1}
@@ -322,7 +322,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 497
+          y: 615
           width: 50
           height: 50
         item:
@@ -346,7 +346,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 497
+          y: 615
           width: 50
           height: 50
         item:
@@ -359,7 +359,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 5, y: 1}
         direction: {x: 0, y: -1}
@@ -370,7 +370,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 497
+          y: 615
           width: 50
           height: 50
         item:
@@ -394,7 +394,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 497
+          y: 615
           width: 50
           height: 50
         item:
@@ -407,7 +407,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 7, y: 1}
         direction: {x: 0, y: -1}
@@ -418,7 +418,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 497
+          y: 615
           width: 50
           height: 50
         item:
@@ -442,7 +442,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 497
+          y: 615
           width: 50
           height: 50
         item:
@@ -455,7 +455,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 0, y: 2}
         direction: {x: 0, y: -1}
@@ -466,7 +466,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 549
+          y: 667
           width: 50
           height: 50
         item:
@@ -490,7 +490,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 549
+          y: 667
           width: 50
           height: 50
         item:
@@ -503,7 +503,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 2, y: 2}
         direction: {x: 0, y: -1}
@@ -514,7 +514,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 549
+          y: 667
           width: 50
           height: 50
         item:
@@ -538,7 +538,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 549
+          y: 667
           width: 50
           height: 50
         item:
@@ -551,7 +551,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 4, y: 2}
         direction: {x: 0, y: -1}
@@ -562,7 +562,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 549
+          y: 667
           width: 50
           height: 50
         item:
@@ -586,7 +586,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 549
+          y: 667
           width: 50
           height: 50
         item:
@@ -599,7 +599,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 6, y: 2}
         direction: {x: 0, y: -1}
@@ -610,7 +610,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 549
+          y: 667
           width: 50
           height: 50
         item:
@@ -634,7 +634,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 549
+          y: 667
           width: 50
           height: 50
         item:
@@ -647,7 +647,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 8, y: 2}
         direction: {x: 0, y: -1}
@@ -658,7 +658,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 549
+          y: 667
           width: 50
           height: 50
         item:
@@ -682,7 +682,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 601
+          y: 719
           width: 50
           height: 50
         item:
@@ -695,7 +695,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 1, y: 3}
         direction: {x: 0, y: -1}
@@ -706,7 +706,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 601
+          y: 719
           width: 50
           height: 50
         item:
@@ -730,7 +730,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 601
+          y: 719
           width: 50
           height: 50
         item:
@@ -743,7 +743,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 3, y: 3}
         direction: {x: 0, y: -1}
@@ -754,7 +754,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 601
+          y: 719
           width: 50
           height: 50
         item:
@@ -778,7 +778,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 601
+          y: 719
           width: 50
           height: 50
         item:
@@ -791,7 +791,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 5, y: 3}
         direction: {x: 0, y: -1}
@@ -802,7 +802,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 601
+          y: 719
           width: 50
           height: 50
         item:
@@ -826,7 +826,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 601
+          y: 719
           width: 50
           height: 50
         item:
@@ -839,7 +839,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 7, y: 3}
         direction: {x: 0, y: -1}
@@ -850,7 +850,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 601
+          y: 719
           width: 50
           height: 50
         item:
@@ -874,7 +874,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 601
+          y: 719
           width: 50
           height: 50
         item:
@@ -887,7 +887,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 0, y: 4}
         direction: {x: 0, y: -1}
@@ -898,7 +898,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 653
+          y: 771
           width: 50
           height: 50
         item:
@@ -922,7 +922,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 653
+          y: 771
           width: 50
           height: 50
         item:
@@ -935,7 +935,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 2, y: 4}
         direction: {x: 0, y: -1}
@@ -946,7 +946,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 653
+          y: 771
           width: 50
           height: 50
         item:
@@ -970,7 +970,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 653
+          y: 771
           width: 50
           height: 50
         item:
@@ -983,7 +983,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 4, y: 4}
         direction: {x: 0, y: -1}
@@ -994,7 +994,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 653
+          y: 771
           width: 50
           height: 50
         item:
@@ -1018,7 +1018,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 653
+          y: 771
           width: 50
           height: 50
         item:
@@ -1031,7 +1031,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 6, y: 4}
         direction: {x: 0, y: -1}
@@ -1042,7 +1042,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 653
+          y: 771
           width: 50
           height: 50
         item:
@@ -1066,7 +1066,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 653
+          y: 771
           width: 50
           height: 50
         item:
@@ -1079,7 +1079,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 8, y: 4}
         direction: {x: 0, y: -1}
@@ -1090,7 +1090,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 653
+          y: 771
           width: 50
           height: 50
         item:
@@ -1114,7 +1114,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 705
+          y: 823
           width: 50
           height: 50
         item:
@@ -1127,7 +1127,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 1, y: 5}
         direction: {x: 0, y: -1}
@@ -1138,7 +1138,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 705
+          y: 823
           width: 50
           height: 50
         item:
@@ -1162,7 +1162,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 705
+          y: 823
           width: 50
           height: 50
         item:
@@ -1175,7 +1175,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 3, y: 5}
         direction: {x: 0, y: -1}
@@ -1186,7 +1186,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 705
+          y: 823
           width: 50
           height: 50
         item:
@@ -1210,7 +1210,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 705
+          y: 823
           width: 50
           height: 50
         item:
@@ -1223,7 +1223,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 5, y: 5}
         direction: {x: 0, y: -1}
@@ -1234,7 +1234,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 705
+          y: 823
           width: 50
           height: 50
         item:
@@ -1258,7 +1258,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 705
+          y: 823
           width: 50
           height: 50
         item:
@@ -1271,7 +1271,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 7, y: 5}
         direction: {x: 0, y: -1}
@@ -1282,7 +1282,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 705
+          y: 823
           width: 50
           height: 50
         item:
@@ -1306,7 +1306,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 705
+          y: 823
           width: 50
           height: 50
         item:
@@ -1319,7 +1319,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 0, y: 6}
         direction: {x: 0, y: -1}
@@ -1330,7 +1330,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 757
+          y: 875
           width: 50
           height: 50
         item:
@@ -1354,7 +1354,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 757
+          y: 875
           width: 50
           height: 50
         item:
@@ -1367,7 +1367,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 2, y: 6}
         direction: {x: 0, y: -1}
@@ -1378,7 +1378,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 757
+          y: 875
           width: 50
           height: 50
         item:
@@ -1402,7 +1402,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 757
+          y: 875
           width: 50
           height: 50
         item:
@@ -1415,7 +1415,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 4, y: 6}
         direction: {x: 0, y: -1}
@@ -1426,7 +1426,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 757
+          y: 875
           width: 50
           height: 50
         item:
@@ -1450,7 +1450,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 757
+          y: 875
           width: 50
           height: 50
         item:
@@ -1463,7 +1463,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 6, y: 6}
         direction: {x: 0, y: -1}
@@ -1474,7 +1474,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 757
+          y: 875
           width: 50
           height: 50
         item:
@@ -1498,7 +1498,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 757
+          y: 875
           width: 50
           height: 50
         item:
@@ -1511,7 +1511,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 8, y: 6}
         direction: {x: 0, y: -1}
@@ -1522,7 +1522,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 757
+          y: 875
           width: 50
           height: 50
         item:
@@ -1546,7 +1546,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 809
+          y: 927
           width: 50
           height: 50
         item:
@@ -1559,7 +1559,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 1, y: 7}
         direction: {x: 0, y: -1}
@@ -1570,7 +1570,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 809
+          y: 927
           width: 50
           height: 50
         item:
@@ -1594,7 +1594,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 809
+          y: 927
           width: 50
           height: 50
         item:
@@ -1607,7 +1607,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 3, y: 7}
         direction: {x: 0, y: -1}
@@ -1618,7 +1618,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 809
+          y: 927
           width: 50
           height: 50
         item:
@@ -1642,7 +1642,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 809
+          y: 927
           width: 50
           height: 50
         item:
@@ -1655,7 +1655,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 5, y: 7}
         direction: {x: 0, y: -1}
@@ -1666,7 +1666,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 809
+          y: 927
           width: 50
           height: 50
         item:
@@ -1690,7 +1690,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 809
+          y: 927
           width: 50
           height: 50
         item:
@@ -1703,7 +1703,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 7, y: 7}
         direction: {x: 0, y: -1}
@@ -1714,7 +1714,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 809
+          y: 927
           width: 50
           height: 50
         item:
@@ -1738,7 +1738,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 809
+          y: 927
           width: 50
           height: 50
         item:
@@ -1762,7 +1762,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 861
+          y: 979
           width: 50
           height: 50
         item:
@@ -1786,7 +1786,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 861
+          y: 979
           width: 50
           height: 50
         item:
@@ -1799,7 +1799,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 2, y: 8}
         direction: {x: 0, y: -1}
@@ -1810,7 +1810,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 861
+          y: 979
           width: 50
           height: 50
         item:
@@ -1834,7 +1834,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 861
+          y: 979
           width: 50
           height: 50
         item:
@@ -1847,7 +1847,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 4, y: 8}
         direction: {x: 0, y: -1}
@@ -1858,7 +1858,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 861
+          y: 979
           width: 50
           height: 50
         item:
@@ -1882,7 +1882,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 861
+          y: 979
           width: 50
           height: 50
         item:
@@ -1895,7 +1895,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 7
         obstacleLayer: 1
         position: {x: 6, y: 8}
         direction: {x: 0, y: -1}
@@ -1906,7 +1906,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 861
+          y: 979
           width: 50
           height: 50
         item:
@@ -1930,7 +1930,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 861
+          y: 979
           width: 50
           height: 50
         item:
@@ -1954,7 +1954,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 861
+          y: 979
           width: 50
           height: 50
         item:
@@ -1967,18 +1967,18 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       bombTimer: 15
     target:
-      name: SugarSquare
-      Description: Destroy sugar squares
-      descriptionLocalizationRefrence: 59
-      FailedDescription: You didn't destroy the sugar squares
-      failedLocalizationRefrence: 60
+      name: CollectItems
+      Description: Collect the items
+      descriptionLocalizationRefrence: 55
+      FailedDescription: You didn't collect the items
+      failedLocalizationRefrence: 56
       prefabs:
-      - {fileID: 1055345148094608, guid: 4ebed1d82b94548d0ab47103e3f205e5, type: 3}
-    targetIndex: 2
+      - {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
+    targetIndex: 0
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 23
-    colorLimit: 4
+    limit: 35
+    colorLimit: 6
     star1: 1000
     star2: 2000
     star3: 3000
@@ -1986,15 +1986,33 @@ MonoBehaviour:
     selectedTutorial: 0
     currentSublevelIndex: 0
     subTargetsContainers:
-    - targetPrefab: {fileID: 1533976084100574, guid: 4ebed1d82b94548d0ab47103e3f205e5,
-        type: 3}
+    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
       count: 0
       preCount: 0
-      extraObject: {fileID: 0}
+      extraObject: {fileID: 21300000, guid: 3dda22942cfed4603a1e236fa67c317c, type: 3}
       color: 0
-    - targetPrefab: {fileID: 1711075845521044, guid: 4ebed1d82b94548d0ab47103e3f205e5,
-        type: 3}
+    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
       count: 0
       preCount: 0
-      extraObject: {fileID: 0}
+      extraObject: {fileID: 21300000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
+      color: 0
+    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
+      count: 33
+      preCount: 33
+      extraObject: {fileID: 21300000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+      color: 0
+    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
+      count: 33
+      preCount: 33
+      extraObject: {fileID: 21300000, guid: 184e1f54b83be4d56bd5262c7c2395ff, type: 3}
+      color: 0
+    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
+      count: 33
+      preCount: 33
+      extraObject: {fileID: 21300000, guid: 0f9770a23cda149a98876ec06ccb224c, type: 3}
+      color: 0
+    - targetPrefab: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
+      count: 33
+      preCount: 33
+      extraObject: {fileID: 21300000, guid: 00609a7a5bb9f4a9b89633edcfd97d78, type: 3}
       color: 0

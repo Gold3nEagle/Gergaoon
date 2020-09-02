@@ -264,6 +264,9 @@ namespace SweetSugar.Scripts.GUI
             BackToMenu registerStars = FindObjectOfType<BackToMenu>();
             registerStars.SetStars(currentLevel, starsReceived);
 
+            AdsScript adsScript = FindObjectOfType<AdsScript>();
+            adsScript.ShowInterstitialAd();
+
 
         }  
 

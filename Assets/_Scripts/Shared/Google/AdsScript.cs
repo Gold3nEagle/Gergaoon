@@ -35,6 +35,8 @@ public class AdsScript : MonoBehaviour
     Score gameScore;
     string currentScene;
     Overworld overWorld;
+    int adsNum;
+    bool adsEnabled = false;
     //public EndGameManager endGame;
     //public ScoreManager matchScore;
 
@@ -42,6 +44,12 @@ public class AdsScript : MonoBehaviour
     void Start()
     {
         currentScene = SceneManager.GetActiveScene().name;
+        adsNum = PlayerPrefs.GetInt("IAPAds");
+        if (adsNum == 1)
+        {
+            adsEnabled = true;
+        }
+
 
 #if UNITY_ANDROID
         string appId = "ca-app-pub-8350868259993569~2254859297";
@@ -104,9 +112,12 @@ public class AdsScript : MonoBehaviour
 
     public void ShowInterstitialAd()
     {
-        if (this.interstitial.IsLoaded())
+        if (adsEnabled == false)
         {
-            this.interstitial.Show();
+            if (this.interstitial.IsLoaded())
+            {
+                this.interstitial.Show();
+            }
         }
     }
 
@@ -167,7 +178,7 @@ public class AdsScript : MonoBehaviour
                 int receivedCandy = PlayerPrefs.GetInt("DoubleReward");
                 int totalCandy = PlayerPrefs.GetInt("totalCandy");
 
-                totalCandy += (receivedCandy * 2);
+                totalCandy += receivedCandy;
                 PlayerPrefs.SetInt("totalCandy", totalCandy);
             }
         }

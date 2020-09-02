@@ -27,10 +27,10 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 0, y: 0}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 0, y: 8}
         guiRect:
           serializedVersion: 2
           x: 3
@@ -51,10 +51,10 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 1, y: 0}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 1, y: 8}
         guiRect:
           serializedVersion: 2
           x: 56
@@ -75,10 +75,10 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 2, y: 0}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 2, y: 8}
         guiRect:
           serializedVersion: 2
           x: 109
@@ -99,10 +99,10 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 3, y: 0}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 3, y: 8}
         guiRect:
           serializedVersion: 2
           x: 162
@@ -123,10 +123,10 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 4, y: 0}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 4, y: 8}
         guiRect:
           serializedVersion: 2
           x: 215
@@ -147,10 +147,10 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 5, y: 0}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 5, y: 8}
         guiRect:
           serializedVersion: 2
           x: 268
@@ -171,10 +171,10 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 6, y: 0}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 6, y: 8}
         guiRect:
           serializedVersion: 2
           x: 321
@@ -195,10 +195,10 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 7, y: 0}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 7, y: 8}
         guiRect:
           serializedVersion: 2
           x: 374
@@ -219,10 +219,10 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 8, y: 0}
         direction: {x: 0, y: -1}
-        enterSquare: 1
+        enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 8, y: 8}
         guiRect:
           serializedVersion: 2
           x: 427
@@ -669,9 +669,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 0, y: 3}
         direction: {x: 0, y: -1}
@@ -693,9 +693,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 1, y: 3}
         direction: {x: 0, y: -1}
@@ -717,9 +717,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 2, y: 3}
         direction: {x: 0, y: -1}
@@ -741,9 +741,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 3, y: 3}
         direction: {x: 0, y: -1}
@@ -765,9 +765,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 4, y: 3}
         direction: {x: 0, y: -1}
@@ -789,9 +789,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 5, y: 3}
         direction: {x: 0, y: -1}
@@ -813,9 +813,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 6, y: 3}
         direction: {x: 0, y: -1}
@@ -837,9 +837,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 7, y: 3}
         direction: {x: 0, y: -1}
@@ -861,9 +861,9 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 8, y: 3}
         direction: {x: 0, y: -1}
@@ -885,10 +885,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 2
         position: {x: 0, y: 4}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -909,10 +909,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 2
         position: {x: 1, y: 4}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -933,10 +933,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 2
         position: {x: 2, y: 4}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -957,10 +957,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 2
         position: {x: 3, y: 4}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -981,10 +981,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 2
         position: {x: 4, y: 4}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1005,10 +1005,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 2
         position: {x: 5, y: 4}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1029,10 +1029,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 2
         position: {x: 6, y: 4}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1053,10 +1053,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 2
         position: {x: 7, y: 4}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1077,10 +1077,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 2
         position: {x: 8, y: 4}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1101,10 +1101,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 3
         position: {x: 0, y: 5}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1125,10 +1125,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 3
         position: {x: 1, y: 5}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1149,10 +1149,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 3
         position: {x: 2, y: 5}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1173,10 +1173,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 3
         position: {x: 3, y: 5}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1197,10 +1197,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 3
         position: {x: 4, y: 5}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1221,10 +1221,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 3
         position: {x: 5, y: 5}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1245,10 +1245,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 3
         position: {x: 6, y: 5}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1269,10 +1269,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 3
         position: {x: 7, y: 5}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1293,10 +1293,10 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 2
         blockLayer: 1
-        obstacle: 0
-        obstacleLayer: 1
+        obstacle: 4
+        obstacleLayer: 3
         position: {x: 8, y: 5}
         direction: {x: 0, y: -1}
         enterSquare: 0
@@ -1317,7 +1317,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1341,7 +1341,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1365,7 +1365,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1389,7 +1389,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1413,7 +1413,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1437,7 +1437,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1461,7 +1461,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1485,7 +1485,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1509,7 +1509,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 1
+      - block: 0
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1539,7 +1539,7 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 0, y: 7}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
@@ -1563,7 +1563,7 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 1, y: 7}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
@@ -1587,7 +1587,7 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 2, y: 7}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
@@ -1611,7 +1611,7 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 3, y: 7}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
@@ -1635,7 +1635,7 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 4, y: 7}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
@@ -1659,7 +1659,7 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 5, y: 7}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
@@ -1683,7 +1683,7 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 6, y: 7}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
@@ -1707,7 +1707,7 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 7, y: 7}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
@@ -1731,7 +1731,7 @@ MonoBehaviour:
         obstacleLayer: 1
         position: {x: 8, y: 7}
         direction: {x: 0, y: -1}
-        enterSquare: 0
+        enterSquare: 1
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
@@ -1756,8 +1756,8 @@ MonoBehaviour:
         position: {x: 0, y: 8}
         direction: {x: 0, y: -1}
         enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 0, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1780,8 +1780,8 @@ MonoBehaviour:
         position: {x: 1, y: 8}
         direction: {x: 0, y: -1}
         enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 1, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1804,8 +1804,8 @@ MonoBehaviour:
         position: {x: 2, y: 8}
         direction: {x: 0, y: -1}
         enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 2, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1828,8 +1828,8 @@ MonoBehaviour:
         position: {x: 3, y: 8}
         direction: {x: 0, y: -1}
         enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 3, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1852,8 +1852,8 @@ MonoBehaviour:
         position: {x: 4, y: 8}
         direction: {x: 0, y: -1}
         enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 4, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1876,8 +1876,8 @@ MonoBehaviour:
         position: {x: 5, y: 8}
         direction: {x: 0, y: -1}
         enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 5, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1900,8 +1900,8 @@ MonoBehaviour:
         position: {x: 6, y: 8}
         direction: {x: 0, y: -1}
         enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 6, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1924,8 +1924,8 @@ MonoBehaviour:
         position: {x: 7, y: 8}
         direction: {x: 0, y: -1}
         enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 7, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1948,8 +1948,8 @@ MonoBehaviour:
         position: {x: 8, y: 8}
         direction: {x: 0, y: -1}
         enterSquare: 0
-        isEnterTeleport: 0
-        teleportCoordinatesLinked: {x: -1, y: -1}
+        isEnterTeleport: 1
+        teleportCoordinatesLinked: {x: 8, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1977,8 +1977,8 @@ MonoBehaviour:
     targetIndex: 2
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 23
-    colorLimit: 4
+    limit: 45
+    colorLimit: 5
     star1: 1000
     star2: 2000
     star3: 3000
@@ -1988,8 +1988,8 @@ MonoBehaviour:
     subTargetsContainers:
     - targetPrefab: {fileID: 1533976084100574, guid: 4ebed1d82b94548d0ab47103e3f205e5,
         type: 3}
-      count: 0
-      preCount: 0
+      count: 27
+      preCount: 27
       extraObject: {fileID: 0}
       color: 0
     - targetPrefab: {fileID: 1711075845521044, guid: 4ebed1d82b94548d0ab47103e3f205e5,

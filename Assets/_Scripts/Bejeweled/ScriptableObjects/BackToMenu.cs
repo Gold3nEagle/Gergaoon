@@ -34,21 +34,9 @@ public class BackToMenu : MonoBehaviour
             gameData.saveData.isActive[currentLevel] = true;
             gameData.Save(); 
         }
+         
+            StartCoroutine(GoToMenu(1)); 
 
-        if (adsEnabled == false)
-        {
-            if (currentLevel % 3 == 0)
-            { 
-                adScript.ShowInterstitialAd();
-                StartCoroutine(GoToMenu(3));
-            } else
-            {
-                StartCoroutine(GoToMenu(1));
-            }
-        } else
-        { 
-            StartCoroutine(GoToMenu(1));
-        } 
     }
 
     public void LoseOK()
