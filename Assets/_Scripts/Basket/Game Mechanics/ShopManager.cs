@@ -78,7 +78,7 @@ public class ShopManager : MonoBehaviour
     public void EquipHat(int hatEquipped) {
 
         PlayerPrefs.SetInt("equippedHat", hatEquipped);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("GameScene");
     }
      
 

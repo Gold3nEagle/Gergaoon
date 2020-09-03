@@ -24,11 +24,30 @@ public class NotificationsManager : MonoBehaviour
         var defaultChannel = new AndroidNotificationChannel()
         {
             Id = "default_channel",
+            Name = "HourlyNotification",
+            Importance = Importance.High,
+            Description = "For Lives Regenerated",
+        };
+
+        var DailyRewardsChannel = new AndroidNotificationChannel()
+        {
+            Id = "daily_channel",
             Name = "DailyNotification",
             Importance = Importance.High,
             Description = "For daily rewarded notifications",
         };
-         
+
+        var RetentionChannel = new AndroidNotificationChannel()
+        {
+            Id = "retention_channel",
+            Name = "RetentionNotification",
+            Importance = Importance.High,
+            Description = "For retention notifications",
+        };
+
+
+        AndroidNotificationCenter.RegisterNotificationChannel(RetentionChannel);
+        AndroidNotificationCenter.RegisterNotificationChannel(DailyRewardsChannel);
         AndroidNotificationCenter.RegisterNotificationChannel(defaultChannel);
     }
 
@@ -55,7 +74,7 @@ public class NotificationsManager : MonoBehaviour
                 notification.FireTime = System.DateTime.Now.AddDays(1);
             }
         }  
-        AndroidNotificationCenter.SendNotification(notification, "default_channel");
+        AndroidNotificationCenter.SendNotification(notification, "daily_channel");
     }
 
     public void SendRetentionNotification()
@@ -79,12 +98,12 @@ public class NotificationsManager : MonoBehaviour
                 else if (language == 2)
                 {
                     notificationRetention.Title = "Gergaoon";
-                    notificationRetention.Text = "How much candy can you collect NOW?";
+                    notificationRetention.Text = "How much candy can you collect Today?";
                     notificationRetention.LargeIcon = "icon_0";
                     notificationRetention.FireTime = System.DateTime.Now.AddDays(5);
                 }
             }
-            AndroidNotificationCenter.SendNotification(notificationRetention, "default_channel");
+            AndroidNotificationCenter.SendNotification(notificationRetention, "retention_channel");
             PlayerPrefs.SetInt("RetentionNotification", 0);
         }
     }

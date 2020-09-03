@@ -117,7 +117,7 @@ public class DailyRewards : MonoBehaviour
     public void DayOneReward()
     {
         int totalCandy = PlayerPrefs.GetInt("totalCandy");
-        totalCandy += 500;
+        totalCandy += 250;
         PlayerPrefs.SetInt("totalCandy", totalCandy);
         notificationsManager.SendRewardNotification();
         Button clickButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
@@ -129,7 +129,7 @@ public class DailyRewards : MonoBehaviour
     public void DayTwoReward()
     {
         int totalCandy = PlayerPrefs.GetInt("totalCandy");
-        totalCandy += 1000;
+        totalCandy += 500;
         PlayerPrefs.SetInt("totalCandy", totalCandy);
         notificationsManager.SendRewardNotification();
         Button clickButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
@@ -141,7 +141,7 @@ public class DailyRewards : MonoBehaviour
     public void DayThreeReward()
     {
         int totalCandy = PlayerPrefs.GetInt("totalCandy");
-        totalCandy += 2000;
+        totalCandy += 1000;
         PlayerPrefs.SetInt("totalCandy", totalCandy);
         notificationsManager.SendRewardNotification();
         Button clickButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();

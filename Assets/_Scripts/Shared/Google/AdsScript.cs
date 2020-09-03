@@ -180,6 +180,9 @@ public class AdsScript : MonoBehaviour
 
                 totalCandy += receivedCandy;
                 PlayerPrefs.SetInt("totalCandy", totalCandy);
+
+                BackToMenu backToMenu = FindObjectOfType<BackToMenu>();
+                backToMenu.SetCandyScoreText(receivedCandy * 2);
             }
         }
 

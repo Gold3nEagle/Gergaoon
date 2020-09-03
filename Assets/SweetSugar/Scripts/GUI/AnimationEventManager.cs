@@ -41,6 +41,10 @@ namespace SweetSugar.Scripts.GUI
             {
                 CharacterAnimation characterAnimation = FindObjectOfType<CharacterAnimation>();
                 characterAnimation.SadAnimation();
+
+                AdsScript adsScript = FindObjectOfType<AdsScript>();
+                adsScript.ShowInterstitialAd();
+
             }
              
             if (name == "PreFailed")
@@ -342,7 +346,8 @@ namespace SweetSugar.Scripts.GUI
             }
             if (gameObject.name == "MenuFailed")
             {
-                LevelManager.THIS.gameStatus = GameState.Map;
+                //LevelManager.THIS.gameStatus = GameState.Map;
+
             }
 
             if (SceneManager.GetActiveScene().name == "game")

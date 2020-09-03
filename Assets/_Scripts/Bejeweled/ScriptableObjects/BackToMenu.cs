@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine; 
+using UnityEngine;
+using TMPro;
 
 public class BackToMenu : MonoBehaviour
 { 
     private GameData gameData; 
     public LevelLoader levelLoader;
     public AdsScript adScript;
+    public TMP_Text candyScoreText; 
     int currentLevel;
     private int adsNum;
     private bool adsEnabled = false;
@@ -98,7 +100,14 @@ public class BackToMenu : MonoBehaviour
             totalCandy += (50 * stars);
             PlayerPrefs.SetInt("DoubleReward", (stars * 50));
             PlayerPrefs.SetInt("totalCandy", totalCandy);
+            SetCandyScoreText(50 * stars);
         }
 
     }
+
+    public void SetCandyScoreText(int score)
+    {
+        candyScoreText.text = "+ " + score.ToString();
+    }
+
 }
