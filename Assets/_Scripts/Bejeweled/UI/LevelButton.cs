@@ -89,7 +89,7 @@ public class LevelButton : MonoBehaviour
     public void ConfirmPanel(int level)
     { 
         totalLives = PlayerPrefs.GetInt("totalLives");
-        if (level < 124)
+        if (level < 131)
         {
             if (totalLives <= 0)
             {
