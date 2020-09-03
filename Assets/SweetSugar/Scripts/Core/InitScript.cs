@@ -110,9 +110,9 @@ namespace SweetSugar.Scripts.Core
             rate.GetComponent<RectTransform>().offsetMax = new Vector2(5, 5);
 //        rate.GetComponent<RectTransform>().anchoredPosition = (Resources.Load("Prefabs/Rate") as GameObject).GetComponent<RectTransform>().anchoredPosition;
             rate.transform.localScale = Vector3.one;
-            var g = MenuReference.THIS.Reward.gameObject;
-            g.SetActive(true);
-            g.SetActive(false);
+            //var g = MenuReference.THIS.Reward.gameObject;
+            //g.SetActive(true);
+            //g.SetActive(false);
             if (CrosssceneData.totalLevels == 0)
                 CrosssceneData.totalLevels = LoadingManager.GetLastLevelNum();
 #if FACEBOOK
