@@ -61,16 +61,18 @@ public class AdsScript : MonoBehaviour
 
         MobileAds.Initialize(appId);
 
-        // Called when the user should be rewarded for interacting with the ad. 
-
-        this.RequestInterstitial();
-        this.RequestRewardedAd();
+        // Called when the user should be rewarded for interacting with the ad.  
+        if (currentScene == "gameStatic")
+        {
+            this.RequestInterstitial();
+            this.RequestRewardedAd();
+        }
 
         if (currentScene == "GameScene")
             gameScore = GameObject.FindGameObjectWithTag("Hat").GetComponent<Score>();
     }
 
-    private void RequestInterstitial()
+    public void RequestInterstitial()
     {
 #if UNITY_ANDROID
         string adUnitId = "ca-app-pub-8350868259993569/2735927793";
@@ -90,7 +92,7 @@ public class AdsScript : MonoBehaviour
     }
 
 
-    private void RequestRewardedAd()
+    public void RequestRewardedAd()
     {
 #if UNITY_ANDROID
         string RadUnitId = "ca-app-pub-8350868259993569/9671077241";

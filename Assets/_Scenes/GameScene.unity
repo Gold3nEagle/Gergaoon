@@ -2148,7 +2148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c9dd040b5dc149644aa4f1a80baebbe4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e20375434159baa4194c09820c121e11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2835,7 +2835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c9dd040b5dc149644aa4f1a80baebbe4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e20375434159baa4194c09820c121e11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4592,6 +4592,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3727266936027943745, guid: 91a2ef5e930ceb542a4e2c708259e3ca,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727266936027943745, guid: 91a2ef5e930ceb542a4e2c708259e3ca,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1071013169}
@@ -4609,6 +4614,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727266936027943745, guid: 91a2ef5e930ceb542a4e2c708259e3ca,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727266936027943745, guid: 91a2ef5e930ceb542a4e2c708259e3ca,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727266936027943745, guid: 91a2ef5e930ceb542a4e2c708259e3ca,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3727266936491504397, guid: 91a2ef5e930ceb542a4e2c708259e3ca,
         type: 3}
@@ -4821,7 +4841,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 238419945}
   m_HandleRect: {fileID: 238419944}
   m_Direction: 0
-  m_Value: 0.0000007072426
+  m_Value: -0.0000007072426
   m_Size: 0.92793304
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7290,7 +7310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c9dd040b5dc149644aa4f1a80baebbe4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e20375434159baa4194c09820c121e11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7845,7 +7865,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c9dd040b5dc149644aa4f1a80baebbe4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e20375434159baa4194c09820c121e11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10163,7 +10183,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11153,12 +11173,36 @@ PrefabInstance:
     m_TransformParent: {fileID: 454101682}
     m_Modifications:
     - target: {fileID: 1744945025, guid: e1dc121b9bfa0b242882e7e44345c282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744945025, guid: e1dc121b9bfa0b242882e7e44345c282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 858895905}
     - target: {fileID: 1744945025, guid: e1dc121b9bfa0b242882e7e44345c282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowAdPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744945025, guid: e1dc121b9bfa0b242882e7e44345c282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744945025, guid: e1dc121b9bfa0b242882e7e44345c282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744945025, guid: e1dc121b9bfa0b242882e7e44345c282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1071013169}
+    - target: {fileID: 1744945025, guid: e1dc121b9bfa0b242882e7e44345c282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RequestRewardedAd
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744945025, guid: e1dc121b9bfa0b242882e7e44345c282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6597904614597340564, guid: e1dc121b9bfa0b242882e7e44345c282,
         type: 3}
@@ -11880,6 +11924,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1416092123}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1071013169}
+        m_MethodName: RequestInterstitial
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

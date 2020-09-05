@@ -2,7 +2,7 @@
 1 : Any purchase will remove all ads
 2 : Do you want to continue?
 3 : SPIN
-4 : Coins Shop
+4 : Candy Shop
 5 : Play
 6 : You WIN!
 7 : You lose!
@@ -81,3 +81,18 @@
 81 : Marmalade
 82 : Free
 83 : Level
+84 : About
+85 : Privacy Policy
+86 : To Be Continued . . .
+87 : Awesome! You Have Finished All Available Levels!
+88 : Collect MORE candy in the Basket game while you wait for the next update!
+89 : Do You Like The Game?
+90 : Rate it and Get FREE Candy!
+91 : Watch an Ad to Get More Tries!
+92 : Booster Store
+93 : Remove Ads
+94 : Day 1
+95 : Day 2
+96 : Day 3
+97 : Take it!
+98 : Daily Rewards!

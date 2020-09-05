@@ -12,10 +12,8 @@ public class NotificationsManager : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "MainMenu")
         {
             PlayerPrefs.SetInt("LifeNotification", 1);
-            PlayerPrefs.SetInt("RetentionNotification", 1);
         } 
         CreateNotificationChannel();
-        SendRetentionNotification();
         SendLivesReplenishedNotification();
     } 
 
@@ -35,18 +33,8 @@ public class NotificationsManager : MonoBehaviour
             Name = "DailyNotification",
             Importance = Importance.High,
             Description = "For daily rewarded notifications",
-        };
-
-        var RetentionChannel = new AndroidNotificationChannel()
-        {
-            Id = "retention_channel",
-            Name = "RetentionNotification",
-            Importance = Importance.High,
-            Description = "For retention notifications",
-        };
-
-
-        AndroidNotificationCenter.RegisterNotificationChannel(RetentionChannel);
+        }; 
+         
         AndroidNotificationCenter.RegisterNotificationChannel(DailyRewardsChannel);
         AndroidNotificationCenter.RegisterNotificationChannel(defaultChannel);
     }
@@ -77,37 +65,7 @@ public class NotificationsManager : MonoBehaviour
         AndroidNotificationCenter.SendNotification(notification, "daily_channel");
     }
 
-    public void SendRetentionNotification()
-    {
-        int toggle = PlayerPrefs.GetInt("RetentionNotification");
-        if (toggle == 1)
-        {
-
-            var notificationRetention = new AndroidNotification();
-
-            if (PlayerPrefs.HasKey("LanguageNum"))
-            {
-                int language = PlayerPrefs.GetInt("LanguageNum");
-                if (language == 1)
-                {
-                    notificationRetention.Title = "قرقاعون";
-                    notificationRetention.Text = "تقدر تجمع حلوى أكثر اليوم؟";
-                    notificationRetention.LargeIcon = "icon_0";
-                    notificationRetention.FireTime = System.DateTime.Now.AddDays(5);
-                }
-                else if (language == 2)
-                {
-                    notificationRetention.Title = "Gergaoon";
-                    notificationRetention.Text = "How much candy can you collect Today?";
-                    notificationRetention.LargeIcon = "icon_0";
-                    notificationRetention.FireTime = System.DateTime.Now.AddDays(5);
-                }
-            }
-            AndroidNotificationCenter.SendNotification(notificationRetention, "retention_channel");
-            PlayerPrefs.SetInt("RetentionNotification", 0);
-        }
-    }
-
+    
     public void SendLivesReplenishedNotification()
     {
         int toggle = PlayerPrefs.GetInt("LifeNotification");
@@ -142,8 +100,7 @@ public class NotificationsManager : MonoBehaviour
 
 
     private void OnApplicationQuit()
-    {
-        SendRetentionNotification();
+    { 
         SendLivesReplenishedNotification();
     }
 

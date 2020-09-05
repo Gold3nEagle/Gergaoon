@@ -9,7 +9,8 @@ public class CandyShop : MonoBehaviour
     public Overworld overWorld;
     int totalCandy;
     public int extraMovesPrice, freeMovePrice, explodeAreaPrice, removeCandyPrice;
-    public Text extraMovesAmount, freeMoveAmount, explodeAreaAmount, removeCandyAmount; 
+    public Text extraMovesAmount, freeMoveAmount, explodeAreaAmount, removeCandyAmount;
+    public GameObject iapPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,10 @@ public class CandyShop : MonoBehaviour
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
+        } else
+        {
+            gameObject.SetActive(false);
+            iapPanel.SetActive(true);
         }
     }
 
@@ -47,6 +52,11 @@ public class CandyShop : MonoBehaviour
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
         }
+        else
+        {
+            gameObject.SetActive(false);
+            iapPanel.SetActive(true);
+        }
     } 
 
     public void BuyExplodeArea()
@@ -62,6 +72,11 @@ public class CandyShop : MonoBehaviour
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
         }
+        else
+        {
+            gameObject.SetActive(false);
+            iapPanel.SetActive(true);
+        }
     }
 
     public void BuyRemoveCandy()
@@ -76,6 +91,11 @@ public class CandyShop : MonoBehaviour
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
+        }
+        else
+        {
+            gameObject.SetActive(false);
+            iapPanel.SetActive(true);
         }
     }
 

@@ -120,7 +120,7 @@ public class LevelButton : MonoBehaviour
         GameObject mainMusicGO = GameObject.FindGameObjectWithTag("Music");
         Destroy(mainMusicGO);
 
-        levelLoader.LoadLevel(4);
+        levelLoader.LoadLevel(3);
     }
 
 }

@@ -25,7 +25,7 @@ public class MusicController : MonoBehaviour
         } 
 
         currentScene = SceneManager.GetActiveScene().name;
-        if(currentScene == "SetLocale" || currentScene == "OverWorld")
+        if(currentScene == "MainMenu" || currentScene == "OverWorld")
         {
             DontDestroyOnLoad(gameObject);
             PlayMenuMusic();
