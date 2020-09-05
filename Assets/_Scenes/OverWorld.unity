@@ -17076,7 +17076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23383267, y: 0.65939176}
   m_AnchorMax: {x: 0.758, y: 0.794}
-  m_AnchoredPosition: {x: -3.848297, y: -48.30005}
+  m_AnchoredPosition: {x: -3.8482819, y: -48.30005}
   m_SizeDelta: {x: 87.85211, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342141396
@@ -106453,7 +106453,7 @@ MonoBehaviour:
   TotalTimeForRestLifeHours: 0
   TotalTimeForRestLifeMin: 25
   TotalTimeForRestLifeSec: 60
-  CapOfLife: 3
+  CapOfLife: 5
   dateReceived: 0
   TestDate: 
 --- !u!1 &1936100286

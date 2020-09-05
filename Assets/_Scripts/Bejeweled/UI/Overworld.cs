@@ -17,12 +17,12 @@ public class Overworld : MonoBehaviour
     {
         gameData = FindObjectOfType<GameData>();
          
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().name == "OverWorld")
         {
             if (!PlayerPrefs.HasKey("firstMatch3"))
             {
                 PlayerPrefs.SetInt("firstMatch3", 1);
-                PlayerPrefs.SetInt("totalLives", 3);
+                PlayerPrefs.SetInt("totalLives", 5);
                 PlayerPrefs.SetInt("ExtraMoves", 1);
                 PlayerPrefs.SetInt("FreeMove", 1);
                 PlayerPrefs.SetInt("ExplodeArea", 1);

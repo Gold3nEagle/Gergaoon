@@ -6,15 +6,39 @@ using UnityEngine.SceneManagement;
 
 public class NotificationsManager : MonoBehaviour
 {
+
+    int languageNum;
+
     // Start is called before the first frame update
     void Start()
     {
-        if(SceneManager.GetActiveScene().name == "MainMenu")
+
+        string language = Application.systemLanguage.ToString(); 
+
+        if(language == "Arabic")
+        {
+            languageNum = 1;
+        } else
+        {
+            languageNum = 2;
+        }
+
+
+        PlayerPrefs.SetInt("LanguageNum", languageNum );
+
+        if (SceneManager.GetActiveScene().name == "MainMenu")
         {
             PlayerPrefs.SetInt("LifeNotification", 1);
         } 
         CreateNotificationChannel();
-        SendLivesReplenishedNotification();
+
+        int lifes = PlayerPrefs.GetInt("totalLives");
+        int lifeNotification = PlayerPrefs.GetInt("LifeNotification");
+        if(lifes < 5 && lifeNotification == 1)
+        {
+            SendLivesReplenishedNotification();
+        }
+
     } 
 
     void CreateNotificationChannel()
@@ -96,12 +120,5 @@ public class NotificationsManager : MonoBehaviour
             AndroidNotificationCenter.SendNotification(notificationRestoreLives, "default_channel");
             PlayerPrefs.SetInt("LifeNotification", 0);
         }
-    }
-
-
-    private void OnApplicationQuit()
-    { 
-        SendLivesReplenishedNotification();
-    }
-
+    } 
 }

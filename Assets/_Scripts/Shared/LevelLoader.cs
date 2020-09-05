@@ -24,7 +24,7 @@ public class LevelLoader : MonoBehaviour
 
         CheckToDestroyMusic(sceneIndex);
 
-        if(sceneIndex == 3)
+        if(sceneIndex == 2)
         {
             Screen.orientation = ScreenOrientation.LandscapeLeft;
         } else
