@@ -22,8 +22,8 @@ public class CandyShop : MonoBehaviour
 
     public void BuyExtraMoves()
     {
-        if(totalCandy >= extraMovesPrice)
-        { 
+        if (totalCandy >= extraMovesPrice)
+        {
             int extraMovesBoostNum = PlayerPrefs.GetInt("ExtraMoves");
             extraMovesBoostNum++;
             PlayerPrefs.SetInt("ExtraMoves", extraMovesBoostNum);
@@ -32,7 +32,24 @@ public class CandyShop : MonoBehaviour
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
-        } else
+
+            //Log Firebase Spend Coin Event
+            Firebase.Analytics.FirebaseAnalytics.LogEvent(
+            Firebase.Analytics.FirebaseAnalytics.EventSpendVirtualCurrency,
+            new Firebase.Analytics.Parameter[] {
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterItemName, "Extra Moves"),
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
+                        }
+                );
+
+
+
+        }
+        else
         {
             gameObject.SetActive(false);
             iapPanel.SetActive(true);
@@ -41,7 +58,7 @@ public class CandyShop : MonoBehaviour
 
     public void BuyFreeMove()
     {
-        if(totalCandy >= freeMovePrice)
+        if (totalCandy >= freeMovePrice)
         {
             int freeMoveNum = PlayerPrefs.GetInt("FreeMove");
             freeMoveNum++;
@@ -51,17 +68,33 @@ public class CandyShop : MonoBehaviour
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
+
+
+            //Log Firebase Spend Coin Event
+            Firebase.Analytics.FirebaseAnalytics.LogEvent(
+            Firebase.Analytics.FirebaseAnalytics.EventSpendVirtualCurrency,
+            new Firebase.Analytics.Parameter[] {
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterItemName, "Free Moves"),
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
+                        }
+                );
+
+
         }
         else
         {
             gameObject.SetActive(false);
             iapPanel.SetActive(true);
         }
-    } 
+    }
 
     public void BuyExplodeArea()
     {
-        if(totalCandy >= explodeAreaPrice)
+        if (totalCandy >= explodeAreaPrice)
         {
             int explodeAreaNum = PlayerPrefs.GetInt("ExplodeArea"); ;
             explodeAreaNum++;
@@ -71,6 +104,22 @@ public class CandyShop : MonoBehaviour
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
+
+            //Log Firebase Spend Coin Event
+            Firebase.Analytics.FirebaseAnalytics.LogEvent(
+            Firebase.Analytics.FirebaseAnalytics.EventSpendVirtualCurrency,
+            new Firebase.Analytics.Parameter[] {
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterItemName, "Explode Area"),
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
+                        }
+                );
+
+
+
         }
         else
         {
@@ -91,6 +140,22 @@ public class CandyShop : MonoBehaviour
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
+
+
+            //Log Firebase Spend Coin Event
+            Firebase.Analytics.FirebaseAnalytics.LogEvent(
+            Firebase.Analytics.FirebaseAnalytics.EventSpendVirtualCurrency,
+            new Firebase.Analytics.Parameter[] {
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterItemName, "Remove Candy"),
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
+            new Firebase.Analytics.Parameter(
+            Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
+                        }
+                );
+
+
         }
         else
         {
@@ -111,6 +176,6 @@ public class CandyShop : MonoBehaviour
         freeMoveAmount.text = freeMoveNum.ToString();
         explodeAreaAmount.text = explodeAreaNum.ToString();
         removeCandyAmount.text = removeCandyNum.ToString();
-    } 
+    }
 
 }

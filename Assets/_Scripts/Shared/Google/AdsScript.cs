@@ -20,7 +20,7 @@ using SweetSugar.Scripts.GUI;
 // Called when the ad click caused the user to leave the application.
 //  this.interstitial.OnAdLeavingApplication += HandleOnAdLeavingApplication;
 
-    public enum AdRewardType
+public enum AdRewardType
 {
     ExtraMoves,
     DoubleReward
@@ -133,12 +133,12 @@ public class AdsScript : MonoBehaviour
 
     public void RewardedType(int type)
     {
-        if(type == 1)
+        if (type == 1)
         {
-            rewardType = AdRewardType.ExtraMoves; 
-        } 
+            rewardType = AdRewardType.ExtraMoves;
+        }
 
-        else if(type == 2)
+        else if (type == 2)
         {
             rewardType = AdRewardType.DoubleReward;
         }
@@ -174,8 +174,8 @@ public class AdsScript : MonoBehaviour
             {
                 AnimationEventManager animationEventManager = GameObject.Find("PreFailed").GetComponent<AnimationEventManager>();
                 animationEventManager.GoOnFailed();
-            } 
-            else if(rewardType == AdRewardType.DoubleReward)
+            }
+            else if (rewardType == AdRewardType.DoubleReward)
             {
                 int receivedCandy = PlayerPrefs.GetInt("DoubleReward");
                 int totalCandy = PlayerPrefs.GetInt("totalCandy");
@@ -185,6 +185,18 @@ public class AdsScript : MonoBehaviour
 
                 BackToMenu backToMenu = FindObjectOfType<BackToMenu>();
                 backToMenu.SetCandyScoreText(receivedCandy * 2);
+
+                //Log Firebase Event (How much candies do these dudes have?)
+                Firebase.Analytics.FirebaseAnalytics.LogEvent(
+                Firebase.Analytics.FirebaseAnalytics.EventEarnVirtualCurrency,
+                new Firebase.Analytics.Parameter[] {
+                new Firebase.Analytics.Parameter(
+                Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
+                new Firebase.Analytics.Parameter(
+                Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
+                                        }
+                                        );
+
             }
         }
 
