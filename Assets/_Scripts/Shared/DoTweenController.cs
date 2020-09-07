@@ -18,7 +18,13 @@ public class DoTweenController : MonoBehaviour
         if (gameObject.CompareTag("WiggleButton"))
         {
             Wiggle();
-        } 
+        }
+
+        if (gameObject.CompareTag("Hover"))
+        {
+            Hover();
+        }
+
     }
 
     public void OnEnable()
@@ -38,9 +44,14 @@ public class DoTweenController : MonoBehaviour
        gameObject.SetActive(false);
     }
 
-    public void Wiggle()
+    void Wiggle()
     {
         LeanTween.scale(gameObject, new Vector3(0.95f, 1.1f, 0), 0.4f).setLoopPingPong();
+    }
+
+    void Hover()
+    {
+        LeanTween.moveLocalY(gameObject, 500f, 3f ).setLoopPingPong();
     }
 
 }

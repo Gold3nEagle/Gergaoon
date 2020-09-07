@@ -16,6 +16,13 @@ TagManager:
   - MarmaladeAnimation
   - Multicolor_firework
   - Simple_firework
+  - Music
+  - WiggleButton
+  - scoreNum
+  - Hat
+  - Bomb
+  - totalCoins
+  - Hover
   layers:
   - Default
   - TransparentFX

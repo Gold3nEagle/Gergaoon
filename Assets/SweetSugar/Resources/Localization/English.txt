@@ -96,3 +96,4 @@
 96 : Day 3
 97 : Take it!
 98 : Daily Rewards!
+99 : Gergaoon
