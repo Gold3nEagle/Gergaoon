@@ -30,6 +30,7 @@ public class NotificationsManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("LifeNotification", 1);
         } 
+
         CreateNotificationChannel();
 
         int lifes = PlayerPrefs.GetInt("totalLives");
@@ -47,7 +48,7 @@ public class NotificationsManager : MonoBehaviour
         {
             Id = "default_channel",
             Name = "HourlyNotification",
-            Importance = Importance.High,
+            Importance = Importance.Default,
             Description = "For Lives Regenerated",
         };
 
@@ -67,10 +68,9 @@ public class NotificationsManager : MonoBehaviour
     public void SendRewardNotification()
     {
         var notification = new AndroidNotification(); ;
-
-        if (PlayerPrefs.HasKey("LanguageNum"))
-        {
+        
             int language = PlayerPrefs.GetInt("LanguageNum");
+
             if (language == 1)
             {
                 notification.Title = "قرقاعون";
@@ -85,7 +85,7 @@ public class NotificationsManager : MonoBehaviour
                 notification.LargeIcon = "icon_0";
                 notification.FireTime = System.DateTime.Now.AddDays(1);
             }
-        }  
+        
         AndroidNotificationCenter.SendNotification(notification, "daily_channel");
     }
 
@@ -97,8 +97,7 @@ public class NotificationsManager : MonoBehaviour
         { 
             var notificationRestoreLives = new AndroidNotification();
 
-            if (PlayerPrefs.HasKey("LanguageNum"))
-            {
+
                 int language = PlayerPrefs.GetInt("LanguageNum");
                 if (language == 1)
                 {
@@ -116,7 +115,7 @@ public class NotificationsManager : MonoBehaviour
                     notificationRestoreLives.FireTime = System.DateTime.Now.AddHours(2);
                 }
 
-            }
+            
             AndroidNotificationCenter.SendNotification(notificationRestoreLives, "default_channel");
             PlayerPrefs.SetInt("LifeNotification", 0);
         }

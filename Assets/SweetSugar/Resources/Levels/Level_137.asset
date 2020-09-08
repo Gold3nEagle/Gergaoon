@@ -34,7 +34,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 445
+          y: 497
           width: 50
           height: 50
         item:
@@ -58,16 +58,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 445
+          y: 497
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -83,7 +82,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 445
+          y: 497
           width: 50
           height: 50
         item:
@@ -107,16 +106,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 445
+          y: 497
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -132,7 +130,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 445
+          y: 497
           width: 50
           height: 50
         item:
@@ -156,16 +154,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 445
+          y: 497
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -181,7 +178,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 445
+          y: 497
           width: 50
           height: 50
         item:
@@ -205,16 +202,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 445
+          y: 497
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -230,7 +226,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 445
+          y: 497
           width: 50
           height: 50
         item:
@@ -254,16 +250,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 497
+          y: 549
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -279,7 +274,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 497
+          y: 549
           width: 50
           height: 50
         item:
@@ -303,16 +298,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 497
+          y: 549
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -328,7 +322,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 497
+          y: 549
           width: 50
           height: 50
         item:
@@ -352,16 +346,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 497
+          y: 549
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -377,7 +370,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 497
+          y: 549
           width: 50
           height: 50
         item:
@@ -401,16 +394,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 497
+          y: 549
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -426,7 +418,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 497
+          y: 549
           width: 50
           height: 50
         item:
@@ -450,16 +442,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 497
+          y: 549
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -475,7 +466,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 549
+          y: 601
           width: 50
           height: 50
         item:
@@ -499,16 +490,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 549
+          y: 601
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -524,7 +514,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 549
+          y: 601
           width: 50
           height: 50
         item:
@@ -548,16 +538,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 549
+          y: 601
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -573,7 +562,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 549
+          y: 601
           width: 50
           height: 50
         item:
@@ -597,16 +586,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 549
+          y: 601
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -622,7 +610,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 549
+          y: 601
           width: 50
           height: 50
         item:
@@ -646,16 +634,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 549
+          y: 601
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -671,7 +658,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 549
+          y: 601
           width: 50
           height: 50
         item:
@@ -695,16 +682,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 601
+          y: 653
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -720,7 +706,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 601
+          y: 653
           width: 50
           height: 50
         item:
@@ -744,16 +730,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 601
+          y: 653
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -769,7 +754,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 601
+          y: 653
           width: 50
           height: 50
         item:
@@ -793,16 +778,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 601
+          y: 653
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -818,7 +802,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 601
+          y: 653
           width: 50
           height: 50
         item:
@@ -842,16 +826,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 601
+          y: 653
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -867,7 +850,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 601
+          y: 653
           width: 50
           height: 50
         item:
@@ -891,16 +874,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 601
+          y: 653
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -916,7 +898,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 653
+          y: 705
           width: 50
           height: 50
         item:
@@ -940,16 +922,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 653
+          y: 705
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -965,7 +946,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 653
+          y: 705
           width: 50
           height: 50
         item:
@@ -989,16 +970,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 653
+          y: 705
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1014,7 +994,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 653
+          y: 705
           width: 50
           height: 50
         item:
@@ -1038,16 +1018,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 653
+          y: 705
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1063,7 +1042,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 653
+          y: 705
           width: 50
           height: 50
         item:
@@ -1087,16 +1066,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 653
+          y: 705
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1112,7 +1090,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 653
+          y: 705
           width: 50
           height: 50
         item:
@@ -1136,16 +1114,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 705
+          y: 757
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1161,7 +1138,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 705
+          y: 757
           width: 50
           height: 50
         item:
@@ -1185,16 +1162,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 705
+          y: 757
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1210,7 +1186,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 705
+          y: 757
           width: 50
           height: 50
         item:
@@ -1234,16 +1210,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 705
+          y: 757
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1259,7 +1234,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 705
+          y: 757
           width: 50
           height: 50
         item:
@@ -1283,16 +1258,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 705
+          y: 757
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1308,7 +1282,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 705
+          y: 757
           width: 50
           height: 50
         item:
@@ -1332,16 +1306,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 705
+          y: 757
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1357,7 +1330,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 757
+          y: 809
           width: 50
           height: 50
         item:
@@ -1381,16 +1354,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 757
+          y: 809
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1406,7 +1378,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 757
+          y: 809
           width: 50
           height: 50
         item:
@@ -1430,16 +1402,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 757
+          y: 809
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1455,7 +1426,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 757
+          y: 809
           width: 50
           height: 50
         item:
@@ -1479,16 +1450,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 757
+          y: 809
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1504,7 +1474,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 757
+          y: 809
           width: 50
           height: 50
         item:
@@ -1528,16 +1498,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 757
+          y: 809
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1553,7 +1522,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 757
+          y: 809
           width: 50
           height: 50
         item:
@@ -1577,16 +1546,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 809
+          y: 861
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1602,7 +1570,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 809
+          y: 861
           width: 50
           height: 50
         item:
@@ -1626,16 +1594,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 809
+          y: 861
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1651,7 +1618,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 809
+          y: 861
           width: 50
           height: 50
         item:
@@ -1675,16 +1642,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 809
+          y: 861
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1700,7 +1666,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 809
+          y: 861
           width: 50
           height: 50
         item:
@@ -1724,16 +1690,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 809
+          y: 861
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1749,7 +1714,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 809
+          y: 861
           width: 50
           height: 50
         item:
@@ -1773,16 +1738,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 809
+          y: 861
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1798,7 +1762,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 3
-          y: 861
+          y: 913
           width: 50
           height: 50
         item:
@@ -1822,16 +1786,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 56
-          y: 861
+          y: 913
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1847,7 +1810,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 109
-          y: 861
+          y: 913
           width: 50
           height: 50
         item:
@@ -1871,16 +1834,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 162
-          y: 861
+          y: 913
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1896,7 +1858,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 215
-          y: 861
+          y: 913
           width: 50
           height: 50
         item:
@@ -1920,16 +1882,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 268
-          y: 861
+          y: 913
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1945,7 +1906,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 321
-          y: 861
+          y: 913
           width: 50
           height: 50
         item:
@@ -1969,16 +1930,15 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 374
-          y: 861
+          y: 913
           width: 50
           height: 50
         item:
-          Color: 2
+          Color: 1
           ItemType: 0
-          Texture: {fileID: 2800000, guid: 0edf19301af4941ef8ab05726d03f78d, type: 3}
+          Texture: {fileID: 2800000, guid: 8604122af3f62472e95c261ef7b15478, type: 3}
           colors: {fileID: 0}
-          Item: {fileID: 1119664270634208, guid: 9e94793869c22499fa7ac77d70d4380e,
-            type: 2}
+          Item: {fileID: 190504, guid: e83178387e3af4eb8aa2a7236fa058ed, type: 3}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
       - block: 6
@@ -1994,7 +1954,7 @@ MonoBehaviour:
         guiRect:
           serializedVersion: 2
           x: 427
-          y: 861
+          y: 913
           width: 50
           height: 50
         item:
@@ -2017,7 +1977,7 @@ MonoBehaviour:
     targetIndex: 3
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 40
+    limit: 11
     colorLimit: 5
     star1: 1000
     star2: 2000

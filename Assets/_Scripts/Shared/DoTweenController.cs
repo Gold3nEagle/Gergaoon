@@ -25,6 +25,11 @@ public class DoTweenController : MonoBehaviour
             Hover();
         }
 
+        if (gameObject.CompareTag("Rotate"))
+        {
+            Rotate();
+        }
+
     }
 
     public void OnEnable()
@@ -52,6 +57,11 @@ public class DoTweenController : MonoBehaviour
     void Hover()
     {
         LeanTween.moveLocalY(gameObject, 500f, 3f ).setLoopPingPong();
+    }
+
+    void Rotate()
+    {
+        LeanTween.rotateLocal(gameObject, new Vector3(0f, 0f, -260f), 26f);
     }
 
 }

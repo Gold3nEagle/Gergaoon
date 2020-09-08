@@ -23,6 +23,7 @@ TagManager:
   - Bomb
   - totalCoins
   - Hover
+  - Rotate
   layers:
   - Default
   - TransparentFX

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Popups : MonoBehaviour
 {
-    //ENABLE FOR NEXT UPDATE!
-    
     private void Awake()
     {
         Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {

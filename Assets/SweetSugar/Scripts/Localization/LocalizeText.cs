@@ -12,17 +12,31 @@ namespace SweetSugar.Scripts.Localization
 
         private string _originalText;
         private string _currentText;
+        int languageNum;
+
+        FixArabicTMProUGUI fixArabic;
 
         private void Awake()
         {
             textObject = GetComponent<TextMeshProUGUI>();
+            fixArabic = GetComponent<FixArabicTMProUGUI>();
+            languageNum = PlayerPrefs.GetInt("LanguageNum");
         }
 
         private void OnEnable()
         {
             _originalText = textObject.text;
             _currentText = LocalizationManager.GetText(instanceID, _originalText);
-            textObject.text = _currentText;
+
+            if(fixArabic != null && languageNum == 1)
+            {
+                fixArabic.UpdateText(_currentText);
+            }
+            else
+            {
+                textObject.text = _currentText;
+            }
+
 
         }
     }

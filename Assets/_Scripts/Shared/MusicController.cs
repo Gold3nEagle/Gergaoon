@@ -31,12 +31,12 @@ public class MusicController : MonoBehaviour
             PlayMenuMusic();
         }
 
-        if(currentScene == "GameScene" || currentScene == "gameStatic")
-        {
-            GameObject mainMusicGO = GameObject.FindGameObjectWithTag("Music");
-            Destroy(mainMusicGO);
-            Destroy(gameObject);
-        }
+        //if(currentScene == "GameScene" || currentScene == "gameStatic")
+        //{
+        //    GameObject mainMusicGO = GameObject.FindGameObjectWithTag("Music");
+        //    Destroy(mainMusicGO);
+        //    Destroy(gameObject);
+        //}
 
     }
 

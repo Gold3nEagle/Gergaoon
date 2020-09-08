@@ -8,6 +8,7 @@ public class PanZoom : MonoBehaviour
     public float zoomOutMin = 500;
     public float zoomOutMax = 1000;
     public float minX, maxX, minY, maxY;
+    public float zoomSpeed = 500;
  
 
     // Update is called once per frame
@@ -64,7 +65,7 @@ public class PanZoom : MonoBehaviour
 
     void Zoom(float increment)
     {
-        increment = increment * 500;
+        increment = increment * zoomSpeed;
         Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax);
     }
 
