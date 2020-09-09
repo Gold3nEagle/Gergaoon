@@ -55,7 +55,7 @@ public class Overworld : MonoBehaviour
 
             //Precaution so camera is not out of bounds.
             if (latestLevel > 150)
-                latestLevel -= 2;
+                latestLevel -= 5;
             
 
             GameObject neededPosition = GameObject.Find("Level Prefab " + "(" + latestLevel.ToString() + ")");

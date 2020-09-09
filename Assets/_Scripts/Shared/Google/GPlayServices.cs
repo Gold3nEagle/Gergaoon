@@ -50,7 +50,7 @@ public class GPlayServices : MonoBehaviour
     }
 
     public void ShowBasketLeaderboard()
-    { 
+    {
         PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkItef62N0LEAIQCw");
         Social.ShowLeaderboardUI();
     }
@@ -97,7 +97,7 @@ public class GPlayServices : MonoBehaviour
             case 8:
                 PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_its_over_4000, 100f, success => { });
                 break;
-                 
+
         }
     }
 
