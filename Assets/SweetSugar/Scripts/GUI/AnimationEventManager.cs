@@ -270,7 +270,7 @@ namespace SweetSugar.Scripts.GUI
 
             AdsScript adsScript = FindObjectOfType<AdsScript>();
             adsScript.ShowInterstitialAd();
-
+              
 
         }  
 
@@ -287,6 +287,17 @@ namespace SweetSugar.Scripts.GUI
                 yield return new WaitForSeconds(0.00001f);
             }
             scores.text = "" + LevelManager.Score;
+
+            //Post score in leaderboards
+            GPlayServices gPlay = FindObjectOfType<GPlayServices>(); 
+            gPlay.AddScoreToLeaderboard("CgkItef62N0LEAIQDA", LevelManager.Score);
+
+            if(LevelManager.Score > 4000)
+            {
+                gPlay.UnlockAchievement(8);
+            }
+
+            //Debug.Log("This is the level's score! " + LevelManager.Score);
         }
 
         /// <summary>

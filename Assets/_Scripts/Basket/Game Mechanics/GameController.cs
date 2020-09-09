@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour {
 
     public AdsScript ads;
     public SfxController sfx;
+    public GPlayServices gPlay;
 
     private Rigidbody2D rb;
     private new Renderer renderer;
@@ -138,11 +139,7 @@ public class GameController : MonoBehaviour {
         StartCoroutine(Spawn());
         }
          
-    }
-     
- 
-
-
+    } 
     void UpdateText()
     {
         timerText.text =   Mathf.RoundToInt(timeLeft).ToString(); 
@@ -168,6 +165,9 @@ public class GameController : MonoBehaviour {
             GameObject endballs = balls[Random.Range(0, 5)];
             Instantiate( endballs, spawnPosition, spawnRotation); 
         }
+         
+        gPlay.AddScoreToLeaderboard("CgkItef62N0LEAIQCw", gameScore.score);
+        CheckAchievements();
 
         if (adsEnabled == false)
         {
@@ -184,8 +184,7 @@ public class GameController : MonoBehaviour {
         int TP = PlayerPrefs.GetInt("TP");
         TP++;
         PlayerPrefs.SetInt("TP", TP);
-    }
-
+    } 
 
     public void RestartGame()
     {
@@ -196,6 +195,21 @@ public class GameController : MonoBehaviour {
     {
         gameScore = GameObject.FindGameObjectWithTag("Hat").GetComponent<Score>();
         hatController = GameObject.FindGameObjectWithTag("Hat").GetComponent<HatController>();
+    }
+
+    void CheckAchievements()
+    {
+        if (gameScore.score <= 0)
+            gPlay.UnlockAchievement(5);
+
+        if (gameScore.score >= 50)
+            gPlay.UnlockAchievement(1);
+
+        if (gameScore.score >= 100)
+            gPlay.UnlockAchievement(2);
+
+        if (gameScore.score >= 111)
+            gPlay.UnlockAchievement(3);
     }
 
 

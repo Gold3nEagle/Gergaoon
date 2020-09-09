@@ -1,5 +1,5 @@
-lastUpgrade=00962
-proj.pluginVersion=0.9.62
+lastUpgrade=01011
+proj.pluginVersion=0.10.11
 proj.AppId=403108180917
 and.BundleId=com.goldeneagle.gergaoon
 proj.classDir=Assets

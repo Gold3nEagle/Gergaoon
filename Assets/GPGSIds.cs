@@ -24,12 +24,16 @@
 
 public static class GPGSIds
 {
+        public const string achievement_finished_10_levels = "CgkItef62N0LEAIQDQ"; // <GPGSID>
         public const string achievement_professional = "CgkItef62N0LEAIQBg"; // <GPGSID>
-        public const string leaderboard = "CgkItef62N0LEAIQAw"; // <GPGSID>
+        public const string leaderboard_basket_leaderboards = "CgkItef62N0LEAIQCw"; // <GPGSID>
+        public const string leaderboard_gergaoon_leaderboard = "CgkItef62N0LEAIQDA"; // <GPGSID>
         public const string achievement_50_candies = "CgkItef62N0LEAIQBA"; // <GPGSID>
         public const string achievement_you_did_your_best = "CgkItef62N0LEAIQCQ"; // <GPGSID>
         public const string achievement_100_candies = "CgkItef62N0LEAIQBQ"; // <GPGSID>
+        public const string achievement_finished_100_levels = "CgkItef62N0LEAIQDg"; // <GPGSID>
         public const string achievement_survival_of_the_fittest = "CgkItef62N0LEAIQCA"; // <GPGSID>
+        public const string achievement_its_over_4000 = "CgkItef62N0LEAIQDw"; // <GPGSID>
 
 }
 

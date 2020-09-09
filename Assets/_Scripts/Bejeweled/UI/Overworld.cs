@@ -9,6 +9,7 @@ public class Overworld : MonoBehaviour
 
     public Text totalCandyDisplay, totalLivesDisplay;
     public GameObject pointerAnim;
+    public GPlayServices gPlay;
     GameData gameData;
     Camera mainCamera;
 
@@ -32,10 +33,7 @@ public class Overworld : MonoBehaviour
                 PlayerPrefs.SetInt("BeenRated", 0);
             } 
         }
-        gameData.CheckLevels();
-
-        //PlayerPrefs.SetInt("totalCandy", 100000);
-        //PlayerPrefs.SetInt("totalLives", 3);
+        gameData.CheckLevels(); 
 
         DisplayTotalCandy(); 
     }
@@ -43,15 +41,20 @@ public class Overworld : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().name == "OverWorld")
         {
             mainCamera = Camera.main;
             int latestLevel = gameData.GetLatestUnlockedLevel();
 
-            if(latestLevel >= 17)
-                //Unlock Basket Game and show celebration!
+           
+            if (latestLevel >= 10)
+                gPlay.UnlockAchievement(6);
 
-            if (latestLevel > 90)
+            if (latestLevel >= 100)
+                gPlay.UnlockAchievement(7);
+
+            //Precaution so camera is not out of bounds.
+            if (latestLevel > 150)
                 latestLevel -= 2;
             
 
