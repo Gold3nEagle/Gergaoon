@@ -90,6 +90,23 @@ public class FixArabicTMProUGUI : MonoBehaviour
         neededText = text;
         textMeshPro.text = textMeshPro.FixArabicTMProUGUILines(useTashkeel, useHinduNumbers, text);
     }
+    
+    public string ReturnFixedString(string text)
+    {
+        if (!initialized)
+            Awake();
+        neededText = text;
+        text = textMeshPro.FixArabicTMProUGUILines(useTashkeel, useHinduNumbers, text);
+
+        return text; 
+    }
+
+    public void ConfigureText()
+    {
+        TMP_InputField textIF = GameObject.Find("InputField (TMP)").GetComponent<TMP_InputField>();
+        textIF.text = textMeshPro.FixArabicTMProUGUILines(useTashkeel, useHinduNumbers, textMeshPro.text);
+    }
+
 }
 #if UNITY_EDITOR
 [CustomEditor(typeof(FixArabicTMProUGUI))]
