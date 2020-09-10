@@ -30,6 +30,8 @@ public class MainSceneHandler : MonoBehaviour
             new Message(APIHandler.Instance.authAPI.GetUser().nickname, APIHandler.Instance.authAPI.GetUserId(),
                 textIF.text),
             () => Debug.Log("Message was sent!"), Debug.Log);
+
+        textIF.text = " ";
     }
 
     private void CreateMessage(Message message, string messageId)
@@ -73,6 +75,6 @@ public class MainSceneHandler : MonoBehaviour
     {
         APIHandler.Instance.databaseAPI.StopListeningForMessages();
         APIHandler.Instance.authAPI.SignOut();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("OverWorld");
     }
 }

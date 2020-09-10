@@ -17,13 +17,13 @@ public class MessageHandler : MonoBehaviour
 
         fixArabic = GetComponentInChildren<FixArabicTMProUGUI>(); 
 
-        sender.text = $"{message.senderNickname}:";
+        sender.text = fixArabic.ReturnFixedString($": {message.senderNickname} :");
 
         text.text = fixArabic.ReturnFixedString(message.text);
 
-        if (!isOwner) return;
-        editButton.SetActive(true);
-        deleteButton.SetActive(true);
+        //if (!isOwner) return;
+        //editButton.SetActive(true);
+        //deleteButton.SetActive(true);
     }
 
     public void EditMessage() =>

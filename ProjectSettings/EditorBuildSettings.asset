@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/gameStatic.unity
     guid: 2d0d93538b9f447f5860fee1ef81d59b
+  - enabled: 1
+    path: Assets/_Scenes/ChatScene.unity
+    guid: 014467dc70cd3c74ea9a5855bf07489d
   m_configObjects: {}

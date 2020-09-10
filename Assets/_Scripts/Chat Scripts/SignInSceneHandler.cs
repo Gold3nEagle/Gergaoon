@@ -13,6 +13,13 @@ public class SignInSceneHandler : MonoBehaviour
     public GameObject chatPanel, loginPanel;
 
     private bool signInComplete;
+    FixArabicTMProUGUI fixArabic;
+
+    private void Start()
+    {
+        fixArabic = GetComponent<FixArabicTMProUGUI>();
+    }
+
 
     public void SignUp() => APIHandler.Instance.authAPI.SignUpUser(emailIF.text, passwordIF.text,
         () =>
