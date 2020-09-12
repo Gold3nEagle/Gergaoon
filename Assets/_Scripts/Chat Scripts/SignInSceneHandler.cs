@@ -60,4 +60,10 @@ public class SignInSceneHandler : MonoBehaviour
         chatPanel.SetActive(true);
 
     }
+
+    public void ExitToOverWorld()
+    {
+        SceneManager.LoadScene("OverWorld");
+    }
+
 }

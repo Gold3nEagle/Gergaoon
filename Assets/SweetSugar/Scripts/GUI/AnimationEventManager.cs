@@ -441,7 +441,7 @@ namespace SweetSugar.Scripts.GUI
             // LevelManager.THIS.gameStatus = GameState.GameOver;
             // CloseMenu();
             gameObject.SetActive(false);
-            LevelManager.THIS.gameStatus = GameState.Map; 
+            //LevelManager.THIS.gameStatus = GameState.Map; 
             BackToMenu gotoScene = FindObjectOfType<BackToMenu>();
             gotoScene.LoseOK();
 

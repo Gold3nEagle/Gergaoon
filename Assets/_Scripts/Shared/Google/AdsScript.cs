@@ -68,6 +68,11 @@ public class AdsScript : MonoBehaviour
             this.RequestRewardedAd();
         }
 
+        if(currentScene == "ChatScene")
+        {
+            this.RequestRewardedAd();
+        }
+
         if (currentScene == "GameScene")
             gameScore = GameObject.FindGameObjectWithTag("Hat").GetComponent<Score>();
     }
@@ -153,9 +158,17 @@ public class AdsScript : MonoBehaviour
         if (currentScene == "GameScene")
         {
             int totalCandy = PlayerPrefs.GetInt("totalCandy");
-            totalCandy += 500;
+            totalCandy += 250;
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             gameScore.DisplayTotalCandy();
+        }
+        else if (currentScene == "ChatScene")
+        {
+            int totalCandy = PlayerPrefs.GetInt("totalCandy");
+            totalCandy += 250;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            MainSceneHandler mHandler = FindObjectOfType<MainSceneHandler>();
+            mHandler.DisplayTotalCandy();
         }
 
         else if (currentScene == "OverWorld")

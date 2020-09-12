@@ -19,16 +19,15 @@ namespace SweetSugar.Scripts.Localization
         private void Awake()
         {
             textObject = GetComponent<TextMeshProUGUI>();
-            fixArabic = GetComponent<FixArabicTMProUGUI>();
-            languageNum = PlayerPrefs.GetInt("LanguageNum");
+            fixArabic = GetComponent<FixArabicTMProUGUI>(); 
         }
 
         private void OnEnable()
-        {
+        { 
             _originalText = textObject.text;
             _currentText = LocalizationManager.GetText(instanceID, _originalText);
 
-            if(fixArabic != null && languageNum == 1)
+            if(fixArabic != null)
             {
                 fixArabic.UpdateText(_currentText);
             }

@@ -28,7 +28,7 @@ public class RegenerateLives : MonoBehaviour
     public float TotalTimeForRestLifeSec = 60;
 
     //EDITOR: max amount of life
-    public int CapOfLife = 5;
+    public int CapOfLife = 3;
 
     public DateTime serverTime;
     public bool dateReceived;

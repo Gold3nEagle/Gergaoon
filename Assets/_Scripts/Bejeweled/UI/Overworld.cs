@@ -8,7 +8,7 @@ public class Overworld : MonoBehaviour
 {
 
     public Text totalCandyDisplay, totalLivesDisplay;
-    public GameObject pointerAnim;
+    public GameObject pointerAnim, guidePanel;
     public GPlayServices gPlay;
     GameData gameData;
     Camera mainCamera;
@@ -23,7 +23,7 @@ public class Overworld : MonoBehaviour
             if (!PlayerPrefs.HasKey("firstMatch3"))
             {
                 PlayerPrefs.SetInt("firstMatch3", 1);
-                PlayerPrefs.SetInt("totalLives", 5);
+                PlayerPrefs.SetInt("totalLives", 3);
                 PlayerPrefs.SetInt("ExtraMoves", 1);
                 PlayerPrefs.SetInt("FreeMove", 1);
                 PlayerPrefs.SetInt("ExplodeArea", 1);
@@ -43,6 +43,7 @@ public class Overworld : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "OverWorld")
         {
+            CheckUI();
             mainCamera = Camera.main;
             int latestLevel = gameData.GetLatestUnlockedLevel();
 
@@ -106,5 +107,19 @@ public class Overworld : MonoBehaviour
         }
     }
 
+    void CheckUI()
+    {
+        if (!PlayerPrefs.HasKey("firstMatch3"))
+        {
+            PlayerPrefs.SetInt("firstMatch3", 1);
+        }
+        int timesPlayed = PlayerPrefs.GetInt("firstMatch3");
+
+        if(timesPlayed <= 2)
+        {
+            guidePanel.SetActive(true);
+            PlayerPrefs.SetInt("firstMatch3", 4);
+        }
+    }
 
 }

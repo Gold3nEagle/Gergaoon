@@ -32,12 +32,12 @@ public class AnimationController : MonoBehaviour
         timesPlayed++;
         PlayerPrefs.SetInt("TP", timesPlayed);
         Debug.Log(timesPlayed +" Rated or not?   " +  IsRated);
-        if (timesPlayed >= 6 && IsRated == 0) {  
+        if (timesPlayed >= 5 && IsRated == 0) {  
         animator.SetBool("IsOpen", true);
         PlayerPrefs.SetInt("BeenRated", 1);
         }
 
-        if(timesPlayed >= 50)
+        if(timesPlayed >= 100)
         {
             GPlayServices gPlay = FindObjectOfType<GPlayServices>();
             gPlay.UnlockAchievement(4);

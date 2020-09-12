@@ -97,3 +97,7 @@
 97 : Take it!
 98 : Daily Rewards!
 99 : Gergaoon
+100 : Watch an Ad to Get More Candy!
+101 : Main Menu
+102 : Chat With Players
+103 : Achievements and Leaderboards
