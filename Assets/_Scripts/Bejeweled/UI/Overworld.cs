@@ -23,7 +23,7 @@ public class Overworld : MonoBehaviour
             if (!PlayerPrefs.HasKey("firstMatch3"))
             {
                 PlayerPrefs.SetInt("firstMatch3", 1);
-                PlayerPrefs.SetInt("totalLives", 3);
+                PlayerPrefs.SetInt("totalLives", 5);
                 PlayerPrefs.SetInt("ExtraMoves", 1);
                 PlayerPrefs.SetInt("FreeMove", 1);
                 PlayerPrefs.SetInt("ExplodeArea", 1);
@@ -47,7 +47,7 @@ public class Overworld : MonoBehaviour
             mainCamera = Camera.main;
             int latestLevel = gameData.GetLatestUnlockedLevel();
 
-           
+
             if (latestLevel >= 10)
                 gPlay.UnlockAchievement(6);
 
@@ -56,8 +56,11 @@ public class Overworld : MonoBehaviour
 
             //Precaution so camera is not out of bounds.
             if (latestLevel > 150)
-                latestLevel -= 5;
-            
+                latestLevel -= 3;
+
+            //Don't jump to next map when the last level of a map is unlocked.
+            if (latestLevel == 18 || latestLevel == 131)
+                latestLevel--;
 
             GameObject neededPosition = GameObject.Find("Level Prefab " + "(" + latestLevel.ToString() + ")");
             mainCamera.transform.position = new Vector3(neededPosition.transform.position.x, neededPosition.transform.position.y, -10);

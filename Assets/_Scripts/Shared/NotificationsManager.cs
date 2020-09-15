@@ -48,19 +48,10 @@ public class NotificationsManager : MonoBehaviour
         {
             Id = "default_channel",
             Name = "HourlyNotification",
-            Importance = Importance.Default,
-            Description = "For Lives Regenerated",
-        };
-
-        var DailyRewardsChannel = new AndroidNotificationChannel()
-        {
-            Id = "daily_channel",
-            Name = "DailyNotification",
             Importance = Importance.High,
-            Description = "For daily rewarded notifications",
+            Description = "For Lives Regenerated",
         }; 
-         
-        AndroidNotificationCenter.RegisterNotificationChannel(DailyRewardsChannel);
+
         AndroidNotificationCenter.RegisterNotificationChannel(defaultChannel);
     }
 
@@ -76,17 +67,17 @@ public class NotificationsManager : MonoBehaviour
                 notification.Title = "قرقاعون";
                 notification.Text = "احصل على جائزتك اليومية المجانية الآن!";
                 notification.LargeIcon = "icon_0";
-                notification.FireTime = System.DateTime.Now.AddDays(1);
+                notification.FireTime = System.DateTime.Now.AddHours(24);
             }
             else if (language == 2)
             {
                 notification.Title = "Gergaoon";
                 notification.Text = "Come Back And Get Your Daily Reward Now!";
                 notification.LargeIcon = "icon_0";
-                notification.FireTime = System.DateTime.Now.AddDays(1);
+                notification.FireTime = System.DateTime.Now.AddHours(24);
             }
         
-        AndroidNotificationCenter.SendNotification(notification, "daily_channel");
+        AndroidNotificationCenter.SendNotification(notification, "default_channel");
     }
 
     

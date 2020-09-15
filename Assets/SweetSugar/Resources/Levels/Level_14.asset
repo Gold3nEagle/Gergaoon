@@ -1332,8 +1332,8 @@ MonoBehaviour:
     limit: 30
     colorLimit: 6
     star1: 600
-    star2: 1200
-    star3: 1600
+    star2: 1000
+    star3: 1400
     enableMarmalade: 0
     selectedTutorial: 0
     currentSublevelIndex: 0

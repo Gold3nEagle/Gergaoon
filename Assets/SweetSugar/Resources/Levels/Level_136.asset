@@ -141,7 +141,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -150,7 +150,7 @@ MonoBehaviour:
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 0, y: 7}
         guiRect:
           serializedVersion: 2
           x: 268
@@ -165,7 +165,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -174,7 +174,7 @@ MonoBehaviour:
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 1, y: 7}
         guiRect:
           serializedVersion: 2
           x: 321
@@ -189,7 +189,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -198,7 +198,7 @@ MonoBehaviour:
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 2, y: 7}
         guiRect:
           serializedVersion: 2
           x: 374
@@ -213,7 +213,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 0
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -222,7 +222,7 @@ MonoBehaviour:
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: -1, y: -1}
+        teleportCoordinatesLinkedBack: {x: 3, y: 7}
         guiRect:
           serializedVersion: 2
           x: 427
@@ -360,13 +360,13 @@ MonoBehaviour:
       - block: 2
         blockLayer: 1
         obstacle: 4
-        obstacleLayer: 1
+        obstacleLayer: 2
         position: {x: 5, y: 1}
         direction: {x: 0, y: -1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: 0, y: 7}
+        teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
           x: 268
@@ -384,13 +384,13 @@ MonoBehaviour:
       - block: 2
         blockLayer: 1
         obstacle: 4
-        obstacleLayer: 1
+        obstacleLayer: 2
         position: {x: 6, y: 1}
         direction: {x: 0, y: -1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: 1, y: 7}
+        teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
           x: 321
@@ -408,13 +408,13 @@ MonoBehaviour:
       - block: 2
         blockLayer: 1
         obstacle: 4
-        obstacleLayer: 1
+        obstacleLayer: 2
         position: {x: 7, y: 1}
         direction: {x: 0, y: -1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: 2, y: 7}
+        teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
           x: 374
@@ -432,13 +432,13 @@ MonoBehaviour:
       - block: 2
         blockLayer: 1
         obstacle: 4
-        obstacleLayer: 1
+        obstacleLayer: 2
         position: {x: 8, y: 1}
         direction: {x: 0, y: -1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
-        teleportCoordinatesLinkedBack: {x: 3, y: 7}
+        teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
           x: 427
@@ -1541,7 +1541,7 @@ MonoBehaviour:
         direction: {x: 0, y: -1}
         enterSquare: 0
         isEnterTeleport: 1
-        teleportCoordinatesLinked: {x: 5, y: 1}
+        teleportCoordinatesLinked: {x: 5, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1565,7 +1565,7 @@ MonoBehaviour:
         direction: {x: 0, y: -1}
         enterSquare: 0
         isEnterTeleport: 1
-        teleportCoordinatesLinked: {x: 6, y: 1}
+        teleportCoordinatesLinked: {x: 6, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1589,7 +1589,7 @@ MonoBehaviour:
         direction: {x: 0, y: -1}
         enterSquare: 0
         isEnterTeleport: 1
-        teleportCoordinatesLinked: {x: 7, y: 1}
+        teleportCoordinatesLinked: {x: 7, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1613,7 +1613,7 @@ MonoBehaviour:
         direction: {x: 0, y: -1}
         enterSquare: 0
         isEnterTeleport: 1
-        teleportCoordinatesLinked: {x: 8, y: 1}
+        teleportCoordinatesLinked: {x: 8, y: 0}
         teleportCoordinatesLinkedBack: {x: -1, y: -1}
         guiRect:
           serializedVersion: 2
@@ -1761,7 +1761,7 @@ MonoBehaviour:
     targetIndex: 2
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 14
+    limit: 20
     colorLimit: 4
     star1: 1000
     star2: 2000

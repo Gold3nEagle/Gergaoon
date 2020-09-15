@@ -1115,9 +1115,9 @@ MonoBehaviour:
     ingrCountTarget: 0000000000000000
     limit: 18
     colorLimit: 5
-    star1: 400
-    star2: 800
-    star3: 1300
+    star1: 200
+    star2: 400
+    star3: 800
     enableMarmalade: 0
     selectedTutorial: 0
     currentSublevelIndex: 0

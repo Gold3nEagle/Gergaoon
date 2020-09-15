@@ -16,7 +16,7 @@ public class GameData : MonoBehaviour
 {
     public static GameData gameData;
     public SaveData saveData;
-    int totalLevels = 152;
+    int totalLevels = 157;
 
     // Start is called before the first frame update
     void Awake()

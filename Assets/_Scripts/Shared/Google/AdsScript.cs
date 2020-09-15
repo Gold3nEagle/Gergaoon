@@ -4,6 +4,7 @@ using UnityEngine;
 using GoogleMobileAds.Api;
 using UnityEngine.SceneManagement;
 using SweetSugar.Scripts.GUI;
+using UnityEngine.UI;
 
 
 
@@ -37,8 +38,12 @@ public class AdsScript : MonoBehaviour
     Overworld overWorld;
     int adsNum;
     bool adsEnabled = false;
+    bool rewardedAdRequested = false;
     //public EndGameManager endGame;
     //public ScoreManager matchScore;
+
+    public bool testRewardedBool = false;
+    public Button rewardedAdButton01, rewardedAdButton02;
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +73,7 @@ public class AdsScript : MonoBehaviour
             this.RequestRewardedAd();
         }
 
-        if(currentScene == "ChatScene")
+        if (currentScene == "ChatScene")
         {
             this.RequestRewardedAd();
         }
@@ -115,6 +120,7 @@ public class AdsScript : MonoBehaviour
         AdRequest request = new AdRequest.Builder().Build();
         // Load the rewarded ad with the request.
         this.rewardedAd.LoadAd(request);
+        rewardedAdRequested = true;
     }
 
     public void ShowInterstitialAd()
@@ -151,6 +157,38 @@ public class AdsScript : MonoBehaviour
         WatchRewardedAd();
     }
 
+    private void Update()
+    {
+        if (rewardedAdButton01 != null)
+        {
+            if (rewardedAdRequested == true)
+            {
+                if (rewardedAd.IsLoaded() == false)
+                {
+                    rewardedAdButton01.interactable = false;
+                }
+                else
+                {
+                    rewardedAdButton01.interactable = true;
+                }
+            }
+        }
+
+        if (rewardedAdButton02 != null)
+        {
+            if (rewardedAdRequested == true)
+            {
+                if (rewardedAd.IsLoaded() == false)
+                {
+                    rewardedAdButton02.interactable = false;
+                }
+                else
+                {
+                    rewardedAdButton02.interactable = true;
+                }
+            }
+        }
+    }
 
 
     public void HandleUserEarnedReward(object sender, Reward args)

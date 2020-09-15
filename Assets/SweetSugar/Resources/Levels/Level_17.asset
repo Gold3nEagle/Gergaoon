@@ -1980,8 +1980,8 @@ MonoBehaviour:
     limit: 30
     colorLimit: 4
     star1: 1000
-    star2: 2000
-    star3: 3000
+    star2: 1800
+    star3: 2500
     enableMarmalade: 0
     selectedTutorial: 0
     currentSublevelIndex: 0
