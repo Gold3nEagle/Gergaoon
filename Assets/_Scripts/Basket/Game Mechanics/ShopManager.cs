@@ -109,7 +109,7 @@ public class ShopManager : MonoBehaviour
         equippedStatusImage[equippedHat].SetActive(true);
         equipButtons[equippedHat].GetComponent<Button>().interactable = false;
 
-        Instantiate(shopHats[equippedHat], new Vector3(-2.8f, 0.85f, 0), Quaternion.identity );
+        Instantiate(shopHats[equippedHat], new Vector3(0f, 0f, 0), Quaternion.identity );
     }
 
 }

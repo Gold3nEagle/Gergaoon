@@ -62,8 +62,8 @@ public class GPlayServices : MonoBehaviour
 
     public void UnlockAchievement(int achievement)
     {
-        Debug.Log(achievement);
-        Debug.Log("Unlocking achievements works!!");
+        //Debug.Log(achievement);
+        //Debug.Log("Unlocking achievements works!!");
         switch (achievement)
         {
             case 1:

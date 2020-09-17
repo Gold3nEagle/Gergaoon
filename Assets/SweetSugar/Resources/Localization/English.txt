@@ -66,10 +66,10 @@
 66 : Places a package item on the game field
 67 : Places a striped item on the game field
 68 : Gives you the 30 extra seconds
-69 : Destroys one item
+69 : Destroys one candy
 70 : Places a multicolor item on the game field
-71 : Free item switch
-72 : Destroys the items in an area
+71 : Free candy switch
+72 : Destroys the candy in an area
 73 : Places a marmalade item on the game field
 74 : PLAY
 75 : Privacy

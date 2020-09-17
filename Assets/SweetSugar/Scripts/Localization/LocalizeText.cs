@@ -11,8 +11,7 @@ namespace SweetSugar.Scripts.Localization
         [SerializeField, Reorderable( elementNameProperty = "language"),HideInInspector]
 
         private string _originalText;
-        private string _currentText;
-        int languageNum;
+        private string _currentText; 
 
         FixArabicTMProUGUI fixArabic;
 

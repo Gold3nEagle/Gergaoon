@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Analytics;
 
 public class BackToMenu : MonoBehaviour
 { 
@@ -29,6 +30,8 @@ public class BackToMenu : MonoBehaviour
     public void WinOK()
     {
         int currentLevel = PlayerPrefs.GetInt("currentLevel");
+        AnalyticsResult analyticsResult = AnalyticsEvent.LevelComplete(currentLevel);
+        Debug.Log("Analytics Result: " + analyticsResult);
 
         //Enable the next level
         if (gameData != null)
@@ -39,13 +42,17 @@ public class BackToMenu : MonoBehaviour
          
             StartCoroutine(GoToMenu(1)); 
 
+
     }
 
     public void LoseOK()
     { 
         int totalLives = PlayerPrefs.GetInt("totalLives");
- 
-        if(totalLives > 1)
+        AnalyticsResult analyticsResult = AnalyticsEvent.LevelFail(currentLevel);
+        Debug.Log("Analytics Result: " + analyticsResult);
+
+
+        if (totalLives > 1)
         {
             totalLives--;
         } else if(totalLives <= 1)

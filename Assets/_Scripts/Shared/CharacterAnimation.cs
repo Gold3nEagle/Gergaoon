@@ -11,10 +11,10 @@ public class CharacterAnimation : MonoBehaviour
     private void Awake()
     {
 
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().name == "MainMenu")
         {
             IdleAnimation();
-        } else if(SceneManager.GetActiveScene().buildIndex == 3)
+        } else if(SceneManager.GetActiveScene().name == "GameScene")
         {
             HappyAnimation();
         }

@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
     public GameObject[] balls;
     public float timeLeft;
     public Text timerText, endScoreText;
-    public GameObject EndGameObj, Lights, splashScreen, startButton, restartButton, GameBeginsObj, colliderObj, scoreObject, sparksObj, exitButton, gameCharacters;  
+    public GameObject EndGameObj, startButton, restartButton, GameBeginsObj, colliderObj, scoreObject, sparksObj, exitButton, gameCharacters;  
     
     public int ballSpeed;
 
