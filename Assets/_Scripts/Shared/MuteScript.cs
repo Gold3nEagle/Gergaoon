@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class MuteScript : MonoBehaviour
 {
@@ -54,6 +55,15 @@ public class MuteScript : MonoBehaviour
 
     public void ShareGame()
     {
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            AnalyticsResult analyticsResult = AnalyticsEvent.SocialShare(ShareType.Image, SocialNetwork.None);
+            Debug.Log("Analytics Result: " + analyticsResult);
+        } else
+        {
+            AnalyticsResult analyticsResult = AnalyticsEvent.SocialShare(ShareType.Achievement, SocialNetwork.None);
+            Debug.Log("Analytics Result: " + analyticsResult);
+        }
         StartCoroutine(TakeSSAndShare());
     }
 
@@ -70,11 +80,8 @@ public class MuteScript : MonoBehaviour
 
         // To avoid memory leaks
         Destroy(ss);
-
-        if (PlayerPrefs.HasKey("LanguageNum"))
-        {
-            int language = PlayerPrefs.GetInt("LanguageNum");
-            if (language == 1)
+         
+            if (Application.systemLanguage == SystemLanguage.Arabic)
             {
 
                 new NativeShare().AddFile(filePath).SetSubject("Subject").SetText(" حمل لعبة قرقاعون على الأندرويد والآيفون! " +
@@ -87,7 +94,7 @@ public class MuteScript : MonoBehaviour
                         " Android:  https://play.google.com/store/apps/details?id=com.goldeneagle.gergaoon " +
                         " iOS:  https://apps.apple.com/us/app/%D9%82%D8%B1%D9%82%D8%A7%D8%B9%D9%88%D9%86/id1485903162?ls=1 ").SetTarget("com.whatsapp").Share();
             }
-            else if (language == 2)
+            else
             {
                 new NativeShare().AddFile(filePath).SetSubject("Subject").SetText("Download Gergaoon Now On Android & iOS!" +
                         " Android:  https://play.google.com/store/apps/details?id=com.goldeneagle.gergaoon " +
@@ -99,8 +106,7 @@ public class MuteScript : MonoBehaviour
                         " Android:  https://play.google.com/store/apps/details?id=com.goldeneagle.gergaoon " +
                         " iOS:  https://apps.apple.com/us/app/%D9%82%D8%B1%D9%82%D8%A7%D8%B9%D9%88%D9%86/id1485903162?ls=1 ").SetTarget("com.whatsapp").Share();
             }
-        } 
-    }
+        }  
 
     public void AccessWebsite()
     {

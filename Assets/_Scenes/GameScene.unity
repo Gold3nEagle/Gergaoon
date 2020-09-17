@@ -6859,6 +6859,7 @@ GameObject:
   - component: {fileID: 1601370935}
   - component: {fileID: 1601370934}
   - component: {fileID: 1601370936}
+  - component: {fileID: 1601370937}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -6905,7 +6906,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "!\uFE90\uFECC\uFEE0\uFEDF\uFE8D \uFE83\uFEAA\uFE91\uFE8D"
+  m_text: "!\uFE90\uFECC\uFEE0\uFEDF\u0627 \u0623\uFEAA\uFE91\u0627\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 615a0a6f0c64d48c0bf5b6fff88cacca, type: 2}
   m_sharedMaterial: {fileID: 21976591372562464, guid: 615a0a6f0c64d48c0bf5b6fff88cacca,
@@ -6975,9 +6976,9 @@ MonoBehaviour:
   m_margin: {x: 15.857361, y: 0, z: 15.8573, w: 0}
   m_textInfo:
     textComponent: {fileID: 1601370934}
-    characterCount: 11
+    characterCount: 13
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 2
     wordCount: 2
     linkCount: 0
     lineCount: 1
@@ -7020,6 +7021,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instanceID: 5
   _originalText: 
+--- !u!114 &1601370937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601370932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed37a68ae46d2e45bd164269e27e0ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editTextHere: 0
+  customText: "\u0627\u0628\u062F\u0623 \u0627\u0644\u0644\u0639\u0628!"
+  textAlreadySet: 0
+  updateInRealTime: 0
+  updateOnlyOnChange: 0
+  useTashkeel: 0
+  useHinduNumbers: 0
 --- !u!1 &1603385019
 GameObject:
   m_ObjectHideFlags: 0

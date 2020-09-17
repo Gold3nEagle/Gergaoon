@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class GameController : MonoBehaviour {
     public Camera cam;
@@ -66,6 +67,7 @@ public class GameController : MonoBehaviour {
             adsEnabled = true;
         }
 
+        ReachedGergaoon();
 
     }
      
@@ -212,5 +214,11 @@ public class GameController : MonoBehaviour {
             gPlay.UnlockAchievement(3);
     }
 
+    void ReachedGergaoon()
+    {
+        SystemLanguage systemLanguage = Application.systemLanguage;
+        AnalyticsResult analyticsResult = Analytics.CustomEvent("reached_basket" + systemLanguage);
+        Debug.Log("Analytics Result: " + analyticsResult);
+    }
 
 }
