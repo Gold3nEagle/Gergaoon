@@ -32,8 +32,8 @@ public static class LeanTweenExt
     public static LTDescr LeanDelayedCall(this GameObject gameObject, float delayTime, System.Action<object> callback) { return LeanTween.delayedCall(gameObject, delayTime, callback); }
 
     //LeanTween.isPaused
-    public static bool LeanIsPaused(this GameObject gameObject) { return LeanTween.isPaused(gameObject); }
-    public static bool LeanIsPaused(this RectTransform rectTransform) { return LeanTween.isPaused(rectTransform); }
+    //public static bool LeanIsPaused(this GameObject gameObject) { return LeanTween.isPaused(gameObject); }
+    //public static bool LeanIsPaused(this RectTransform rectTransform) { return LeanTween.isPaused(rectTransform); }
 
     //LeanTween.isTweening
     public static bool LeanIsTweening(this GameObject gameObject) { return LeanTween.isTweening(gameObject); }

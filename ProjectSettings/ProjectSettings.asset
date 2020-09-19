@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: GoldenEagle
-  productName: "\u0642\u0631\u0642\u0627\u0639\u0648\u0646"
+  productName: Gergaoon
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 1, y: 1}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
