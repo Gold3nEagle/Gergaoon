@@ -7,63 +7,33 @@ public class CharacterAnimation : MonoBehaviour
 {
 
     public Animator boyAnim, girlAnim;
+    Character character;
+    CharacterState characterState;
 
     private void Awake()
     {
 
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
-            IdleAnimation();
+            SetAnimation(boyAnim, "IsIdle");
+            SetAnimation(girlAnim, "IsWaving");
         } else if(SceneManager.GetActiveScene().name == "GameScene")
         {
-            HappyAnimation();
+            SetAnimation(boyAnim, "IsHappy");
+            SetAnimation(girlAnim, "IsHappy");
         }
          
-    } 
+    }  
 
-    public void SadAnimation()
+    public void SetAnimation(Animator animator, string animationString)
     {
-        foreach (AnimatorControllerParameter parameter in boyAnim.parameters)
+        foreach (AnimatorControllerParameter parameter in animator.parameters)
         {
-            boyAnim.SetBool(parameter.name, false);
+            animator.SetBool(parameter.name, false);
         }
 
-        boyAnim.SetBool("IsSad", true);
-        girlAnim.SetBool("IsSad", true); 
-    }
+        animator.SetBool(animationString, true);
 
-    public void HappyAnimation()
-    {
-        foreach (AnimatorControllerParameter parameter in boyAnim.parameters)
-        {
-            boyAnim.SetBool(parameter.name, false);
-        }
-
-        boyAnim.SetBool("IsHappy", true);
-        girlAnim.SetBool("IsHappy", true); 
-    }
-
-    public void IdleAnimation()
-    {
-
-        foreach (AnimatorControllerParameter parameter in boyAnim.parameters)
-        {
-            boyAnim.SetBool(parameter.name, false);
-        }
-
-        boyAnim.SetBool("IsIdle", true);
-        girlAnim.SetBool("IsIdle", true); 
-    }
-
-    public void WavingAnimation()
-    {
-        foreach (AnimatorControllerParameter parameter in boyAnim.parameters)
-        {
-            boyAnim.SetBool(parameter.name, false);
-        }
-
-        boyAnim.SetBool("IsWaving", true);
-        girlAnim.SetBool("IsWaving", true); 
     }
 
 }

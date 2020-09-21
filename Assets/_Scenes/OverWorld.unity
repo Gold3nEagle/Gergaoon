@@ -18116,7 +18116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23383267, y: 0.65939176}
   m_AnchorMax: {x: 0.758, y: 0.794}
-  m_AnchoredPosition: {x: -3.8482666, y: -48.32898}
+  m_AnchoredPosition: {x: -3.8482819, y: -48.32898}
   m_SizeDelta: {x: 87.85211, y: 50.058044}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342141396
@@ -108781,8 +108781,8 @@ MonoBehaviour:
   text: {fileID: 1981120834}
   lifeText: {fileID: 122164057}
   TotalTimeForRestLifeHours: 0
-  TotalTimeForRestLifeMin: 23
-  TotalTimeForRestLifeSec: 26
+  TotalTimeForRestLifeMin: 12
+  TotalTimeForRestLifeSec: 60
   CapOfLife: 5
   dateReceived: 0
   TestDate: 
@@ -111228,6 +111228,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970568682}
   m_CullTransparentMesh: 0
+--- !u!1 &1974033726
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974033728}
+  - component: {fileID: 1974033727}
+  m_Layer: 0
+  m_Name: _FungusState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1974033727
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974033726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 0}
+--- !u!4 &1974033728
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974033726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975287286
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Firebase;
 
 public class Popups : MonoBehaviour
 {
+
+    //FirebaseApp app;
+
     private void Awake()
     {
         Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
@@ -12,7 +16,7 @@ public class Popups : MonoBehaviour
             {
                 // Create and hold a reference to your FirebaseApp,
                 // where app is a Firebase.FirebaseApp property of your application class.
-                Firebase.FirebaseApp app = Firebase.FirebaseApp.DefaultInstance;
+                //app = FirebaseApp.DefaultInstance;
 
                 // Set a flag here to indicate whether Firebase is ready to use by your app.
             }

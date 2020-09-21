@@ -240,7 +240,16 @@ namespace Fungus
 #if UNITY_2018_1_OR_NEWER
                 if(tmpro != null)
                 {
-                    return tmpro.textInfo.characterInfo[tmpro.maxVisibleCharacters].character;
+                    try
+                    {
+
+                        return tmpro.textInfo.characterInfo[tmpro.maxVisibleCharacters].character;
+                    }
+                    catch (System.IndexOutOfRangeException e)  // CS0168
+                    {
+                        Debug.Log(e.Message);
+                        //Catch the error nigg
+                    }
                 }
 #endif
                 return (char)0;

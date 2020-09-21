@@ -40,7 +40,7 @@ namespace SweetSugar.Scripts.GUI
             if (name == "MenuFailed")
             {
                 CharacterAnimation characterAnimation = FindObjectOfType<CharacterAnimation>();
-                characterAnimation.SadAnimation();
+                characterAnimation.SetAnimation(characterAnimation.girlAnim, "IsSad");
 
                 AdsScript adsScript = FindObjectOfType<AdsScript>();
                 adsScript.ShowInterstitialAd();
@@ -53,7 +53,7 @@ namespace SweetSugar.Scripts.GUI
                 //transform.Find("Banner/Buttons/Video").gameObject.SetActive(false);
 
                 CharacterAnimation characterAnimation = FindObjectOfType<CharacterAnimation>();
-                characterAnimation.SadAnimation();
+                characterAnimation.SetAnimation(characterAnimation.boyAnim, "IsSad");
                 GetComponent<Animation>().Play();
             }
 

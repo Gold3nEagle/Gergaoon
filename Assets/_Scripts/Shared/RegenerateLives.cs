@@ -107,15 +107,13 @@ public class RegenerateLives : MonoBehaviour
 
         var dateOfExit = DateTime.Parse(DateOfExit);
         if (serverTime.Subtract(dateOfExit).TotalSeconds > TotalTimeForRestLife * ( CapOfLife -  lifes))
-        {
-            //Debug.Log(dateOfExit + " " + InitScript.today);
+        { 
             RestoreLifes();
             RestLifeTimer = 0;
             return false;    ///we dont need lifes
         }
 
-        TimeCount((float)serverTime.Subtract(dateOfExit).TotalSeconds);
-        //Debug.Log((float)ServerTime.THIS.serverTime.Subtract(dateOfExit).TotalSeconds + " " + dateOfExit + " " + ServerTime.THIS.serverTime);
+        TimeCount((float)serverTime.Subtract(dateOfExit).TotalSeconds); 
         return true;     ///we need lifes
     }
 
@@ -129,8 +127,7 @@ public class RegenerateLives : MonoBehaviour
         {
             AddLife(1);
             ResetTimer();
-        }
-        //		}
+        } 
     }
 
     void ResetTimer()
@@ -155,8 +152,7 @@ public class RegenerateLives : MonoBehaviour
             if (lifes <  CapOfLife)
             {
                 if (CheckPassedTime())
-                    startTimer = true;
-                //	StartCoroutine(TimeCount());
+                    startTimer = true; 
             }
         }
 
@@ -184,9 +180,7 @@ public class RegenerateLives : MonoBehaviour
                     text.enabled = true;
                     text.text = "" + string.Format("{0:00}:{1:00}", minutes, seconds);
 
-                }
-
-                //				//	text.text = "+1 in \n " + Mathf.FloorToInt( MainMenu.RestLifeTimer/60f) + ":" + Mathf.RoundToInt( (MainMenu.RestLifeTimer/60f - Mathf.FloorToInt( MainMenu.RestLifeTimer/60f))*60f);
+                } 
             }
             else
             {
@@ -233,8 +227,7 @@ public class RegenerateLives : MonoBehaviour
             lifes = CapOfLife;
         PlayerPrefs.SetInt("totalLives", lifes);
         PlayerPrefs.Save();
-        DisplayTotalLives();
-       
+        DisplayTotalLives(); 
     }
 
     public int GetLife()

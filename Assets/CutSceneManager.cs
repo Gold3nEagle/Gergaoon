@@ -33,18 +33,15 @@ public class CutSceneManager : MonoBehaviour
     public SpriteRenderer boyFace, girlFace;
     public Sprite[] boyFaceSprites;
     public Sprite[] girlFaceSprites;
+    public GameObject[] cutScenes;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
-    }
+        int cutScene = PlayerPrefs.GetInt("cutScene");
+        //cutScenes[cutScene].SetActive(true); 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    } 
 
     public void AnimateCharacter(Character character, FaceState faceState, CharacterState animationState )
     {
@@ -112,5 +109,19 @@ public class CutSceneManager : MonoBehaviour
 
     }
 
+    public int CheckLocale()
+    {
+        SystemLanguage systemLanguage = Application.systemLanguage;
+
+        if(systemLanguage == SystemLanguage.Arabic)
+        {
+            return 1;
+        } else
+        {
+            return 2;
+        }
+
+
+    }
 
 }

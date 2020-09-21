@@ -105,7 +105,8 @@ public class EndGameManager : MonoBehaviour
         girlHappy.enabled = true;
         boySad.enabled = false;
         girlSad.enabled = false;
-        charAnims.HappyAnimation();
+        charAnims.SetAnimation(charAnims.boyAnim, "IsHappy");
+        charAnims.SetAnimation(charAnims.girlAnim, "IsHappy");
 
         sparksEffect.SetActive(true);
         musicController.PlayCheeringSound();
@@ -175,7 +176,8 @@ public class EndGameManager : MonoBehaviour
         girlHappy.enabled = false;
         boySad.enabled = true;
         girlSad.enabled = true;
-        charAnims.SadAnimation();
+        charAnims.SetAnimation(charAnims.boyAnim, "IsSad");
+        charAnims.SetAnimation(charAnims.girlAnim, "IsSad");
         board.currentState = GameStatus.lose;
         overWorld = FindObjectOfType<Overworld>();
         Debug.Log("Time is up LOSO!");

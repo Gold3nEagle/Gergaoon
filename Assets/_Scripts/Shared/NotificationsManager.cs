@@ -95,7 +95,7 @@ public class NotificationsManager : MonoBehaviour
                     notificationRestoreLives.Title = "قرقاعون";
                     notificationRestoreLives.Text = "لقد امتلأ عداد المحاولات! حياك العب!";
                     notificationRestoreLives.LargeIcon = "icon_0";
-                    notificationRestoreLives.FireTime = System.DateTime.Now.AddHours(2);
+                    notificationRestoreLives.FireTime = System.DateTime.Now.AddHours(1);
 
                 }
                 else if (language == 2)
@@ -103,7 +103,7 @@ public class NotificationsManager : MonoBehaviour
                     notificationRestoreLives.Title = "Gergaoon";
                     notificationRestoreLives.Text = "Tries Replenished! Come Play!";
                     notificationRestoreLives.LargeIcon = "icon_0";
-                    notificationRestoreLives.FireTime = System.DateTime.Now.AddHours(2);
+                    notificationRestoreLives.FireTime = System.DateTime.Now.AddHours(1);
                 }
 
             

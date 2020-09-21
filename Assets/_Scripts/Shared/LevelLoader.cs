@@ -45,7 +45,10 @@ public class LevelLoader : MonoBehaviour
 
     void CheckToDestroyMusic(int sceneIndex)
     {
-        if(sceneIndex == 2 || sceneIndex == 3 || sceneIndex == 4)
+        if(sceneIndex == 0 || sceneIndex == 1)
+        { 
+            return; 
+        } else
         {
             GameObject MainmusicGO = GameObject.FindGameObjectWithTag("Music");
             Destroy(MainmusicGO);

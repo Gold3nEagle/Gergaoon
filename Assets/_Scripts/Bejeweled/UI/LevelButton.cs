@@ -117,10 +117,19 @@ public class LevelButton : MonoBehaviour
         LevelLoader levelLoader = FindObjectOfType<LevelLoader>();
         PlayerPrefs.SetInt("currentLevel", chosenLevel);
 
-        GameObject mainMusicGO = GameObject.FindGameObjectWithTag("Music");
-        Destroy(mainMusicGO);
 
-        levelLoader.LoadLevel(3);
+        switch (chosenLevel)
+        {
+            case 1:
+                PlayerPrefs.SetInt("cutScene", 0);
+                levelLoader.LoadLevel(5);
+                break;
+
+            default:
+                levelLoader.LoadLevel(3);
+                break;
+        } 
+
     }
 
 }

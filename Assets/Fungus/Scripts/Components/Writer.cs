@@ -82,6 +82,7 @@ namespace Fungus
         protected float sizeValue = 16f;
         protected bool inputFlag;
         protected bool exitFlag;
+        protected int languageNum = 0;
 
         //holds number of Word tokens in the currently running Write
         public int WordTokensFound { get; protected set; }
@@ -127,6 +128,12 @@ namespace Fungus
 
         protected virtual void Awake()
         {
+            if(Application.systemLanguage == SystemLanguage.Arabic)
+            {
+                languageNum = 1;
+            }
+
+
             GameObject go = targetTextObject;
             if (go == null)
             {
@@ -977,8 +984,14 @@ namespace Fungus
             // If this clip is null then WriterAudio will play the default sound effect (if any)
             NotifyStart(audioClip);
 
-             
-            string toArabic = fixArabic.ReturnFixedString(content);
+            string toArabic;
+
+             if (languageNum == 1) { 
+                toArabic = fixArabic.ReturnFixedString(content);
+                } else
+                { 
+                toArabic = content;
+                } 
 
             string tokenText = TextVariationHandler.SelectVariations(toArabic);
             

@@ -14,6 +14,17 @@ namespace SweetSugar.Scripts.MapScripts
         private int level;
         public GameObject tutsGO, jellyTutorial, powerUpPanel;
 
+
+        private void Start()
+        {
+            GameObject FungusManager = GameObject.Find("FungusManager");
+            if(FungusManager != null)
+            {
+                Destroy(FungusManager);
+            }
+           
+        }
+
         private void OnEnable()
         {
             level = LevelsMap._instance.GetLastestReachedLevel();
@@ -57,13 +68,10 @@ namespace SweetSugar.Scripts.MapScripts
             {
                 yield return new WaitForSeconds(6f);
                 powerUpPanel.SetActive(true);
-            }
-
-
+            }  
             yield return null;
         }
 
     }
-
-    
+       
 }

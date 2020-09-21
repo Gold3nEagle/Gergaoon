@@ -10683,6 +10683,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246689334}
   m_CullTransparentMesh: 0
+--- !u!1 &246743754
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246743756}
+  - component: {fileID: 246743755}
+  m_Layer: 0
+  m_Name: _FungusState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &246743755
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246743754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 0}
+--- !u!4 &246743756
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246743754}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &247191178
 GameObject:
   m_ObjectHideFlags: 0
@@ -21878,7 +21922,7 @@ Camera:
   far clip plane: 10000
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 13.333333
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -83311,9 +83355,9 @@ MonoBehaviour:
   pictures:
   - {fileID: 21300000, guid: d2b4eb85bf2d74c329bd4b55e4bf9432, type: 3}
   - {fileID: 21300000, guid: d2b4eb85bf2d74c329bd4b55e4bf9432, type: 3}
-  - {fileID: 21300000, guid: d2b4eb85bf2d74c329bd4b55e4bf9432, type: 3}
-  - {fileID: 21300000, guid: d2b4eb85bf2d74c329bd4b55e4bf9432, type: 3}
-  - {fileID: 21300000, guid: d2b4eb85bf2d74c329bd4b55e4bf9432, type: 3}
+  - {fileID: 21300000, guid: 18cd18382f8964821b99f41a28f72095, type: 3}
+  - {fileID: 21300000, guid: 18cd18382f8964821b99f41a28f72095, type: 3}
+  - {fileID: 21300000, guid: 18cd18382f8964821b99f41a28f72095, type: 3}
 --- !u!1 &1664530905
 GameObject:
   m_ObjectHideFlags: 0
@@ -89137,7 +89181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

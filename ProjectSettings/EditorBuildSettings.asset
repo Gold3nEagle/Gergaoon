@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/ChatScene.unity
     guid: 014467dc70cd3c74ea9a5855bf07489d
+  - enabled: 1
+    path: Assets/_Scenes/FungusScene.unity
+    guid: 2144e6ce75a04ca42b9d398cb73cf2c9
   m_configObjects: {}

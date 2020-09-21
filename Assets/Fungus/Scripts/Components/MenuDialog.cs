@@ -7,6 +7,7 @@ using System.Collections;
 using UnityEngine.EventSystems;
 using System.Linq;
 using MoonSharp.Interpreter;
+using ArabicSupport;
 
 namespace Fungus
 {
@@ -247,7 +248,9 @@ namespace Fungus
                 }
             };
 
-            return AddOption(text, interactable, hideOption, action);
+
+            string toArabic = ArabicFixer.Fix(text, true, false);
+            return AddOption(toArabic, interactable, hideOption, action);
         }
 
         /// <summary>
