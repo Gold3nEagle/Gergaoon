@@ -1977,7 +1977,7 @@ MonoBehaviour:
     targetIndex: 0
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 35
+    limit: 40
     colorLimit: 4
     star1: 1000
     star2: 1800

@@ -40,9 +40,14 @@ public class BackToMenu : MonoBehaviour
             gameData.Save(); 
         }
          
+
+        if(currentLevel == 18)
+        {
+            CheckCutScene(currentLevel);
+        } else
+        {
             StartCoroutine(GoToMenu(1)); 
-
-
+        } 
     }
 
     public void LoseOK()
@@ -115,6 +120,19 @@ public class BackToMenu : MonoBehaviour
     public void SetCandyScoreText(int score)
     {
         candyScoreText.text = "+ " + score.ToString();
+    }
+
+    void CheckCutScene(int currentLevel)
+    {
+
+        if(currentLevel == 18)
+        {
+            PlayerPrefs.SetInt("cutScene", 1);
+            levelLoader.LoadLevel(5);
+        }
+
+        GameObject musicGameObject = GameObject.Find("Music");
+        Destroy(musicGameObject);
     }
 
 }

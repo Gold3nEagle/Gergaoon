@@ -39,7 +39,7 @@ public class CutSceneManager : MonoBehaviour
     void Awake()
     {
         int cutScene = PlayerPrefs.GetInt("cutScene");
-        //cutScenes[cutScene].SetActive(true); 
+        cutScenes[cutScene].SetActive(true);
 
     } 
 

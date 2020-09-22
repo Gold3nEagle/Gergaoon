@@ -249,7 +249,13 @@ namespace Fungus
             };
 
 
-            string toArabic = ArabicFixer.Fix(text, true, false);
+            string toArabic = text;
+                
+                if(Application.systemLanguage == SystemLanguage.Arabic)
+            {
+                toArabic = ArabicFixer.Fix(text, true, false);
+            }
+                
             return AddOption(toArabic, interactable, hideOption, action);
         }
 

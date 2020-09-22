@@ -35,7 +35,13 @@ public class Overworld : MonoBehaviour
         }
         gameData.CheckLevels(); 
 
-        DisplayTotalCandy(); 
+        DisplayTotalCandy();
+
+        GameObject FungusManager = GameObject.Find("FungusManager");
+        if (FungusManager != null)
+        {
+            Destroy(FungusManager);
+        } 
     }
 
     // Start is called before the first frame update

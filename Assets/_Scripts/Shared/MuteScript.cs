@@ -119,4 +119,10 @@ public class MuteScript : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void Feedback()
+    {
+        Application.OpenURL("https://geagle.tech/contact");
+    
+    }
+
 }

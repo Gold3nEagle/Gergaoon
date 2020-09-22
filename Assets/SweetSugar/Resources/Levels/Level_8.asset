@@ -2433,7 +2433,7 @@ MonoBehaviour:
     targetIndex: 2
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 40
+    limit: 45
     colorLimit: 5
     star1: 500
     star2: 1000
