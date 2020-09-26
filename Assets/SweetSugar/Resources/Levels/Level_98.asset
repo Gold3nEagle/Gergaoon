@@ -21,7 +21,7 @@ MonoBehaviour:
       maxCols: 11
       noRegenLevel: 0
       levelSquares:
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -45,7 +45,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -93,7 +93,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -117,7 +117,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -141,7 +141,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -165,7 +165,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -189,7 +189,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -213,7 +213,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -237,7 +237,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -261,7 +261,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -285,7 +285,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -525,7 +525,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -549,7 +549,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -789,7 +789,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -813,7 +813,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -837,7 +837,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -861,7 +861,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -885,7 +885,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -909,7 +909,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -957,7 +957,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -981,7 +981,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1005,7 +1005,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1029,7 +1029,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1053,7 +1053,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1173,7 +1173,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1221,7 +1221,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1341,12 +1341,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 0, y: 5}
-        direction: {x: 0, y: -1}
+        direction: {x: 1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -1365,12 +1365,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 1, y: 5}
-        direction: {x: 0, y: -1}
+        direction: {x: 1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -1389,7 +1389,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1437,7 +1437,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1485,7 +1485,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1533,7 +1533,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1557,12 +1557,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 9, y: 5}
-        direction: {x: 0, y: -1}
+        direction: {x: -1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -1581,12 +1581,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 10, y: 5}
-        direction: {x: 0, y: -1}
+        direction: {x: -1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -1605,12 +1605,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 0, y: 6}
-        direction: {x: 0, y: -1}
+        direction: {x: 0, y: 1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -1653,7 +1653,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 6
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1701,7 +1701,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1749,7 +1749,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1797,7 +1797,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 6
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1845,12 +1845,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 10, y: 6}
-        direction: {x: 0, y: -1}
+        direction: {x: 0, y: 1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -1869,12 +1869,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 0, y: 7}
-        direction: {x: 0, y: -1}
+        direction: {x: 0, y: 1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -1965,7 +1965,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -2013,7 +2013,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -2109,12 +2109,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 10, y: 7}
-        direction: {x: 0, y: -1}
+        direction: {x: 0, y: 1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2133,12 +2133,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 0, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: 0, y: 1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2157,12 +2157,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 1, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: -1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2181,12 +2181,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 2, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: -1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2205,12 +2205,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 3, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: -1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2229,12 +2229,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 4, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: -1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2253,7 +2253,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -2277,12 +2277,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 6, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: 1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2301,12 +2301,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 7, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: 1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2325,12 +2325,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 8, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: 1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2349,12 +2349,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 9, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: 1, y: 0}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2373,12 +2373,12 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
         position: {x: 10, y: 8}
-        direction: {x: 0, y: -1}
+        direction: {x: 0, y: 1}
         enterSquare: 0
         isEnterTeleport: 0
         teleportCoordinatesLinked: {x: -1, y: -1}
@@ -2399,34 +2399,28 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       bombTimer: 15
     target:
-      name: SugarSquare
-      Description: Destroy sugar squares
-      descriptionLocalizationRefrence: 59
-      FailedDescription: You didn't destroy the sugar squares
-      failedLocalizationRefrence: 60
+      name: JellyBlock
+      Description: Spread the jelly everywhere
+      descriptionLocalizationRefrence: 61
+      FailedDescription: You didn't spread the jelly
+      failedLocalizationRefrence: 62
       prefabs:
-      - {fileID: 1055345148094608, guid: 4ebed1d82b94548d0ab47103e3f205e5, type: 3}
-    targetIndex: 2
+      - {fileID: 1491958887448974, guid: a30bc3dfa7cc24355a551baa872b9b71, type: 3}
+    targetIndex: 3
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 24
+    limit: 33
     colorLimit: 4
     star1: 1000
     star2: 2000
-    star3: 3000
+    star3: 4000
     enableMarmalade: 0
     selectedTutorial: 0
     currentSublevelIndex: 0
     subTargetsContainers:
-    - targetPrefab: {fileID: 1533976084100574, guid: 4ebed1d82b94548d0ab47103e3f205e5,
+    - targetPrefab: {fileID: 1491958887448974, guid: a30bc3dfa7cc24355a551baa872b9b71,
         type: 3}
-      count: 56
-      preCount: 56
-      extraObject: {fileID: 0}
-      color: 0
-    - targetPrefab: {fileID: 1711075845521044, guid: 4ebed1d82b94548d0ab47103e3f205e5,
-        type: 3}
-      count: 0
-      preCount: 0
+      count: 2
+      preCount: 2
       extraObject: {fileID: 0}
       color: 0

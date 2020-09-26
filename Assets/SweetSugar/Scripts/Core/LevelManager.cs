@@ -148,6 +148,9 @@ namespace SweetSugar.Scripts.Core
         public Color[] scoresColorsOutline;
         //congratulation words popup reference
         public GameObject[] gratzWords;
+        public Image[] gratzImage;
+        public Sprite[] arabicGratz;
+        public Sprite[] englishGratz;
         //Level gameobject reference
         public GameObject Level;
         //Gameobject reference
@@ -158,6 +161,8 @@ namespace SweetSugar.Scripts.Core
         public GameObject NoMoreMatches;
         //Gameobject reference
         public GameObject CompleteWord;
+        public Image[] completeImage;
+        public Sprite[] completeSprites;
         //Gameobject reference
         public GameObject FailedWord;
         //in game boost reference
@@ -411,7 +416,8 @@ namespace SweetSugar.Scripts.Core
         {
             THIS = this;
             testByPlay = false;
-//        testByPlay = true;//enable to instant level run
+            //        testByPlay = true;//enable to instant level run
+            CheckGratzWords();
         }
 
         // Use this for initialization
@@ -441,6 +447,31 @@ namespace SweetSugar.Scripts.Core
 
             gameStatus = GameState.Map;
 
+        }
+
+        void CheckGratzWords()
+        { 
+            if(Application.systemLanguage == SystemLanguage.Arabic) 
+            {
+
+                gratzImage[0].sprite = arabicGratz[0];
+                gratzImage[1].sprite = arabicGratz[1];
+                gratzImage[2].sprite = arabicGratz[2];
+                gratzImage[3].sprite = arabicGratz[3];
+
+                completeImage[0].sprite = completeSprites[1];
+                completeImage[1].sprite = completeSprites[3];
+
+            } else
+            {
+                gratzImage[0].sprite = englishGratz[0];
+                gratzImage[1].sprite = englishGratz[1];
+                gratzImage[2].sprite = englishGratz[2];
+                gratzImage[3].sprite = englishGratz[3];
+
+                completeImage[0].sprite = completeSprites[0];
+                completeImage[1].sprite = completeSprites[2];
+            }
         }
 
         private void PrepareGame()
@@ -1084,6 +1115,7 @@ namespace SweetSugar.Scripts.Core
                 gratzWords[Random.Range(0, gratzWords.Length)].SetActive(true);
                 combo = 0;
                 OnCombo?.Invoke();
+
             }
 
             //CheckItemsPositions();

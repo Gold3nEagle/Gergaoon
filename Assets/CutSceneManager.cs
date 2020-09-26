@@ -30,15 +30,15 @@ public class CutSceneManager : MonoBehaviour
 {
 
     public Animator boyAnim, girlAnim;
-    public SpriteRenderer boyFace, girlFace;
-    public Sprite[] boyFaceSprites;
-    public Sprite[] girlFaceSprites;
+    public SpriteRenderer boyFace, girlFace, backgroundRenderer;
+    public Sprite[] boyFaceSprites, girlFaceSprites, backgroundSprites; 
     public GameObject[] cutScenes;
 
     // Start is called before the first frame update
     void Awake()
     {
         int cutScene = PlayerPrefs.GetInt("cutScene");
+        SetBackground(cutScene); 
         cutScenes[cutScene].SetActive(true);
 
     } 
@@ -124,4 +124,21 @@ public class CutSceneManager : MonoBehaviour
 
     }
 
+    void SetBackground(int cutScene)
+    {
+        switch (cutScene)
+        {
+            case 0:
+                backgroundRenderer.sprite = backgroundSprites[2];
+                break;
+
+            case 1:
+                backgroundRenderer.sprite = backgroundSprites[3];
+                break;
+
+            case 2:
+                backgroundRenderer.sprite = backgroundSprites[1];
+                break;
+        } 
+    }
 }

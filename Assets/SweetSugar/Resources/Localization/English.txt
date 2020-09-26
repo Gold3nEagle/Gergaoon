@@ -1,14 +1,14 @@
 0 : life after
 1 : Any purchase will remove all ads
-2 : Do you want to continue?
+2 : Continue?
 3 : SPIN
 4 : Candy Shop
 5 : Play
-6 : You WIN!
-7 : You lose!
-8 : Lost all lifes?
+6 : You WON!
+7 : You Lost!
+8 : Lost all lives?
 9 : Select Boosters:
-10 : NEXT
+10 : Next
 11 : Choco Spiral
 12 : Spread the Jelly
 13 : BOOM!
@@ -16,7 +16,7 @@
 15 : DAY
 16 : Watch VIDEO
 17 : SHARE
-18 : Level COMPLETED!
+18 : Level Complete!
 19 : Level FAILED!
 20 : MAP
 21 : AGAIN
@@ -30,7 +30,7 @@
 29 : How to play
 30 : Striped Candy
 31 : Package
-33 : Collect all ITEMS
+33 : Collect All Candies
 34 : Multicolor CANDY
 35 : Logout
 36 : Connect
@@ -39,7 +39,7 @@
 39 : Use it to get Multicolor Candy
 40 : BUY
 41 : MOVES
-42 : Combine more candies the same color for WIN!
+42 : Swap to match candies of the same color!
 43 : SCORE
 44 : Buy Booster!
 45 : You didn't fill JELLY everywhere

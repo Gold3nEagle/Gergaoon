@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 
 
+
 //https://developers.google.com/admob/unity/interstitial
 
 // Called when an ad request has successfully loaded.
@@ -30,12 +31,13 @@ public enum AdRewardType
 public class AdsScript : MonoBehaviour
 {
 
-    AdRewardType rewardType;
+    public AdRewardType rewardType;
     private InterstitialAd interstitial;
     private RewardedAd rewardedAd;
-    Score gameScore;
-    string currentScene;
-    Overworld overWorld;
+    public Score gameScore;
+    public string currentScene;
+    public Overworld overWorld;
+    UnityAds unityAds;
     int adsNum;
     bool adsEnabled = false;
     bool rewardedAdRequested = false;
@@ -48,6 +50,8 @@ public class AdsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        unityAds = FindObjectOfType<UnityAds>();
+
         currentScene = SceneManager.GetActiveScene().name;
         adsNum = PlayerPrefs.GetInt("IAPAds");
         if (adsNum == 1)
@@ -80,6 +84,10 @@ public class AdsScript : MonoBehaviour
 
         if (currentScene == "GameScene")
             gameScore = GameObject.FindGameObjectWithTag("Hat").GetComponent<Score>();
+
+
+        InvokeRepeating("CheckRewardedButtons", 5, 5);
+
     }
 
     public void RequestInterstitial()
@@ -92,15 +100,16 @@ public class AdsScript : MonoBehaviour
         string adUnitId = "unexpected_platform";
 #endif
 
-        // Initialize an InterstitialAd.
-        this.interstitial = new InterstitialAd(adUnitId);
-        // Create an empty ad request.
-        AdRequest request = new AdRequest.Builder().Build();
-        // Load the interstitial with the request.
-        this.interstitial.LoadAd(request);
-
-    }
-
+        if (adsEnabled == false)
+        { 
+            // Initialize an InterstitialAd.
+            this.interstitial = new InterstitialAd(adUnitId);
+            // Create an empty ad request.
+            AdRequest request = new AdRequest.Builder().Build();
+            // Load the interstitial with the request.
+            this.interstitial.LoadAd(request);
+        }
+    } 
 
     public void RequestRewardedAd()
     {
@@ -112,15 +121,16 @@ public class AdsScript : MonoBehaviour
         string RadUnitId = "unexpected_platform";
 #endif
 
-
-
-        this.rewardedAd = new RewardedAd(RadUnitId);
-        this.rewardedAd.OnUserEarnedReward += HandleUserEarnedReward;
-        // Create an empty ad request.
-        AdRequest request = new AdRequest.Builder().Build();
-        // Load the rewarded ad with the request.
-        this.rewardedAd.LoadAd(request);
-        rewardedAdRequested = true;
+        if (adsEnabled == false)
+        { 
+            this.rewardedAd = new RewardedAd(RadUnitId);
+            this.rewardedAd.OnUserEarnedReward += HandleUserEarnedReward;
+            // Create an empty ad request.
+            AdRequest request = new AdRequest.Builder().Build();
+            // Load the rewarded ad with the request.
+            this.rewardedAd.LoadAd(request);
+            rewardedAdRequested = true;
+        }
     }
 
     public void ShowInterstitialAd()
@@ -130,6 +140,10 @@ public class AdsScript : MonoBehaviour
             if (this.interstitial.IsLoaded())
             {
                 this.interstitial.Show();
+            } else
+            {
+                UnityAds unityAds = FindObjectOfType<UnityAds>();
+                unityAds.ShowInterstitialAd();
             }
         }
     }
@@ -139,6 +153,9 @@ public class AdsScript : MonoBehaviour
         if (this.rewardedAd.IsLoaded())
         {
             this.rewardedAd.Show();
+        } else
+        {
+            unityAds.ShowRewardedVideo();
         }
     }
 
@@ -157,13 +174,13 @@ public class AdsScript : MonoBehaviour
         WatchRewardedAd();
     }
 
-    private void Update()
+    void CheckRewardedButtons()
     {
         if (rewardedAdButton01 != null)
         {
             if (rewardedAdRequested == true)
             {
-                if (rewardedAd.IsLoaded() == false)
+                if (rewardedAd.IsLoaded() == false && unityAds.UnityRewardedReady() == false)
                 {
                     rewardedAdButton01.interactable = false;
                 }
@@ -178,7 +195,7 @@ public class AdsScript : MonoBehaviour
         {
             if (rewardedAdRequested == true)
             {
-                if (rewardedAd.IsLoaded() == false)
+                if (rewardedAd.IsLoaded() == false && unityAds.UnityRewardedReady() == false)
                 {
                     rewardedAdButton02.interactable = false;
                 }
@@ -236,20 +253,59 @@ public class AdsScript : MonoBehaviour
 
                 BackToMenu backToMenu = FindObjectOfType<BackToMenu>();
                 backToMenu.SetCandyScoreText(receivedCandy * 2);
-
-                //Log Firebase Event (How much candies do these dudes have?)
-                Firebase.Analytics.FirebaseAnalytics.LogEvent(
-                Firebase.Analytics.FirebaseAnalytics.EventEarnVirtualCurrency,
-                new Firebase.Analytics.Parameter[] {
-                new Firebase.Analytics.Parameter(
-                Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
-                new Firebase.Analytics.Parameter(
-                Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
-                                        }
-                                        );
-
+                 
             }
         }
 
+    }
+
+    public void HandleUnityAdsReward()
+    {
+        if (currentScene == "GameScene")
+        {
+            int totalCandy = PlayerPrefs.GetInt("totalCandy");
+            totalCandy += 250;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            gameScore.DisplayTotalCandy();
+        }
+        else if (currentScene == "ChatScene")
+        {
+            int totalCandy = PlayerPrefs.GetInt("totalCandy");
+            totalCandy += 250;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            MainSceneHandler mHandler = FindObjectOfType<MainSceneHandler>();
+            mHandler.DisplayTotalCandy();
+        }
+
+        else if (currentScene == "OverWorld")
+        {
+            overWorld = FindObjectOfType<Overworld>();
+            int totalLives = PlayerPrefs.GetInt("totalLives");
+            totalLives++;
+            PlayerPrefs.SetInt("totalLives", totalLives);
+            RegenerateLives lifeRegan = FindObjectOfType<RegenerateLives>();
+            lifeRegan.DisplayTotalLives();
+        }
+
+        else if (currentScene == "gameStatic")
+        {
+            if (rewardType == AdRewardType.ExtraMoves)
+            {
+                AnimationEventManager animationEventManager = GameObject.Find("PreFailed").GetComponent<AnimationEventManager>();
+                animationEventManager.GoOnFailed();
+            }
+            else if (rewardType == AdRewardType.DoubleReward)
+            {
+                int receivedCandy = PlayerPrefs.GetInt("DoubleReward");
+                int totalCandy = PlayerPrefs.GetInt("totalCandy");
+
+                totalCandy += receivedCandy;
+                PlayerPrefs.SetInt("totalCandy", totalCandy);
+
+                BackToMenu backToMenu = FindObjectOfType<BackToMenu>();
+                backToMenu.SetCandyScoreText(receivedCandy * 2);
+
+            }
+        }
     }
 }

@@ -429,7 +429,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -765,7 +765,7 @@ MonoBehaviour:
           Item: {fileID: 0}
           EnableMarmaladeTargets: 0
           TargetMarmaladePositions: []
-      - block: 2
+      - block: 1
         blockLayer: 1
         obstacle: 0
         obstacleLayer: 1
@@ -1220,8 +1220,8 @@ MonoBehaviour:
     subTargetsContainers:
     - targetPrefab: {fileID: 1533976084100574, guid: 4ebed1d82b94548d0ab47103e3f205e5,
         type: 3}
-      count: 40
-      preCount: 40
+      count: 38
+      preCount: 38
       extraObject: {fileID: 0}
       color: 0
     - targetPrefab: {fileID: 1711075845521044, guid: 4ebed1d82b94548d0ab47103e3f205e5,

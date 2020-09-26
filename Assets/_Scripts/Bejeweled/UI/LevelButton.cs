@@ -89,7 +89,7 @@ public class LevelButton : MonoBehaviour
     public void ConfirmPanel(int level)
     { 
         totalLives = PlayerPrefs.GetInt("totalLives");
-        if (level < 153)
+        if (level < 158)
         {
             if (totalLives <= 0)
             {
@@ -122,6 +122,11 @@ public class LevelButton : MonoBehaviour
         {
             case 1:
                 PlayerPrefs.SetInt("cutScene", 0);
+                levelLoader.LoadLevel(5);
+                break;
+
+            case 9:
+                PlayerPrefs.SetInt("cutScene", 2);
                 levelLoader.LoadLevel(5);
                 break;
 

@@ -13,6 +13,7 @@ public class BackToMenu : MonoBehaviour
     int currentLevel;
     private int adsNum;
     private bool adsEnabled = false;
+    public GameObject nextButton;
 
     // Start is called before the first frame update
     void Start()
@@ -94,6 +95,13 @@ public class BackToMenu : MonoBehaviour
 
     }  
 
+    IEnumerator EnableNextButton()
+    {
+        yield return new WaitForSeconds(1f);
+        nextButton.SetActive(true);
+
+    }
+
     public void SetStars(int level, int stars)
     {
         gameData.saveData.stars[level - 1 ] = stars;
@@ -114,6 +122,8 @@ public class BackToMenu : MonoBehaviour
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             SetCandyScoreText(50 * stars);
         }
+
+        StartCoroutine(EnableNextButton());
 
     }
 

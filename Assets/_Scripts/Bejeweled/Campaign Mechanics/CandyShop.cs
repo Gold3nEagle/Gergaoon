@@ -11,12 +11,15 @@ public class CandyShop : MonoBehaviour
     public int extraMovesPrice, freeMovePrice, explodeAreaPrice, removeCandyPrice;
     public Text extraMovesAmount, freeMoveAmount, explodeAreaAmount, removeCandyAmount;
     public GameObject iapPanel;
+    IAPManager iapManager;
 
     // Start is called before the first frame update
     void Start()
     {
         totalCandy = overWorld.GetTotalCandy();
         DisplayBoostsAmount();
+
+        iapManager = FindObjectOfType<IAPManager>();
     }
 
 
@@ -32,27 +35,13 @@ public class CandyShop : MonoBehaviour
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
-
-            //Log Firebase Spend Coin Event
-            Firebase.Analytics.FirebaseAnalytics.LogEvent(
-            Firebase.Analytics.FirebaseAnalytics.EventSpendVirtualCurrency,
-            new Firebase.Analytics.Parameter[] {
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterItemName, "Extra Moves"),
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
-                        }
-                );
-
-
-
+              
         }
         else
         {
             gameObject.SetActive(false);
             iapPanel.SetActive(true);
+            iapManager.RetrievePrices();
         }
     }
 
@@ -67,28 +56,13 @@ public class CandyShop : MonoBehaviour
             totalCandy -= freeMovePrice;
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
-            DisplayBoostsAmount();
-
-
-            //Log Firebase Spend Coin Event
-            Firebase.Analytics.FirebaseAnalytics.LogEvent(
-            Firebase.Analytics.FirebaseAnalytics.EventSpendVirtualCurrency,
-            new Firebase.Analytics.Parameter[] {
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterItemName, "Free Moves"),
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
-                        }
-                );
-
-
+            DisplayBoostsAmount(); 
         }
         else
         {
             gameObject.SetActive(false);
             iapPanel.SetActive(true);
+            iapManager.RetrievePrices();
         }
     }
 
@@ -100,31 +74,17 @@ public class CandyShop : MonoBehaviour
             explodeAreaNum++;
             PlayerPrefs.SetInt("ExplodeArea", explodeAreaNum);
 
-            totalCandy -= freeMovePrice;
+            totalCandy -= explodeAreaPrice;
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
-
-            //Log Firebase Spend Coin Event
-            Firebase.Analytics.FirebaseAnalytics.LogEvent(
-            Firebase.Analytics.FirebaseAnalytics.EventSpendVirtualCurrency,
-            new Firebase.Analytics.Parameter[] {
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterItemName, "Explode Area"),
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
-                        }
-                );
-
-
-
+             
         }
         else
         {
             gameObject.SetActive(false);
             iapPanel.SetActive(true);
+            iapManager.RetrievePrices();
         }
     }
 
@@ -136,31 +96,17 @@ public class CandyShop : MonoBehaviour
             removeCandyNum++;
             PlayerPrefs.SetInt("Bomb", removeCandyNum);
 
-            totalCandy -= freeMovePrice;
+            totalCandy -= removeCandyPrice;
             PlayerPrefs.SetInt("totalCandy", totalCandy);
             overWorld.DisplayTotalCandy();
             DisplayBoostsAmount();
-
-
-            //Log Firebase Spend Coin Event
-            Firebase.Analytics.FirebaseAnalytics.LogEvent(
-            Firebase.Analytics.FirebaseAnalytics.EventSpendVirtualCurrency,
-            new Firebase.Analytics.Parameter[] {
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterItemName, "Remove Candy"),
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterValue, totalCandy),
-            new Firebase.Analytics.Parameter(
-            Firebase.Analytics.FirebaseAnalytics.ParameterVirtualCurrencyName, "Total Candy"),
-                        }
-                );
-
-
+ 
         }
         else
         {
             gameObject.SetActive(false);
             iapPanel.SetActive(true);
+            iapManager.RetrievePrices();
         }
     }
 

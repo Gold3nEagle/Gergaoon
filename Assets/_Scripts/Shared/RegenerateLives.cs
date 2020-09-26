@@ -204,18 +204,16 @@ public class RegenerateLives : MonoBehaviour
  
     void OnDisable()
     {
-         DateOfExit = serverTime.ToString();
-         PlayerPrefs.SetString("DateOfExit", DateOfExit);
-        Debug.Log(serverTime.ToString());
-
+        DateOfExit = serverTime.ToString();
+        PlayerPrefs.SetString("DateOfExit", DateOfExit); 
     }
+     
 
 
     void OnApplicationQuit()   
     {
         DateOfExit = serverTime.ToString();
-        PlayerPrefs.SetString("DateOfExit", DateOfExit);
-        Debug.Log(serverTime.ToString());
+        PlayerPrefs.SetString("DateOfExit", DateOfExit); 
     }
 
     public void AddLife(int count)

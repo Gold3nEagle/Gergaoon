@@ -2,10 +2,15 @@
 using UnityEngine;
 using UnityEngine.Purchasing;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class IAPManager : MonoBehaviour, IStoreListener
 {
+
+    public Text removeAdsPrice, candy50KPrice, candy100KPrice, candy5kAdsPrice; 
+
+
     public static IAPManager instance;
 
     private static IStoreController m_StoreController;
@@ -15,6 +20,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
     private string removeAds = "remove_ads";
     private string candy50K = "candy_50k";
     private string candy100K = "candy_100k";
+    private string candy5kAds = "candyads_5k";
 
 
 
@@ -28,7 +34,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         builder.AddProduct(removeAds, ProductType.NonConsumable);
         builder.AddProduct(candy50K, ProductType.Consumable);
         builder.AddProduct(candy100K, ProductType.Consumable);
-
+        builder.AddProduct(candy5kAds, ProductType.Consumable);
         UnityPurchasing.Initialize(this, builder);
     }
 
@@ -40,6 +46,11 @@ public class IAPManager : MonoBehaviour, IStoreListener
 
 
     //Step 3 Create methods
+
+    public void Candy50Ads()
+    {
+        BuyProductID(candy5kAds);
+    }
 
     public void RemoveAds()
     { 
@@ -55,6 +66,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
     {
         BuyProductID(candy100K);
     }
+
 
     //Step 4 modify purchasing
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
@@ -83,20 +95,40 @@ public class IAPManager : MonoBehaviour, IStoreListener
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
+        else if (String.Equals(args.purchasedProduct.definition.id, candy5kAds, StringComparison.Ordinal))
+        {
+            Debug.Log("Add 5K candy & Remove Ads");
+            int totalCandy = PlayerPrefs.GetInt("totalCandy");
+            totalCandy += 5000;
+            PlayerPrefs.SetInt("totalCandy", totalCandy);
+            PlayerPrefs.SetInt("IAPAds", 1);
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
         else
         {
             Debug.Log("Purchase Failed");
         }
         return PurchaseProcessingResult.Complete;
     }
+     
+    public void RetrievePrices()
+    {
+        SetTextPrice(removeAdsPrice, removeAds);
+        SetTextPrice(candy50KPrice, candy50K);
+        SetTextPrice(candy100KPrice, candy100K);
+        SetTextPrice(candy5kAdsPrice, candy5kAds);
+    }
 
 
+    void SetTextPrice(Text priceText, string productID)
+    {
+        if (m_StoreController == null) InitializePurchasing();
+        string priceInStore = m_StoreController.products.WithID(productID).metadata.localizedPriceString;
 
-
-
-
-
-
+        priceText.text = priceInStore;
+    } 
 
 
     //**************************** Dont worry about these methods ***********************************

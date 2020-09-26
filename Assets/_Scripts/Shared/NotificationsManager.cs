@@ -6,26 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class NotificationsManager : MonoBehaviour
 {
-
-    int languageNum;
+    SystemLanguage systemLanguage;
 
     // Start is called before the first frame update
     void Start()
     {
 
+        systemLanguage = Application.systemLanguage;
+
         string language = Application.systemLanguage.ToString(); 
-
-        if(language == "Arabic")
-        {
-            languageNum = 1;
-        } else
-        {
-            languageNum = 2;
-        }
-
-
-        PlayerPrefs.SetInt("LanguageNum", languageNum );
-
+         
+         
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
             PlayerPrefs.SetInt("LifeNotification", 1);
@@ -59,17 +50,15 @@ public class NotificationsManager : MonoBehaviour
     public void SendRewardNotification()
     {
         var notification = new AndroidNotification(); ;
-        
-            int language = PlayerPrefs.GetInt("LanguageNum");
-
-            if (language == 1)
+         
+            if (systemLanguage == SystemLanguage.Arabic)
             {
                 notification.Title = "قرقاعون";
                 notification.Text = "احصل على جائزتك اليومية المجانية الآن!";
                 notification.LargeIcon = "icon_0";
                 notification.FireTime = System.DateTime.Now.AddHours(24);
             }
-            else if (language == 2)
+            else
             {
                 notification.Title = "Gergaoon";
                 notification.Text = "Come Back And Get Your Daily Reward Now!";
@@ -87,10 +76,8 @@ public class NotificationsManager : MonoBehaviour
         if (toggle == 1)
         { 
             var notificationRestoreLives = new AndroidNotification();
-
-
-                int language = PlayerPrefs.GetInt("LanguageNum");
-                if (language == 1)
+             
+                if (systemLanguage == SystemLanguage.Arabic)
                 {
                     notificationRestoreLives.Title = "قرقاعون";
                     notificationRestoreLives.Text = "لقد امتلأ عداد المحاولات! حياك العب!";
@@ -98,7 +85,7 @@ public class NotificationsManager : MonoBehaviour
                     notificationRestoreLives.FireTime = System.DateTime.Now.AddHours(1);
 
                 }
-                else if (language == 2)
+                else
                 {
                     notificationRestoreLives.Title = "Gergaoon";
                     notificationRestoreLives.Text = "Tries Replenished! Come Play!";

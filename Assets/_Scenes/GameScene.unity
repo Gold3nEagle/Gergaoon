@@ -3245,6 +3245,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b9707cde6e4c64f8a6f2243b1464f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &858895906 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3727266936027943745, guid: 91a2ef5e930ceb542a4e2c708259e3ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 858895903}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &858941663
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,6 +4161,7 @@ GameObject:
   - component: {fileID: 1071013168}
   - component: {fileID: 1071013167}
   - component: {fileID: 1071013169}
+  - component: {fileID: 1071013170}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -4222,9 +4235,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb53cf36ffe37d647830e3c783322eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rewardType: 0
+  gameScore: {fileID: 0}
+  currentScene: 
+  overWorld: {fileID: 0}
   testRewardedBool: 0
-  rewardedAdButton01: {fileID: 0}
+  rewardedAdButton01: {fileID: 858895906}
   rewardedAdButton02: {fileID: 0}
+--- !u!114 &1071013170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071013166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11e38b8bf0633642a72dc3174cb6cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1076242861
 GameObject:
   m_ObjectHideFlags: 0

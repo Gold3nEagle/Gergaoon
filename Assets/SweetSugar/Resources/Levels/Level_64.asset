@@ -47,7 +47,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 5
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 1, y: 0}
         direction: {x: 0, y: -1}
@@ -71,7 +71,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 5
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 2, y: 0}
         direction: {x: 0, y: -1}
@@ -167,7 +167,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 5
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 1, y: 1}
         direction: {x: 0, y: -1}
@@ -191,7 +191,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 5
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 2, y: 1}
         direction: {x: 0, y: -1}
@@ -287,7 +287,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 5
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 1, y: 2}
         direction: {x: 0, y: -1}
@@ -311,7 +311,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 5
+        obstacle: 0
         obstacleLayer: 1
         position: {x: 2, y: 2}
         direction: {x: 0, y: -1}
@@ -407,7 +407,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 1, y: 3}
         direction: {x: 0, y: -1}
@@ -527,7 +527,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 1, y: 4}
         direction: {x: 0, y: -1}
@@ -647,7 +647,7 @@ MonoBehaviour:
           TargetMarmaladePositions: []
       - block: 1
         blockLayer: 1
-        obstacle: 0
+        obstacle: 4
         obstacleLayer: 1
         position: {x: 1, y: 5}
         direction: {x: 0, y: -1}
@@ -1113,7 +1113,7 @@ MonoBehaviour:
     targetIndex: 3
     limitType: 0
     ingrCountTarget: 0000000000000000
-    limit: 23
+    limit: 26
     colorLimit: 5
     star1: 1000
     star2: 1500
