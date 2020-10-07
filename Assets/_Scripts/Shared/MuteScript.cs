@@ -46,11 +46,7 @@ public class MuteScript : MonoBehaviour
     public void RateGame()
     {
         Application.OpenURL("market://details?id=com.goldeneagle.gergaoon");
-        PlayerPrefs.SetInt("BeenRated", 1);
-
-        int totalCandy = PlayerPrefs.GetInt("totalCandy");
-        totalCandy += 100;
-        PlayerPrefs.SetInt("totalCandy", totalCandy); 
+        PlayerPrefs.SetInt("BeenRated", 1); 
     } 
 
     public void ShareGame()

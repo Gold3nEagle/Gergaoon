@@ -688,6 +688,7 @@ GameObject:
   - component: {fileID: 152643192}
   - component: {fileID: 152643268}
   - component: {fileID: 152643182}
+  - component: {fileID: 152643178}
   m_Layer: 0
   m_Name: BahrainOutro FlowChart
   m_TagString: Untagged
@@ -1065,8 +1066,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 152643203}
-  selectedCommands:
-  - {fileID: 152643201}
+  selectedCommands: []
   variables:
   - {fileID: 152643164}
   description: 
@@ -1688,6 +1688,20 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &152643178
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152643153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 157
+  indentLevel: 0
 --- !u!114 &152643179
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2942,6 +2956,7 @@ MonoBehaviour:
   - {fileID: 152643252}
   - {fileID: 152643250}
   - {fileID: 152643201}
+  - {fileID: 152643178}
   - {fileID: 152643202}
   suppressAllAutoSelections: 0
 --- !u!114 &152643204
@@ -6842,6 +6857,7 @@ GameObject:
   - component: {fileID: 402467411}
   - component: {fileID: 402467410}
   - component: {fileID: 402467413}
+  - component: {fileID: 402467414}
   m_Layer: 0
   m_Name: WhatIsGerg FlowChart
   m_TagString: Untagged
@@ -7999,6 +8015,7 @@ MonoBehaviour:
   - {fileID: 402467407}
   - {fileID: 402467377}
   - {fileID: 402467413}
+  - {fileID: 402467414}
   - {fileID: 402467405}
   suppressAllAutoSelections: 0
 --- !u!114 &402467383
@@ -9672,6 +9689,20 @@ MonoBehaviour:
   orthoSizeTweenType: 4
   posTweenType: 4
   rotTweenType: 4
+--- !u!114 &402467414
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402467356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 98
+  indentLevel: 0
 --- !u!1 &402950030
 GameObject:
   m_ObjectHideFlags: 0
@@ -12036,11 +12067,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1217312536}
   selectedCommands:
-  - {fileID: 1217312558}
-  - {fileID: 1217312556}
-  - {fileID: 1217312555}
-  - {fileID: 1217312557}
-  - {fileID: 1217312543}
+  - {fileID: 1217312552}
   variables:
   - {fileID: 1217312553}
   description: Flowchart that plays before the first level.
@@ -12067,9 +12094,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 141
+    x: 139.93617
     y: 119
-    width: 60
+    width: 75.53191
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12102,8 +12129,8 @@ MonoBehaviour:
   - {fileID: 1217312565}
   - {fileID: 1217312563}
   - {fileID: 1217312564}
-  - {fileID: 1217312552}
   - {fileID: 1217312550}
+  - {fileID: 1217312552}
   - {fileID: 1217312549}
   suppressAllAutoSelections: 0
 --- !u!114 &1217312537
@@ -14401,7 +14428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 402467359}
+  selectedFlowchart: {fileID: 1217312535}
 --- !u!4 &1555801516
 Transform:
   m_ObjectHideFlags: 1

@@ -13,17 +13,7 @@ namespace SweetSugar.Scripts.MapScripts
         public TextMeshProUGUI text;
         private int level;
         public GameObject tutsGO, jellyTutorial, powerUpPanel;
-
-
-        private void Start()
-        {
-            GameObject FungusManager = GameObject.Find("FungusManager");
-            if(FungusManager != null)
-            {
-                Destroy(FungusManager);
-            }
-           
-        }
+         
 
         private void OnEnable()
         {

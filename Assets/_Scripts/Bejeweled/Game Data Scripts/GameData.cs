@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public class SaveData
@@ -16,7 +17,7 @@ public class GameData : MonoBehaviour
 {
     public static GameData gameData;
     public SaveData saveData;
-    int totalLevels = 160;
+    int totalLevels = 170;
 
     // Start is called before the first frame update
     void Awake()
@@ -67,27 +68,28 @@ public class GameData : MonoBehaviour
 
     public void CheckLevels()
     {
-        if (saveData.isActive.Length < totalLevels)
-        {
-            int lastLevel = GetLatestUnlockedLevel(); 
-             
-            saveData.isActive = new bool[totalLevels];
-            saveData.stars = new int[totalLevels];
-            saveData.highScores = new int[totalLevels];
-
-            for (int i = 0; i <= lastLevel; i++)
+ 
+            if (saveData.isActive.Length < totalLevels)
             {
-                saveData.isActive[i] = true;
-            }
+                int lastLevel = GetLatestUnlockedLevel();
 
-            for (int i = lastLevel; i <= saveData.isActive.Length; i++)
-            {
-                saveData.isActive[i] = false;
-            }
+                saveData.isActive = new bool[totalLevels];
+                saveData.stars = new int[totalLevels];
+                saveData.highScores = new int[totalLevels];
 
-            Debug.Log("Reconfigured Save File");
-            Save(); 
-        }
+                for (int i = 0; i <= lastLevel; i++)
+                {
+                    saveData.isActive[i] = true;
+                }
+
+                for (int i = lastLevel; i <= saveData.isActive.Length; i++)
+                {
+                    saveData.isActive[i] = false;
+                }
+
+                Debug.Log("Reconfigured Save File");
+                Save();
+            } 
     } 
 
     public int GetLatestUnlockedLevel()

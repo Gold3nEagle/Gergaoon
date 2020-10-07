@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DentedPixel;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DoTweenController : MonoBehaviour
 {
@@ -61,6 +62,10 @@ public class DoTweenController : MonoBehaviour
 
     void Rotate()
     {
+        if(SceneManager.GetActiveScene().name == "OverWorld")
+        { 
+            LeanTween.scale(gameObject, new Vector3(.2f, .2f, 1), 0f);
+        }
         LeanTween.rotateLocal(gameObject, new Vector3(0f, 0f, -260f), 26f);
     }
 

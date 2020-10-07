@@ -8,7 +8,7 @@ public class Overworld : MonoBehaviour
 {
 
     public Text totalCandyDisplay, totalLivesDisplay;
-    public GameObject pointerAnim, guidePanel;
+    public GameObject pointerAnim, guidePanel, latestLevelRays;
     public GPlayServices gPlay;
     GameData gameData;
     Camera mainCamera;
@@ -36,12 +36,7 @@ public class Overworld : MonoBehaviour
         gameData.CheckLevels(); 
 
         DisplayTotalCandy();
-
-        GameObject FungusManager = GameObject.Find("FungusManager");
-        if (FungusManager != null)
-        {
-            Destroy(FungusManager);
-        } 
+        
     }
 
     // Start is called before the first frame update
@@ -54,6 +49,12 @@ public class Overworld : MonoBehaviour
             int latestLevel = gameData.GetLatestUnlockedLevel();
 
 
+            //Denote Unlocked level
+            GameObject neededPosition = GameObject.Find("Level Prefab " + "(" + (latestLevel - 1).ToString() + ")");
+            Transform parentRay = neededPosition.transform;
+            GameObject rayObject = Instantiate(latestLevelRays, new Vector3(parentRay.position.x, parentRay.position.y, 0), Quaternion.identity); 
+            rayObject.transform.parent = parentRay.transform; 
+
             if (latestLevel >= 10)
                 gPlay.UnlockAchievement(6);
 
@@ -61,15 +62,18 @@ public class Overworld : MonoBehaviour
                 gPlay.UnlockAchievement(7);
 
             //Precaution so camera is not out of bounds.
-            if (latestLevel > 150)
+            if (latestLevel > 160)
                 latestLevel -= 3;
 
             //Don't jump to next map when the last level of a map is unlocked.
             if (latestLevel == 18 || latestLevel == 131)
                 latestLevel--;
 
-            GameObject neededPosition = GameObject.Find("Level Prefab " + "(" + latestLevel.ToString() + ")");
+            neededPosition = GameObject.Find("Level Prefab " + "(" + latestLevel.ToString() + ")");
             mainCamera.transform.position = new Vector3(neededPosition.transform.position.x, neededPosition.transform.position.y, -10);
+
+
+
         }
     }
 

@@ -17,26 +17,16 @@ public class AnimationController : MonoBehaviour
     {
         scene = SceneManager.GetActiveScene().name;
         timesPlayed = PlayerPrefs.GetInt("TP");
-        IsRated = PlayerPrefs.GetInt("BeenRated");
-        if (scene == "GameScene" || scene == "OverWorld")
-        {
-            RateGame();
-            //LBPointer();
-        }
+        IsRated = PlayerPrefs.GetInt("BeenRated"); 
     }
       
 
     public void RateGame()
-    {
-
+    { 
         timesPlayed++;
         PlayerPrefs.SetInt("TP", timesPlayed);
         Debug.Log(timesPlayed +" Rated or not?   " +  IsRated);
-        if (timesPlayed >= 5 && IsRated == 0) {  
-        animator.SetBool("IsOpen", true);
-        PlayerPrefs.SetInt("BeenRated", 1);
-        }
-
+  
         if(timesPlayed >= 100)
         {
             GPlayServices gPlay = FindObjectOfType<GPlayServices>();

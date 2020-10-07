@@ -33,15 +33,27 @@ public class CutSceneManager : MonoBehaviour
     public SpriteRenderer boyFace, girlFace, backgroundRenderer;
     public Sprite[] boyFaceSprites, girlFaceSprites, backgroundSprites; 
     public GameObject[] cutScenes;
+    int cutScene;
 
     // Start is called before the first frame update
     void Awake()
     {
-        int cutScene = PlayerPrefs.GetInt("cutScene");
+        cutScene = PlayerPrefs.GetInt("cutScene");
         SetBackground(cutScene); 
         cutScenes[cutScene].SetActive(true);
+        InvokeRepeating("CheckSceneLoaded", 3, 3);
 
-    } 
+    }
+     
+
+    void CheckSceneLoaded()
+    { 
+        if (cutScenes[cutScene].active == false)
+        {
+            cutScenes[cutScene].SetActive(true);
+        }
+    }
+
 
     public void AnimateCharacter(Character character, FaceState faceState, CharacterState animationState )
     {
